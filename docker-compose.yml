@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  pvp-scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pvp-scraper:latest
+    container_name: pvp-scraper
+
+    # -------------------------------------------------------------------------
+    # Risorse — Chromium headless usa ~300-500 MB durante lo scraping.
+    # Con 3.8 GB RAM sul TS-433 questi limiti sono ampiamente sufficienti.
+    # -------------------------------------------------------------------------
+    mem_limit: 1g
+    memswap_limit: 1g
+    cpus: "1.5"
+
+    ports:
+      - "5000:5000"
+
+    # -------------------------------------------------------------------------
+    # Volume mappato sulla cartella /Container/pvp-scraper/data del NAS
+    # I file results.json e results_backup.json finiscono qui
+    # -------------------------------------------------------------------------
+    volumes:
+      - /share/CACHEDEV1_DATA/Container/pvp-scraper/data:/app/data
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Europe/Rome
+      # Punta i file JSON alla cartella /app/data dentro il container
+      - RESULTS_FILE=/app/data/results.json
+      - BACKUP_FILE=/app/data/results_backup.json
+
+    # -------------------------------------------------------------------------
+    # Necessario per Chromium headless in Docker
+    # -------------------------------------------------------------------------
+    shm_size: "256mb"
+    security_opt:
+      - seccomp:unconfined
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:5000/api/ping')"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

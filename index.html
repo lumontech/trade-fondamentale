@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade Fondamentale · Dashboard</title>
+<style>
+:root {
+  --bg: #08101e;
+  --bg2: #0f1a2e;
+  --bg3: #162035;
+  --card: #111d33;
+  --card2: #1a2845;
+  --border: rgba(0,180,255,0.12);
+  --border2: rgba(255,255,255,0.06);
+  --accent: #00c8ff;
+  --accent2: #0088cc;
+  --long: #00e676;
+  --long-dim: rgba(0,230,118,0.12);
+  --short: #ff4060;
+  --short-dim: rgba(255,64,96,0.12);
+  --neutral: #ffb020;
+  --neutral-dim: rgba(255,176,32,0.12);
+  --text: #dce8f5;
+  --text2: #7a9bbf;
+  --text3: #4a6a8a;
+  --radius: 10px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:14px;min-height:100vh;overflow-x:hidden}
+.header{background:linear-gradient(135deg,#080f1d,#0d1828);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;gap:16px;height:56px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;color:var(--accent);letter-spacing:.5px}
+.logo svg{width:28px;height:28px}
+.nav{display:flex;gap:2px;margin-left:8px}
+.nav-btn{padding:6px 16px;border:none;background:transparent;color:var(--text2);cursor:pointer;border-radius:6px;font-size:13px;font-weight:500;transition:all .2s;letter-spacing:.3px}
+.nav-btn:hover{background:rgba(0,200,255,0.08);color:var(--accent)}
+.nav-btn.active{background:rgba(0,200,255,0.15);color:var(--accent);border-bottom:2px solid var(--accent)}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.clock{color:var(--text2);font-size:12px;font-variant-numeric:tabular-nums}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--long);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.main{padding:20px;max-width:1400px;margin:0 auto}
+.tab{display:none}.tab.active{display:block}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card-sm{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px}
+.section-title{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--text2);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.badge-long{background:var(--long-dim);color:var(--long);border:1px solid rgba(0,230,118,.25)}
+.badge-short{background:var(--short-dim);color:var(--short);border:1px solid rgba(255,64,96,.25)}
+.badge-neutral{background:var(--neutral-dim);color:var(--neutral);border:1px solid rgba(255,176,32,.25)}
+.badge-high{background:rgba(255,64,96,.15);color:#ff6080;border:1px solid rgba(255,64,96,.3)}
+.badge-medium{background:rgba(255,176,32,.15);color:#ffb020;border:1px solid rgba(255,176,32,.3)}
+.badge-low{background:rgba(0,200,255,.1);color:#00c8ff;border:1px solid rgba(0,200,255,.2)}
+.badge-watchlist{background:rgba(255,215,0,.12);color:#ffd700;border:1px solid rgba(255,215,0,.3);font-size:10px}
+.badge-riskoff{background:var(--short-dim);color:var(--short);border:1px solid rgba(255,64,96,.25);padding:4px 12px;font-size:12px}
+.badge-riskon{background:var(--long-dim);color:var(--long);border:1px solid rgba(0,230,118,.25);padding:4px 12px;font-size:12px}
+.badge-neutral-lrg{background:var(--neutral-dim);color:var(--neutral);border:1px solid rgba(255,176,32,.25);padding:4px 12px;font-size:12px}
+.btn{padding:8px 16px;border-radius:6px;border:none;cursor:pointer;font-size:13px;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:linear-gradient(135deg,#0066cc,#0099ff);color:#fff}
+.btn-primary:hover{filter:brightness(1.15);transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text2)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-tec{background:rgba(0,200,255,.1);border:1px solid rgba(0,200,255,.25);color:var(--accent);padding:4px 10px;font-size:11px;font-weight:700;border-radius:6px;cursor:pointer;transition:all .2s}
+.btn-tec:hover{background:rgba(0,200,255,.2)}
+.btn-generate{background:linear-gradient(135deg,#1a3a6a,#0066bb);color:#fff;padding:12px 28px;font-size:14px;border-radius:8px;border:1px solid rgba(0,150,255,.3)}
+.btn-generate:hover{filter:brightness(1.2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,120,255,.3)}
+.news-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:12px;transition:all .2s}
+.news-card:hover{border-color:rgba(0,200,255,.25);transform:translateY(-1px)}
+.news-card.watchlist-hit{border-left:3px solid #ffd700}
+.news-source{font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.8px;text-transform:uppercase}
+.news-title{font-size:14px;font-weight:600;color:var(--text);line-height:1.4}
+.news-summary{font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+.winrate-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:rgba(0,200,255,.1);border:1px solid rgba(0,200,255,.2);color:var(--accent)}
+.confluence-wrap{margin-top:12px;padding-top:12px;border-top:1px solid var(--border2)}
+.confluence-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.conf-item{font-size:10px;color:var(--text2)}
+.conf-bar-wrap{height:4px;background:rgba(255,255,255,.06);border-radius:2px;margin-top:3px;overflow:hidden}
+.conf-bar{height:100%;border-radius:2px;transition:width 1s ease}
+.conf-bar.fund{background:linear-gradient(90deg,#0066ff,#00ccff)}
+.conf-bar.tec{background:linear-gradient(90deg,#7700ff,#cc00ff)}
+.conf-bar.sent{background:linear-gradient(90deg,#ff6600,#ffcc00)}
+.conf-bar.stag{background:linear-gradient(90deg,#006600,#00ff88)}
+.conf-total{display:flex;align-items:center;gap:8px;margin-top:8px;padding:6px 10px;background:rgba(0,0,0,.2);border-radius:6px;border:1px solid var(--border2)}
+.conf-total-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.conf-total-score{font-size:14px;font-weight:700;margin-left:auto}
+.cal-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px;display:grid;grid-template-columns:80px 60px 1fr auto;gap:12px;align-items:start;transition:all .2s}
+.cal-card:hover{border-color:rgba(0,200,255,.2)}
+.cal-card.watchlist-hit{border-left:3px solid #ffd700}
+.cal-card.past{opacity:.5}
+.cal-time{text-align:center}
+.cal-time .time-main{font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent)}
+.cal-time .countdown{font-size:10px;color:var(--text3);margin-top:2px;font-variant-numeric:tabular-nums}
+.cal-currency{display:flex;flex-direction:column;align-items:center;gap:4px}
+.currency-flag{font-size:18px}
+.currency-code{font-size:11px;font-weight:700;color:var(--text2)}
+.cal-event-name{font-size:14px;font-weight:600}
+.cal-analysis{font-size:12px;color:var(--text2);line-height:1.5;margin-top:6px}
+.cal-scenarios{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.scenario{font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600}
+.scenario-over{background:var(--long-dim);color:var(--long);border:1px solid rgba(0,230,118,.2)}
+.scenario-under{background:var(--short-dim);color:var(--short);border:1px solid rgba(255,64,96,.2)}
+.cal-actions{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.winrate-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-direction:column}
+.briefing-hero{background:linear-gradient(135deg,#0d1a2e,#0a2040);border:1px solid rgba(0,150,255,.2);border-radius:12px;padding:28px;margin-bottom:20px;text-align:center}
+.briefing-hero h1{font-size:22px;font-weight:700;color:var(--text);margin-bottom:6px}
+.briefing-hero .date{font-size:13px;color:var(--text2)}
+.sentiment-big{font-size:36px;margin:16px 0 8px}
+.sentiment-text{font-size:24px;font-weight:700}
+.sentiment-sub{font-size:13px;color:var(--text2);margin-top:4px}
+.briefing-sintesi{font-size:14px;color:var(--text);line-height:1.7;padding:16px;background:rgba(0,0,0,.2);border-radius:8px;border-left:3px solid var(--accent);margin-top:16px}
+.setup-card{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:14px;position:relative;overflow:hidden;margin-bottom:10px}
+.setup-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.setup-card.long::before{background:var(--long)}
+.setup-card.short::before{background:var(--short)}
+.setup-symbol{font-size:18px;font-weight:700;color:var(--text)}
+.setup-why{font-size:11px;color:var(--text2);line-height:1.5;margin-top:6px}
+.setup-levels{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.level-tag{font-size:10px;padding:2px 7px;border-radius:3px;background:rgba(255,255,255,.05);color:var(--text2);border:1px solid var(--border2)}
+.monitor-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.monitor-list li{display:flex;align-items:center;gap:10px;font-size:13px;padding:8px 12px;background:rgba(0,0,0,.15);border-radius:6px;border:1px solid var(--border2)}
+.monitor-list li::before{content:'◈';color:var(--accent);font-size:10px}
+.hot-time{display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(255,176,32,.06);border:1px solid rgba(255,176,32,.15);border-radius:6px;font-size:12px}
+.wl-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:all .2s}
+.wl-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.wl-symbol{font-size:20px;font-weight:700;color:var(--text)}
+.wl-actions{display:flex;gap:6px;margin-top:10px}
+.wl-price{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--text);line-height:1.2}
+.wl-chg{font-size:12px;font-weight:600;margin-left:6px}
+.wl-chg.up{color:var(--long)}.wl-chg.dn{color:var(--short)}.wl-chg.flat{color:var(--text3)}
+.wl-live-dot{font-size:10px;color:var(--text3);margin-top:2px}
+/* ── Price ticker bar ── */
+.price-ticker{background:#080e1c;border-bottom:1px solid var(--border);padding:5px 20px;display:flex;gap:0;overflow:hidden;position:relative}
+.price-ticker::before,.price-ticker::after{content:'';position:absolute;top:0;width:40px;height:100%;z-index:2;pointer-events:none}
+.price-ticker::before{left:0;background:linear-gradient(90deg,#080e1c,transparent)}
+.price-ticker::after{right:0;background:linear-gradient(270deg,#080e1c,transparent)}
+.ptick-track{display:flex;gap:28px;animation:tickerScroll 40s linear infinite;white-space:nowrap}
+.ptick-track:hover{animation-play-state:paused}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ptick-item{display:inline-flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;padding:2px 0}
+.ptick-item:hover .ptick-sym{color:#fff}
+.ptick-sym{font-weight:700;color:var(--text2);letter-spacing:.5px;min-width:60px}
+.ptick-val{font-variant-numeric:tabular-nums;color:var(--text)}
+.ptick-chg{font-size:11px;font-weight:600}
+.ptick-chg.up{color:var(--long)}.ptick-chg.dn{color:var(--short)}.ptick-chg.flat{color:var(--text3)}
+.ptick-sep{color:var(--border);margin:0 4px}|
+.wl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.btn-star{background:transparent;border:1px solid var(--border);border-radius:6px;padding:4px 8px;cursor:pointer;font-size:14px;transition:all .2s}
+.btn-star.active{background:rgba(255,215,0,.15);border-color:#ffd700}
+.add-symbol-row{display:flex;gap:8px;margin-bottom:16px}
+.add-symbol-row input{flex:1;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:8px 12px;color:var(--text);font-size:13px;outline:none}
+.add-symbol-row input:focus{border-color:var(--accent)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:1000;display:none;align-items:flex-start;justify-content:flex-end;backdrop-filter:blur(4px)}
+.overlay.open{display:flex}
+.tec-panel{width:min(95vw,1080px);height:100vh;background:var(--bg2);border-left:1px solid var(--border);overflow-y:auto;animation:slideIn .25s ease;display:flex;flex-direction:column}
+@keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+.tec-header{padding:14px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;position:sticky;top:0;background:var(--bg2);z-index:10;flex-shrink:0}
+.tec-symbol{font-size:22px;font-weight:800;color:var(--accent)}
+.tec-close{margin-left:auto;background:transparent;border:none;color:var(--text2);cursor:pointer;font-size:20px;padding:4px 8px;border-radius:4px}
+.tec-close:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.tec-chart-wrap{height:440px;flex-shrink:0;border-bottom:1px solid var(--border);background:#060d1a;position:relative}
+.tec-chart-wrap iframe{border:none!important}
+.tec-tv-bar{position:absolute;top:8px;right:12px;z-index:5;display:flex;gap:6px}
+.tec-tf-btn{background:rgba(0,200,255,.1);border:1px solid rgba(0,200,255,.2);color:var(--accent);padding:3px 9px;font-size:11px;font-weight:700;border-radius:4px;cursor:pointer;transition:all .15s}
+.tec-tf-btn:hover,.tec-tf-btn.active{background:rgba(0,200,255,.25);border-color:var(--accent)}
+.tec-body{padding:18px 20px;flex:1}
+.tec-section{margin-bottom:20px}
+.tec-section-title{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border2)}
+.tec-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tec-stat{background:rgba(0,0,0,.2);border-radius:6px;padding:10px;border:1px solid var(--border2)}
+.tec-stat-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.tec-stat-value{font-size:15px;font-weight:700;color:var(--text);margin-top:3px}
+.trend-bar{height:8px;border-radius:4px;background:rgba(255,255,255,.06);margin-top:4px;overflow:hidden}
+.trend-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#0044cc,#00aaff)}
+.sr-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sr-item{padding:8px 12px;border-radius:6px;font-size:13px;font-weight:600;text-align:center}
+.sr-sup{background:var(--long-dim);color:var(--long);border:1px solid rgba(0,230,118,.2)}
+.sr-res{background:var(--short-dim);color:var(--short);border:1px solid rgba(255,64,96,.2)}
+.sr-label{font-size:9px;opacity:.6;display:block;margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
+.setup-box{background:rgba(0,0,0,.25);border-radius:8px;padding:14px;border:1px solid var(--border)}
+.setup-dir-big{font-size:24px;font-weight:800;margin-bottom:10px}
+.setup-table{width:100%;border-collapse:collapse}
+.setup-table td{padding:5px 0;font-size:12px;border-bottom:1px solid var(--border2)}
+.setup-table td:first-child{color:var(--text3);width:100px}
+.setup-table td:last-child{font-weight:600;text-align:right}
+.pattern-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(150,50,255,.12);border:1px solid rgba(150,50,255,.25);border-radius:6px;color:#cc88ff;font-size:12px;font-weight:600}
+.conf-chips{display:flex;flex-wrap:wrap;gap:6px}
+.conf-chip{padding:3px 10px;background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.2);border-radius:20px;font-size:11px;color:var(--accent)}
+.tec-note{font-size:12px;color:var(--text2);line-height:1.6;padding:12px;background:rgba(0,0,0,.2);border-radius:6px;border-left:2px solid var(--accent)}
+.tec-loading{display:flex;flex-direction:column;align-items:center;justify-content:center;height:300px;gap:12px}
+.spinner{width:36px;height:36px;border:3px solid rgba(0,200,255,.2);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;gap:14px}
+.loading-text{color:var(--text2);font-size:13px}
+.events-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;margin-bottom:20px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+.event-chip{flex-shrink:0;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;min-width:140px}
+.event-chip.high-impact{border-color:rgba(255,64,96,.3);background:rgba(255,64,96,.05)}
+.event-chip-time{font-size:11px;color:var(--text3);margin-bottom:2px}
+.event-chip-name{font-size:11px;font-weight:600;color:var(--text)}
+.event-chip-cd{font-size:10px;color:var(--accent);margin-top:2px;font-variant-numeric:tabular-nums}
+.risk-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
+.risk-alto{background:var(--short-dim);color:var(--short);border:1px solid rgba(255,64,96,.2)}
+.risk-medio{background:var(--neutral-dim);color:var(--neutral);border:1px solid rgba(255,176,32,.2)}
+.filter-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filter-btn{padding:5px 12px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;font-size:12px;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:rgba(0,200,255,.1);border-color:var(--accent);color:var(--accent)}
+.empty-state{text-align:center;padding:40px;color:var(--text3)}
+.empty-state .icon{font-size:36px;margin-bottom:8px}
+.tag{display:inline-flex;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;background:rgba(0,200,255,.08);color:var(--text2);border:1px solid var(--border2)}
+.mock-banner{background:rgba(255,176,32,.08);border:1px solid rgba(255,176,32,.2);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:12px;color:var(--neutral);display:flex;gap:8px;align-items:center}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+/* Scanner */
+.scanner-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:12px;transition:all .2s}
+.scanner-card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.scanner-card.long{border-left:3px solid var(--long)}
+.scanner-card.short{border-left:3px solid var(--short)}
+.sc-header{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.sc-sym{font-size:18px;font-weight:800;color:var(--text)}
+.sc-name{font-size:12px;font-weight:600;color:var(--text2)}
+.sc-tf{background:rgba(0,200,255,.1);border:1px solid rgba(0,200,255,.2);color:var(--accent);padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700}
+.sc-wr{padding:3px 10px;border-radius:6px;font-size:12px;font-weight:800}
+.sc-wr.high{background:rgba(0,230,118,.15);color:var(--long);border:1px solid rgba(0,230,118,.3)}
+.sc-wr.med{background:rgba(255,176,32,.15);color:var(--neutral);border:1px solid rgba(255,176,32,.3)}
+.sc-desc{font-size:12px;color:var(--text2);margin-bottom:10px;line-height:1.5}
+.sc-levels{display:flex;gap:16px;flex-wrap:wrap;font-size:12px}
+.sc-level{display:flex;flex-direction:column;gap:2px}
+.sc-level-label{font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.5px}
+.sc-level-val{font-weight:700;font-variant-numeric:tabular-nums}
+.sc-rr{background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.15);border-radius:6px;padding:4px 10px;font-size:11px;color:var(--accent);font-weight:700}
+.sc-confluenze{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.sc-conf-tag{background:rgba(255,255,255,.05);border:1px solid var(--border2);border-radius:4px;padding:2px 7px;font-size:10px;color:var(--text3)}
+.scanner-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;color:var(--text3)}
+.scanner-header-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="rgba(0,200,255,0.12)"/><polyline points="4,20 10,12 16,16 24,6" stroke="#00c8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12" r="2" fill="#00e676"/><circle cx="16" cy="16" r="2" fill="#ffb020"/><circle cx="24" cy="6" r="2" fill="#ff4060"/></svg>
+    TRADE FONDAMENTALE
+  </div>
+  <nav class="nav">
+    <button class="nav-btn active" onclick="switchTab('briefing',this)">⚡ BRIEFING</button>
+    <button class="nav-btn" onclick="switchTab('news',this)">📡 NOTIZIE</button>
+    <button class="nav-btn" onclick="switchTab('calendar',this)">📅 CALENDARIO</button>
+    <button class="nav-btn" onclick="switchTab('watchlist',this)">⭐ WATCHLIST</button>
+    <button class="nav-btn" onclick="switchTab('scanner',this)">🎯 SCANNER</button>
+  </nav>
+  <div class="header-right">
+    <div class="status-dot"></div>
+    <div class="clock" id="clock"></div>
+  </div>
+</header>
+<div class="price-ticker" id="price-ticker"><div class="ptick-track" id="ptick-track"><span style="color:var(--text3);font-size:11px">Caricamento prezzi…</span></div></div>
+
+<div class="main">
+
+  <!-- BRIEFING -->
+  <div class="tab active" id="tab-briefing">
+    <div class="briefing-hero">
+      <h1>Briefing Mattutino</h1>
+      <div class="date" id="briefing-date"></div>
+      <div id="sentiment-display" style="margin-top:16px;display:none">
+        <div class="sentiment-big" id="sent-icon"></div>
+        <div class="sentiment-text" id="sent-label"></div>
+        <div class="sentiment-sub" id="sent-sub"></div>
+        <div class="briefing-sintesi" id="brief-sintesi"></div>
+      </div>
+      <button class="btn btn-generate" id="briefing-btn" onclick="generateBriefing()" style="margin-top:20px">✦ Genera Briefing</button>
+      <div id="briefing-loading" style="display:none;margin-top:20px;color:var(--text2);font-size:13px">
+        <div class="spinner" style="margin:0 auto 8px"></div>Analisi AI in corso…
+      </div>
+    </div>
+    <div class="section-title">Eventi di Oggi</div>
+    <div class="events-strip" id="events-strip"></div>
+    <div id="briefing-content" style="display:none">
+      <div class="grid3" style="margin-bottom:20px">
+        <div><div class="section-title">Top 3 Setup</div><div id="top-setups"></div></div>
+        <div><div class="section-title">Cosa Monitorare</div><ul class="monitor-list" id="monitor-list"></ul></div>
+        <div><div class="section-title">Orari Caldi</div><div id="hot-times" style="display:flex;flex-direction:column;gap:6px"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIZIE -->
+  <div class="tab" id="tab-news">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div class="section-title" style="margin:0">Feed Notizie Analizzato</div>
+      <button class="btn btn-outline" onclick="loadNews()">↻ Aggiorna</button>
+    </div>
+    <div class="filter-bar" id="news-filters">
+      <button class="filter-btn active" onclick="filterNews('all',this)">Tutti</button>
+      <button class="filter-btn" onclick="filterNews('LONG',this)">▲ LONG</button>
+      <button class="filter-btn" onclick="filterNews('SHORT',this)">▼ SHORT</button>
+      <button class="filter-btn" onclick="filterNews('watchlist',this)">⭐ Watchlist</button>
+      <button class="filter-btn" onclick="filterNews('BANCA_CENTRALE',this)">🏦 Banche Centrali</button>
+      <button class="filter-btn" onclick="filterNews('INFLAZIONE',this)">📊 Inflazione</button>
+      <button class="filter-btn" onclick="filterNews('OCCUPAZIONE',this)">💼 Occupazione</button>
+    </div>
+    <div id="news-container"></div>
+  </div>
+
+  <!-- CALENDARIO -->
+  <div class="tab" id="tab-calendar">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div class="section-title" style="margin:0">Calendario Economico</div>
+      <div style="display:flex;gap:8px">
+        <button class="filter-btn active" onclick="filterCalendar('all',this)">Tutti</button>
+        <button class="filter-btn" onclick="filterCalendar('HIGH',this)">🔴 Alto</button>
+        <button class="filter-btn" onclick="filterCalendar('watchlist',this)">⭐ Watchlist</button>
+      </div>
+    </div>
+    <div id="calendar-container"></div>
+  </div>
+
+  <!-- WATCHLIST -->
+  <div class="tab" id="tab-watchlist">
+    <div style="margin-bottom:20px">
+      <div class="section-title">Gestione Watchlist</div>
+      <div class="add-symbol-row">
+        <input type="text" id="new-symbol" placeholder="Aggiungi strumento (es. GBPJPY)" onkeypress="if(event.key==='Enter')addSymbol()">
+        <button class="btn btn-primary" onclick="addSymbol()">+ Aggiungi</button>
+      </div>
+      <div class="wl-grid" id="watchlist-grid"></div>
+    </div>
+    <div class="section-title">Analisi Rapida</div>
+    <div class="grid2" id="wl-quick-grid"></div>
+  </div>
+
+  <!-- TAB SCANNER -->
+  <div class="tab" id="tab-scanner">
+    <div class="scanner-header-bar">
+      <div>
+        <div class="section-title" style="margin-bottom:4px">🎯 STRATEGY SCANNER</div>
+        <div style="font-size:12px;color:var(--text3)" id="scanner-meta">Scansione setup ad alta probabilità su indicatori reali</div>
+      </div>
+      <button class="btn btn-outline" onclick="loadScanner(true)" style="font-size:12px;padding:6px 14px">↻ Aggiorna</button>
+    </div>
+    <div id="scanner-container">
+      <div class="scanner-empty"><div style="font-size:32px;margin-bottom:8px">🎯</div>Clicca Aggiorna per avviare la scansione</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- OVERLAY TECNICA -->
+<div class="overlay" id="tec-overlay" onclick="closeTec(event)">
+  <div class="tec-panel">
+    <div class="tec-header">
+      <span>📐 ANALISI TECNICA</span>
+      <span class="tec-symbol" id="tec-symbol">–</span>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+        <span style="font-size:11px;color:var(--text3)" id="tec-price-live"></span>
+        <button class="tec-close" onclick="closeTecPanel()">✕</button>
+      </div>
+    </div>
+    <!-- Grafico TradingView live -->
+    <div class="tec-chart-wrap">
+      <div class="tec-tv-bar" id="tec-tf-bar"></div>
+      <div id="tv-chart-container" style="width:100%;height:100%"></div>
+    </div>
+    <!-- Analisi AI -->
+    <div class="tec-body" id="tec-body">
+      <div class="tec-loading"><div class="spinner"></div><span style="color:var(--text2);font-size:12px">Analisi AI in corso…</span></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+<script>
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let newsData = [];
+let calendarData = [];
+let watchlistData = ['XAUUSD','EURUSD','GBPUSD','USDJPY','BTCUSD','US500'];
+let newsFilter = 'all';
+let calFilter = 'all';
+let livePrices = {};   // { XAUUSD: {price, change, change_pct, source}, … }
+
+// ─── MOCK DATA ────────────────────────────────────────────────────────────────
+const MOCK_NEWS = [
+  {id:1,source:'MarketWatch',titolo_it:'Powell (Fed): approccio cauto ai tagli tassi, inflazione ancora alta',sommario_it:'Il presidente della Fed Jerome Powell ha adottato una posizione di attesa sui tagli dei tassi, sottolineando la necessità di progressi sostenuti sull\'inflazione prima di qualsiasi allentamento. I mercati hanno ridotto le aspettative di tagli nel 2024.',strumenti_impattati:['XAUUSD','EURUSD','US500','USDJPY'],segnale:'SHORT',winrate:72,confidenza:'ALTA',razionale:'Tono hawkish Fed rafforza il dollaro USA, penalizzando oro e EUR/USD. Retorica "più a lungo più in alto" segnala nessun taglio imminente.',sentiment:'RISK_OFF',impatto_atteso:'BREVE_TERMINE',categoria:'BANCA_CENTRALE',confluenza_fondamentale:85,confluenza_tecnica:70,confluenza_sentiment:78,confluenza_stagionalita:60},
+  {id:2,source:'SeekingAlpha',titolo_it:'Oro sopra $2.350: il dollaro cede su dati occupazione deludenti',sommario_it:'I prezzi dell\'oro sono saliti bruscamente mentre il dollaro USA è sceso dopo un report ADP deludente, sollevando interrogativi sulla forza del mercato del lavoro. Gli investitori si rifugiano nell\'oro come asset difensivo.',strumenti_impattati:['XAUUSD','EURUSD','USDCAD'],segnale:'LONG',winrate:68,confidenza:'ALTA',razionale:'Debolezza del dollaro su dati macro negativi è segnale classico rialzista per l\'oro. Il pattern si ripete con alta frequenza dopo ADP sotto-attese.',sentiment:'RISK_OFF',impatto_atteso:'IMMEDIATO',categoria:'OCCUPAZIONE',confluenza_fondamentale:80,confluenza_tecnica:65,confluenza_sentiment:72,confluenza_stagionalita:58},
+  {id:3,source:'Investing.com',titolo_it:'BCE: primo taglio tassi a giugno atteso nonostante inflazione servizi ostinata',sommario_it:'I funzionari BCE hanno segnalato che il primo taglio potrebbe avvenire già a giugno, anche se l\'inflazione nei servizi rimane elevata. Il mercato prezza oltre il 90% di probabilità per un taglio a giugno.',strumenti_impattati:['EURUSD','EURJPY','EURGBP'],segnale:'SHORT',winrate:65,confidenza:'MEDIA',razionale:'Aspettative di taglio BCE anticipato rispetto alla Fed creano differenziale di tasso negativo per l\'euro. Divergenza BCE-Fed è il principale driver ribassista strutturale.',sentiment:'RISK_ON',impatto_atteso:'MEDIO_TERMINE',categoria:'BANCA_CENTRALE',confluenza_fondamentale:78,confluenza_tecnica:60,confluenza_sentiment:65,confluenza_stagionalita:55},
+  {id:4,source:'MarketWatch',titolo_it:'NFP USA superiore alle attese: 275K posti di lavoro vs previsione 200K',sommario_it:'L\'economia americana ha creato più posti di lavoro del previsto. Il tasso di disoccupazione è salito al 3.9% e la crescita salariale si è moderata, offrendo un quadro misto per la Fed.',strumenti_impattati:['EURUSD','XAUUSD','US500','GBPUSD'],segnale:'SHORT',winrate:74,confidenza:'ALTA',razionale:'NFP sopra attese rafforza il dollaro e riduce aspettative di tagli Fed. L\'oro corregge nelle 4-8 ore successive a NFP positivo con alta frequenza storica.',sentiment:'RISK_ON',impatto_atteso:'IMMEDIATO',categoria:'OCCUPAZIONE',confluenza_fondamentale:88,confluenza_tecnica:72,confluenza_sentiment:80,confluenza_stagionalita:65},
+  {id:5,source:'SeekingAlpha',titolo_it:'Banca del Giappone: nuovo rialzo tassi in arrivo, CPI sopra target',sommario_it:'Il governatore BoJ Kazuo Ueda ha suggerito ulteriori rialzi dei tassi se l\'inflazione continuerà a mantenersi al 2% in modo sostenibile. Il JPY si è rafforzato sulle dichiarazioni.',strumenti_impattati:['USDJPY','EURJPY','GBPJPY'],segnale:'SHORT',winrate:70,confidenza:'ALTA',razionale:'Pivot hawkish BoJ dopo anni di politica ultra-accomodante è forte segnale di rafforzamento yen. Il differenziale tassi BoJ-Fed si restringe comprimendo i cross JPY.',sentiment:'RISK_OFF',impatto_atteso:'MEDIO_TERMINE',categoria:'BANCA_CENTRALE',confluenza_fondamentale:82,confluenza_tecnica:68,confluenza_sentiment:75,confluenza_stagionalita:60},
+  {id:6,source:'Investing.com',titolo_it:'Petrolio in ritirata: OPEC+ valuta estensione tagli produzione in Q3',sommario_it:'I prezzi del petrolio si sono ritirati dai massimi mentre i trader digerivano segnali OPEC+ sull\'estensione dei tagli produzione oltre il Q2. Incertezza sulla domanda cinese pesa ulteriormente.',strumenti_impattati:['USDCAD','XTIUSD'],segnale:'NEUTRO',winrate:55,confidenza:'BASSA',razionale:'Segnale misto: tagli OPEC+ supportano i prezzi ma incertezza domanda crea pressione ribassista. Attendere conferma direzionale prima di operare.',sentiment:'NEUTRO',impatto_atteso:'MEDIO_TERMINE',categoria:'COMMODITY',confluenza_fondamentale:55,confluenza_tecnica:50,confluenza_sentiment:48,confluenza_stagionalita:52},
+  {id:7,source:'MarketWatch',titolo_it:'S&P 500 ai massimi storici: mega-cap tech volano sugli utili trimestrali',sommario_it:'I principali indici USA hanno raggiunto nuovi massimi dopo che diverse società tech a grande capitalizzazione hanno riportato utili ben superiori alle stime. L\'AI continua a trainare la crescita dei ricavi.',strumenti_impattati:['US500','NASDAQ','BTCUSD'],segnale:'LONG',winrate:66,confidenza:'MEDIA',razionale:'Momentum rialzista forte su indici USA dopo earnings beat. Sentiment risk-on favorisce anche asset rischiosi come BTC nel breve termine.',sentiment:'RISK_ON',impatto_atteso:'BREVE_TERMINE',categoria:'EQUITY',confluenza_fondamentale:70,confluenza_tecnica:75,confluenza_sentiment:82,confluenza_stagionalita:63},
+  {id:8,source:'SeekingAlpha',titolo_it:'CPI UK scende al 3.2%, sotto attese: boom scommesse sul taglio BOE',sommario_it:'L\'inflazione britannica ha sorpreso al ribasso, scendendo più velocemente del previsto, aumentando la probabilità di un taglio BOE in estate. La sterlina si è indebolita immediatamente.',strumenti_impattati:['GBPUSD','GBPJPY','EURGBP'],segnale:'SHORT',winrate:71,confidenza:'ALTA',razionale:'CPI sotto attese aumenta probabilità taglio BOE anticipato. Il mercato repriza GBP al ribasso in questi scenari con winrate storico elevato.',sentiment:'RISK_OFF',impatto_atteso:'IMMEDIATO',categoria:'INFLAZIONE',confluenza_fondamentale:84,confluenza_tecnica:68,confluenza_sentiment:76,confluenza_stagionalita:62},
+];
+
+function getMockCalendar() {
+  const n = new Date(), h = n.getHours(), mi = n.getMinutes();
+  const ts = (dh, dm) => {
+    const d = new Date(n); d.setHours(h+dh); d.setMinutes(mi+dm); return d.toISOString();
+  };
+  return [
+    {id:1,time:pad(h+1)+':30',currency:'USD',event:'Non-Farm Payrolls',impact:'HIGH',forecast:'190K',previous:'275K',timestamp:ts(1,30),analisi_it:'Il principale evento mensile forex. Dato sopra attese rafforza dollaro e abbassa aspettative tagli Fed.',strumenti_chiave:['XAUUSD','EURUSD','GBPUSD'],scenario_sopra:{segnale:'SHORT',strumento:'XAUUSD',winrate:74},scenario_sotto:{segnale:'LONG',strumento:'XAUUSD',winrate:71},storico_winrate:73,volatilita_attesa:'ALTA',cosa_aspettarsi:'Attendere il primo ritracement post-dato prima di entrare.'},
+    {id:2,time:pad(h+1)+':32',currency:'USD',event:'Unemployment Rate',impact:'HIGH',forecast:'3.9%',previous:'3.7%',timestamp:ts(1,32),analisi_it:'Pubblicato con NFP. Tasso più alto del previsto aumenta aspettative tagli Fed.',strumenti_chiave:['EURUSD','USDJPY'],scenario_sopra:{segnale:'SHORT',strumento:'EURUSD',winrate:62},scenario_sotto:{segnale:'LONG',strumento:'EURUSD',winrate:68},storico_winrate:65,volatilita_attesa:'ALTA',cosa_aspettarsi:'Monitorare combinazione NFP+disoccupazione per leggere il quadro completo.'},
+    {id:3,time:pad(h)+':'+pad(mi+45<60?mi+45:59),currency:'USD',event:'FOMC Member Speech (Williams)',impact:'MEDIUM',forecast:'',previous:'',timestamp:ts(0,45),analisi_it:'I discorsi FOMC possono segnalare cambiamenti nella forward guidance.',strumenti_chiave:['EURUSD','XAUUSD'],scenario_sopra:{segnale:'SHORT',strumento:'EURUSD',winrate:60},scenario_sotto:{segnale:'LONG',strumento:'EURUSD',winrate:58},storico_winrate:58,volatilita_attesa:'MEDIA',cosa_aspettarsi:'Cercare keywords: "patient", "data dependent", "restrictive".'},
+    {id:4,time:pad(h+5)+':45',currency:'EUR',event:'CPI Flash Estimate (YoY)',impact:'HIGH',forecast:'2.4%',previous:'2.6%',timestamp:ts(5,45),analisi_it:'Dato flash CPI europeo fondamentale per prezzare tagli BCE. Discesa sotto attese accelera aspettative taglio giugno.',strumenti_chiave:['EURUSD','EURJPY','EURGBP'],scenario_sopra:{segnale:'LONG',strumento:'EURUSD',winrate:67},scenario_sotto:{segnale:'SHORT',strumento:'EURUSD',winrate:72},storico_winrate:69,volatilita_attesa:'ALTA',cosa_aspettarsi:'Sotto 2.3% = bullish per tagli BCE aggressivi. Sopra 2.6% = hawkish per EUR.'},
+    {id:5,time:pad(h+7)+':00',currency:'GBP',event:'BOE Interest Rate Decision',impact:'HIGH',forecast:'5.25%',previous:'5.25%',timestamp:ts(7,0),analisi_it:'Decisione BOE con comunicato e conferenza stampa. Mercato cerca segnali sul timing dei tagli.',strumenti_chiave:['GBPUSD','GBPJPY','EURGBP'],scenario_sopra:{segnale:'LONG',strumento:'GBPUSD',winrate:65},scenario_sotto:{segnale:'SHORT',strumento:'GBPUSD',winrate:70},storico_winrate:67,volatilita_attesa:'ALTA',cosa_aspettarsi:'Il tono della conferenza stampa muoverà più il mercato della decisione stessa.'},
+    {id:6,time:pad(h-2<0?0:h-2)+':00',currency:'JPY',event:'BOJ Meeting Minutes',impact:'MEDIUM',forecast:'',previous:'',timestamp:ts(-2,0),analisi_it:'I verbali BOJ rivelano il dibattito sulla normalizzazione. Segnali hawkish rafforzano lo yen.',strumenti_chiave:['USDJPY','EURJPY'],scenario_sopra:{segnale:'SHORT',strumento:'USDJPY',winrate:62},scenario_sotto:{segnale:'LONG',strumento:'USDJPY',winrate:58},storico_winrate:60,volatilita_attesa:'MEDIA',cosa_aspettarsi:'Cercare menzione di "wage growth" e "sustainable inflation".'},
+    {id:7,time:pad(h+3)+':15',currency:'USD',event:'ISM Manufacturing PMI',impact:'MEDIUM',forecast:'50.4',previous:'50.3',timestamp:ts(3,15),analisi_it:'PMI manifatturiero USA. Sopra 50 indica espansione. Dato anticipatore dell\'attività.',strumenti_chiave:['EURUSD','US500'],scenario_sopra:{segnale:'LONG',strumento:'US500',winrate:63},scenario_sotto:{segnale:'SHORT',strumento:'US500',winrate:61},storico_winrate:62,volatilita_attesa:'MEDIA',cosa_aspettarsi:'Focus sul sotto-indice "New Orders" come indicatore anticipatore.'},
+    {id:8,time:pad(h+9)+':30',currency:'CAD',event:'Employment Change',impact:'HIGH',forecast:'18.5K',previous:'-2.2K',timestamp:ts(9,30),analisi_it:'Il report occupazione canadese muove significativamente USD/CAD.',strumenti_chiave:['USDCAD'],scenario_sopra:{segnale:'SHORT',strumento:'USDCAD',winrate:68},scenario_sotto:{segnale:'LONG',strumento:'USDCAD',winrate:66},storico_winrate:67,volatilita_attesa:'ALTA',cosa_aspettarsi:'Monitorare anche il tasso di disoccupazione canadese pubblicato simultaneamente.'},
+  ];
+}
+
+function pad(n) { return String(Math.max(0,n)).padStart(2,'0'); }
+
+const MOCK_TECHNICAL = {
+  XAUUSD:{simbolo:'XAUUSD',prezzo_attuale:2341.50,trend_principale:'RIALZISTA',forza_trend:7,rsi_14:62,rsi_segnale:'LONG',ma50:2280.00,ma200:2050.00,posizione_vs_medie:'SOPRA ENTRAMBE',macd_signal:'RIALZISTA',macd_istogramma:'CRESCENTE',supporti:[2310,2280,2240],resistenze:[2360,2400,2450],pattern:'Bandiera Rialzista',setup_operativo:{direzione:'LONG',zona_entrata:'Pullback area 2310-2320',entry_price:2315,stop_loss:2290,tp1:2370,tp2:2420,risk_reward:2.3,timeframe:'H4'},confluenze:['Sopra MA50 e MA200','RSI zona neutro-rialzista','MACD bullish crossover','Supporto chiave 2310'],note:'L\'oro mantiene bias rialzista solido. Il pullback verso 2310-2320 offre zona di acquisto ottimale con R/R favorevole.',winrate_setup:70},
+  EURUSD:{simbolo:'EURUSD',prezzo_attuale:1.08520,trend_principale:'RIBASSISTA',forza_trend:6,rsi_14:42,rsi_segnale:'SHORT',ma50:1.09100,ma200:1.08800,posizione_vs_medie:'SOTTO ENTRAMBE',macd_signal:'RIBASSISTA',macd_istogramma:'DECRESCENTE',supporti:[1.0820,1.0780,1.0720],resistenze:[1.0880,1.0920,1.0960],pattern:'Doppio Massimo',setup_operativo:{direzione:'SHORT',zona_entrata:'Rimbalzo area 1.0880-1.0900',entry_price:1.0885,stop_loss:1.0930,tp1:1.0820,tp2:1.0750,risk_reward:2.1,timeframe:'H4'},confluenze:['Sotto MA50 e MA200','Divergenza BCE-Fed','RSI sotto 50','Doppio massimo completato'],note:'EUR/USD mantiene bias ribassista per divergenza BCE vs Fed. I rimbalzi verso 1.0880-1.0900 offrono opportunità di vendita.',winrate_setup:68},
+  GBPUSD:{simbolo:'GBPUSD',prezzo_attuale:1.26850,trend_principale:'LATERALE',forza_trend:4,rsi_14:49,rsi_segnale:'NEUTRO',ma50:1.27200,ma200:1.26100,posizione_vs_medie:'TRA LE MEDIE',macd_signal:'NEUTRO',macd_istogramma:'NEUTRO',supporti:[1.2620,1.2580,1.2520],resistenze:[1.2740,1.2800,1.2860],pattern:'Nessuno',setup_operativo:{direzione:'SHORT',zona_entrata:'Test resistenza 1.2740-1.2760',entry_price:1.2745,stop_loss:1.2800,tp1:1.2620,tp2:1.2540,risk_reward:2.4,timeframe:'D1'},confluenze:['Tra medie mobili','RSI neutro','Attesa BOE Decision'],note:'GBP in range consolidamento. Attendere la decisione BOE per direzionalità.',winrate_setup:60},
+  USDJPY:{simbolo:'USDJPY',prezzo_attuale:149.480,trend_principale:'RIALZISTA',forza_trend:6,rsi_14:65,rsi_segnale:'NEUTRO',ma50:148.200,ma200:145.800,posizione_vs_medie:'SOPRA ENTRAMBE',macd_signal:'RIALZISTA',macd_istogramma:'DECRESCENTE',supporti:[148.50,147.80,146.50],resistenze:[150.00,151.50,152.00],pattern:'Testa e Spalle Invertita',setup_operativo:{direzione:'LONG',zona_entrata:'Pullback 148.50-149.00',entry_price:148.70,stop_loss:147.50,tp1:150.50,tp2:152.00,risk_reward:2.0,timeframe:'H4'},confluenze:['Sopra MA50 e MA200','Differenziale tassi Fed-BoJ ampio','Pattern T&S invertita'],note:'USD/JPY trend rialzista ma attenzione alla zona 150 dove interventi BOJ sono storicamente frequenti.',winrate_setup:62},
+  BTCUSD:{simbolo:'BTCUSD',prezzo_attuale:64520,trend_principale:'RIALZISTA',forza_trend:8,rsi_14:68,rsi_segnale:'NEUTRO',ma50:61200,ma200:48500,posizione_vs_medie:'SOPRA ENTRAMBE',macd_signal:'RIALZISTA',macd_istogramma:'CRESCENTE',supporti:[62000,58500,55000],resistenze:[66500,69000,72000],pattern:'Triangolo Ascendente',setup_operativo:{direzione:'LONG',zona_entrata:'Pullback 62000-63000',entry_price:62500,stop_loss:59500,tp1:68000,tp2:72000,risk_reward:2.7,timeframe:'D1'},confluenze:['Post-halving momentum','ETF spot inflow','Sopra MA50 e MA200'],note:'BTC mantiene struttura rialzista post-halving. Il livello 62000 è supporto chiave da difendere.',winrate_setup:67},
+  US500:{simbolo:'US500',prezzo_attuale:5205,trend_principale:'RIALZISTA',forza_trend:7,rsi_14:64,rsi_segnale:'NEUTRO',ma50:5080,ma200:4720,posizione_vs_medie:'SOPRA ENTRAMBE',macd_signal:'RIALZISTA',macd_istogramma:'NEUTRO',supporti:[5150,5080,4980],resistenze:[5260,5330,5400],pattern:'Canale Rialzista',setup_operativo:{direzione:'LONG',zona_entrata:'Supporto 5150-5180',entry_price:5160,stop_loss:5080,tp1:5280,tp2:5380,risk_reward:1.8,timeframe:'D1'},confluenze:['Earnings season positiva','Sopra MA50 e MA200','Canale rialzista'],note:'S&P 500 in trend solido. I pullback verso 5150 offrono opportunità di acquisto.',winrate_setup:65},
+  GBPJPY:{simbolo:'GBPJPY',prezzo_attuale:189.85,trend_principale:'RIALZISTA',forza_trend:7,rsi_14:66,rsi_segnale:'NEUTRO',ma50:187.50,ma200:182.00,posizione_vs_medie:'SOPRA ENTRAMBE',macd_signal:'RIALZISTA',macd_istogramma:'CRESCENTE',supporti:[188.50,186.50,184.00],resistenze:[191.00,193.00,196.00],pattern:'Nessuno',setup_operativo:{direzione:'LONG',zona_entrata:'Pullback 188.50-189.00',entry_price:188.70,stop_loss:186.50,tp1:192.00,tp2:195.00,risk_reward:2.3,timeframe:'H4'},confluenze:['Sopra MA50 e MA200','Differenziale BOE-BoJ'],note:'GBP/JPY mantiene bias rialzista. Attenzione ai rischi intervento BOJ.',winrate_setup:63},
+  AUDUSD:{simbolo:'AUDUSD',prezzo_attuale:0.65220,trend_principale:'LATERALE',forza_trend:3,rsi_14:47,rsi_segnale:'NEUTRO',ma50:0.65800,ma200:0.65400,posizione_vs_medie:'SOTTO MA50',macd_signal:'RIBASSISTA',macd_istogramma:'NEUTRO',supporti:[0.6480,0.6430,0.6380],resistenze:[0.6580,0.6650,0.6720],pattern:'Nessuno',setup_operativo:{direzione:'SHORT',zona_entrata:'Rimbalzo 0.6560-0.6580',entry_price:0.6565,stop_loss:0.6620,tp1:0.6480,tp2:0.6400,risk_reward:1.9,timeframe:'D1'},confluenze:['Sotto MA50','Correlazione negativa USD forte'],note:'AUD/USD in consolidamento laterale. La forza del dollaro e debolezza commodity pesano sull\'aussie.',winrate_setup:58},
+};
+
+// MOCK_BRIEFING generato dinamicamente dai prezzi live — nessun valore hardcoded
+function getMockBriefing() {
+  const xau = livePrices['XAUUSD'] || {}, spx = livePrices['XAUUSD'] || {};
+  const eur = livePrices['EURUSD'] || {}, us5 = livePrices['US500']  || {};
+  const goldChg = xau.change_pct || 0, spxChg = us5.change_pct || 0;
+  const sentiment = (spxChg < -0.5 || goldChg > 0.5) ? 'RISK_OFF'
+                  : (spxChg > 0.5 && goldChg < 0)    ? 'RISK_ON'  : 'NEUTRO';
+  const icon = sentiment==='RISK_OFF' ? '📉' : sentiment==='RISK_ON' ? '📈' : '⚖️';
+  // Calcola setup live per ogni simbolo della watchlist
+  const setups = watchlistData.slice(0,3).map(s => {
+    const p = livePrices[s] || {};
+    const price = p.price || 0;
+    if (!price) return null;
+    const chg = p.change_pct || 0;
+    const dir = chg >= 0 ? 'LONG' : 'SHORT';
+    const atrPct = price > 500 ? 0.010 : price > 10 ? 0.015 : 0.005;
+    const atr = price * atrPct;
+    const nd = price < 10 ? 5 : price < 100 ? 3 : 2;
+    const fix = v => parseFloat(v.toFixed(nd));
+    const entry = fix(price);
+    const sl  = dir==='LONG' ? fix(price - atr*1.5) : fix(price + atr*1.5);
+    const tp  = dir==='LONG' ? fix(price + atr*2.0) : fix(price - atr*2.0);
+    return {
+      strumento: s, direzione: dir,
+      motivazione: `${dir==='LONG'?'Momentum rialzista':'Pressione ribassista'}: ${chg>=0?'+':''}${chg.toFixed(2)}% oggi`,
+      confluenze: ['prezzo_live','momentum'], winrate: Math.abs(chg)>0.5 ? 62 : 55,
+      priorita: Math.abs(chg)>0.5 ? 'ALTA' : 'MEDIA',
+      entry: String(entry), sl: String(sl), tp: String(tp),
+    };
+  }).filter(Boolean);
+  return {
+    sentiment_mercato: sentiment, sentiment_icon: icon,
+    sentiment_spiegazione: `S&P500 ${spxChg>=0?'+':''}${spxChg.toFixed(2)}%, Gold ${goldChg>=0?'+':''}${goldChg.toFixed(2)}%`,
+    sintesi: `⚡ Dati live (ricarica crediti Anthropic per analisi AI). Gold: ${xau.price||'—'} | S&P500: ${us5.price||'—'} | EUR/USD: ${eur.price||'—'}`,
+    top_setup: setups,
+    cosa_monitorare: [
+      `XAUUSD: ${xau.price||'—'} (${goldChg>=0?'+':''}${goldChg.toFixed(2)}%)`,
+      `US500: ${us5.price||'—'} (${spxChg>=0?'+':''}${spxChg.toFixed(2)}%)`,
+      `EURUSD: ${eur.price||'—'} (${(eur.change_pct||0)>=0?'+':''}${(eur.change_pct||0).toFixed(2)}%)`,
+    ],
+    rischio_giornata: 'MEDIO', orari_caldi: [],
+  };
+}
+
+// ─── API (con fallback mock) ───────────────────────────────────────────────────
+async function tryApi(path, method='GET', body=null) {
+  try {
+    const opts = {method, headers:{'Content-Type':'application/json'}};
+    if (body) opts.body = JSON.stringify(body);
+    const r = await fetch('http://localhost:8000'+path, opts);
+    if (!r.ok) throw new Error(r.status);
+    return {ok:true, data: await r.json()};
+  } catch(e) {
+    return {ok:false};
+  }
+}
+
+function mockBanner(text) {
+  return `<div class="mock-banner">⚡ <strong>Demo Mode</strong> — ${text}. Per AI live: aggiungi ANTHROPIC_API_KEY nel file <code style="background:rgba(0,0,0,.3);padding:0 5px;border-radius:3px">.env</code> e avvia <code style="background:rgba(0,0,0,.3);padding:0 5px;border-radius:3px">python app.py</code></div>`;
+}
+
+// ─── CLOCK ────────────────────────────────────────────────────────────────────
+function updateClock() {
+  const n = new Date();
+  document.getElementById('clock').textContent =
+    n.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit',second:'2-digit'}) + ' · ' +
+    n.toLocaleDateString('it-IT',{weekday:'short',day:'numeric',month:'short'});
+}
+setInterval(updateClock, 1000);
+updateClock();
+document.getElementById('briefing-date').textContent =
+  new Date().toLocaleDateString('it-IT',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+
+// ─── TAB SWITCHING ────────────────────────────────────────────────────────────
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+  if (name === 'news' && !newsData.length) loadNews();
+  if (name === 'calendar' && !calendarData.length) loadCalendar();
+  if (name === 'watchlist') { loadPrices(); renderWatchlist(); }
+  if (name === 'scanner') loadScanner();
+}
+
+// ─── COUNTDOWN ────────────────────────────────────────────────────────────────
+function fmtCountdown(iso) {
+  const d = new Date(iso) - new Date();
+  if (d < 0) return 'PASSATO';
+  const h = Math.floor(d/3600000), m = Math.floor((d%3600000)/60000), s = Math.floor((d%60000)/1000);
+  return h > 0 ? `⏱ ${h}h ${m}m` : m > 0 ? `⏱ ${m}m ${s}s` : `⏱ ${s}s`;
+}
+function startCD() {
+  if (window._cd) clearInterval(window._cd);
+  window._cd = setInterval(() => {
+    document.querySelectorAll('[data-cd]').forEach(el => el.textContent = fmtCountdown(el.dataset.cd));
+  }, 1000);
+}
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function sigBadge(s) {
+  const m={LONG:'badge-long',SHORT:'badge-short',NEUTRO:'badge-neutral'}, a={LONG:'▲',SHORT:'▼',NEUTRO:'◆'};
+  return `<span class="badge ${m[s]||'badge-neutral'}">${a[s]||'◆'} ${s||'?'}</span>`;
+}
+function impBadge(i) {
+  const m={HIGH:'badge-high',MEDIUM:'badge-medium',ALTA:'badge-high',MEDIA:'badge-medium',BASSA:'badge-low',LOW:'badge-low'};
+  return `<span class="badge ${m[i]||'badge-low'}">${i}</span>`;
+}
+function wrColor(w) { return w>=70?'var(--long)':w>=60?'var(--neutral)':'var(--text2)'; }
+// ── Formatta prezzo in base alla grandezza ──
+function fmtP(p) {
+  if (!p && p!==0) return '—';
+  if (p < 10)   return p.toFixed(5);
+  if (p < 100)  return p.toFixed(3);
+  if (p < 1000) return p.toLocaleString('it-IT',{minimumFractionDigits:2,maximumFractionDigits:2});
+  return p.toLocaleString('it-IT',{minimumFractionDigits:2,maximumFractionDigits:2});
+}
+function fmtChg(c, pct) {
+  if (pct == null) return '';
+  const sign = pct >= 0 ? '+' : '';
+  return `${sign}${pct.toFixed(2)}%`;
+}
+function chgClass(pct) { return pct > 0 ? 'up' : pct < 0 ? 'dn' : 'flat'; }
+function wlHit(arr) { return (arr||[]).some(s => watchlistData.includes(s)); }
+function catIcon(c) {
+  return {BANCA_CENTRALE:'🏦',OCCUPAZIONE:'💼',INFLAZIONE:'📊',GEOPOLITICA:'🌍',COMMODITY:'⚡',EQUITY:'📈',PMI:'🏭',GENERALE:'📰'}[c]||'📰';
+}
+function fmt(v, big) { return typeof v==='number' ? v.toFixed(big?2:5) : (v||'—'); }
+
+function confMeter(n) {
+  const f=n.confluenza_fondamentale||50, t=n.confluenza_tecnica||50,
+        s=n.confluenza_sentiment||50, st=n.confluenza_stagionalita||50;
+  const tot = Math.round((f+t+s+st)/4);
+  const tc = tot>=70?'var(--long)':tot>=55?'var(--neutral)':'var(--short)';
+  return `<div class="confluence-wrap">
+    <div style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px">Confluenza Segnale</div>
+    <div class="confluence-grid">
+      <div class="conf-item">Fondamentale<div class="conf-bar-wrap"><div class="conf-bar fund" style="width:${f}%"></div></div></div>
+      <div class="conf-item">Tecnico<div class="conf-bar-wrap"><div class="conf-bar tec" style="width:${t}%"></div></div></div>
+      <div class="conf-item">Sentiment<div class="conf-bar-wrap"><div class="conf-bar sent" style="width:${s}%"></div></div></div>
+      <div class="conf-item">Stagionalità<div class="conf-bar-wrap"><div class="conf-bar stag" style="width:${st}%"></div></div></div>
+    </div>
+    <div class="conf-total">
+      <span class="conf-total-label">Consenso Incrociato</span>
+      <span class="conf-total-score" style="color:${tc}">${tot}%</span>
+    </div>
+  </div>`;
+}
+
+// ─── NEWS ─────────────────────────────────────────────────────────────────────
+async function loadNews() {
+  document.getElementById('news-container').innerHTML =
+    '<div class="loading-wrap"><div class="spinner"></div><div class="loading-text">Raccolta notizie…</div></div>';
+  const res = await tryApi('/api/news');
+  newsData = res.ok ? (res.data.news||[]) : MOCK_NEWS;
+  renderNews(res.ok ? '' : mockBanner('Dati di esempio'));
+}
+
+function renderNews(banner='') {
+  const c = document.getElementById('news-container');
+  let list = newsData;
+  if (newsFilter==='LONG') list = newsData.filter(n=>n.segnale==='LONG');
+  else if (newsFilter==='SHORT') list = newsData.filter(n=>n.segnale==='SHORT');
+  else if (newsFilter==='watchlist') list = newsData.filter(n=>wlHit(n.strumenti_impattati));
+  else if (newsFilter!=='all') list = newsData.filter(n=>n.categoria===newsFilter);
+  if (!list.length) { c.innerHTML = banner + '<div class="empty-state"><div class="icon">🔍</div>Nessuna notizia per questo filtro</div>'; return; }
+  c.innerHTML = banner + list.map(n => {
+    const wl = wlHit(n.strumenti_impattati);
+    const instr = (n.strumenti_impattati||[]).map(s=>`<span class="tag">${s}</span>`).join('');
+    return `<div class="news-card ${wl?'watchlist-hit':''}">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px">
+        <span class="news-source">${n.source}</span>
+        ${impBadge(n.confidenza==='ALTA'?'HIGH':n.confidenza==='MEDIA'?'MEDIUM':'LOW')}
+        ${sigBadge(n.segnale)}
+        ${wl?'<span class="badge badge-watchlist">★ WATCHLIST</span>':''}
+        <span class="badge" style="background:rgba(255,255,255,.05);color:var(--text3)">${catIcon(n.categoria)} ${n.categoria||'GENERALE'}</span>
+      </div>
+      <div class="news-title" style="margin-bottom:8px">${n.titolo_it||'—'}</div>
+      <div class="news-summary">${n.sommario_it||''}</div>
+      <div style="font-size:12px;color:var(--text2);padding:8px 12px;background:rgba(0,0,0,.15);border-radius:6px;border-left:2px solid var(--accent);margin-bottom:10px;line-height:1.5">💡 ${n.razionale||'—'}</div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+        ${instr}
+        <span style="color:var(--text3);font-size:10px">${n.impatto_atteso||''}</span>
+        <span style="color:var(--text3);font-size:10px">${n.sentiment||''}</span>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <span class="winrate-badge" style="color:${wrColor(n.winrate||50)}">⚡ Win Rate ${n.winrate||50}%</span>
+        ${(n.strumenti_impattati||[]).map(s=>`<button class="btn-tec" onclick="openTec('${s}')">📐 TEC ${s}</button>`).join('')}
+      </div>
+      ${confMeter(n)}
+    </div>`;
+  }).join('');
+}
+
+function filterNews(type, btn) {
+  newsFilter = type;
+  document.querySelectorAll('#news-filters .filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderNews(newsData===MOCK_NEWS ? mockBanner('Dati di esempio') : '');
+}
+
+// ─── CALENDAR ─────────────────────────────────────────────────────────────────
+async function loadCalendar() {
+  document.getElementById('calendar-container').innerHTML =
+    '<div class="loading-wrap"><div class="spinner"></div><div class="loading-text">Caricamento calendario…</div></div>';
+  const res = await tryApi('/api/calendar');
+  calendarData = res.ok ? (res.data.events||[]) : getMockCalendar();
+  renderCalendar(res.ok ? '' : mockBanner('Dati di esempio con countdown live'));
+  loadEventsStrip();
+  startCD();
+}
+
+function renderCalendar(banner='') {
+  const c = document.getElementById('calendar-container');
+  const flags = {USD:'🇺🇸',EUR:'🇪🇺',GBP:'🇬🇧',JPY:'🇯🇵',CAD:'🇨🇦',AUD:'🇦🇺',NZD:'🇳🇿',CHF:'🇨🇭'};
+  let list = calendarData;
+  if (calFilter==='HIGH') list = calendarData.filter(e=>e.impact==='HIGH');
+  else if (calFilter==='watchlist') list = calendarData.filter(e=>(e.strumenti_chiave||[]).some(s=>watchlistData.includes(s)));
+  if (!list.length) { c.innerHTML = banner+'<div class="empty-state"><div class="icon">📅</div>Nessun evento</div>'; return; }
+  c.innerHTML = banner + list.map(e => {
+    const past = e.timestamp && new Date(e.timestamp)<new Date();
+    const wl = (e.strumenti_chiave||[]).some(s=>watchlistData.includes(s));
+    const wr = e.storico_winrate||58, wrc = wrColor(wr);
+    const sp = e.scenario_sopra, su = e.scenario_sotto;
+    return `<div class="cal-card ${past?'past':''} ${wl?'watchlist-hit':''}">
+      <div class="cal-time">
+        <div class="time-main">${e.time||'—'}</div>
+        ${e.timestamp?`<div class="countdown" data-cd="${e.timestamp}">${fmtCountdown(e.timestamp)}</div>`:''}
+      </div>
+      <div class="cal-currency"><span class="currency-flag">${flags[e.currency]||'🌐'}</span><span class="currency-code">${e.currency||'?'}</span></div>
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">
+          <span class="cal-event-name">${e.event||'—'}</span>${impBadge(e.impact||'LOW')}${wl?'<span class="badge badge-watchlist">★ WL</span>':''}
+        </div>
+        <div style="display:flex;gap:12px;font-size:11px;color:var(--text3);margin-bottom:6px;flex-wrap:wrap">
+          ${e.forecast?`<span>Prev: <strong style="color:var(--text)">${e.forecast}</strong></span>`:''}
+          ${e.previous?`<span>Prec: <strong style="color:var(--text)">${e.previous}</strong></span>`:''}
+          ${e.volatilita_attesa?`<span>Volatilità: <strong style="color:${e.volatilita_attesa==='ALTA'?'var(--short)':e.volatilita_attesa==='MEDIA'?'var(--neutral)':'var(--long)'}">${e.volatilita_attesa}</strong></span>`:''}
+        </div>
+        ${e.analisi_it?`<div class="cal-analysis">${e.analisi_it}</div>`:''}
+        ${e.cosa_aspettarsi?`<div style="font-size:11px;color:var(--accent);margin-top:4px">👁 ${e.cosa_aspettarsi}</div>`:''}
+        <div class="cal-scenarios">
+          ${sp?`<span class="scenario scenario-over">📈 Sopra → ${sp.segnale} ${sp.strumento||''} (${sp.winrate||'?'}%)</span>`:''}
+          ${su?`<span class="scenario scenario-under">📉 Sotto → ${su.segnale} ${su.strumento||''} (${su.winrate||'?'}%)</span>`:''}
+        </div>
+      </div>
+      <div class="cal-actions">
+        <div class="winrate-circle" style="background:rgba(0,0,0,.2);border:2px solid ${wrc}">
+          <span style="font-size:13px;font-weight:700;color:${wrc}">${wr}%</span><span style="font-size:8px;color:var(--text3)">WR</span>
+        </div>
+        ${(e.strumenti_chiave||[]).slice(0,2).map(s=>`<button class="btn-tec" onclick="openTec('${s}')">📐 ${s}</button>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  startCD();
+}
+
+function filterCalendar(type, btn) {
+  calFilter = type;
+  document.querySelectorAll('#tab-calendar .filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCalendar(calendarData===getMockCalendar() ? mockBanner('Dati di esempio') : '');
+}
+
+// ─── EVENTS STRIP ─────────────────────────────────────────────────────────────
+function loadEventsStrip() {
+  const events = calendarData.length ? calendarData : getMockCalendar();
+  document.getElementById('events-strip').innerHTML = events
+    .filter(e=>e.impact==='HIGH').slice(0,8)
+    .map(e=>`<div class="event-chip high-impact">
+      <div class="event-chip-time">${e.currency} · ${e.time}</div>
+      <div class="event-chip-name">${e.event}</div>
+      ${e.timestamp?`<div class="event-chip-cd" data-cd="${e.timestamp}">${fmtCountdown(e.timestamp)}</div>`:''}
+    </div>`).join('');
+  startCD();
+}
+
+// ─── BRIEFING ─────────────────────────────────────────────────────────────────
+async function generateBriefing() {
+  const btn = document.getElementById('briefing-btn');
+  const loading = document.getElementById('briefing-loading');
+  btn.style.display = 'none'; loading.style.display = 'block';
+  document.getElementById('sentiment-display').style.display = 'none';
+  document.getElementById('briefing-content').style.display = 'none';
+  const res = await tryApi('/api/briefing','POST');
+  loading.style.display = 'none';
+  renderBriefing(res.ok ? res.data.briefing : getMockBriefing());
+}
+
+function renderBriefing(b) {
+  const sm = {RISK_ON:{cls:'badge-riskon',label:'RISK ON'},RISK_OFF:{cls:'badge-riskoff',label:'RISK OFF'},NEUTRO:{cls:'badge-neutral-lrg',label:'NEUTRO'}};
+  const sent = sm[b.sentiment_mercato]||sm.NEUTRO;
+  document.getElementById('sent-icon').textContent = b.sentiment_icon||(b.sentiment_mercato==='RISK_ON'?'📈':b.sentiment_mercato==='RISK_OFF'?'📉':'⚖️');
+  document.getElementById('sent-label').innerHTML = `<span class="${sent.cls}">${sent.label}</span>`;
+  document.getElementById('sent-sub').textContent = b.sentiment_spiegazione||'';
+  document.getElementById('brief-sintesi').textContent = b.sintesi||'';
+  document.getElementById('sentiment-display').style.display = 'block';
+  document.getElementById('top-setups').innerHTML = (b.top_setup||[]).map(s=>`
+    <div class="setup-card ${s.direzione==='LONG'?'long':'short'}">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <span class="setup-symbol">${s.strumento}</span>${sigBadge(s.direzione)}
+        <span class="winrate-badge" style="color:${wrColor(s.winrate||50)}">⚡${s.winrate||'?'}%</span>
+        <span class="risk-badge ${s.priorita==='ALTA'?'risk-alto':'risk-medio'}" style="margin-left:auto">${s.priorita}</span>
+      </div>
+      <div class="setup-why">${s.motivazione||''}</div>
+      <div class="setup-levels">
+        ${s.entry?`<span class="level-tag">🎯 ${s.entry}</span>`:''}
+        ${s.sl?`<span class="level-tag" style="color:var(--short)">🛑 SL: ${s.sl}</span>`:''}
+        ${s.tp?`<span class="level-tag" style="color:var(--long)">🎯 TP: ${s.tp}</span>`:''}
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px">${(s.confluenze||[]).map(c=>`<span class="conf-chip">${c}</span>`).join('')}</div>
+    </div>`).join('');
+  document.getElementById('monitor-list').innerHTML = (b.cosa_monitorare||[]).map(i=>`<li>${i}</li>`).join('');
+  const he = document.getElementById('hot-times');
+  he.innerHTML = (b.orari_caldi||[]).length
+    ? b.orari_caldi.map(t=>`<div class="hot-time">⏰ ${t}</div>`).join('')
+    : '<div style="color:var(--text3);font-size:12px">Nessun orario critico</div>';
+  document.getElementById('briefing-content').style.display = 'block';
+  document.getElementById('briefing-btn').style.display = 'inline-flex';
+  document.getElementById('briefing-btn').textContent = '↻ Rigenera Briefing';
+}
+
+// ─── PREZZI LIVE ──────────────────────────────────────────────────────────────
+async function loadPrices() {
+  if (!watchlistData.length) return;
+  const res = await tryApi('/api/prices?symbols=' + watchlistData.join(','));
+  if (res.ok) {
+    livePrices = res.data.prices || {};
+    renderWatchlist();
+    renderPriceTicker();
+  }
+}
+
+function renderPriceTicker() {
+  const track = document.getElementById('ptick-track');
+  if (!track || !watchlistData.length) return;
+  // Duplica i simboli per scroll continuo
+  const items = watchlistData.map(s => {
+    const p = livePrices[s] || {};
+    const price = p.price != null ? fmtP(p.price) : '—';
+    const pct   = p.change_pct != null ? fmtChg(p.change, p.change_pct) : '';
+    const cls   = p.change_pct != null ? chgClass(p.change_pct) : 'flat';
+    return `<span class="ptick-item" onclick="openTec('${s}')">
+      <span class="ptick-sym">${s}</span>
+      <span class="ptick-val">${price}</span>
+      ${pct ? `<span class="ptick-chg ${cls}">${pct}</span>` : ''}
+    </span><span class="ptick-sep">│</span>`;
+  }).join('');
+  track.innerHTML = items + items; // doppia per loop infinito
+}
+
+// ─── SCANNER ─────────────────────────────────────────────────────────────────
+async function loadScanner(force=false) {
+  document.getElementById('scanner-container').innerHTML =
+    '<div class="loading-wrap"><div class="spinner"></div><div class="loading-text">Scansione indicatori reali su ' + watchlistData.length + ' simboli…</div></div>';
+  document.getElementById('scanner-meta').textContent = 'Calcolo RSI, EMA, ATR, BB, divergenze in corso…';
+  const res = await tryApi('/api/scan' + (force ? '?force=true' : ''));
+  if (res.ok) {
+    renderScanner(res.data);
+  } else {
+    document.getElementById('scanner-container').innerHTML =
+      '<div class="scanner-empty"><div style="font-size:32px;margin-bottom:8px">⚠️</div>Errore scansione — server non disponibile</div>';
+  }
+}
+
+function renderScanner(data) {
+  const setups = data.setups || [];
+  const meta = document.getElementById('scanner-meta');
+  meta.textContent = `${setups.length} setup attivi su ${data.symbols_scanned} simboli • ${new Date(data.timestamp).toLocaleTimeString('it-IT')}`;
+
+  if (!setups.length) {
+    document.getElementById('scanner-container').innerHTML =
+      '<div class="scanner-empty"><div style="font-size:32px;margin-bottom:8px">🔍</div>Nessun setup attivo al momento.<br><span style="font-size:12px">Le condizioni di mercato non soddisfano i criteri delle strategie.</span></div>';
+    return;
+  }
+
+  document.getElementById('scanner-container').innerHTML = setups.map(s => {
+    const isLong    = s.direzione === 'LONG';
+    const dirColor  = isLong ? 'var(--long)' : 'var(--short)';
+    const dirArrow  = isLong ? '▲' : '▼';
+    const chgStr    = s.change_pct != null ? `${s.change_pct >= 0 ? '+' : ''}${s.change_pct.toFixed(2)}%` : '';
+    const chgColor  = (s.change_pct || 0) >= 0 ? 'var(--long)' : 'var(--short)';
+
+    // Score badge color
+    const scoreClass = s.score_class === 'HIGH' ? '#27ae60' : s.score_class === 'MEDIUM' ? '#f39c12' : '#e74c3c';
+    const scoreBg = s.score_class === 'HIGH' ? 'rgba(39,174,96,.15)' : s.score_class === 'MEDIUM' ? 'rgba(243,156,18,.15)' : 'rgba(231,76,60,.15)';
+
+    // WR: show historical if available
+    const wrDisplay = s.win_rate_storico != null && s.bt_total >= 10
+      ? `${s.win_rate_storico}% WR <span style="font-size:9px;opacity:.7">(${s.bt_total} segnali)</span>`
+      : `${s.winrate}% WR`;
+
+    // Claude verdict badge
+    const verdetto = s.ai_verdetto || 'NEUTRO';
+    const verdBg   = verdetto === 'CONFERMA' ? 'rgba(39,174,96,.2)' : verdetto === 'DIVERGE' ? 'rgba(231,76,60,.2)' : 'rgba(255,255,255,.08)';
+    const verdColor = verdetto === 'CONFERMA' ? '#27ae60' : verdetto === 'DIVERGE' ? '#e74c3c' : 'var(--text3)';
+    const verdIcon  = verdetto === 'CONFERMA' ? '✓' : verdetto === 'DIVERGE' ? '✗' : '○';
+
+    // MTF badge
+    const mtf = s.tf_mtf_alignment || '';
+    const mtfBadge = mtf === 'ALLINEATO_LONG'  ? `<span style="background:rgba(39,174,96,.2);color:#27ae60;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700">MTF ▲▲▲</span>`
+                   : mtf === 'ALLINEATO_SHORT' ? `<span style="background:rgba(231,76,60,.2);color:#e74c3c;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700">MTF ▼▼▼</span>`
+                   : `<span style="background:rgba(255,255,255,.08);color:var(--text3);font-size:10px;padding:2px 6px;border-radius:4px">MTF MISTO</span>`;
+
+    const tvSym = window.TV_SYMBOLS && window.TV_SYMBOLS[s.simbolo] ? s.simbolo : null;
+
+    return `
+    <div class="scanner-card ${isLong ? 'long' : 'short'}">
+      <div class="sc-header">
+        <span class="sc-sym">${s.simbolo}</span>
+        <span class="sc-tf">${s.timeframe}</span>
+        <span class="sc-name">${s.strategia}</span>
+        <span style="margin-left:auto;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+          ${chgStr ? `<span style="font-size:11px;font-weight:600;color:${chgColor}">${chgStr}</span>` : ''}
+          <span style="color:${dirColor};font-weight:800">${dirArrow} ${s.direzione}</span>
+          <span style="background:${scoreBg};color:${scoreClass};font-size:11px;padding:3px 8px;border-radius:4px;font-weight:700">⚡ ${s.score}%</span>
+          <span class="sc-wr ${s.winrate >= 70 ? 'high' : 'med'}">★ ${wrDisplay}</span>
+          ${s.priorita==='ALTA' ? '<span class="badge badge-high">ALTA</span>' : '<span class="badge badge-medium">MEDIA</span>'}
+          ${s.calendar_warning ? '<span style="background:rgba(230,126,34,.25);color:#e67e22;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700">⚠️ EVENTO</span>' : ''}
+        </span>
+      </div>
+      <div class="sc-desc">${s.descrizione}</div>
+
+      <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-top:8px">
+        <div class="sc-levels">
+          <div class="sc-level"><span class="sc-level-label">ENTRY</span><span class="sc-level-val">${s.entry}</span></div>
+          <div class="sc-level"><span class="sc-level-label">SL</span><span class="sc-level-val" style="color:var(--short)">${s.sl}</span></div>
+          <div class="sc-level"><span class="sc-level-label">TP1</span><span class="sc-level-val" style="color:var(--long)">${s.tp1}</span></div>
+          <div class="sc-level"><span class="sc-level-label">TP2</span><span class="sc-level-val" style="color:var(--long)">${s.tp2}</span></div>
+          <div class="sc-level"><span class="sc-level-label">R:R</span><span class="sc-level-val" style="background:rgba(52,152,219,.15);color:#3498db;padding:2px 6px;border-radius:4px">1:${s.risk_reward}</span></div>
+        </div>
+        <div style="flex:1;min-width:200px">
+          <div style="background:${verdBg};border:1px solid ${verdColor}22;border-radius:6px;padding:8px 10px;margin-bottom:6px">
+            <span style="color:${verdColor};font-weight:700;font-size:11px">${verdIcon} Claude ${verdetto}</span>
+            <div style="color:var(--text2);font-size:11px;margin-top:3px;line-height:1.4">${s.ai_motivazione}</div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px;align-items:center">
+            ${(s.confluenze||[]).map(c=>`<span style="background:rgba(255,255,255,.06);color:var(--text3);font-size:10px;padding:2px 7px;border-radius:4px">✓ ${c}</span>`).join('')}
+            ${mtfBadge}
+            ${s.calendar_warning && s.calendar_events && s.calendar_events.length ? `<div style="width:100%;margin-top:4px;font-size:10px;color:#e67e22">⚠️ ${s.calendar_events.slice(0,2).map(e=>e.event||'').join(', ')}</div>` : ''}
+          </div>
+        </div>
+        ${tvSym ? `<button class="btn btn-outline" onclick="openTec('${s.simbolo}')" style="font-size:11px;padding:5px 10px;align-self:flex-end">📈 Grafico ${s.simbolo}</button>` : '<button class="btn btn-outline" onclick="openTec(\'' + s.simbolo + '\')" style="font-size:11px;padding:5px 10px;align-self:flex-end">📈 Grafico ' + s.simbolo + '</button>'}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── WATCHLIST ────────────────────────────────────────────────────────────────
+async function loadWatchlist() {
+  const res = await tryApi('/api/watchlist');
+  if (res.ok) watchlistData = res.data.watchlist||watchlistData;
+  renderWatchlist();
+}
+function renderWatchlist() {
+  const g = document.getElementById('watchlist-grid'), q = document.getElementById('wl-quick-grid');
+  if (!watchlistData.length) { g.innerHTML='<div class="empty-state" style="grid-column:1/-1"><div class="icon">⭐</div>Watchlist vuota.</div>'; q.innerHTML=''; return; }
+  g.innerHTML = watchlistData.map(s=>{
+    const p = livePrices[s] || {};
+    const price   = p.price != null ? fmtP(p.price) : '—';
+    const pct     = p.change_pct != null ? fmtChg(p.change, p.change_pct) : '';
+    const cls     = p.change_pct != null ? chgClass(p.change_pct) : 'flat';
+    const isLive  = p.source === 'live';
+    const dotHtml = p.source ? `<div class="wl-live-dot">${isLive ? '🟢 LIVE' : '⚡ Demo'}</div>` : '';
+    return `
+    <div class="wl-card">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span class="wl-symbol">${s}</span>
+        <button class="btn-star active" onclick="removeSymbol('${s}')">★</button>
+      </div>
+      <div style="margin:8px 0 2px;display:flex;align-items:baseline;gap:0">
+        <span class="wl-price">${price}</span>
+        ${pct ? `<span class="wl-chg ${cls}">${pct}</span>` : ''}
+      </div>
+      ${dotHtml}
+      <div class="wl-actions">
+        <button class="btn-tec" onclick="openTec('${s}')">📐 TEC</button>
+        <button class="btn btn-outline" style="flex:1;font-size:11px" onclick="removeSymbol('${s}')">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+  q.innerHTML = watchlistData.map(s=>{
+    const p = livePrices[s] || {};
+    const price = p.price != null ? fmtP(p.price) : '—';
+    const pct   = p.change_pct != null ? fmtChg(p.change, p.change_pct) : '';
+    const cls   = p.change_pct != null ? chgClass(p.change_pct) : 'flat';
+    return `
+    <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+      <span style="font-size:16px;font-weight:700;min-width:80px">${s}</span>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:15px;font-weight:700;font-variant-numeric:tabular-nums">${price}</div>
+        ${pct ? `<div style="font-size:11px" class="wl-chg ${cls}">${pct}</div>` : ''}
+      </div>
+      <button class="btn-tec" onclick="openTec('${s}')">📐 Analisi Tecnica</button>
+    </div>`;
+  }).join('');
+}
+async function addSymbol() {
+  const inp = document.getElementById('new-symbol'), sym = inp.value.trim().toUpperCase();
+  if (!sym) return;
+  const res = await tryApi('/api/watchlist/'+sym,'POST');
+  if (res.ok) watchlistData = res.data.watchlist;
+  else if (!watchlistData.includes(sym)) watchlistData.push(sym);
+  inp.value = ''; renderWatchlist();
+}
+async function removeSymbol(sym) {
+  const res = await tryApi('/api/watchlist/'+sym,'DELETE');
+  if (res.ok) watchlistData = res.data.watchlist;
+  else watchlistData = watchlistData.filter(s=>s!==sym);
+  renderWatchlist();
+}
+
+// ─── TRADINGVIEW CHART ───────────────────────────────────────────────────────
+const TV_SYMBOLS = {
+  'XAUUSD':'OANDA:XAUUSD','XAGUSD':'OANDA:XAGUSD',
+  'EURUSD':'OANDA:EURUSD','GBPUSD':'OANDA:GBPUSD',
+  'USDJPY':'OANDA:USDJPY','GBPJPY':'OANDA:GBPJPY',
+  'AUDUSD':'OANDA:AUDUSD','USDCAD':'OANDA:USDCAD',
+  'EURJPY':'OANDA:EURJPY','NZDUSD':'OANDA:NZDUSD',
+  'USDCHF':'OANDA:USDCHF','EURGBP':'OANDA:EURGBP',
+  'BTCUSD':'BITSTAMP:BTCUSD','ETHUSD':'BITSTAMP:ETHUSD',
+  'US500':'FOREXCOM:SPX500','NASDAQ':'FOREXCOM:NAS100',
+  'DAX':'XETR:DAX','USOIL':'NYMEX:CL1!','UKOIL':'NYMEX:BB1!',
+};
+let _tvTf = 'H4';
+let _tvCurrentSym = '';
+
+function loadTVChart(symbol, tf) {
+  tf = tf || _tvTf;
+  _tvTf = tf;
+  _tvCurrentSym = symbol.toUpperCase();
+  const tvSym = TV_SYMBOLS[_tvCurrentSym] || ('FX:' + _tvCurrentSym);
+
+  // Bottoni timeframe
+  document.getElementById('tec-tf-bar').innerHTML = ['M15','H1','H4','D1','W1'].map(t =>
+    `<button class="tec-tf-btn${t===tf?' active':''}" onclick="loadTVChart('${symbol}','${t}')">${t}</button>`
+  ).join('');
+
+  const container = document.getElementById('tv-chart-container');
+  container.innerHTML = '';
+  if (!window.TradingView) {
+    container.innerHTML = '<div style="display:flex;height:100%;align-items:center;justify-content:center;color:var(--text3);font-size:12px">TradingView non disponibile (connessione assente)</div>';
+    return;
+  }
+  const divId = 'tv_' + Date.now();
+  const div = document.createElement('div');
+  div.id = divId; div.style.cssText = 'width:100%;height:100%';
+  container.appendChild(div);
+  new TradingView.widget({
+    autosize: true,
+    symbol: tvSym,
+    interval: {'M15':'15','H1':'60','H4':'240','D1':'D','W1':'W'}[tf] || '240',
+    timezone: 'Europe/Rome',
+    theme: 'dark',
+    style: '1',
+    locale: 'it',
+    toolbar_bg: '#0d1828',
+    hide_side_toolbar: false,
+    allow_symbol_change: false,
+    save_image: false,
+    backgroundColor: '#08101e',
+    gridColor: 'rgba(0,180,255,0.06)',
+    studies: ['RSI@tv-basicstudies','MACD@tv-basicstudies'],
+    container_id: divId,
+  });
+}
+
+// ─── TECHNICAL ANALYSIS ──────────────────────────────────────────────────────
+async function openTec(symbol) {
+  document.getElementById('tec-overlay').classList.add('open');
+  document.getElementById('tec-symbol').textContent = symbol;
+  // Prezzo live nell'header
+  const pd = livePrices[symbol.toUpperCase()] || {};
+  const liveEl = document.getElementById('tec-price-live');
+  if (pd.price != null) {
+    const cc = chgClass(pd.change_pct);
+    const chgStr = pd.change_pct != null ? ` (${pd.change_pct>=0?'+':''}${pd.change_pct.toFixed(2)}%)` : '';
+    liveEl.innerHTML = `<span style="color:var(--text);font-weight:700">${fmtP(pd.price)}</span>`
+      + `<span style="color:${cc==='up'?'var(--long)':cc==='dn'?'var(--short)':'var(--text3)'}">${chgStr}</span>`
+      + ` ${pd.source==='live'?'🟢':'⚡'}`;
+  } else { liveEl.textContent = ''; }
+  // Grafico TradingView
+  loadTVChart(symbol, _tvTf);
+  // Analisi AI
+  document.getElementById('tec-body').innerHTML =
+    `<div class="tec-loading"><div class="spinner"></div><span style="color:var(--text2);font-size:12px">Analisi AI per ${symbol}…</span></div>`;
+  const res = await tryApi('/api/technical/'+symbol);
+  renderTechnical(res.ok ? res.data.analysis : (MOCK_TECHNICAL[symbol.toUpperCase()]||MOCK_TECHNICAL.EURUSD));
+}
+function closeTecPanel() {
+  document.getElementById('tec-overlay').classList.remove('open');
+  document.getElementById('tv-chart-container').innerHTML = '';
+}
+function closeTec(e) { if (e.target===document.getElementById('tec-overlay')) closeTecPanel(); }
+
+function renderTechnical(a) {
+  const b = document.getElementById('tec-body');
+  const big = a.prezzo_attuale > 100;
+  const tc = a.trend_principale==='RIALZISTA'?'var(--long)':a.trend_principale==='RIBASSISTA'?'var(--short)':'var(--neutral)';
+  const rc = (a.rsi_segnale==='IPERCOMPRATO'||a.rsi_segnale==='SHORT')?'var(--short)':(a.rsi_segnale==='IPERVENDUTO'||a.rsi_segnale==='LONG')?'var(--long)':'var(--neutral)';
+  const mc = a.macd_signal==='RIALZISTA'?'var(--long)':a.macd_signal==='RIBASSISTA'?'var(--short)':'var(--neutral)';
+  const s = a.setup_operativo||{};
+  const wr = a.winrate_setup||55;
+  b.innerHTML = `
+  <div class="tec-section">
+    <div class="tec-section-title">Panoramica</div>
+    <div class="tec-stat-grid">
+      <div class="tec-stat"><div class="tec-stat-label">Prezzo</div><div class="tec-stat-value">${fmt(a.prezzo_attuale,big)}</div></div>
+      <div class="tec-stat"><div class="tec-stat-label">Trend</div><div class="tec-stat-value" style="color:${tc}">${a.trend_principale||'—'}</div><div class="trend-bar"><div class="trend-fill" style="width:${(a.forza_trend||5)*10}%"></div></div><div style="font-size:9px;color:var(--text3);margin-top:2px">Forza: ${a.forza_trend||5}/10</div></div>
+      <div class="tec-stat"><div class="tec-stat-label">RSI (14)</div><div class="tec-stat-value" style="color:${rc}">${a.rsi_14||'—'} · ${a.rsi_segnale||'?'}</div></div>
+      <div class="tec-stat"><div class="tec-stat-label">MACD</div><div class="tec-stat-value" style="color:${mc}">${a.macd_signal||'—'}</div><div style="font-size:10px;color:var(--text3)">${a.macd_istogramma||''}</div></div>
+      <div class="tec-stat" style="grid-column:1/-1"><div class="tec-stat-label">Medie Mobili</div><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:4px"><span style="font-size:12px">MA50: <strong style="color:var(--accent)">${fmt(a.ma50,big)}</strong></span><span style="font-size:12px">MA200: <strong style="color:var(--text2)">${fmt(a.ma200,big)}</strong></span><span style="font-size:11px;color:var(--text2)">${a.posizione_vs_medie||''}</span></div></div>
+    </div>
+  </div>
+  <div class="tec-section">
+    <div class="tec-section-title">Supporti & Resistenze</div>
+    <div class="sr-grid">
+      ${(a.resistenze||[]).map(r=>`<div class="sr-item sr-res"><span class="sr-label">Resistenza</span>${fmt(r,big)}</div>`).join('')}
+      ${(a.supporti||[]).map(v=>`<div class="sr-item sr-sup"><span class="sr-label">Supporto</span>${fmt(v,big)}</div>`).join('')}
+    </div>
+  </div>
+  ${a.pattern&&a.pattern!=='Nessuno'?`<div class="tec-section"><div class="tec-section-title">Pattern</div><div class="pattern-tag">🔷 ${a.pattern}</div></div>`:''}
+  <div class="tec-section">
+    <div class="tec-section-title">Setup Operativo · Win Rate ${wr}%</div>
+    <div class="setup-box">
+      <div class="setup-dir-big" style="color:${s.direzione==='LONG'?'var(--long)':'var(--short)'}">${s.direzione==='LONG'?'▲ LONG':'▼ SHORT'}</div>
+      ${s.zona_entrata?`<div style="font-size:11px;color:var(--text2);margin-bottom:10px">📍 ${s.zona_entrata}</div>`:''}
+      <table class="setup-table">
+        ${s.entry_price?`<tr><td>Entry</td><td style="color:var(--accent)">${fmt(s.entry_price,big)}</td></tr>`:''}
+        ${s.stop_loss?`<tr><td>Stop Loss</td><td style="color:var(--short)">${fmt(s.stop_loss,big)}</td></tr>`:''}
+        ${s.tp1?`<tr><td>Take Profit 1</td><td style="color:var(--long)">${fmt(s.tp1,big)}</td></tr>`:''}
+        ${s.tp2?`<tr><td>Take Profit 2</td><td style="color:var(--long)">${fmt(s.tp2,big)}</td></tr>`:''}
+        ${s.risk_reward?`<tr><td>Risk/Reward</td><td style="color:var(--neutral)">${s.risk_reward}:1</td></tr>`:''}
+        ${s.timeframe?`<tr><td>Timeframe</td><td>${s.timeframe}</td></tr>`:''}
+      </table>
+    </div>
+  </div>
+  ${(a.confluenze||[]).length?`<div class="tec-section"><div class="tec-section-title">Confluenze</div><div class="conf-chips">${a.confluenze.map(c=>`<span class="conf-chip">${c}</span>`).join('')}</div></div>`:''}
+  ${a.note?`<div class="tec-section"><div class="tec-section-title">Nota</div><div class="tec-note">${a.note}</div></div>`:''}
+  <div style="padding:12px;background:rgba(0,200,255,.04);border:1px solid rgba(0,200,255,.1);border-radius:6px;margin-top:8px;font-size:9px;color:var(--text3);text-align:center;line-height:1.5">
+    ⚠️ Analisi AI su dati approssimativi · Non costituisce consulenza finanziaria<br>
+    Fase 2: integrazione API live broker / TradingView
+  </div>`;
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+(async function init() {
+  await loadWatchlist();
+  // Prezzi live al boot, poi ogni 30s
+  await loadPrices();
+  setInterval(loadPrices, 30_000);
+  const calRes = await tryApi('/api/calendar');
+  calendarData = calRes.ok ? (calRes.data.events||[]) : getMockCalendar();
+  loadEventsStrip();
+  startCD();
+})();
+</script>
+</body>
+</html>

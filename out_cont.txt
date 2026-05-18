@@ -1,0 +1,1042 @@
+=== PDF page 61 ===
+104 CAPITOLO 6 
+linea verticale della base sulla sinistra della formazione fino all'apice sulla destra. 
+Poiché le due linee si dovranno incontrare a un certo punto, si potrebbe misurare la 
+distanza soltanto dopo che le due linee convergenti si saranno incontrate. La rottura 
+a rialzo verrà segnalata dalla penetrazione della linea superiore. Se viceversa, i prezzi 
+rimarranno all’interno del triangolo al di sotto dei tre quarti della sua ampiezza, il 
+triangolo perderà potenzialità e i prezzi continueranno a oscillare vicino al suo apice. 
+Di conseguenza il triangolo rappresenta una combinazione interessante tra prezzo e 
+tempo. Le trendlines convergenti fungono da bande tra i prezzi della figura e indicano 
+il punto in cui tale figura verrà completata, riprendendo il trend iniziale tramite il 
+superamento della trendline superiore (nel caso di un uptrend). Tali trendlines offrono 
+un obiettivo di tempo tramite la semplice misurazione dell’estensione della figura. Se 
+per esempio, questa fosse formata da un periodo di venti settimane, saranno ne- 
+cessarie tredici o quindici settimane per avere una rottura (figura 6.4). 
+Il segnale di ripresa del trend sarà dato dalla rottura di una delle due trendlines. 
+Talvolta si verifica un movimento di ritorno dei prezzi sul punto di rottura della 
+trendline. In un uptrend, tale linea di resistenza diventerà di supporto. In un down- 
+trend, dopo la rottura, la linea inferiore diventerà una linea di resistenza. Anche il 
+punto dell’apice fungerà da importante linea di supporto 0 di resisteriza dopo la 
+sua rottura. Si possono applicare vari criteri di penetrazione della rottura, simili a 
+quelli trattati nel capitolo precedente. Il criterio minimo di avvenuta penetrazione 
+sarà la rottura in chiusura e non solo su base intra-day. 
+05/29/97 (DELL) Dell Computer Corp + 02/24/98 
+Grafico a barre giornaliero { 
+100 
+fr 
+ql POT 
+(PI 
+{ny lp (78 
+qui, N 
+pi ' 
+Nun, Di ug Seo a Nov Dec fe Feb 
+Figura 6.4 Nel terzo trimestre 1997 Dell ha formato un triangolo simmetrico rialzista. L'ampiezza del 
+triangolo, misurata da destra verso sinistra, è di 18 settimane. La rottura dei prezzi è avvenuta nella 
+tredicesima settimana (si veda il cerchietto) oltre il punto dei due terzi. 
+FORMAZIONI DI CONTINUAZIONE 105 
+6.2.2 L’importanza del volume 
+I volumi dovrebbero diminuire durante la formazione delle onde del triangolo. 
+Questa tendenza è valida per tutte le figure di consolidamento. Il volume dovrebbe 
+poi aumentare notevolmente sulla rottura della trendline che delinea la figura. Il mo- 
+vimento di ritorno dovrebbe manifestarsi con volumi scarsi, che riprendono spessore 
+man mano che il trend riprende il suo cammino. Ci sono altre due considerazioni di 
+rilievo da discutere riguardo al volume: la prima è che nelle formazioni d’inversione, 
+esso è molto più importante al rialzo che al ribasso. È necessario un incremento del 
+volume sulla ripresa dell’uptrend in tutte le formazioni di consolidamento. 
+La seconda considerazione è che un'accurata analisi del volume, nonostante la 
+diminuzione dell’attività durante la formazione, solitamente offre la possibilità di 
+poter individuare se il volume è al rialzo o al ribasso. Per esempio, in un uptrendla 
+tendenza del volume dovrebbe aumentare durante i rimbalzi e diminuire durante 
+le correzioni. 
+6.2.3 Tecnica di misurazione 
+I triangoli hanno a loro volta delle tecniche di misurazione e, per i triangoli 
+simmetrici, generalmente ne vengono utilizzate due. 
+La più semplice, consiste nel misurare l’altezza della linea verticale nella parte 
+più larga del triangolo (base) e nel proiettare tale distanza dal punto di rottura 
+(figura 6.5). 
+} _ 
+| 
+Ì 
+Ì 
+ine2 P nere 
+_ 
+Figura 6.5 Esistono due metodi di misurazione per il triangolo simmetrico. il primo consiste nel 
+misurare l'altezza della base (A-B) e proiettaria dal punto di rottura C o dall'apice. Un altro metodo 
+consiste nel disegnare una linea rialzista partendo dal punto più alto della base (A), parallela alla linea 
+inferiore del triangolo.
+
+=== PDF page 62 ===
+106 CAPITOLO 6 
+Il secondo metodo, consiste nel disegnare una trendline partendo dal punto 
+massimo della base (punto 4), parallela alla trendline inferiore. È possibile cal- 
+colare un obiettivo di prezzo e di tempo sul punto dove verrà raggiunta la trend- 
+line più alta del canale. A volte i prezzi colpiscono la linea del canale nello stesso 
+momento in cui le due linee convergenti si incontrano all’apice. 
+6.3 Il triangolo ascendente 
+I triangoli ascendenti o discendenti sono delle varianti del triangolo simmetrico ma hanno caratteristiche previsionali differenti. Le figure 6.6 e 6.7 mostrano due esempi di triangoli ascendenti. Si può notare che la linea superiore è piatta mentre 
+quella inferiore è ascendente. Questa formazione indica la maggiore aggressività dei compratori nei confronti dei venditori, con una figura rialzista che si risolve 
+solitamente con una rottura verso l’alto. 
+Entrambi i triangoli ascendenti o discendenti differiscono dal triangolo sim- 
+metrico per una caratteristica importante: in qualunque punto del trend si ma- 
+nifestino i segnali, essi hanno implicazioni previsionali molto chiare. Il triangolo 
+ascendente è rialzista mentre quello discendente è ribassista; al contrario il triangolo simmetrico è una figura interamente neutrale, anche -se questo non vuol dire che non abbia implicazioni previsionali; infatti, poiché il triangolo simme- 
+trico è una formazione di continuazione, non si dovrà fare altro che guardare la direzione del trend precedente alla formazione. 
+A 
+» 
+——— he 
+< 
+FORMAZIONI DI CONTINUAZIONE 107 
+07/02/97 {"DWT X) Dow Transportation 02/18/98 
+Grafico a barre giornaliero 
+gl 
+ANI 3100 
+| | 
+ph | | Mu MAT, 
+ll ni so Aug —_Se5_ Da Kar _ De Ve Feb Piedi vary Tradition © Creaga Rensnansi, Fa 197 
+Triangolo ascendente 
+Figura 6.6 Triangolo ascendente. La formazione viene considerata completa sulla rottura decisiva della linea superiore. Tale rottura dovrebbe essere accompagnata da un forte aumento del volume. La linea di resistenza superiore fungerà da supporto per le successive correzioni a ribasso dopo la sua rottura. Il minimo obiettivo di prezzo si ottiane misurando l'altezza del triangolo (4-8) e proiettando tale 
+distanza partendo dal punto di rottura C. 
+Figura 6.7 Verso la fine del 1997 l'indice Dow sui trasporti ha formato un triangolo ascendente rialzista. Si noti la linea superiore piatta a 3400 e la linea inferiore ascendente. Si tratta di una formazione 
+rialzista a prescindere da ciò che appare sul grafico. 
+Come già detto, il triangolo ascendente è una formazione rialzista. La rottura deci- siva di tale formazione è data da una chiusura al di sopra della sua linea orizzontale superiore. Come per tutte le formazioni, il volume dovrebbe aumentare notevol- mente sulla rottura a rialzo, mentre il movimento di ritorno sulla linea di supporto 
+(linea superiore orizzontale), dovrebbe essere accompagnato da volumi deboli. 
+6.3.1 Tecniche di misurazione 
+La tecnica di misurazione applicata al triangolo ascendente è abbastanza sem- 
+plice. Occorre misurare l’altezza della formazione relativa al punto più ampio e 
+proiettare tale distanza in verticale dal punto di rottura. Si tratta semplicemente 
+di un esempio sull’utilizzo della volatilità delle formazioni per determinare un 
+obiettivo minimo di prezzo. 
+6.3.2 Il triangolo ascendente come bottom 
+Il triangolo ascendente si presenta solitamente in un upirend e viene considerato 
+una formazione di continuazione. Capita invece a volte di vederlo come una 
+formazione di bottoming, in evoluzione alla fine di un downtrend. Ciò nonostante, 
+anche in questo caso l’interpretazione della figura rimane rialzista. La rottura 
+della linea superiore, considerata come resistenza, è quindi rialzista. Entrambi i 
+triangoli ascendenti o discendenti a volte vengono chiamati triangoli rettangoli.
+
+=== PDF page 63 ===
+108 CAPITOLO 6 
+6.4 I triangolo discendente 
+Il triangolo discendente rappresenta esattamente l’immagine speculare del trian- 
+golo ascendente e generalmente viene considerato come una formazione ribassi- 
+sta. Si può notare nelle figure 6.8 e 6.9 la linea superiore discendente e la linea 
+inferiore orizzontale. Questa configurazione indica che i venditori sono più ag- 
+gressivi dei compratori e solitamente è ribassista. Il segnale ribassista viene re- 
+gistrato da una decisiva chiusura al di sotto della trendline, solitamente accom- 
+pagnata da un incremento dei volumi. Di solito si verifica un movimento di 
+ritorno che arriva fino alla linea inferiore della trendline che funge da linea di 
+resistenza. Il calcolo per l’obiettivo di prezzo è esattamente lo stesso usato per il 
+triangolo ascendente, quindi l'analista dovrà misurare l’altezza della base della 
+figura sulla sinistra e proiettarla a ribasso partendo dal punto di rottura. 
+6.4.1 Ml triangolo discendente come top 
+Il triangolo discendente è una formazione di continuazione e solitamente si trova in 
+un mercato ribassista, ma a volte si trova in un top del mercato e quando appare 
+non è certo difficile riconoscerlo. In questo caso, una chiusura al di sotto della linea 
+inferiore orizzontale indicherà la presenza di un forte segnale d’inversione a ribasso. 
+6.4.2 La formazione del volume 
+L'andamento del volume per i triangoli ascendenti o discendenti diminuisce con 
+la continuazione della formazione per poi aumentare sulla rottura. Come nel caso 
+00h 
+Figura 6.8 Esempio di un triangolo discendente. La formazione ribassista viene completata da una 
+chiusura decisamente al di sotto della linea inferiore orizzontale. La tecnica per calcolare l'obiettivo di 
+prezzo è ricavata dall'altezza del triangolo (A-B) proiettata a ribasso partendo dal punto di rottura C. 
+FORMAZIONI DI CONTINUAZIONE 109 
+06/17/97 (DD) Du Pont E | De Nemour 10/29/97 
+Grafico a barre giornaliero 
+puli 
+\l | P, ì | 
+dd A Se RIN ro Fer 
+Figura 6.9 Un triangolo discendente ribassista che si è formato in Du Pont nell'autunno del 1997. La 
+linea superiore è discendente mentre quella inferiore è piatta. All'inizio di ottobre la rottura della linea 
+inferiore ha risolto la formazione verso il ribasso. 
+del triangolo simmetrico, l'analista durante la formazione della figura scoprirà 
+che la leggera diminuzione del volume coincide con le onde che formano i prezzi. 
+Ciò significa che nelle figure ascendenti il volume tende ad aumentare leggermen- 
+te durante i rimbalzi e a diminvire sulle correzioni. Nelle formazioni discendenti il 
+volume dovrebbe aumentare durante le correzioni e diminuire durante i rimbalzi. 
+6.4.3 Il fattore tempo nei triangoli 
+L'ultimo fattore da considerare nei triangoli è il tempo. Il triangolo è considerato 
+una figura di consolidamento che per formarsi solitamente impiega da uno a tre 
+mesi. Un triangolo che invece si forma in meno di un mese è probabilmente una 
+figura differente, per esempio un pennant, che rappresenta una formazione di 
+breve periodo. I triangoli a volte appaiono su grafici di lungo periodo, ma il loro 
+significato fondamentale non cambia. 
+6.5 La formazione broadening 
+Questa ulteriore formazione è una variante del triangolo ed è piuttosto rara. 
+Assomiglia a un triangolo aperto al contrario. Tutte le formazioni dei triangoli 
+trattate finora hanno le trendlines convergenti. La broadening formation come dice
+
+=== PDF page 64 ===
+110 CAPITOLO 6 
+Figura 6.10 Esempio di una broadening top. Questo tipo di triangolo in espansione si verifica 
+solitamente sui major tops. Mostra tre successivi massimi e due minimi discendenti. La rottura del 
+secondo minimo completa la formazione. È una figura difficile da gestire ma, per fortuna, abbastanza rara. 
+la sua denominazione? è esattamente l'opposto. Come si vede nella figura 6.10 le 
+trendlines divergono, creando una figura simile a un triangolo in espansione. È 
+chiamato anche megaphone top. 
+Anche lo sviluppo del volume è differente in questa formazione. Negli altri 
+triangoli il volume tende a diminuire vicino agli apici, mentre nelle broadening for- 
+mations accade esattamente l'opposto, in quanto il volume si espande gradual- 
+mente sull’aumento dell’oscillazione dei prezzi. 
+Questa situazione rappresenta un mercato fuori controllo e fortemente emotivo. 
+Poiché questa figura indica spesso una forte partecipazione pubblica, si verifica 
+molte volte sui ops del mercato. Le formazioni broadening sono solitamente figure 
+ribassiste. In genere compaiono verso la fine di un mercato fortemente rialzista. 
+6.6 Bandiere e pennants? 
+Le formazioni “a bandiera" e i penrants sono invece abbastanza comuni. 
+Esse sono molto simili tra di loro e tendono ad apparire vicino all'esaurimento 
+temporaneo di un trend e hanno perciò utili possibilità di misurare gli obiettivi. 
+Rappresentano spesso brevi pause del mercato. Le accomuna la prerogativa di 
+essere precedute da un forte movimento precedente, quasi verticale. 
+? Il termine infatti si può tradurre con “figura in espansione” o “figura in allargamento” [N.d.T.]. 
+3 Il termine pennants è poco indicativo nella sua traduzione italiana, per cui si è preferito mantenere 
+il termine in lingua inglese [N.d.T.]. 
+FORMAZIONI DI CONTINUAZIONE INDI 
+/) 
+titti}, 
+/ 
+IIMIEESINNINI 
+Figura 6.11 Esempio di una bullish flag. Tale 
+formazione si verifica solitamente dopo un movi- 
+mento molto forte e rappresenta una breve pausa 
+del trend. La flag dovrebbe avere una inclinazione 
+opposta al trend originario. Il volume dovrebbe 
+esaurirsi durante la formazione per poi aumentare 
+nuovamente al momento delia rottura. Tale 
+Figura 6.12 Esempio di un bullish pennant. 
+Assomiglia a un triangolo simmetrico ma dura 
+solitamente non più di tre settimane. Il volume 
+dovrebbe essere basso per tutto questo periodo. 
+Il movimento che segue tale formazione, dov- 
+rebbe essere d'estensione doppia del prece- 
+dente. 
+formazione si verifica solitamente a metà dell'in- 
+tero movimento. 
+Rappresentano delle situazioni in cui dopo forti movimenti a rialzo o a ribasso il mercato forma delle brevi pause, per riprendere fiato prima di tornare nuova- 
+mente nella sua direzione. 
+Tali formazioni sono figure di continuazione e solo raramente invertono il 
+trend originale. Le figure 6.11 e 6.12, ne sono un esempio grafico. Per cominciare, 
+si noti il forte movimento di rialzo che precede tali formazioni con altrettanto for- te volume. 
+Si può vedere anche il brusco esaurimento dell’attività durante il consolida- mento della figura e la sua successiva esplosione sulla rottura al rialzo. 
+6.6.1 Come si costruiscono le /lags e i pennants 
+La costruzione di queste formazioni è leggermente differente. La flag assomiglia a un parallelogramma o a un rettangolo delimitato da due trendlines parallele con 
+inclinazione opposta al trend precedente. In un downtrend la flag dovrebbe avere 
+inclinazione al rialzo. 
+Il pennant è più orizzontale ed è delineato da due trendlines convergenti. As- 
+somiglia a un piccolo triangolo simmetrico. Una caratteristica comune molto 
+importante è costituita dal notevole indebolimento del volume durante lo svi- 
+luppo di tali formazioni. 
+Entrambe le figure sono solitamente di breve periodo e si concludono gene- 
+ralmente nel tempo di una o tre settimane. I pennants e le flags di un downtrend 
+tendono a concludersi in un periodo ancor più breve, solitamente non più di una
+
+=== PDF page 65 ===
+112 CAPITOLO 6 
+03/31/97 (IP) International Paper G 07/18/97 
+Grafico a barre giornaliero | | | 00 
+[Br 
+ha Larne 
+HI ut! Bullish flag 
+ni hi 
+| ao 
+Figura 6.13 Una bullish flag in International Paper. Assomiglia a un parallelogramma con inclinazione 
+ribassista. Si noti che la flag si è verificata sul punto medio del movimento rialzista. 
+o due settimane. Entrambe in un uptrend, vengono completate sulla rottura al 
+rialzo della trendline superiore. Viceversa la rottura della trendline inferiore indi- 
+cherà la ripresa del downtrend. La rottura di queste trendlines dovrebbe sempre 
+verificarsi con volumi alti. Come di consueto il volume al rialzo è più importante 
+del volume a ribasso (figure 6.13 e 6.14). 
+6.6.2 Implicazioni di calcolo 
+Il sistema di calcolo dei movimenti di misurazione è simile per entrambe le for- 
+mazioni. Si dice che le flags e i pennants volino a ‘“mezz’asta’’ dall’impugnatura 
+della bandiera perché appaiono all’incirca sul punto medio del movimento 
+rialzista o ribassista, che rappresenta l’‘‘asta”. Generalmente il movimento di 
+ripresa dopo il trend sarà il doppio di quello che precedeva tale formazione. 
+Bisognerà misurare la distanza del movimento precedente dalla rottura iniziale, 
+cioè da dove è iniziato il primo trend, con la rottura di un livello di supporto, di 
+resistenza o di un'importante trendline. La distanza in verticale di questo mo- 
+vimento verrà riportata partendo dal punto di rottura della flag o del pennant 
+cioè dal punto di rottura della linea superiore in un uptrend o della linea inferiore 
+in un downtrend. 
+FORMAZIONI DI CONTINUAZIONE 113 
+oa {CAT) Caterpillar Inc 12/31/97 
+Grafico a barre giomaliero | | n 
+yi dal th | I, | Li Pennant s 
+Mi i) si 
+| ni 
+si | n) i nà 
+h m 
+nl 
+Hey un n) Avg sep CERRI AIA 
+Figura 6.14 Una coppia di pennants in un grafico di Caterpillar. | pennants sono figure di 
+continuazione che assomigliano a piccoli triangoli simmetrici. | pennant a sinistra ha proseguito in 
+direzione rialzista mentre quello a destra in direzione ribassista. 
+6.6.3 Sommario 
+Sono qui riassunte le caratteristiche più importanti comuni a entrambe le 
+formazioni: 
+1. sono precedute da un movimento quasi verticale detto flagpole, accompagnato 
+da alti volumi; 
+2.i prezzi fanno una pausa da una a tre settimane con volumi in calo; 
+3. il trend riprende con una brusca esplosione dell'attività di trading; 
+4. entrambe le formazioni appaiono a metà strada del movimento completo del 
+mercato; 
+5. il permant sembra un piccolo triangolo simmetrico posto orizzontalmente; 
+6, la flag assomiglia a un piccolo parallelogramma, con inclinazione opposta al 
+trend prevalente; 
+7. entrambe le figure impiegano meno tempo per completarsi nei downtrend; 
+8. tutte e due sono molto comuni nei mercati finanziari.
+
+=== PDF page 66 ===
+114 CAPITOLO 6 
+Figura 6.15 Esempio di un falling wedge rialzista. Esso è delineato da due trendiines convergenti con inclinazione opposta al trend in essere. Il falling wedge è solitamente una formazione rialzista. 
+6.7 La formazione wedge* 
+La wedge formation è simile al triangolo simmetrico, sia per la sua conformazione sia 
+per il tempo che impiega a svilupparsi. Come il triangolo simmetrico è delineato da due trendlines convergenti che si uniscono formando un apice. Impiega solitamente 
+da uno a tre mesi per formarsi e fa parte della categoria delle figure intermedie. 
+La contraddistingue la sua inclinazione fortemente rialzista 0 ribassista. Come 
+la formazione flag ha un’inclinazione opposta al trend. Di conseguenza, un falling wedge è considerato rialzista mentre un rising wedge è ribassista. Si noti l’inclina- 
+zione verso il basso della formazione rialzista 6.15, delineata da due rrendlines 
+convergenti. Viceversa la figura 6.16 nel downtrend è delineata da due trendlines 
+convergenti inclinate verso l’alto. 
+6.7.1 Formazioni wedges sui massimi e sui minimi 
+Esse si verificano più spesso in un trend già in essere e costituiscono delle for- 
+mazioni di continuazione. 
+Viceversa si possono presentare talvolta in un top o in un fondo del mercato, anticipando un'inversione di tendenza. . . 
+A volte vicino alla fine di un uptrend l’analista potrà cominciare a notare la for- mazione di un ben delineato rising wedge. Poiché un continuation wedge in un up- trend dovrebbe avere l'inclinazione verso il basso opposta al trend prevalente, un 
+4 L'espressione, tradotta alla lettera, significa “formazione a cuneo”, ma si consiglia di utilizzare la terminologia inglese, in quanto d’uso corrente MN.d.T.] 
+FORMAZIONI DI CONTINUAZIONE 115 
+Figura 6.16 Esempio di un bearish wedge: dovrebbe avere un’inclinazione rialzista opposta al downtrend prevalente. 
+rising wedge rappresenterà invece una formazione ribassista. In un fondo, un falling wedge sarà un’anticipazione della possibile fine del trend ribassista. 
+Sia che il wedge compaia a metà sia che compaia alla fine di un movimento del 
+mercato, l'analista dovrebbe comunque tenere sempre bene in mente che il rising 
+wedge è bearish e il falling wedge è bullish (figura 6.17). 
+12/18/97 (’CRB) Commodity Research Bureau 01/15/98 
+288 Grafico a barre giornaliero KH Commodity Research Bureau Index 
+Hiù; \ 
+‘280 
+fur | ù 
+‘240 
+- 1238 
+Mm A W 4 9 A s Lo) var N hl 3] re 
+Rising wedge ribassista 
+Figura 6.17 Esempio di un rising wedge. Le due trendiines convergenti hanno un’inclinazione verso 
+l'alto ben definita. Il wedge ha un’inclinazione opposta al trend, pertanto un rising wedge è ribassista 
+mentre una falling wedge è rialzista.
+
+=== PDF page 67 ===
+116 CAPITOLO 6 
+6.8 La formazione a rettangolo 
+La formazione a rettangolo viene solitamente chiamata anche con altri termini ma 
+è una figura molto semplice da individuare. Rappresenta una pausa del trend in 
+cui i prezzi si muovono lateralmente tra due linee parallele orizzontali (figure 
+6.18, 6.19 e 6.20). 
+Il rettangolo viene anche chiamato trading range o congestion area. Nella teoria 
+di Dow è anche denominato line. Qualunque sia la sua definizione, esso rappre- 
+senta semplicemente un periodo di consolidamento del trend in essere e solita- 
+mente si risolve nella direzione del trend che lo precedeva. 
+In termini di previsione assomiglia al triangolo simmetrico con differenti trend- 
+lines che sono orizzontali invece che convergenti. Una chiusura al di sopra o al di 
+sotto della banda superiore o inferiore della formazione indicherà la ripresa del 
+trend. È sempre bene accertarsi che tale formazione non diventi una figura 
+d’inversione. Per esempio, nell’uptrend della figura 6.18, i tre massimi potrebbero 
+essere interpretati come punti eventuali d’inversione. 
+6.8.1  L’importanza dello studio del volume 
+Lo sviluppo del volume è d'importanza fondamentale; poiché i prezzi fluttuano 
+in ogni direzione, l'analista dovrà controllare attentamente quali movimenti 
+sono accompagnati da volumi alti. Se i rimbalzi sono accompagnati da volumi 
+forti e le correzioni a ribasso da volumi deboli, probabilmente la formazione 
+darà luogo a una continuazione dell’uptrend. Viceversa, se i movimenti a ri- 
+basso sono accompagnati da volumi alti, si potrebbe avere un’inversione di 
+tendenza. 
+N 
+“\ 
+Figura 6.18 Esempio di un rettangolo rialzista in 
+un uptrend. Questa formazione viene anche 
+chiamata di trading range e mostra il movimento 
+dei prezzi tra due linee parallele orizzontali. Viene 
+anche definita area di congestione. 
+Figura 6.19 Esempio di un bearish rectangle. 
+Anche se i rettangofi sono solitamente considerati 
+formazioni di continuazione, gli operatori dovranno 
+stare bene attenti a eventuali segnali d'inversione, 
+quali una reazione da un triplo minimo. 
+FORMAZIONI DI CONTINUAZIONE 117 
+(10/09/96 (CPQ) Compaq Computer Corp 08/27/97 
+Grafico a barre giomaliero 
+Ì 
+LI dl, il Li bo | } } N 
+ui pt IN 
+Lal 
+NI Ù by î | I i K Rettangolo rialzista 
+Dec 77 Feo Mar Tape May "VETRO 
+Figura 6.20 Un rettangolo riaizista. La tendenza al rialzo di Compaq è stata interrotta per quattro mesi 
+durante il movimento laterale. All'inizio di maggio la rottura al di sopra della linea superiore ha 
+completato ia formazione e recuperato la tendenza al rialzo. | rettangoli in genere sono formazioni di 
+continuazione. 
+6.8.2 Si possono sfruttare i movimenti all’interno di un range 
+Alcuni analisti sfruttano questo tipo di formazione comprando vicino ai minimi e 
+vendendo sui rimbalzi vicino ai massimi. Questa tecnica consente di sfruttare i 
+movimenti di breve periodo dentro bande ben definite, approfittando dei mo- 
+menti senza tendenza del mercato. Poiché tali posizioni sono state aperte o chiuse 
+sull’estremità del range, il rischio sarà minimo e ben definito. Se il trading range 
+rimanesse intatto, questo tipo di operatività sarebbe ideale. 
+Se viceversa dovesse esserci una rottura, il gestore non dovrà esitare a chiudere 
+l'operazione immediatamente, invertendo la posizione nel senso della nuova dire- 
+zione del trend. Un aiuto può venire dall'uso degli oscillatori, molto utili nei mo- 
+vimenti laterali del mercato, ma assai meno nel momento in cui si verifica la 
+rottura della formazione, per i motivi che verranno discussi più diffusamente nel 
+capitolo 10. 
+Altri operatori usano la formazione a rettangolo mantenendo le posizioni lun- 
+ghe fino alla banda inferiore in un uptrend, oppure dando inizio a posizioni allo 
+scoperto vicino al massimo del range in un downtrend. Altri ancora evitano i mer- 
+cati senza tendenza, aspettando una rottura evidente, per non commettere errori 
+inutili.
+
+=== PDF page 68 ===
+118 CAPITOLO 6 
+I sistemi meccanici di trend-following hanno, per lo più, una performance molto 
+scarsa in questi tipi di movimento laterale o di assenza di direzione. 
+6.8.3 Altre similitudini e differenze 
+Parlando in termini di tempo, il rettangolo impiega da uno a tre mesi per completar- 
+si, così come avviene per i triangoli e i wedges. Lo sviluppo del volume è differente da 
+quello delle formazioni di continuazione, in quanto le ampie oscillazioni di prezzo 
+ostacolano, in generale, la caduta dell'attività, così come avviene nelle altre formazioni. 
+La tecnica di misurazione più comune applicata al rettangolo è basata sull’al- 
+tezza del price range: si misura l’altezza del trading range, partendo dal top fino al 
+bottom e la si proietta dal punto di rottura. 
+Questo metodo è simile alle altre tecniche di misurazione verticali già trattate 
+ed è basato sulla volatilità del mercato. Successivamente verrà approfondito tale 
+argomento per i grafici point & figures, descrivendo il metodo orizzontale per ii 
+calcolo dell’obiettivo di prezzo. 
+Tutti gli argomenti menzionati in relazione al volume, riguardanti le rotture e le 
+conseguenti probabilità di movimento di ritorno, valgono anche per questo tipo 
+di formazione. 
+Poiché le bande superiori e inferiori del rettangolo sono orizzontali e ben de- 
+finite, i livelli di resistenza e di supporto sono chiaramente evidenti. Ciò significa 
+che sulle rotture a rialzo il top precedente dovrebbe diventare valido supporto per 
+le correzioni al ribasso. 
+Viceversa su una rottura a ribasso in un downtrend, il fondo di un trading range 
+(la precedente area di supporto) dovrebbe diventare una solida resistenza per ogni 
+rimbalzo. 
+6.9 ll measured move 
+Il measured move o swing di misurazione, come viene più comunemente chiamato, 
+descrive un fenomeno in cui i forti movimenti a rialzo o a ribasso vengono divisi 
+in due movimenti uguali e paralleli, come si può vedere dalla figura 6.21. Per far sì 
+che questo sistema funzioni, i movimenti del mercato dovranno essere ben or- 
+dinati e definiti. Il measured move rappresenta semplicemente una variante delle 
+altre tecniche già approfondite. Si è visto che alcune tra le formazioni di conti- 
+nuazione come le formazioni a flags o a pennants si verificano solitamente a metà 
+di un movimento di mercato e che questo tende a ripercorrere circa un terzo o la 
+metà del trend primario prima di riprendere il suo cammino. . 
+Quando l’analista vede una situazione di mercato ben definita come nella figura 
+6.21, con un rimbalzo dal punto A al punto 8, seguito da un’onda in controtendenza 
+dal punto 8 al punto C (che solitamente ripercorre da un terzo alla metà dell’onda 
+AB), presume che il prossimo movimento nell’uptrend (CD) arriverà a raddoppiare il 
+percorso della prima onda (48). L’altezza dell’onda (42) verrà misurata di conse- 
+guenza partendo dal minimo della correzione fino ad arrivare al punto C. 
+FORMAZIONI DI CONTINUAZIONE 119 
+Figura 6.21 Esempio di un measured move in un uptrend. Questa teoria sostiene che la seconda 
+onda rialzista (CD) raddoppierà l'ampiezza della prima onda rialzista (AB). L'onda di correzione a ribasso 
+(BC) ripercorrerà solitamente un terzo o la metà del movimento di (AB) prima che l'uptrend riprenda il 
+SUO corso. 
+03/17/97 {PG} Procter & Gamble Co 02/12/98 
+Grafico a barre giornaliero 
+Measured move 
+A M y KI pS s po) N] D 17) F Ei a TR Li 
+Figura 6.22 Un measured move considera l'onda rialzista precedente (45) e aggiunge quel valore al 
+minimo della correzione del punto C. in questo grafico, l'onda rialzista precedente (AB) era di 20 punti. 
+Aggiungendola al punto minimo C (62) è stato ottenuto un obiettivo di prezzo di 82 (D).
+
+=== PDF page 69 ===
+120 CAPITOLO 6 
+Neckline o linea di collo 
+Figura 6.23 Esempio di una formazione di continuazione rialzista head and shoulders. 
+6.10 La formazione di continuazione a “testa e spalle” 
+Nel capitolo precedente è stata descritta la formazione a ‘testa e spalle” come la 
+più conosciuta tra le formazioni d’inversione. Ma bisogna tener conto del fatto 
+che a volte essa possa essere una formazione di continuazione anziché d’inver- 
+sione.5 
+Nella figura di continuazione a ‘itesta e spalle”, in un uptrend i prezzi formano 
+una specie di rettangolo con l’unica differenza che il secondo minimo tende a 
+essere inferiore agli altri due minimi, rappresentanti le spalle (figura 6.23). In un 
+downtrend invece il secondo massimo supera gli altri due massimi (figura 6.24). Il 
+risultato in entrambi i casi è una formazione head and shoulders capovolta. Poiché 
+essa ha dato luogo a un nuovo movimento di rialzo sarà impossibile scambiarla 
+con una formazione d'inversione. G 
+5 A questo punto è necessario precisare che tutti gli esempi di figure o formazioni presenti in questo 
+testo, sono stati scelti accuratamente per semplificare l'apprendimento. Ma nella vita reale le cose non 
+sono sempre così chiare. 
+FORMAZIONI DI CONTINUAZIONE 12] 
+Spalla Testa Spalla 
+: sinistra destra 
+inea di collo 
+Neckine 0 ! 
+Figura 6.24 Esempio di una formazione di continuazione ribassista head and shoulders. 
+(10/17/98 (GM) General Mtrs Corp 09/16/97 
+Grafico a barre giomallero 0 z 
+Testa e spalle di continuazione ” | Ù 
+È Matlivglo E UT a N p | Spalla / i vd, n 
+Figura 6.25 Nella prima metà del 1997 la General Motors ha formato una figura di continuazione head 
+and shoulders che è molto chiara ma appare in un punto insolito. La formazione è stata completata, 
+l'uptrend recuperato con una chiusura al di sopra della neckline a 60.
+
+=== PDF page 70 ===
+122 CAPITOLO 6 
+6.11 Conferme e divergenze 
+Il principio delle conferme costituisce uno dei terni più discussi nell'analisi dei mer- cati e viene correlato, nell’uso, alla sua controparte, la divergenza. Entrambi i con- cetti vérranno analizzati in questo contesto e più volte citati nel corso del testo. Per conferma s'intende un’unanime indicazione dei segnali grafici e degli indi- catori in un preciso senso del mercato. 
+La divergenza rappresenta esattamente l'opposto della conferma e si riferisce a una situazione in cui diverse scadenze di contratti mensili o situazioni di mercato o di indicatori tecnici non siano concordi tra di loro. Le divergenze danno segnali d’inversione di tendenza molto utili e veloci. Questo argomento verrà approfon- dito in modo dettagliato nel capitolo 10 relativo agli oscillatori e all'opinione contraria. 
+7 
+Volume e open interest 
+Molti analisti del mercato finanziario utilizzano una tecnica di analisi multidi- mensionale, seguendo i movimenti di prezzo, volume e open interest. L'analisi del volume si applica a tutti i mercati, l’open interest si applica principalmente ai mercati dei futures. Nel capitolo 3 sono già state discusse le modalità con cui questi tre tipi di informazioni possono essere rappresentate nella costruzione dei grafici giornalieri; si è giunti poi alla conclusione che, sebbene i dati del volume e dell'open interest siano disponibili per i mercati dei futures per ogni mese di scadenza, è comunque il volume totale a essere generalmente usato a scopo previsionale. Gli analisti di borsa si limitano a rappresentare il volume totale insieme al prezzo che lo accompagna. 
+Fino a questo punto la discussione teorica era concentrata principalmente sui movimenti di prezzo con qualche menzione al volume. In questo capitolo verrà sviluppato l’approccio tridimensionale, osservando più da vicino il ruolo giocato dal volume e dall’open interest nel processo previsionale. 
+7.1 Volume e open interest come indicatori secondari 
+Per analizzare il volume e l’open interest è necessario porli nella giusta prospettiva. Il prezzo è di gran lunga il fattore di maggior rilievo, mentre il volume e l’open interest rivestono un’importanza secondaria ma ne hanno invece una primaria quando vengono usati come indicatori di conferma. Fra i due il più importante è il volume. 
+7.1.1 Volume 
+Il volume è il numero delle entità trattate durante il periodo di tempo preso in considerazione. Dal momento che si'avrà a che fare principalmente con grafici a barre giornalieri, anche il volume sarà giornaliero; quest’ultimo è rappresentato da una barra verticale, che parte dal fondo del grafico appena sotto il movimento di prezzo del giorno (figura 7.1). È Il volume può essere rappresentato anche con grafici a barre settimanali e in questo caso, quello per la settimana verrà riportato sotto la barra che rappresenta l'escursione di prezzo della settimana stessa. Il volume non è invece di solito usato nei grafici mensili.
+
+=== PDF page 71 ===
+124 CAPITOLO 7 
+19/15/97 (BDK) Black & Decker Corp 02/27/98 
+NINO [RP 
+Grafico a barre giornaliero iù hh le 
+oo N VOCE Il Da 
+hl ha oe 
+MATTIOIARI | Mar Til t4] I Ln 
+Grafico a barre del volume ' ‘ 
+sissi | ati 
+Figura 7.1 Sinotichele barre del volume sono notevolmente più larghe quando i prezzi rimbalzano (si 
+vedano i cerchistti.. Ciò significa che il volume sta confermando l'aumento dei prezzi ed è rialzista. 
+7.1.2 Open interest nei futures 
+Con il termine open interest si definisce il numero totale dei contratti aperti (cioè 
+in essere) o non chiusi alla fine del giornata: nella figura 7.2 l’open interest è 
+rappresentato dalla linea continua disegnata sul grafico sotto i prezzi corri- 
+spondenti per quel giorno ma sopra le barre del volume. 
+È bene ricordare che dati ufficiali del volume e dell'open interest nei mercati dei 
+futures vengono riportati con un giorno di ritardo e di conseguenza ‘anche dise- 
+gnati con lo stesso ritardo: è invece disponibile il solo volume stimato per l’ultimo 
+giorno di contrattazione. Questo significa che ogni giorno l'analista disegna una 
+barra con il massimo, il minimo e il prezzo di chiusura per l’ultimo giorno di 
+trattazione, ma riporta il volume ufficiale e l’open interest per il giorno prece- 
+dente. 
+*open interest rappresenta il totale dei contratti /ong o short aperti nel mercato, 
+non la somma di entrambi; costituisce quindi il numero di contratti aperti. Questo 
+perché un contratto deve avere sia un compratore sia un venditore, quindi due 
+partecipanti al mercato, che si incontrano per creare un solo contratto. 
+Il dato dell'open interest riportato ogni giorno è seguito dal segno positivo 0 
+negativo che indica l'aumento 0 la diminuzione nel numero dei contratti per quel 
+giorno. Questi cambiamenti nel livello dell'open interest, sia al rialzo sia al ri- 
+basso, danno agli analisti l'indicazione di come sta cambiando il tipo di parte- 
+cipazione nel mercato € attribuiscono all’open interest il suo valore previsionale. 
+VOLUME E OPEN INTEREST 125 
+{2126/07 (LI0598) Crude Oli, Light 05/98 02/27/98 
+| LI | Grafico a barre giornaliero dei futures lua 
+SILA | Tui? I, n 
+MATA TE ult 
+Open interest . poss 
+Volume 
+— 
+Lisi Figura 7.2. Un grafico giornaliero dei futures sul greggio mostra volume e open interest (linea continua). 
+La linea dell'open interest è ascendente quando in prezzi cadono; è perciò una figura ribassista. 
+Come avvengono i cambiamenti nell'open interest. Per comprendere come av- 
+vengono i cambiamenti e come vanno interpretati è necessario capire quali sono le 
+modalità con cui ogni operazione produce una variazione nell'open interest: ogni 
+volta che in borsa viene completata un'operazione l'open interest ne è influenzato 
+in tre possibili modi: 
+1. sale; 
+2. scende; 
+3. resta invariato. 
+Ecco schematicamente come possono presentarsi i cambiamenti nell’open inte- 
+rest. 
+Compratori Venditori Variazioni nell'OI 
+1. acquisto nuova posizione vendita nuova operazione scoperto aumento 
+2. acquisto nuova posizione vendita vecchia posizione invariato 
+3. acquisto vecchia operazione scoperto vendita nuovo scoperto invariato 
+4. acquisto vecchia operazione scoperto vendita vecchia posizione diminuzione 
+Nel primo caso sia i compratori sia i venditori stanno iniziando una nuova posì- 
+zione: nasce così un nuovo contratto. Nel secondo caso il compratore sta aprendo 
+una nuova posizione long ma il venditore sta soltanto liquidando una vecchia po-
+
+=== PDF page 72 ===
+126 CAPITOLO 7 
+sizione /ong: uno sta entrando e l’altro sta uscendo dal mercato per cui l’open interest 
+risulta immobile e non avviene nessuna variazione nel numero dei contratti. 
+Nel terzo caso accade la medesima cosa, con la differenza che questa volta è il 
+venditore che sta aprendo una nuova posizione di scoperto e che il compratore sta 
+solo chiudendo un vecchio scoperto. Dato che un operatore sta entrando e uno 
+sta uscendo dal mercato, anche in questo caso non si avranno variazioni. 
+Nel quarto caso entrambi gli operatori stanno liquidando una vecchia posi- 
+zione e l’open interest di conseguenza diminuisce. 
+Riassumendo i quattro possibili casi si può dire che: se entrambi i partecipanti 
+stanno aprendo una nuova posizione, l’open interest aumenterà; se entrambi 
+stanno chiudendo una vecchia posizione, l'open interest diminuirà; se comunque 
+un operatore sta iniziando una nuova posizione mentre l’altro sta liquidando una 
+vecchia posizione l’open interest rimarrà invariato. 
+Osservando la variazione netta nel totale dell’open interest alla fine della giornata, 
+l'analista è in grado di determinare se il denaro sta entrando o uscendo dal mercato 
+e di trarre alcune conclusioni riguardo alla forza o alla debolezza del trend in atto. 
+7.1.3 Regole generali per l’interpretazione del volume e dell’oper: interest 
+I tecnici del mercato incorporano il volume e l'open interest nelle loro analisi 
+secondo delle regole interpretative sostanzialmente simili sia per il volume sia per 
+l'open interest. Esistono comunque alcune differenze che andrebbero approfondite. 
+Ecco alcune regole generali valide per entrambi, che verranno trattate separa- 
+tamente prima di combinarle ancora insieme alla fine del paragrafo. 
+Prezzo Volume OI Mercato 
+sale alto alto forte 
+sale basso basso debole 
+scende alto alto debole 
+scende basso basso forte 
+Se il volume e l’open interest stanno entrambi crescendo allora il trend pro- 
+babilmente continuerà nella sua attuale direzione (al rialzo o al ribasso). 
+Se sia il volume sia l’open interest stanno scendendo, la variazione dei dati deve 
+essere vista come un avvertimento che il trend in corso potrebbe essere vicino alla fine. 
+Detto questo, si può passare ad analizzarli separatamente. 
+7.2 Interpretazione del volume per tutti i mercati 
+Il livello del voiume misura l’intensità o l’urgenza che sono dietro a un movi- 
+mento di prezzo: un forte volume riflette un alto grado di intensità o pressione. 
+Evidenziando il livello del volume insieme al movimento di prezzo l’analista 
+tecnico è in grado di stirnare la pressione di acquisto o di vendita che sta dietro i 
+movimenti di mercato, utilizzando poi questa informazione per confermare la 
+validità o la non veridicità di tali movimenti (figure 7.3 e 7.4). 
+VOLUME E OPEN INTEREST 127 
+(10/27/97 (MCD) Medonalds Corp 02/18/96 
+Grafico a barre giornaliero | 
+Rottura dei prezzi ii 0 
+PU, IITANPRITTI iu!” ” pi NI RILUFETAZUT a 
+Volume Volume in aumento gono 
+puliti ustuttoltl. Ji liirottu lita HI fine ba CI sa a "= 
+Figura 7.3. La rottura dei prezzi al rialzo di McDonalds nel novembre 1997 è stata accompagnata da un'intensa attività di trading. Formazione rialzista, 
+2123/97 . {INTC) Intel Corp 02/24/98 
+Grafico a barre giornaliero | 
+| 
+| TINI | Tali 
+\ 
+| 
+Figura 7.4. Le barre del volume seguono l'uptrend dei prezzi di Intel. Il volume è più pesante quando i 
+prezzi sono crescenti e crolla quando i prezzi si indeboliscono. Si noti l'intensa attività di trading nel 
+balzo del prezzi degli ultimi tre giorni. .
+
+=== PDF page 73 ===
+128 CAPITOLO 7 
+In modo più sintetico si può affermare che il volume dovrebbe aumentare 0 
+espandersi nella stessa direzione del trend esistente; in un uptrend il volume do- 
+vrebbe aumentare man mano che il prezzo sale e dovrebbe diminuire o contrarsi 
+sulla discesa dei prezzi. 
+Man mano che le figure procedono nella loro formazione, il volume deve con- 
+fermare il trend dei prezzi. 
+L’analista deve però considerare anche le divergenze, che si verificano quando 
+il superamento di un massimo precedente è accompagnato da volume decrescente: 
+questa condizione segnala che la pressione d’acquisto sta diminuendo. 
+Anche se il volume mostra una tendenza a fare dei massimi su dei prezzi che 
+scendono, l’analista comincia a sospettare che il trend rialzista abbia dei pro- 
+blemi. 
+1.2.1 Il volume come conferma delle formazioni 
+Nei capitoli 5 e 6 è stata più volte sottolineata l’importanza del volume come 
+indicatore di conferma dei segnali. Per esempio, uno dei primi segnali del for- 
+marsi di una figura “testa e spalle” è dato quando i prezzi fanno nuovi massimi 
+nella formazione della testa, accompagnati da volumi bassi e dall’immediato 
+aumento di questi ultimi sulla successiva discesa dei prezzi verso la linea di collo 
+o neckline. 
+Il doppio o triplo top presentano un volume basso su ogni successivo massimo, 
+seguito dal rispettivo movimento ribassista accompagnato da un forte volume. 
+Le formazioni di continuazione, come i triangoli, devono essere accompagnate 
+da una graduale diminuzione del volume. . 
+Come regola generale, la risoluzione di ogni formazione (cioè il suo punto di 
+rottura) deve essere accompagnata da forti volumi, se il segnale è reale (figura 
+7.5). In un downtrend il volume dovrebbe essere più forte durante i movimenti 
+ribassisti e meno forte sui rimbalzi. 
+Man mano che la figura procede nella sua formazione la pressione di vendita è 
+maggiore della pressione d'acquisto € il trend ribassista dovrebbe continuare. 
+Solo quando la figura comincia a cambiare gli analisti iniziano a cercare dei 
+segnali di fondo. 
+7.2.2 Il volume precede i prezzi 
+Analizzando insieme il prezzo e il volume si usano due differenti strumenti per 
+misurare la stessa cosa, cioè la pressione. Dal semplice fatto che i prezzi conti- 
+nuano 4 salire, si può dedurre che la pressione d’acquisto è maggiore di quella di 
+vendita. 
+Perciò il volume maggiore dovrebbe essere nella stessa direzione del trend 
+dominante. Gli analisti ritengono che il volume preceda i prezzi, nel senso che la 
+perdita della pressione rialzista in un uptrend o della pressione ribassista in un 
+downtrend, in realtà, si manifesta prima nell’andamento del volume rispetto a 
+un'inversione del trend dei prezzi. 
+VOLUME E OPEN INTEREST 129 
+06/27/97 (CPQ) Compaq Computer Corp 12/31/97 
+Grafico a barre giornaliero / 
+È ‘i 
+Au N 
+| ila 
+Ì 
+nl | x" 
+Te TTT 
+i Ù "I LN gOIoLa 
+Volume 5 
+Sep TaTi 
+Figura 7.5 l La prima metà del grafico mostra un trend positivo con volume più forte nei giorni in rialzo. 
+Il riquadro in alto mostra un improwiso downtum su un forte volume, segnale negativo. Si noti 
+l'aumento del trading quando il triangolo di continuazione viene rotto nel movimento al ribasso. 
+7.2.3. L'on balance volume 
+Gli analisti tecnici hanno sperimentato vari indicatori di volume per quantificare 
+la pressione di acquisto o di vendita. 
+Infatti in un grafico la sola analisi delle colonne verticali del volume non è 
+sempre sufficiente a coglierne le variazioni importanti. 
+Il metodo più semplice e conosciuto tra gli indicatori di volume è l’on ba- 
+lance volume od OBV,! che forma una curva del volume sotto il grafico dei 
+prezzi. Questa può essere usata o come conferma della qualità del trend o 
+come un avviso di un’imminente inversione, quando diverge dall’andamento 
+dei prezzi. i 
+La figura 7.6 mostra il grafico dei prezzi con la linea 08V lungo il fondo del 
+grafico al posto delle barre di volume. Si osservi quanto sia più semplice seguire il 
+trend del volume con la linea 0.BV. La costruzione dell'OBV è molto semplice: al 
+volume totale giornaliero viene assegnato un segno positivo o negativo a seconda 
+che i prezzi di chiusura siano più alti o più bassi rispetto a quelli del giorno 
+precedente. 
+! Fu sviluppato e diffuso da Joseph Granville; cfr. J. Granville, Granville's New Key to Stock 
+Market Profits, Prentice Hall, Engiewood Cliffs (N.Y.) 1963.
+
+=== PDF page 74 ===
+130 CAPITOLO 7 
+05/19/97 (CPQ) Compaq Computer Corp 12/31/97 
+Grafico a barre giornaliero L'hgn] | rs 
+j 1 I N 
+O | ty ì h i UA Laz 
+Ml suli 
+Al” Hay d) Md SUP 
+n ui 
+a Pd 
+i I mcg 
+Na ip, My 
+On balance volume 
+Figura 7.6 La linea lungo il fondo mostra l'on balance volume {OBM per lo stesso grafico di Compaq. Si osservi la grande facilità con cui è stato possibile individuare il downtum nell'ottobre 1997. 
+Una chiusura superiore attribuisce al volume un valore positivo, mentre una 
+chiusura inferiore dà al volume un valore negativo, 
+La somma totale viene aggiornata aggiungendo o sottraendo ogni giorno il volume, basandosi sulla direzione della chiusura. 
+I valori 08 reali saranno diversi a seconda di quanto il grafico torni indietro nel tempo. È consigliabile far eseguire i calcoli al computer e concentrarsi sulla 
+direzione della linea OBV. 
+È possibile applicare alla linea dell'’OBYV vari indicatori tecnici esattamente 
+come accade per i prezzi. Infatti su questa linea sono chiaramente visibili massimi 
+e minimi, livelli di resistenza e di supporto. La divergenza si verifica quando la linea del volume si muove in una direzione diversa rispetto a quella dei prezzi, segnalando una possibile inversione di tendenza. 
+7.2.4 Alternative all’OBV 
+La linea dell’on balance volume non è però del tutto attendibile, innanzitutto 
+perché assegna valore positivo o negativo al volume, osservando globalmente una giornata borsistica. Se, per esempio, la borsa chiude al rialzo per un minimo di uno o due punti, sarebbe limitato assegnare all’attività di quel determinato giorno valore positivo. Analogamente, nei giorni in cui il mercato rimane per la maggior parte della seduta al rialzo per poi chiudere leggermente in ribasso, non è suffi- ciente dare all’attività di quel giorno valore negativo. 
+i 
+VOLUME E OPEN INTEREST 131 
+Per ovviare a questi limiti, gli analisti tecnici hanno cercato molte varianti al- l'indicatore dell’0.B8Y, allo scopo di poter individuare la vera tendenza rialzista o ribassista del volume. 
+Una variante potrebbe consistere nel dare maggior peso a quei giorni in cui la tendenza è particolarmente forte. Per esempio, in una giornata prettamente rial- zista, viene moltiplicato il volume per l’entità del rialzo. Anche questa tecnica as- segna valori positivi o negativi, con la differenza che da maggior peso a quei gior- ni in cui si registrano forti movimenti di prezzo, riducendo l’importanza di quelli in cui si registrano movimenti minimi. 
+Esistono varie formule molto complicate che raffrontano il volume coni prezzi, quali, per esempio, il demand index ideato da James Sibbet che unisce prezzi e volume in un indicatore di mercato principale. L’Herrick Payoff Index usa l'open interest per misurare il flusso di denaro.? 
+È da notare che il volume riferito al mercato azionario è molto più utile rispetto a quello riferito ai mercati dei futures. Il volume relativo al trading di azioni è disponibile immediatamente mentre per i futures è disponibile con un giorno di ritardo, I livelli di volume dei movimenti al rialzo e al ribasso sono disponibili per le azioni ma non per i futures. La disponibilità di dati sulle azioni relativi a ogni movimento di prezzo durante il giorno ha favorito un indicatore ancora più avanzato chiamato Money Flow, sviluppato da Laszlo Birinyi, Jr. Questa versione in tempo reale dell’OBV registra il livello del volume relativo a ogni movimento allo scopo di capire se il denaro stia entrando o uscendo da un titolo. Si tratta di un calcolo sofisticato, tuttavia, che richiede un notevole impiego di risorse da parte del computer e non è disponibile per gran parte dei traders. 
+Queste variazioni più complesse dell’OBY hanno fondamentalmente lo stesso intento, cioè stabilire la forza e la direzione del volume rialzista o ribassista. Nonostante la sua semplicità, la linea dell’OBYV costituisce ancora un ottimo strumento per determinare il flusso di volume in un mercato, sia per i futures sia per le azioni ed è inoltre disponibile nella maggior parte dei programmi infor- matici utilizzati per la creazione di grafici. La maggior parte dei pacchetti ap- plicativi consente perfino di disegnare la linea OBY sui dati dei prezzi per rendere ancora più semplice il confronto (figure 7.7 e 7,8). 
+7.2.5 L'analisi del volume non risulta essere altrettanto utile 
+nelle commodity futures 
+Si è già accennato al problema dei dati relativi al volume riportati con un giorno di ritardo. Inoltre è diffusa l’abitudine errata di considerare il volume della to- talità dei contratti, dato che a volte si presenta l'impossibilità di poter usare e analizzare i volumi di ogni singolo contratto. Esistono tuttavia delle buone ra- gioni per l’utilizzo del volume totale, ma si creano problemi se determinati giorni alcuni contratti chiudono al rialzo mentre altri, appartenenti allo stesso mercato, 
+? Per una spiegazione di entrambi gli indicatori si consulti l’appendice A.
+
+=== PDF page 75 ===
+132 CAPITOLO 7 
+ni ty Lia 
+I i UÒ ; MT ; Mai | la hu My Vi 
+h 
+On balance volume Divergenza ribassista 
+}225000g 
+Figura 7.7. Un ottimo esempio per mostrare la divergenza tra la line dell'on balance volume (in basso) 
+e il prezzo di Intel adeguatamente avvertito di un importante downtum. 
+03/31/97 (MCD) Medonalds Corp 02/26/98 
+Ù Ì tl, 
+I hi i 
+I A I BILOTO J | 
+i n ui ih Hi vi) 
+di i ti 
+A x 4 4 A 3 DI RADI OA DAI 
+[] & IM & 
+Figura 7.8 La sovrapposizione di una linea continua (O8V) sulle barre di prezzo agevola Îl confronto 
+tra prezzo e volume, Il grafico di MeDonalds mostra ta linea OBV che spinge in alto in prezzo indicando 
+in anticipo una rottura rialzista. 
+VOLUME E OPEN INTEREST 133 
+chiudono in ribasso; un altro problema viene dalle sedute di limit day? Le 
+giornate in cui i mercati vengono chiusi per eccesso di rialzo sono generalmente 
+contraddistinte da volumi molto bassi: questo caso è comunque un segno di forza, 
+in quanto i compratori sono molto più numerosi dei venditori e i prezzi vengono 
+quindi bloccati per aver raggiunto il limite massimo di rialzo e gli operatori 
+cessano di trattare. Secondo l’interpretazione tradizionale, un volume basso in 
+una giornata di rialzo è ribassista, ma se si verifica in una giornata di limit day 
+l’interpretazione è diversa. 
+Nonostante questi limiti l’analisi del volume può essere ancora utile a chi opera 
+in questo mercato. 
+7.3 Interpretazione dell’open interest nei futures 
+Il sistema d’interpretazione dell'open interest è simile a quello del volume, ma 
+richiede ulteriori spiegazioni: 
+1. se i prezzi salgono in un uptrend e il totale dell’open interest sale, significa che 
+del denaro nuovo sta entrando nel mercato, segnalando la presenza di nuovi e 
+aggressivi compratori, con netta indicazione rialzista (figura 7.9); 
+2. se, viceversa, i prezzi salgono e l’open interest scende, significa che il rimbalzo 
+è stato causato principalmente da ricoperture (forzate) e il denaro sta uscendo 
+dal mercato; ciò è considerato un segnale ribassista poiché probabilmente 
+l’upirend è in procinto di esaurirsi con il concludersi delle ricoperture (figura 
+7.10); 
+3. se in un downtrend l’open interest sale, l'analista capisce che un nuovo flusso di 
+denaro sta entrando nel mercato con forti vendite allo scoperto; tale azione indi- 
+ca che il downrrend continuerà con un segnale prettamente ribassista (figura 
+7.11); 
+4. se viceversa il totale dell’open interest scende, accompagnato da prezzi in ri- 
+basso, significa che il movimento è stato causato da vendite forzate delle posizioni 
+lunghe dovute a uno scoraggiamento globale. Questa situazione indica il pro- 
+babile esaurimento del downtrend e nel momento in cui l’open interest sarà 
+sceso a sufficienza, sarà evidente che le vendite sono esaurite e che il downtrend- 
+è ormai in fase di esaurimento. 
+Ecco un riassunto schematico dei quattro punti appena citati: 
+1. l’open interest crescente in un uptrend è un segnale di conferma rialzista; 
+2. l’open interest in ribasso in un uptrend è un primo segnale ribassista; 
+3. l’open interest crescente in un downirend è un segnale di conferma ribassista; 
+4. l'open interest in ribasso in un downtrend è un primo segnale rialzista. 
+3 Il limit day indica la chiusura della trattazione per eccesso di rialzo o di ribasso.
+
+=== PDF page 76 ===
+134 CAPITOLO 7 
+(11/11/97 (AM0398) Silver 03/98 02/20/98 
+Grafico a barre giornaliero dei futures 
+ll I, 
+pet D'i I aria! 
+Open interest in aumento 
+Dee se VA LC Tati 
+Figura 7.9 Il trend rialzista dei prezzi dell'argento è stato confermato da un aumento di entità simile nella linea dell'open interest. | riquadri a destra mostrano la liquidazione di alcuni contratti in essere, 
+fenomeno normale quando inizia la correzione dei prezzi al ribasso. 
+2/12/97 (GC0498) Gold 04/98 02/20/98 
+Grafico a barre giornaliero dei futures 
+Li 
+n I, 
+Open interest 
+18 F3 Fi] DA tr 2% o 9 "] TETI 
+Figura 7.10 Esempio di un debole rimbalzo del prezzo sui futures dell'oro. L'aumento del prezzo è accompagnato da una caduta dell'open interest, mentre il ribasso dei prezzi mostra un aumento dell'open interest. Un trend forte evidenzierebbe un open interest in teridenza con il prezzo, non in 
+opposizione a esso, 
+VOLUME E OPEN INTEREST 135 
+DI/26/97 (GR0398) Copper High Grade 03/98 02/25/98 
+Grafico a barre [110 giornaliero 
+dei futures 16 
+T 100 
+VWA Prezzi in discesa 95 
+Open interest 
+|70000 
+{40000 
+Open interest in aumento Lsooo 
+A w bI n TA 1°) A RRANNA Da") E = 
+Figura 7.11 li downtum del rame nell'estate del 1997 con il conseguente ribasso del prezzo è stato accompagnato da un open interest crescente. Tale formazione è ribassista perché riflette forti vendite allo scoperto. 
+7.3.1 Altre situazioni in cui l’open interest è importante 
+In aggiunta alle precedenti tendenze, esistono altre situazioni tecniche del mercato in cui lo studio dell'open interest può essere di grande utilità. 
+1. Verso la fine di un movimento primario del mercato, in cui l'open interest è salito insieme ai prezzi, un suo livellamento o ribasso indica solitamente una 
+possibile inversione di tendenza. 
+2. Un alto livello di open interest sui punti massimi del mercato può essere consi- 
+derato ribassista se si verifica una brusca caduta dei prezzi. Ciò significa che tutte le posizioni lunghe che erano state aperte vicino alla fine dell’uptrend, 
+sono state chiuse in perdita. 
+Queste liquidazioni forzate incideranno sulla pressione al ribasso fintantoché il livello dell’open interest non sarà sceso a sufficienza. Si prenda come esempio un uptrend che dura da parecchio tempo. Con il passare dei mesi l'open interest 
+è aumentato notevolmente. È necessario ricordare che a ogni contratto del- l’open interest corrisponde un nuovo contratto long e un nuovo contratto short. 
+Improvvisamente i prezzi cominciano a calare sensibilmente, oltrepassando il minimo storico dell’ultimo mese; ogni singolo nuovo contratto long acceso du- 
+rante questo periodo, subirà una perdita. 
+Le liquidazioni forzate di questi contratti /ong tengono sotto pressione i prezzi,
+
+=== PDF page 77 ===
+136 CAPITOLO 7 
+fino al momento in cui le posizioni non verranno interamente liquidate; ma è 
+ancora peggio quando, come spesso accade, le vendite forzate dei long si autoa- 
+limentano sul ribasso, causando altre vendite per rientrare nei margini con ulte- 
+riori cadute di prezzo. 
+Come conseguenza al punto precedente, si può affermare che un livello inso- 
+litamente alto dell'open interest in un mercato rialzista, rappresenta sempre un 
+segnale di pericolo. 
+3. Se il livello dell'open interest cresce notevolmente durante una fase di consoli- 
+damento 0 di movimenti laterali in un trading range, aumentano le probabilità di 
+una possibile forte azione di rottura. Il mercato si trova dunque in una fase 
+d’indecisione. Nessuno è sicuro della direzione che prenderà il mercato dopo la 
+rottura, sebbene l'aumento dell’open interest suggerisca che molti investitori 
+hanno aperto delle posizioni pensando di anticiparla. Comunque, una volta 
+che la rottura si è verificata, molti investitori si troveranno dalla parte sbagliata 
+del mercato. 
+Si supponga che il mercato sia rimasto per tre mesi in un trading range, e che l'open 
+interest sia salito velocemente di 10.000 contratti. Ciò significa che sono state 
+aperte 10.000 nuove posizioni lunghe e 10.000 nuove posizioni short. Successiva- 
+mente i prezzi rompono al rialzo, dando luogo a tre mesi di nuovi massimi. Poiché 
+le contrattazioni si sono verificate prevalentemente sui punti massimi di questi tre 
+mesi, ogni singola posizione short (appartenente ai 10.000 contratti) iniziata du- 
+rante i tre mesi precedenti si trova in perdita. La ricopertura di tutte queste 
+posizioni short causa naturalmente un'ulteriore pressione al rialzo dei prezzi, re- 
+cando altro panico nel mercato. I prezzi rimarranno alti fintantoché la maggior 
+parte di queste 10.000 posizioni short saranno chiuse con acquisti nel mercato. Se 
+la rottura fosse al ribasso, allora sarebbero stati i Jong ad avere problemi. 
+I primi passi del nuovo trend dopo la rottura sono solitamente il risultato di 
+liquidazioni forzate di quei contratti aperti nella direzione opposta del mercato. 
+Tanto più forte sarà il movimento, tanto più veloci saranno le liquidazioni di 
+posizione con calo analogo dell’open interest. 
+Il nuovo trend viene aiutato da coloro che si trovano dalla parte giusta del 
+mercato: essi approfitteranno delle fasi di accumulazione per incrementare le 
+loro posizioni. Questo può essere ben visibile dal forte incremento dell'open 
+interest durante un periodo di trading range, che aumenta il potenziale del 
+movimento successivo. 
+4. L'open interest che aumenta sulla conclusione grafica di una figura, indica la 
+conferma del nuovo trend. Per esempio la rottura della neckline di un head and 
+shoulders bottom diventa più convincente se accompagnata da un incremento 
+del volume e dell’open interest. Di conseguenza l'analista dovrà stare molto at- 
+tento dato che il primo movimento, che segue il segnale inizialé del trend, è 
+spesso causato da coloro che si trovano dalla parte sbagliata del mercato. 
+Infatti @ volte cdpita che il livello dell'open interest diminuisca leggermente, 
+prima di iniziare un nuovo trend. Questa leggera diminuzione dell’open interest 
+può ingannare l’analista, che deve valutare molto attentamente i cambiamenti . 
+dell'open interest nel brevissimo periodo. 
+VOLUME E OPEN INTEREST 137 
+7.4 Riassunto dei ruoli del volume e dell’open interest 
+Vengono qui riassunte alcune delle relazioni più importanti tra prezzi, volumi e 
+open interest. 
+1. il volume è usato per tutti i mercati; l'open interest soprattutto per i futures; 
+2. per i futures si usa soltanto il totale del volume e dell'open interest; 
+3. l’ineremento del volume e dell'open interest indica che probabilmente il trend 
+continuerà; 
+4.la diminuzione del volume e dell'open interest suggerisce una probabile in- 
+versione di tendenza; 
+5.i volumi precedono i prezzi; i cambiamenti della pressione d’acquisto o di 
+vendita, si rilevano solitamente prima sul volume che sui prezzi; 
+6. l'on balance volume (OBV) o le sue varianti possono essere usate per misurare 
+accuratamente la pressione del volume; 
+7. in un uptrend un improvviso livellamento o un abbassamento dell'open interest 
+indica solitamente una possibile inversione di tendenza; questo principio si 
+applica solo ai futures; 
+8. un open interest molto alto sul top del mercato è pericoloso e può intensificare 
+la pressione ribassista; questo principio si applica solo ai futures; 
+9. una forte crescita dell'open interest durante un periodo di consolidamento 
+intensifica un’imminente rottura del trading range; questo principio si applica 
+solo ai futures; 
+10. l'incremento del volume e dell’open interest aiuta a confermare la risoluzione 
+o lo sviluppo di una formazione, anticipando l’inizio di un nuovo trend. 
+7.5. Blowoffs e selling climaxes 
+Indicano un tipo di situazioni drammatiche che solitamente si verificano sui top.s 
+o sui bottoms del mercato dominante. 
+I blowoffs sì verificano sui market tops e i selling climaxes sui bottoms. Nei 
+futures i blowoffs spesso sono accompagnati da una caduta dell'open interest 
+durante il ra//y finale. 
+Nel caso di blowoffs, che, come appena detto, si verificano sui major market 
+tops, i prezzi cominciano a salire velocemente, dopo un lungo periodo di rialzo, 
+accompagnati da un forte aumento dell’attività e da un successivo vistoso ribasso 
+(figura 7.12). Viceversa il selling climax si manifesta con i prezzi che calano 
+improvvisamente accompagnati da forti volumi per poi risalire rapidamente (si 
+veda la precedente figura 4.45).
+
+=== PDF page 78 ===
+138 CAPITOLO 7 
+10/08/93 (CC1600) Coffee 1600 02/27/98 
+LIO 
+Blowoffs sui futures del caffè lao0 
+P200 
+200 
+li ja 
+hair IM date 
+Di n Va par al | i h 
+ni Lal Hi 97 VE ] 
+Figura 7.12 Una coppia di massimi blowoffs nei futures sul caffè. In entrambi i casi si è verificato un 
+repentino recupero dei prezzi su un forte volume. | segnali negativi provenivano da un ribasso dell'open 
+interest (linea continua) durante i due rally (si vedano le frecce). 
+7.6 Rapporto sulle posizioni aperte 
+A questo punto per completare l'argomento relativo all’open interest, è necessario 
+parlare del rapporto sulle “posizioni aperte” o, in inglese Commitments of Traders 
+(COT) Report, analizzandone i vari usi a livello di previsione sui futures. 
+Il rapporto viene redatto da una commissione, la Commodity Futures Trading 
+Commission, abbreviata per comodità in CFTC, due volte al mese: a metà e a fine mese. 
+Il rapporto divide i numeri dell'open interest in tre categorie: grandi arbitraggi, 
+grandi speculatori, piccoli operatori. I grandi arbitraggi (/arge hedgers), definiti 
+anche commercials, utilizzano i mercati dei futures prevalentemente per motivi di 
+arbitraggio. I grandi speculatori includono i fondi specializzati nei contratti su 
+merci che fanno riferimento principalmente ai sistemi meccanici trend-following. 
+L’ultima categoria, quella dei piccoli operatori, comprende il pubblico generale 
+che investe in quantitativi molto minori. 
+7.7 Osservazione dei commercials 
+Il principio che guida l’analisi del Commitments Report è la convinzione che i 
+large commercial hedgers, a differenza dei traders, fanno previsioni corrette. In 
+VOLUME E OPEN INTEREST 139 
+questo caso la scelta migliore è di collocarsi nelle stesse posizioni degli hedgers e in quelle opposte alle due categorie di traders. Per esempio, un segnale rialzista in un bottom di mercato si verificherebbe quando i commercials fossero fortemente net long mentre i grandi e piccoli traders fossero fortemente net short. In un mercato in crescita, il segnale di un possibile massimo si verificherebbe quando i grandi e piccoli traders diventassero fortemente nel long mentre i commercials diventassero 
+fortemente net short. 
+7.8 Posizioni nette dei trader 
+È possibile rappresentare i trend dei tre gruppi di mercato e utilizzarli per indi- viduare gli estremi delle loro posizioni. Uno dei modi è di studiare le posizioni nette dei traders pubblicate in Futures Charts. Questo servizio rappresenta tre linee che, per ogni mercato, mostrano le posizioni nette relative ai tre gruppi su un grafico dei prezzi settimanale che torna indietro di quattro anni. Fornendo dati relativi a quattro anni è facile effettuare un confronto storico. Nick Van Nice, l'editore del servizio commerciale, ricerca le situazioni in cui i commercials si trovano a un estremo e le due categorie di traders all’altro, allo scopo di indivi- duare opportunità di acquisto e di vendita, come mostrato nelle figure 7.13 e 7.14, Anche se non si utilizza il COT Report come input primario nelle decisioni di trading, è comunque utile sorvegliare l'operato dei tre gruppi. 
+Pop S&P 500 - WEEKLY LP: i tutte ennio Di +_—- Haeresi Fulursa Confracî aa of Fridey's Ciose ' LL, < 11200; f CASPAA IDE CTI Prenatni Pretetoe 
+debe È <p + setto do. e ‘1100 : i . ’ t 
+< i 1000 
+* 900 
+i ‘4 700 
+i du g00 
+i TUFO noie Lian 1-500 
+ida . tie - " cerano — 17400 
+Hi L x 
+Posizioni : Comprare Tomprare 
+commerciali f I 400| 
+NY spin 
+dea AS 0 dan IAT 1908 1007 ve ’F63 
+Figura 7.13 Questo grafico settimanale dei futures S&P 500 mostra tre segnali d'acquisto (si vedano le frecce). Le linee lungo il fondo mostrano i commercials (linea continua) in forte posizione net long e i grandi speculatori (linea tratteggiata) in forte posizione nét short a ogni segnale di acquisto.
+
+=== PDF page 79 ===
+140 CAPITOLO 7 
+1 "COPPER - WEEKLY ” To Ci Aoareai Futures Cardrazi as of Friday'a Giova 150) 
+i Ì 140 
+I_{gy {th Î _ 
+ECRA VE I, Log 120 
+Î N gii, 
+referee copoccna feed | K 110 
+Segnali di vendita primari CT 1001 
+LU 
+Alu #0 
+— È 0) 
+CTS Financial Pubilshing : 
+800-3311069 | : TTT i 
+Figura 7.14 Questo grafico settimanale dei futures sul rame mostra tre segnali di vendita indicati dalle 
+frecce. Ogni segnale di vendita evidenzia le posizioni net long relative alle due categorie di speculatori e 
+una posizione net short relativa ai commerciale. Questi ultimi avevano ragione. 
+7.9 l'open interest nelle options 
+L'argomento dell’open interest è stato trattato soprattutto a proposito dei mercati 
+dei futures ma riveste un ruolo importante anche nel trading delle options. Le cifre 
+relative all’open interest vengono pubblicate ogni giorno per le options di vendita e 
+di acquisto sui mercati dei futures, per gli indici di mercato, gli indici industriali e i 
+titoli individuali. Anche se l’open interest sulle options non deve necessariamente 
+essere interpretato come accade per i futures, l'indicazione che fornisce è esatta- 
+mente la stessa, cioè dove si trovano l'interesse e la liquidità. Alcuni trader di 
+options mettono a confronto l’open interest di acquisto (rialzista) con l'open in- 
+terest di vendita (ribassista) a fine di misurare il sentiment del mercato. Altri 
+utilizzano il volume sulle options. 
+7.10 Rapporti acquisto/vendita 
+Le cifre sul volume per i mercati delle options vengono usate essenzialmente come 
+quelle relative ai futures e alle azioni, cioè indicano il grado di pressione di ac- 
+quisto o vendita in un dato mercato. Le cifre sul volume nelle options si suddi- 
+VENITE 
+TI 
+VOLUME E OPEN INTEREST 141 
+vidono in volume di acquisto (rialzista) e volume di vendita (ribassista). Moni- 
+torando il volume di acquisti in opposizione a quello delle vendite è possibile 
+determinare il grado di rialzismo o ribassismo di un mercato. Uno degli utilizzi 
+più importanti dei dati sul volume nel trading delle options è la realizzazione di 
+rapporti tra volume di vendita e volume di acquisto. Quando i traders sulle 
+options sono rialzisti, il volume di acquisto eccede il volume di vendita e il rap- 
+porto vendita/acquisto cala. Un atteggiamento ribassista si riflette in un volume 
+di vendita più forte e in un rapporto vendita/acquisto più elevato. Il rapporto tra 
+volume di vendita e volume di acquisto in genere viene considerato come un 
+indicatore contrario. Un rapporto molto elevato segnala un mercato ipervenduto, 
+mentre un rapporto molto basso è un avvertimento negativo di un mercato i- 
+percomprato. 
+7.11 Unione del sentiment sulle options con le misure tecniche 
+I traders sulle options utilizzano l’open interest e le cifre del rapporto tra volume di 
+acquisto e volume di vendita per determinare gli estremi nel sentiment rialzista o 
+ribassista. Le letture del sentimenti sono più efficaci se combinate a misure tec- 
+niche come il supporto, la resistenza e il trend del mercato sottostante. Poiché il 
+timing riveste un'importanza cruciale nelle options, la maggior parte dei traders 
+sono orientati in una direzione tecnica. 
+7.12 Conclusioni 
+Con questo paragrafo si conclude la trattazione del volume e dell’open interest. 
+L’analisi del volume-è usata in tutti i mercati finanziari: futures, options e azioni. 
+L’open interest viene applicato solo ai futures e alle options; tuttavia, poiché questi 
+vengono scambiati attraverso una molteplicità di veicoli legati al mercato azio- 
+nario, è utile capire il funzionamento dell’open interest in tutte i tre scenari fi- 
+nanziari. Finora sono stati presi in esame soprattutto i grafici a barre giornalieri; 
+nel capitolo successivo verrà ampliato l’orizzonte temporale applicando gli 
+strumenti appresi a grafici settimanali e mensili al fine di eseguire analisi dei trend 
+di lungo periodo.
+
+=== PDF page 80 ===
+8 
+Grafici di lungo periodo 
+Tra i grafici usati dagli analisti tecnici a scopo previsionale e di gestione per i mercati finanziari, il grafico a barre giornaliero è di gran lunga il più utilizzato. Il grafico a barre giornaliero solitamente comprende un periodo relativo a soli sei 0 nove mesi. Di conseguenza, poiché gli operatori analizzano i periodi brevi del mercato, usano i grafici giornalieri a barre come primo strumento d'analisi. Buona parte delle analisi sui futures avviene tramite grafici giornalieri, che, co- me è stato detto, vengono usati sul breve periodo, mentre per /a previsione di pe- riodi più lunghi, si usano i grafici settimanali e mensili. Un'analisi approfondita del mercato dovrebbe includere delle considerazioni sul suo movimento giornaliero, ma in relazione alla struttura del trend di lungo periodo. Per questo motivo è necessario utilizzare anche grafici di lungo periodo. Nel grafico settimanale a barre, ogni barra indica il movimento di prezzo gior» naliero, mentre su quelli settimanali 0 mensili, ogni barra riporta il movimento relativo a una settimana o a un mese. 
+Lo scopo dei grafici settimanali o mensili € quello di comprimere i movimenti dei prezzi per dare la possibilità di studiare periodi di mercato più lunghi. 
+8.1 L’importanza della prospettiva di lungo periodo 
+I grafici di lungo periodo evidenz iano in pr ospettiva la tendenza del mercato chenon é riscontrabile sui soli grafici giornalieri. 
+Nell’introduzione alla filosofia dell’analisi tecnica che si trova nel capitolo 1 di questo volume, si è puntualizzata la possibilità di utilizzare a livello previsionale qualsiasi periodo di tempo, incluso il lungo periodo; inoltre è stata smentita la falsa teoria che vincola gli analisti tecnici all’utilizzo dei grafici di breve periodo e gli analisti fondamentali all’utilizzo di quelli a lungo periodo. Piuttosto, l'utilizzo comparato dei due aiuta a dimostrare quanto siano efficaci € proficui i vari principi dell'analisi tecnica, quali l’analisi della tendenza, i livelli di supporto e di resistenza, le trendlines, la percentuale di ritracciamento e le formazioni grafiche, che si applicano in modo assai vantaggioso all’analisi dei grafici di lungo periodo.
+

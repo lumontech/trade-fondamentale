@@ -1,0 +1,1108 @@
+=== PDF page 28 ===
+36 CAPITOLO 3 
+08/31/82 (*'UDX) Us Dollar Index 
+Grafico a barre mensile 
+| n | Î 
+; Ù | 
+2110 
+I | i ì i li I li 
+| i Nn Ù n pu Met hu (i) | ty HI 
+m INCA — 7 ERA n 82 Li seri arri in o Lina manici ne Tal 
+PI, 
+hh pela 
+ul 
+È dB Bs Be er le ho 0 A 
+Figura 3.10 Grafico a barre mensile dell'indice del dollaro statunitense. Ogni barra rappresenta Ì dati 
+relativi ai prezzi di un mese. L'ulteriore compressione di questi dati consente un'analisi del grafico per 
+periodi fino a vent'anni. 
+dati, ma che da solo non ha un grande valore. Può essere assimilato al pennello e 
+alla tela di un pittore: singolarmente non hanno nessun valore, mentre nelle mani 
+di un artista di talento, possono creare delle immagini meravigliose. Ugualmente, 
+un grafico può diventare uno strumento di grandissima utilità nell’arte di pre 
+visione dell’andamento del mercato, una volta che i sistemi che lo regolano siano 
+stati ben compresi. Nel prossimo capitolo, verranno approfonditi alcuni dei 
+concetti fondamentali del trend, che può considerarsi basilare nell’analisi tecnica. 
+4 
+Concetti fondamentali di trend 
+Il concetto di trend è essenziale nell'analisi tecnica. Tutti gli strumenti utilizzati dagli analisti, quali supporti e livelli di resistenza, formazioni di prezzo, medie mobili, linee di tendenza ecc., hanno come preciso scopo il monitoraggio del trend, per decidere se partecipare al suo movimento. Sovente si sentono espressioni del tipo “investi solo nella direzione del trend”, “non combattere mai il trend” o “il trend è tuo amico”. È importante perciò definire il concetto di trend ed esaminare le sue differenziazioni. 
+In generale il trend rappresenta semplicemente la direzione del mercato, ma ne- cessita di una definizione più precisa con la quale poter lavorare. Prima di tutto i mercati, in generale, non seguono un andamento lineare: i loro movimenti sono caratterizzati da una serie di zig-zag su una serie di onde successive, ovviamente con massimi e minimi. La direzione di questi massimi o minimi costituisce il trend del mercato. 
+Tali massimi o minimi si possono muovere al rialzo, al ribasso, o lateralmente. Un trend rialzista, sarà definito da una serie di massimi e minimi crescenti, mentre un trend ribassista sarà l’esatto contrario: una serie di massimi e minimi decre- scenti; per definire invece un trend a tendenza laterale, si dovranno avere massimi e minimi orizzontali (figure 4.1, 4.2, 4.3 e 4.4). 
+Figura 4.1 Esempio di un trend rialzista. Presenta massimi e minimi crescenti.
+
+=== PDF page 29 ===
+Envirosell Europe 
+38 CAPITOLO 4 
+Figura 4.2 Esempio di un trend ribassista. Presenta massimi e minimi decrescenti. 
+Figura 4.3. Esempio di un trend con movimenti laterali con massimi e minimi orizzontali. Questo tipo di 
+mercato viene solitamente denominato trendiess, cioè “senza tendenza”. 
+4.1 I trend ha tre direzioni 
+Molti tendono a pensare che il mercato possa essere sempre al rialzo o al ribasso. 
+In realtà, il mercato si muove in tre direzioni: al rialzo, al ribasso e lateralmente. 
+Questa distinzione è molto importante, perché per almeno un terzo del tempo, i 
+prezzi si muovono solo lateralmente, dando luogo a formazioni orizzontali. Que- 
+sto tipo di movimento laterale riflette un periodo di equilibriq nei livelli di prezzo, 
+in cui le forze dell'offerta e della domanda si bilanciano. Si dice che un mercato ha 
+un andamento piatto quando è contraddistinto solo da movimenti laterali (si- 
+deways trend), ma viene più comunemente chimato trendless. 
+Molti sistemi o strumenti di analisi tecnica sono per loro stessa natura frend- 
+following, cioè progettati principalmente per mercati che si muovono al rialzo o al 
+ribasso. Risultano perciò molte volte inadeguati per il mercato in fase di movi- 
+CONCETTI FONDAMENTALI DI TREND 39 
+03/17/94 (*BTW) Dow 20 Bonds 02/27/98 
+Grafico lineare giornaliero Trend ribassista 
+Trend 
+rialzista 
+Trend laterale 
+Figura 4.4 Esempio di un trend ribassista che diventa rialzista. La parte sinistra del grafico mostra il 
+trend ribassista; dall'aprile 1996 all'aprile 1997 il mercato si è mosso lateralmente. Durante l'estate del 
+1997 il trend è diventato rialzista. 
+mento laterale o trendless. È proprio in questo periodo di movimento laterale, che 
+l’esperienza degli analisti tecnici subisce grandi frustrazioni e i sistemi di gestione 
+basati su di essa raggiungono grosse perdite. Un sistema di trend-following neces- 
+sita per definizione di un trend in essere da cui alimentarsi. Lo sbaglio in questo 
+caso non fa parte del sistema, ma è del trader che si sforza di applicare un sistema 
+progettato per un mercato in tendenza a un mercato senza nessuna tendenza prin- 
+cipale. 
+Il trader, a questo punto, può adottare tre risoluzioni differenti: comprare (go 
+long), vendere (go short), o semplicemente non fare niente (stand aside). Quando 
+un mercato sta salendo, è opportuno comprare. Quando sta scendendo, meglio 
+vendere, Comunque, quando il mercato si muove lateralmente, la scelta più sag- 
+gia è proprio quella di stare fuori. 
+4.2 T trend ha tre classificazioni 
+Oltre ad avere tre direzioni, il trend viene solitamente suddiviso in altre tre classi- 
+ficazioni: il trend primario, il secondario (o intermedio) e il minore (o di breve 
+periodo). In realtà, esiste un vario numero di trend che interagiscono tra di loro, a 
+partire dai trend di breve periodo, formati da minuti od ore, ai trend di lun- 
+ghissimo periodo che possono durare da cinquanta a cento anni. Molti analisti
+
+=== PDF page 30 ===
+40 CAPITOLO 4 
+tecnici comunque limitano a tre la classificazione dei trend. Esiste del resto una 
+certa ambiguità sui differenti modi di analizzare e di definire ogni trend. 
+Per esempio, la teoria di Dow classifica il major trend (o trend primario) solo 
+per estensioni superiori all’anno. Poiché i gestori di futures operano su archi di 
+tempo inferiori a quelli delle azioni, sarebbe più opportuno abbassare il periodo 
+di tempo del trend primario a oltre i sei mesi per i futures. Dow definisce come 
+trend secondario o intermedio un arco di periodo che va da tre settimane fino a 
+vari mesi, adeguato perciò anche al mercato dei futures. Il trend minore viene 
+solitamente limitato ai periodi inferiori a due o tre settimane. 
+Ogni singolo trend fa parte del successivo trend, di periodo più lungo. Per 
+esempio, il trend secondario sarà una correzione del trend primario. 
+In un trend rialzista di lungo periodo il mercato fa una correzione di un paio di 
+mesi, prima di continuare il suo cammino al rialzo. La correzione secondaria si 
+sviluppa in onde di breve periodo che verranno poi identificate come correzioni. 
+Ciò accade di frequente, in quanto ogni trend fa parte del trend successivo, 
+comprendente a sua volta dei trend minori (figure 4.5 e 4.6). 
+Nella figura 4.5, il trend primario è al rialzo con massimi e minimi crescenti, 
+(punti 1, 2, 3, 4). Ma la fase di correzione (dal punto 2 al punto 3) è contraddi- 
+stinta da tre onde minori (A, 8, C). Al punto C l’analista direbbe che il trend 
+primario è ancora al rialzo ma il trend secondario e quello minore sono al ribasso. 
+Al punto 4 tutti e tre i trend saranno al rialzo’ 
+È molto importante distinguere tra loro i vari gradi di trend ed è impossibile 
+dare una chiara definizione di un trend in atto, se prima non si specifica la fase a 
+cui ci si vuole riferire. 
+Nascono a volte dei fraintendimenti nella definizione di trend, dovuti alla di- 
+versa visione che ne hanno i :raders: per un trader che opera su posizioni di lungo 
+Figura 4.5 Esempio dei tre gradi di trend: primario, secondario e minore. ì punti 1, 2, 3 e 4 mostrano il 
+trend primario, o major trend. L'onda 2-3 rappresenta una correzione secondaria del trend primario. 
+Ogni onda secondaria viene a sua volta divisa in trend minori. Per esempio, le onde secondarie 2-3 
+sono divise in onde minori A-8-C. 
+CONCETTI FONDAMENTALI DI TREND 41 
+12/08/95 (*DWI X) Dow Industrials 14/28/07 
+Tre tipi di trend 
+1 7500 
+Il trend 
+secondario è 
+al ribasso 
+Il trend minore è ribassista 
+Il trend primario è rialzista 
+RITA 
+Figura 4.6 Durante il 1997 il trend primario {superiore a un anno) è al rialzo; a marzo si è verificata una correzione di breve termine, da aprile a novembre (tre mesi) una correzione intermedia che ha dato 
+origine a tre trend di breve periodo. 
+periodo, i movimenti di prezzo di pochi giorni o poche settimane sono solitamen- 
+te insignificanti, ma per un trader che opera quotidianamente, due o tre giorni di contrattazioni al rialzo possono costituire un uptrend primario. Quindi, è estre- 
+mamente importante specificare i differenti gradi di trend e assicurarsi che tutti stiano parlando della stessa cosa. 
+In linea di massima, molti approcci di trend-following sono focalizzati sul trend secondario che può durare parecchi mesi. Il trend minore viene analizza- to principalmente per stabilire il timing di entrata. In un trend rialzista inter- 
+medio, le correzioni di breve periodo saranno utilizzate per iniziare posizioni 
+unghe. 
+4.3 Supporti e resistenze 
+I prezzi si muovono con una serie di massimi e minimi e la direzione di questi massimi o minimi determina la direzione del mercato. È necessario dare a questi massimi o minimi dei nomi appropriati e, allo stesso tempo, introdurre il concetto 
+di supporto e di resistenza. 
+I minimi o “punti di rimbalzo”’, vengono chiamati supporti. Il termine si spiega da solo e indica che il supporto è un livello o un’area del grafico nel quale l’in- teresse dei compratori diviene sufficientemente forte da superare la pressione dei
+
+=== PDF page 31 ===
+42 CAPITOLO 4 
+venditori. Come risultato, il ribasso si ferma e i prezzi ricominciano a salire. Soli- 
+tamente, un livello di supporto viene identificato in anticipo da una prima rea- 
+zione tecnica. Nella figura 4.7, i punti 2 e 4 rappresentano livelli di supporto in un 
+trend rialzista. 
+La resistenza è l'opposto del supporto in quanto rappresenta un livello di prezzo 
+del mercato in cui la pressione di vendita supera quella dei compratori, invertendo 
+il rialzo. Solitamente un livello di resistenza coincide con un precedente massimo. 
+Nella figura 4.7 i punti 1 e 3 sono livelli di resistenza. La figura 4.7 mostra un trend 
+al rialzo, dove i livelli di supporto e di resistenza sono compresi in formazioni 
+grafiche ascendenti. La figura 4.8 rappresenta un trend al ribasso con massimi e 
+minimi discendenti: in questo caso i punti 1 e 3 sono i punti inferiori di supporto del 
+trend e i punti 2 e 4 sono i suoi livelli superiori di resistenza. 
+In un trend rialzista, i livelli di resistenza indicano una pausa dello stesso trend 
+e vengono solitamente superati poi nello stesso punto. In un trend a ribasso i livel- 
+li di supporto non sono sufficienti per fermare permanentemente la discesa, ma 
+sono in grado di arrestarla, almeno temporaneamente. 
+Per far sì che un trend al rialzo continui, è necessario che ogni minimo suc- 
+cessivo (livello di supporto) sia sempre più alto del precedente. Ogni rialzo verso i 
+massimi (resistenza) dovrà superare il livello precedente. Se una correzione di un 
+trend al rialzo raggiunge il minimo precedente, essa potrebbe segnalare la fine del 
+trend rialzista o l’inizio di un trend laterale. Se il livello di supporto dovesse venire 
+violato, si avrà un’inversione di tendenza da rialzista a ribassista. 
+Ogni volta che una precedente resistenza viene testata, il trend rialzista entra in 
+una fase critica. L’incapacità di superare un massimo precedente in un mercato 
+rialzista, o di rialzare un supporto precedente in un trend ribassista, costituisce 
+Resistenza 3 
+Supporto Resistenza 1 
+Supporto 
+2 
+Figura 4.7 | livelli di supporti e di resistenze in un uptrend. | punti 2 e 4 sono livelli di supporto che 
+solitamente sono preceduti da reazioni a ribasso. | punti 1 e 3 sono livelli di resistenza, solitamente 
+contraddistinti da massimi precedenti, 
+SI 
+II 
+A 
+e 
+CONCETTI FONDAMENTALI DI TREND 43 
+Resistenza 
+Supporto Resistenza 
+Supporto 
+Figura 4.8 Supporti e resistenze in un trend ribassista. 
+solitamente il primo segnale che il trend in atto sta per cambiare. I capitoli 5 e 6 
+sulle formazioni dimostrano come i test di questi livelli di supporto e resistenze 
+formino determinate figure sui grafici, che anticipano un’inversione del trend o 
+semplicemente una pausa del movimento in corso. 
+Ma i punti chiave, su cui queste formazioni sono basate, vengono contrasse- 
+gnati dai livelli di supporto e di resistenza. 
+Gli esempi riportati nelle figure dalla 4.9 alla 4.11 sono esempi classici d'in- 
+Resistenza 
+Supporto 
+Figura 4.9 Esempio di un'inversione di trend. L'incapacità dei prezzi al punto 5 di superare il 
+precedente massimo al punto 3, seguito da una rottura a ribasso del precedente minimo al punto 4, 
+rappresenta la fine del trend rialzista. Questo tipo di figura si chiama doppio massimo.
+
+=== PDF page 32 ===
+44 CAPITOLO 4 
+Resistenza 
+4 
+Figura 4.10 Esempio d'inversione di trend da un fondo (bottom reversal pattern). Solitamente il primo 
+segnale di fondo consiste nella capacità dei prezzi di tenere sul punto 5 o fermarsi sui precedente 
+minimo al punto 3. Il fondo viene confermato solo quando il punto 4 viene superato al rialzo. 
+A y | Grafico a barre giornaliero | fi 
+Wu | n : 
+Ì Dj}  reccnea i Ù 
+| i II toc 
+ME TUTARO 
+Figura 4.11 Esempio di bottom reversal. A gennaio 1998 i prezzi hanno ritestato il minimo del 
+supporto di dicembre e sono rimbaizati formando un secondo livello di supporto. La penetrazione al 
+rialzo della resistenza centrale ha segnalato un nuovo trend rialzista. 
+CONCETTI FONDAMENTALI DI TREND 45 
+versione di trend. Nella figura 4.9 si può notare l'incapacità dei prezzi al punto 5 
+di superare il precedente massimo (punto 3), prima di girare al ribasso e violare il precedente minimo al punto 4. 
+Questa inversione di trend potrebbe essere identificata semplicemente tenendo d'occhio i livelli di supporto o di resistenza. Questo tipo di figure d’inversione sa- ranno identificate in seguito come di doppio massimo. 
+4.3.1 Come livelli di supporto e di resistenza si scambiano i ruoli 
+Il supporto è stato definito come un precedente minimo e la resistenza come un precedente massimo: tuttavia non è sempre così. Questo porta a uno degli aspetti più interessanti e meno conosciuti del concetto di supporto e di resistenza e cioè al fatto che essi possano invertire i rispettivi ruoli: quando un livello di supporto o di resistenza viene violato o rotto permanentemente si ha un'inversione di ruoli. In altre parole, un livello di resistenza diventa livello di supporto mentre un supporto di- venta resistenza. Per capire il perché di tutto ciò, può essere utile analizzare la psi- 
+cologia che sta alla base di tali concetti. 
+4.3.2 La psicologia del supporto e della resistenza 
+Innanzitutto è necessario dividere i partecipanti al mercato in tre distinte cate- gorie: chi ha posizioni (i cosidetti /orgs), chi è scoperto e chi è fuori. 
+I /ongs sono quei gestori che hanno già comprato. Gli scopertisti sono coloro che hanno aperto operazioni in vendita, i liquidi (o uncommited) sono tutti quelli fuori dai mercato, perché indecisi sul da fare. 
+Si presupponga che il mercato cominci il rialzo da un’area di supporto dove i prezzi hanno già oscillato. I /ongs (coloro che hanno comprato vicino all’area di supporto) ne sono molto contenti, ma temono di non aver comprato abbastanza e aspettano che il mercato torni ancora indietro vicino all’area di supporto per po- ter aumentare le posizioni. Gli scopertisti cominciano a capire di essere dalla par- te sbagliata del mercato: quanto più il mercato sarà salito dall'area di supporto tanto più essi saranno preoccupati. Essi stanno sperando in un arretramento su quell’area dove sono andati shor!, per comperare esattamente dove hanno iniziato a vendere, 
+1 traders ancora fuori possono essere divisi in altri due gruppi: quello di chi non ha mai avuto posizioni e quello di chi, per una qualsiasi ragione, ha già preceden- temente liquidato nell’area di supporto. Il secondo gruppo è formato ovviamente da chi ha liquidato troppo presto e aspetta un'altra opportunità per poter rien- 
+trare dove ha già venduto. 
+L'ultimo gruppo, gli uncomitted, capisce solo a questo punto che i prezzi si stanno muovendo al rialzo e decide di entrare al rialzo alla successiva opportunità d'acquisto. Tutti e quattro i gruppi decidono di comperare sul successivo arre- tramento in quanto hanno lo stesso “interesse d’investimento” su una stessa area di supporto. Naturalmente se i prezzi dovessero scendere vicino al supporto, il ripetersi di ordini d’acquisto di tutti e quattro i gruppi si materializzerebbe subito con un rialzo.
+
+=== PDF page 33 ===
+46 CAPITOLO 4 
+Gli investimenti che prendono luogo in quest'area diventano ancor più signi- 
+ficativi per l'interesse globale che si è generato. 
+Le contrattazioni che si verificano in una certa area di supporto o di resistenza 
+possono essere catalogate in tre modi: in base alla quantità di tempo passato sulla 
+stessa area, al volume sviluppato e al momento in cui si svolge la contrattazione; 
+quanto più a lungo si estende l'area di supporto o di resistenza tanto più l’area stessa 
+diventa importante. 
+Per esempio, se i prezzi si muovono lateralmente per tre settimane, in un’area di 
+congestione, prima di muoversi al rialzo, quest'area di supporto sarà più im- 
+portante di un’altra dove il consolidamento si è esteso per soli tre giorni. 
+Il volume è un altro mezzo per misurare l'importanza di un supporto e di una resi- 
+stenza. Se un livello di supporto è accompagnato da un volume molto forte, si- 
+gnifica che una grande quantità di azioni ha cambiato mano, e ciò ne aumenterà 
+l’importanza nei confronti di altri supporti accompagnati da volumi minori. I gra- 
+fici point & figure! che misurano solo l’attività intra-day di contrattazioni, sono mol- 
+to utili per identificare i livelli di prezzo dove si svolgono maggiori contrattazioni, e 
+quindi individuare i punti di supporto o di resistenza che funzionano meglio. 
+Un terzo metodo per determinare l'importanza di un'area di supporto o di resi- 
+stenza consiste nel verificare il momento e il tempo in cui si è mantenuta in quella 
+posizione. Poiché si stanno esaminando le reazioni dei traders ai movimenti di 
+mercato e le posizioni che hanno preso o si accingono a prendere, si arriva alla 
+conclusione che più recente è l’attività, tanto è più forte. 
+Si ipotizzi per un momento, che i prezzi anziché muoversi al rialzo si muovano 
+al ribasso. Nell'esempio precedente, mentre i prezzi salivano, una reazione dei 
+partecipanti al mercato causò una controreazione al ribasso, accompagnata però 
+da un aumento degli acquisti (che creò poi un supporto). Comunque, se i prezzi 
+dovessero cominciare a scendere e a oltrepassare l’area del supporto precedente, 
+la reazione diventerebbe l’esatto contrario. Tutti coloro che hanno comperato sul- 
+l’area di supporto, realizzano di avere fatto un errore. Per peggiorare la situazio- 
+ne, i loro broker chiamano in caso di contratti futures per chiedere altro margine. 
+Per l’alta volatilità insita nella natura stessa dei futures, gli operatori non possono 
+mantenere posizioni in perdita per molto tempo. Sono obbligati ad aggiungere 
+margine o a liquidare in perdita le loro posizioni. l 
+Quello che aveva creato inizialmente la prima zona di supporto era costituito 
+da una fonte di acquisti sopra di esse. Ora, tutti i precedenti ordini d'acquisto 
+sopra il supporto si sono tramutati in ordini di vendita sotto di esso. // supporto è 
+diventato così resistenza. 
+Il punto principale è che la precedente area di supporto (dove recentemente 
+venivano messi la maggior parte degli ordini) diventa ora molto più potente pro- 
+prio a causa del fatto che questa zona si sia tramutata in area di resistenza. Tutti i 
+fattori che avevano contribuito a creare il supporto, ossia le tre categorie di par- 
+tecipanti al trading (i rialzisti, i ribassisti e gli indecisi) faranno ora in modo di 
+creare un tetto a ogni rimbalzo. 
+l Il termine è intraducibile in italiano e si riferisce al one point reversal trattato più avanti {N.d.T.]. 
+CONCETTI FONDAMENTALI DI TREND 47 
+La reale efficacia delle figure di supporto e di resistenza, utilizzate nell'analisi 
+tecnica, non si basa certo su-motivi aleatori, ma sul fatto che esse rispecchiano fe- 
+delmente quello che gli investitori fanno nel mercato, permettendo di determinare 
+le loro reazioni a determinati movimenti di prezzo. L'analisi tecnica è infatti lo 
+studio della psicologia umana e in particolare delle reazioni degli operatori al 
+variare delle condizioni di mercato; ma, dato che i mercati finanziari sono spesso 
+frenetici, diventa necessario ricorrere alla terminologia e all'analisi tecnica: esse 
+rappresentano una valida concretizzazione di quei concetti economici che con- 
+corrono alla formazione delle figure sui grafici. Esistono infatti delle ragioni 
+psicologiche per cui i livelli di supporto e resistenza si formano sui grafici, giu- 
+stificando l’uso di questi livelli per prevedere il movimento del mercato. 
+4.3.3 Supporti diventano resistenze e viceversa: livelli di penetrazione 
+Un livello di supporto penetrato di un margine sufficiente, diventa livello di 
+resistenza e viceversa. Le figure dalla 4.12 alla 4.14 sono simili alle figure 4.7 e 4.8 
+ma con una sottigliezza in più. Si noti la correzione della figura 4.12, che, dopo il 
+rialzo, corregge fino al punto 4 e si ferma sopra o sul punto massimo della prece- 
+dente resistenza al punto l. 
+Ma dopo essere stata decisamente penetrata dalla terza onda il massimo della 
+precedente resistenza diventa livello di supporto. Tutte le precedenti vendite vi- 
+cino al massimo della prima onda (che diventa un livello di resistenza) si tra- 
+mutano in acquisti al mercato. La figura 4.13 mostra un ribasso oltre il punto 1 
+(punto che precedentemente fungeva da livello di supporto del mercato), che suc- 
+cessivamente diventa livello di resistenza e funge da tetto al punto 4. 
+Resistenza Supporto 
+Figura 4.12 Inuntrend rialzista, i livelli di resistenza che sono stati rotti sufficientemente diventano poi 
+ivelli di supporto. Dopo che la resistenza al punto 1 è stata superata, diventa poi livello di supporto al 
+punto 4. | precedenti massimi fungono da supporto alle correzioni successive.
+
+=== PDF page 34 ===
+48 CAPITOLO 4 
+Resistenza Lodrino CA CIT TE 
+Supporto 
+Figura 4.13 In un trend ribassista, i livelli di supporti che vengono penetrati diventano livelli di 
+resistenza per i successivi rimbalzi. Il precedente supporto al punto 1 diventa una resistenza al punto 4. 
+2119/96 (*NDX) Nasdaq 100 Index 02/27/98 
+Grafico a barre giornaliero {"° 
+1150 
+[| P1100 
+N 
+PO Ma [ La resistenza precedente sì diventa Losa 
+7 ° nuovo supporto 
+d7 F M A M i Pi h) N |) de i 
+e 
+[ot] 
+Figura 4.14 Esempio di inversione dei ruoli. All'inizio del 1997, una volta rotto il massimo della 
+resistenza, questa è diventata livello di supporto. Un anno dopo, il ribasso del prezzo intermedio ha 
+trovato supporto al precedente massimo di resistenza che era diventato un nuovo supporto. 
+CONCETTI FONDAMENTALI DI TREND 49 
+È stato detto in precedenza che più i prezzi sono stati su un supporto di una re- 
+sistenza, tanto più aumentava l’importanza di quel supporto o di quella resisten- 
+za. Ciò si verifica particolarmente quando i livelli di supporto o di resistenza ven- 
+gono penetrati invertendo il loro ruolo. Per esempio, è stato provato che i livelli 
+di resistenza o di supporto invertono i loro ruoli, solo dopo una penetrazione significativa. Ma cosa s’intende per “significativa”? Determinare se la rottura è stata significativa o no è sempre un criterio soggettivo. Come riferimento, alcuni 
+analisti usano un criterio di penetrazione del 3%, particolarmente per livelli di supporto o di resistenze maggiori. Mentre per livelli di supporto o di resistenza di 
+breve periodo, sarebbe probabilmente sufficiente una rottura dell’1%. In realtà, ogni analista dovrebbe decidere da sé che cosa costituisce una valida rottura. Ma è importante ricordarsi che le aree di supporto o di resistenza invertono i loro ruoli solo quando il mercato si muove in modo così consistente da convincere i suoi partecipanti d'avere commesso un errore. E più questo accade, più essi si con- vincono. 
+4.34 L’importanza dei numeri tondi come supporto o resistenza 
+I numeri tondi tendono generalmente a fermare rialzi o ribassi e i traders prefe- riscono pensare in termini d’importanti numeri tondi, quali il 10, 20, 25, 50, 75, 100 e i multipli di 1000: anche gli obbiettivi di prezzo agiscono di conseguenza. 
+Quindi, questi numeri tondi fungono da livelli psicologici di supporto o di resi- 
+stenza. Un trader, potrà quindi usare questa caratteristica per cominciare a pren- dere i profitti all’avvicinarsi d’importanti numeri tondi. 
+Il mercato dell’oro è un eccellente esempio di questo fenomeno. Nel 1982 il minimo del ribasso continuava a essere sopra i 300 dollari. In seguito l’oro rimbalzò fino a 500 dollari nel primo trimestre del 1983, prima di ridiscendere a 400 dollari. Un ra//y dell'oro nel 1987 si è fermato nuovamente a 500 dollari. Dal 1990 al 1997, l'oro non è riuscito a penetrare i 400 dollari. Il Dow Jones Industrial 
+Average ha evidenziato la tendenza ad arrestarsi su multipli di 1000. 
+Un'altra applicazione di questo principio consiste nell’evitare di piazzare ordini 
+su ovvi numeri tondi. Per esempio, se si sta tentando di comperare su una còrre- 
+zione di breve periodo durante un rialzo, sarebbe il caso di dare gli ordini d’acqui- sto quando si è di poco sopra a importanti numeri tondi. Infatti, siccome gli altri stanno cercando di comperare a prezzi tondi, il mercato potrebbe non arrivare mai a quel livello. I traders che intendono fare scoperto su un rimbalzo, piazze- ranno infatti i loro ordini di vendita appena sotto questi numeri tondi. Risul- 
+terebbe vero l'opposto, quando si piazzano gli stops di protezione su posizioni in 
+essere. In linea generale, bisogna evitare di collocare stops di protezione su ovvie cifre tonde. 
+In altre parole, gli stops di protezione su posizioni lunghe, dovrebbero essere 
+piazzati sotto un numero tondo, mentre per posizioni di scoperto, sopra di essi. I 
+mercati solitamente tendono a rispettare le cifre tonde e in particolare quelle che si sono rivelate di maggiore importanza in periodi recenti: questa peculiarità è di grande aiuto per i traders e per chi ricorre all’analisi tecnica.
+
+=== PDF page 35 ===
+50 CAPITOLO 4 
+4.4 Linee di tendenza o frendlines 
+Una volta chiarito il concetto di supporto e di resistenza, si può analizzare un 
+altro strumento tecnico: la trendline o linea di tendenza (si vedano le figure 4.15, 
+4.16 e 4.17). 
+Le trendlines di fondo rappresentano uno degli strumenti più semplici utilizzati 
+dagli analisti tecnici. Una trendline rialzista è una linea retta tracciata per con- 
+giungere i minimi, come viene raffigurato nella figura 4.15. Una; trendline ri- 
+bassista viene tracciata lungo i massimi, così come rappresentato, nella figura 
+4.16. 
+4.4.1 Tracciare una trendline 
+Per tracciare in modo corretto una trendline è necessaria una certa abilità, così 
+come per ogni altro aspetto dei grafici: bisogna procedere per tentativi, con linee 
+diverse per individuare infine quella più corretta. 
+Talvolta anche una trendline apparentemente corretta deve essere ridisegnata, 
+ma esiste un sistema per individuare quella esatta. 
+Prima di tutto è necessario evidenziare il trend. Ciò significa che per disegnare 
+una trendline rialzista, sono necessari almeno due minimi con il secondo più alto 
+del precedente: del resto è ovvio che si devono sempre toccare due punti per 
+disegnare qualsiasi tipo di linea retta. Nella figura 4.15, per esempio, solo dopo 
+che i prezzi hanno cominciato a muoversi al rialzo dal punto 3, si può pensare che 
+Figura 4.15 Esempio di una trendiine rialzista, che viene tracciata sotto tutti i minimi importanti. Una 
+trendiine provvisoria viene tracciata inizialmente unendo due minimi crescenti successivi (punto 1 e 3), 
+ma necessita di un terzo test per essere confermata come tale. 
+det 
+simbionti CONCETTI FONDAMENTALI DI TREND Sì 
+Figura 4.16 Una trendline ribassista viene disegnata congiungendo massimi decrescenti. Una 
+trendiine provvisoria, comincia su due punti (1 e 3) ma necessita anch'essa di un terzo punto per essere 
+confermata come valida. 
+(12/22/95 ‘(*BI00) Phix Kbw Bank Index 02/27/98 
+al Il i i Grafico a barre settimanale 
+i lui ip 
+br A 2 o SI WITHER 6 tra A FAV) 
+Figura 4.17 Trendline di lungo termine crescente. La linea è stata disegnata verso l'alto e a destra 
+lungo i primi due minimi di reazione (si vedano le frecce). Il terzo minimo all’inizio del 1998 è rimbalzato 
+sulla trendline crescente, mantenendo quindi intatta la tendenza al rialzo.
+
+=== PDF page 36 ===
+52 CAPITOLO 4 
+è stato fatto un minimo, e solo allora potrà essere disegnata una trendline 
+provvisoria tra il punto 1 e il 3. 
+Alcuni analisti, prima di disegnare la rrendline, aspettano che il massimo al 
+punto 2 venga superato come conferma di un trend rialzista. Altri richiedono 
+semplicemente un ritracciamento del 50% dell’onda 2-3, o che i prezzi ritornino 
+sul massimo dell’onda al punto 2. Sebbene i criteri per tracciare una rrendline 
+siano differenti, rimane fermo il punto che un analista tecnico deve essere ra- 
+gionevolmente sicuro che sia stato raggiunto un secondo minimo (reaction low?) 
+dopo aver identificato il primo. Una volta individuati i due minimi ascendenti si 
+potrà disegnare una linea diritta al rialzo verso destra che li congiunga. 
+4.4.2 Le trendlines provvisorie e le definitive 
+Finora le trendlines tracciate sono solo provvisorie, ma per confermarne la vali- 
+dità, le stesse linee dovrebbero essere testate una terza volta, e successivamente 
+rimbalzare da essa. Di conseguenza, nella figura 4.15, il test successivo della 
+trendline rialzista al punto 5 ne conferma la validità. La figura 4.16, rappresenta 
+un trend ribassista ma i ruoli sono gli stessi. Il test soddisfacente della trendline si 
+concretizza al punto 5. Per ricapitolare, sono necessari due punti per disegnare 
+una trendline e un terzo per confermarne la validità. 
+4.4.3. Come usare la trendline 
+Una volta che il terzo punto viene confermato e il trend procede per la sua dire- 
+zione originaria, la trendline diventa utile in molte e varie occasioni. Una delle ca- 
+ratteristiche basilari del trend è la sua continuità. Di conseguenza, una volta che il 
+trend assume una certa inclinazione (o velocità), identificata dalla trendline, so- 
+litamente tende a mantenerla. Quindi la trendline non aiuta solo a determinare le 
+estremità della fase di correzione ma, cosa ancor più importante, segnala even- 
+tuali cambiamenti del trend. ° 
+In un trend rialzista, per esempio, spesso l'inevitabile correzione al ribasso 
+testerà o si avvicinerà alla linea di tendenza rialzista (up trendline). Poiché lo 
+scopo dei futures trader è di comperare correzioni dell’uptrend, la trendline forma 
+una banda di supporto dei prezzi, che può essere usata come area d’acquisto. AI 
+contrario una frendline al ribasso potrà essere usata come area di resistenza per 
+vendere meglio (figure 4.18 e 4.19). 
+Finché la trendline non viene violata può essere usata per determinare le aree 
+d’acquisto o di vendita. Ciò nonostante al punto 9 delle figure 4.18 e 4.19 la rot- 
+tura della trendline segnala un’inversione di trend, per liquidazione di tutte le po- 
+sizioni nella direzione del trend precedente. Molto spesso, /a rottura della trend- 
+line è un avvertimento d’inversione di tendenza. d 
+4.4.4 Come determinare l’importanza di una trendline 
+Vi sono due fattori da considerare per determinare l’importanza di una trendline: 
+il primo è l'ampiezza dell'arco temporale in cui si è protratta, e il secondo è il 
+2 Con il termine reaction low si definisce il minimo da cui parte un rimbalzo significativo. 
+vst 
+& 
+CONCETTI FONDAMENTALI DI TREND 53 
+Figura 4.18. Una volta individuata la trendiine rialzista, si possono usare le successive correzioni a ribasso ‘come aree d'acquisto. | punti 5 e 7 in questo esempio possono essere usati per incrementare o per aprire nuovi contratti /ongs. La rottura della trendiine al punto 9, significa liquidazione di tutte le posizioni lunghe e la possibilità di inizio di un nuovo trend ribassista. 
+numero di volte che è stata testata positivamente. Una trendline che è stata testata 
+in modo soddisfacente per otto volte, per esempio, ha dimostrato la continuità 
+della sua validità e ovviamente sarà da ritenersi più importante rispetto a un’altra 
+testata soltanto tre volte. . 
+Parimenti, una trendline che è stata in forza per nove mesi sarà più importante di 
+una che è rimasta intatta solo per nove settimane o nove giorni. Più potente è la trendline e più ispira fiducia, per cui la sua rottura sarà estremamente significativa. 
+1 
+Figura 4.19 | punti 5 e 7 potrebbero essere usati come aree di vendita. La rottura della trendiine al punto 9 segnala la rottura del trend al rialzo. °
+
+=== PDF page 37 ===
+S4 CAPITOLO 4 
+Figura 4.20 Il metodo corretto di tracciare una trendline dovrebbe comprendere tutto il movimento 
+dei prezzi giornalieri. 
+4.45 La trendline dovrebbe includere tutti i movimenti di prezzo 
+La trendline sui grafici a barre dovrebbe essere tracciata al di sopra o al di sotto 
+dell'intera serie di prezzi giornalieri. Alcuni analisti preferiscono disegnare la 
+trendline congiungendo soltanto i prezzi di chiusura, una procedura per altro non 
+molto usata. 
+Il prezzo di chiusura è davvero il prezzo più importante del giorno, ma rap- 
+presenta, comunque solo un piccolo punto dell'intera attività. Perciò si usa più 
+comunemente una tecnica che inquadri tutta la serie dei prezzi giornalieri (figura 
+4.20). 
+4.4.6 Come comportarsi con le piccole perforazioni della trendline 
+Talvolta si verificano rotture della frendline su base intra-day, successivamente 
+smentite da una chiusura che rientra nelia direzione originaria del trend, creando 
+così alcuni dubbi d’interpretazione. La figura 4.21 mostra come si presenta una 
+situazione di questo tipo: i prezzi che durante il giorno hanno violato la trendline, 
+hanno chiuso immediatamente dopo al rialzo sopra la stessa. Occorre rintracciare 
+la trendline? 
+Sfortunatamente non esistono regole da seguire in situazioni simili; a volte è 
+meglio ignorare le rotture minori, specialmente se i movimenti dì prezzo successivi 
+provano che la linea originale è ancora valida. 
+4.41 Cosa costituisce una valida rottura di una trendline? 
+Una chiusura al di sopra della trendline è certamente più significativa di una 
+rottura intra-day. A volte, persino una rottura in chiusura non è sufficientemente 
+CONCETTI FONDAMENTALI DI TREND 55 
+Figura 4.21 Qualche volta, la rottura intra-day di una trendiine, lascerà dubbi sulla sua validità, s sulla 
+necessità di ridisegnarne una nuova. Un compromesso consiste nell'applicare, vicino alla trendine 
+originale, una nuova linea tratteggiata in attesa di poter determinare quale sia la vera trendline. 
+importante. La maggior parte degli analisti tecnici impiega molto tempo a filtrare 
+i prezzi per valutare le penetrazioni di trendline ed eliminare i falsi segnali. Un 
+esempio di filtro per i prezzi è costituito dal criterio di penetrazione del 3%. 
+Questa tecnica viene usata principalmente sulle rotture delle trendlines di lungo 
+periodo, ma richiede una penetrazione del 3% sul prezzo di chiusura. 
+Se, per esempio, il prezzo dell'oro dovesse rompere il trend primario al rialzo a 
+400 dollari, dovrebbe anche chiudere sotto il 3%, rispetto alla precedente chiusu- 
+ra (in questo caso, i prezzi avrebbero dovuto chiudere di 12 dollari al di sotto del- 
+la trendline, a 388 dollari). Ovviamente, un criterio di penetrazione di 12 dollari, 
+non si presta molto a un trading di breve periodo dove anche una rottura dell'1%, 
+potrebbe forse essere sufficiente. 
+La regola del 3% rappresenta solo un tipo di filtro del prezzo. Gli analisti delle 
+azioni, per esempio, potrebbero prendere in considerazione una penetrazione di 
+punti pieni e ignorare i movimenti frazionali. Se il filtro è troppo piccolo non sarà 
+di molta utilità nel ridurre le perdite, ma se invece è troppo largo, si perderà gran 
+parte del movimento iniziale prima di avere il segnale vero. L'analista tecnico 
+deve individuare quale grado di filtro usare, sempre tenendo conto delle dif- 
+ferenze dei vari mercati. 
+Un’alternativa ai filtri di prezzo (che necessitano della rottura della trendline su 
+determinate variazioni di prezzo) è rappresentato dai filtri di tempo: il più co- 
+mune è quello a due giorni. In altre parole, per avere una valida rottura di una 
+trendline, i prezzi dovranno chiudere al di sotto di essa per i due giorni successivi. 
+AI contrario per rompere una trendline al rialzo, i prezzi dovranno chiudere sotto 
+la stessa per due giorni consecutivi e una rottura di un solo giorno sarà da con- 
+siderarsi di poco conto. Bisogna anche ricordare che la regola dell’1-3 % e quella
+
+=== PDF page 38 ===
+56 CAPITOLO 4 
+dei due giorni si possono applicare sulle rotture d’importanti punti di supporto e 
+di resistenza, ma non a trendlines di lungo periodo. 
+Un altro filtro potrebbe richiedere una chiusura al venerdì oltre un punto di 
+rottura maggiore per garantire un segnale settimanale. 
+4.4.8 Comele trendlines invertono i ruoli 
+Così come accade per livelli di supporto e di resistenza, anche le trendlines, una 
+volta violate, invertono i rispettivi ruoli (figure 4,22, 4.23 e 4.24). In altre parole 
+una trendline rialzista (cioè una linea di supporto) diventerà una linea di resi- 
+stenza una volta rotta al ribasso. 
+Una trendline al ribasso (cioè una linea di resistenza) diventerà sempre di sup- 
+porto, una volta che è stata decisamente rotta. Perciò è sempre una buona idea 
+proiettare tutte le trendlines il più possibile verso destra, anche quando esse sono 
+già state rotte; è sorprendente come le vecchie trendlines fungano spesso da linee 
+di supporto o di resistenza, ma con ruoli invertiti. 
+4.4.9 Implicazioni di misurazione nelle trendlines 
+Le trendlines possono essere usate per determinare obiettivi di prezzo:? difatti 
+alcuni di essi sono derivati dalle formazioni e sono simili a quelli delle rrendlines. 
+Per dirla brevemente, una volta superata la trendline, i prezzi se ne allontaneranno 
+di uno spazio equivalente alla distanza verticale tra la precedente linea e il punto 
+in cui si è verificato il cambiamento del trend. 
+Figura 4.22 Esempio di una linea di supporto rialzista, che diventa resistenza. Solitamente una linea di 
+supporto funziona da barriera di resistenza ai successivi rimbalzi, dopo essere stata rotta al ribasso. 
+? Si parlerà molto diffusamente di obiettivi di prezzo nei capitoli 5 e 6, che riguardano la formazione 
+delle figure. 
+sped CONCETTI FONDAMENTALI DI TREND 57 
+Figura 4.23 Molto spesso una trendiine ribassista diventerà una linea di supporto una volta rotta al 
+rialzo. 
+Quindi, se nel trend principale i prezzi si muovono in un range di 50 dollari 
+(misurati verticalmente), ci si aspetta di guadagnare gli stessi 50 dollari al ribasso, 
+dopo la rottura della trendline. 
+Grafico a barre giornaliero | | Di . 
+Li; n | |". 
+Î i il La trendiine crescent j 
+| | rotta, diventa resistenza On " 
+DI ; ee Dee rr 
+Figura 4.24. Anche le trendiines invertono i ruoli, In questo grafico la trendiine crescente, una volta 
+rotta, è diventata una barriera di resistenza sul successivo tentativo di rimbalzo,
+
+=== PDF page 39 ===
+58 CAPITOLO 4 
+4.5 N principio del ventaglio 
+Il discorso fatto in precedenza porta a un altro uso interessante delle trendlines: il 
+cosiddetto principio del ventaglio, o delle fan lines (figure 4.25, 4.26 e 4.27). Tal 
+volta, dopo la rottura di una trendline rialzista, i prezzi cominciano a scendere 
+lievemente, prima di rimbalzare verso il fondo della vecchia trendline rialzista, che 
+fungerà da resistenza. Nella figura 4.25, i prezzi hanno rimbalzato. ma senza 
+penetrare la linea 1. Si potrà disegnare una seconda trendline (linea 2), che sarà 
+successivamente rotta. Dopo un altro rimbalzo, si potrà ridisegnare una terza 
+linea (linea 3). La rottura della terza trendline è, solitamente, l’indicazione che i 
+prezzi scenderanno ulteriormente. 
+Nella figura 4.26, la rottura della terza linea ribassista (linea 3) dà il segnale di un 
+nuovo trend rialzista. In questi esempi, i punti di rottura delle linee di supporto 
+diventano punti di resistenza e le resistenze diventano linee di supporto. Il principio 
+del ventaglio deve il suo nome proprio al fatto che le trendlines assomigliano in 
+questo caso alle stecche di tale oggetto. Quello che non si deve mai dimenticare è che 
+la rottura della terza linea rappresenta un valido segnale d’inversione di tendenza. 
+4.6 L'importanza del numero tre 
+Il numero tre ha un ruolo di risalto in molti approcci tecnici, come dimostrano 
+anche le tre linee del principio del ventaglio appena esaminato. Parimenti nel 
+mercato primario ribassista o rialzista, vi sono solitamente tre fasi maggiori (così 
+Figura 4.25 Esempio del principio del ventaglio. La rottura della terza trendiine dà li segnale del- 
+l'inversione di tendenza. Le trendlines rotte (1 e 2), diventano sempre linee di resistenza. 
+CONCETTI FONDAMENTALI DI TREND 59 
+Figura 4.26 Il principio del ventaglio su un fondo. La rottura della terza trenoline dà un segnale 
+d'inversione di tendenza al rialzo. Le precedenti rotture delle trendlines (1 e 2) diventano sempre punti di 
+supporto. 
+08/22/97 {*RUT) Russell 2000 Index 02/27/98 
+“Grafico a barre { 
+giornaliero I | 
+È 
+I 
+tell Linee di ventaglio | | 
+pit I 
+Dal Hoy Dec 
+Figura 4.27 Le linee di ventaglio sono disegnate lungo i massimi successivi, come mostrato in questo 
+grafico. La rottura della terza linea indica generalmente l’inizio della tendenza al rialzo.
+
+=== PDF page 40 ===
+60 CAPITOLO 4 
+dicono la teoria di Dow e la teoria delle onde di Elliott); ci sono tre tipi di gaps 
+(buchi che dovranno essere colmati in breve periodo); alcune delle figure d’in- 
+versione più conosciute, come il triplo massimo e il testa e spalle, hanno tre 
+massimi prominenti; ci sono tre tipi di trend (primario, secondario e minore) e tre 
+direzioni di trend (al rialzo, al ribasso e laterale). Tra le figure di continuazione 
+generalmente accettate esistono tre tipi di triangoli: simmetrico, ascendente e 
+discendente; ci sono tre principali fonti d’informazione: prezzo, volume e open 
+interest. Qualunque ne sia la ragione, è innegabile il ruolo prominente che questo 
+numero riveste nel campo dell'analisi tecnica. 
+4.7  L’inclinazione relativa delle trendlines 
+Anche l'inclinazione relativa delle trendlines riveste una notevole rilevanza. Di 
+solito la linea di tendenza rialzista più importante ha un’inclinazione media di 45 
+gradi e perciò alcuni analisti tecnici disegnano semplicemente una linea di 45 gradi 
+sul grafico partendo da un importante massimo o minimo, e la usano poi come 
+trendline primaria. La linea a 45 gradi, che fu una delle tecniche favorite da W.D. 
+Gann, riflette una situazione nella quale i prezzi avanzano o arretrano con una 
+percentuale tale da creare una perfetta sintonia tra il movimento dei prezzi e il 
+tempo. Se una linea di tendenza è troppo ripida (si veda linea 1 nella figura 4.28), 
+Figura 4.28 Le trendlines più attendibili raggiungono un angolo approssimato di 46 gradi (vedi linea 
+2). Se la trendiine è troppo ripida (linea 1), solitamente indica che il suo tasso di sviluppo non durerà 
+molto. Una trendline troppo piatta (linea 3) indica che l'uptrend è troppo debole e probabilrnente 
+sospetto. Molti analisti tecnici usano una linea di 45 gradi che parte da un precedente massimo o 
+minimo, che funge da trendiine primaria. 
+CONCETTI FONDAMENTALI DI TREND 61 
+significa solitamente che i prezzi stanno avanzando troppo rapidamente e che tale rapida ascesa non durerà molto. La rottura di questa trendline troppo inclinata, potrebbe essere seguita da una correzione al ribasso verso la linea di trend di 45 gradi, più equilibrata (linea 2). Se una trendline è troppo piatta (linea 3), potrebbe indicare che l’uptrend è troppo debole e quindi non bisogna dare a tale linea ec- 
+cessiva fiducia, 
+4.7.1  Comesi aggiustano le trendlines 
+Talvolta le frendlines devono essere adattate a un andamento lento del mercato o a un trend in accelerazione (figure 4.29, 4.30 e 4.31). Per esempio, come abbiamo mostrato nel caso precedente, se una linea troppo ripida viene rotta, se ne po- trebbe disegnare una più lenta. Se la frendline originale è troppo piatta si dovrà ridisegnarne un’altra con un angolo più stretto. La figura 4.29 mostra una si- tuazione in cui la rottura della trendline più ripida (linea 1), comporterà la for- mazione lenta (linea 2). Nella figura 4.30, la trendline originale (linea 1) è troppo piatta e dovrà essere seguita da un’altra con maggior inclinazione, Una trendline troppo lontana dai movimenti di prezzo è, ovviamente, di poca utilità per valu- tare il trend. 
+Talvolta, nei trend accelerati, si dovranno disegnare linee di tenderiza con an- goli sempre più ripidi; tuttavia, l’esperienza insegna che, quando sono necessarie delle trendlines ripide, è meglio ricorrere all’uso delle medie mobili, che hanno la stessa utilità di una trendline curvilinea. Uno dei vantaggi dell'uso di differenti tipi di indicatori tecnici consiste nella possibilità di scegliere quello più appropriato a ogni singola situazione. Un trend accelerato rappresenta uno dei casi in cui l’uso della media mobile è molto più utile di una serie di trendlines molto ripide. Poiché esistono vari gradi di trend, sono anche necessarie differenti trendlines per misurarli. Per esempio, in una trendline maggiore o primaria, verranno col- 
+Figura 4,29 Esempio di una trendiine troppo ripida (linea 1). La trendiine rialzista originale è troppo inclinata. Spesso la rottura di una trendiine così ripida, rappresenta semplicemente un aggiustamento verso una più lenta e valida trendiine rialzista (linea 2).
+
+=== PDF page 41 ===
+62 CAPITOLO 4 
+Figura 4.30 Esempio di una trenoline rialzista troppo piatta (linea 1). La linea 1 si dimostra troppo 
+lenta quando l'uptrend accelera. In questo caso, una seconda e più ripida trendiine (linea 2) dovrebbe 
+essere disegnata, partendo dai minimi più vicini del trend rialzista. 
+08/05/94 (*SPX) S&P 500 Stock Index 02/27/98 
+1050 
+Grafico a barre settimanale i 
+Lal, ptt 
+o. Se A 
+Figura 4.31 Un uptrend in accelerazione richiede la rappresentazione di linee più ripide come 
+mostrato In questo grafico. La trendiine più ripida diventa quella più importante. 
+CONCETTI FONDAMENTALI DI TREND 63 
+Figura 4.32 Differenti trendlines vengono usate per definire ì diversi gradi di trend. La linea 1, 
+nell'esempio soprastante, è la trendfine rialzista primaria, che delimita il trend primario. Le linee 2, 3 e 4 
+delineano i trend rialzisti secondari. Infine, la linea 5 delinea un riaizo di breve periodo, appartenente ai 
+trend rialzista secondario. Gli analisti tecnici usano varie trendlines nello stesso grafico. 
+legati i punti minimi del trend, mentre si potrebbe usare una linea più breve e più 
+sensibile per le oscillazioni secondarie e per misurare i movimenti di breve periodo 
+(figura 4.32). 
+4.8. La linea del canale 
+La linea del canale, o più comunemente return line,4 è un’altra utile applicazione 
+della tecnica delle trendlines. Talvolta infatti i prezzi fluttuano tra due linee pa- 
+rallele: la linéa di tendenza principale e la linea del canale. 
+Ovviamente, quando l’analista riconosce l’esistenza di un canale, lo potrà an- 
+che usare, per avere dei buoni profitti. Tracciare le linee del canale è abbastanza 
+semplice. In un uptrend (figura 4.33) bisognerà prima disegnare la linea al rialzo 
+principale collegando i minimi. Dopo di che, si disegnerà una linea tratteggiata, 
+partendo dal primo massimo prominente (punto 2), che risulterà parallela alla 
+linea principale rialzista; entrambe le linee saranno indirizzate verso destra, 
+dando luogo così a un canale. 
+Se il successivo rimbalzo raggiunge e corregge la linea del canale (punto 4), 
+significa che probabilmente il canale è valido. Lo stesso vale per un downtrend 
+(figura 4.34), ovviamente nella direzione opposta. 
+4 Con questo termine si indica la linea di rimbalzo.
+
+=== PDF page 42 ===
+64 CAPITOLO 4 
+Figura 4.33 Esempio di un trend a canale. Una volta disegnata la trendline principale (sotto il punto 1 
+e 3) può essere proiettata la sua linea di canale sopra al primo massimo sul punto 2, la quale è parallela 
+alla trendline principale. 
+Figura 4.34 Un canale in un downtrendi. Il canale è proiettato al ribasso, partendo dal primo minimo al 
+punto 2, parallelamente alla trendiine ribassista, comprendente i punti massimi 1 e 3.1 prezzi 
+solitamente fluttuano in questo canale. 
+Risulta subito evidente il valore di tale situazione: la linea di tendenza principale 
+potrà essere usata per aprire nuove posizioni, mentre quella: del canale potrà 
+essere usata per profitti di breve periodo. I traders più aggressivi potranno anche 
+usare la linea del canale per iniziare posizioni brevi di controtendenza allo scoper- 
+to, nonostante questa tattica possa essere spesso pericolosa e costosa. Come ac- 
+cade anche per le trendlines, il canale diventa tanto più importante e affidabile 
+quanto più rimane intatto nel tempo e quanto più è testato positivamente. 
+CONCETTI FONDAMENTALI DI TREND 65 
+03/31/70 {"DWU) Dow Utilities 02/28/95 
+200 
+Grafico lineare mensile 
+Linee del canale di lungo periodo 
+peo 
+Sira ra Va is e nn _ ea do de de te dr e 
+Figura 4.35 Si osservi la fluttuazione dei prezzi tra i canali paralleli, superiore e inferiore, in un periodo di 25 anni, | massimi del 1987, 1989 e 1993 sono sulla linea del canale superiore. Il minimo del 1994 è rimbalzato sulla trendiine inferiore. 
+La rottura della trendline maggiore indica un’importante inversione di tendenza, 
+ma la rottura di una linea di un canale ascendente indica esattamente l'opposto, 
+cioè segnala un’accelerazione del trend esistente. Per alcuni traders, la scomparsa della linea superiore rialzista, costituisce una valida ragione per aumentare le 
+posizioni /ong. 
+La tecnica dei canali può anche risultare utile per evidenziare un prezzo che è 
+incapace di raggiungere la linea del canale, fatto che anticipa solitamente un 
+mercato debole. Nella figura 4.36, l'incapacità dei prezzi di raggiungere il top del canale (punto 5) dà un avvertimento anticipato che la tendenza sta per cambiare, 
+aumentando le possibilità di rottura della trendline principale rialzista. 
+Generalmente, il fatto che i prezzi, che si muovono all’interno di un canale, non 
+riescano a raggiungerne una banda, può anticipare una inversione di tendenza e aumentare le probabilità che anche l'altra banda del canale venga rotta. 
+Il canale può anche essere usato per aggiustare la linea di tendenza principale 
+(figure 4.37 e 4.38); se i prezzi si muovono al di sopra della linea di un canale che 
+sia proiettato al rialzo in modo consistente, solitamente è in atto un trend molto 
+forte. Alcuni analisti subito dopo disegnano, partendo dall’ultima correzione, 
+un'altra trendline principale rialzista più ripida, parallela alla nuova linea del 
+canale (come dimostra la figura 4.37) e spesso questa nuova linea di supporto, più 
+ripida, funziona meglio della vecchia linea più piatta. Similmente, se un trend al rialzo non riesce a raggiungere la parte superiore e terminale del canale, si può
+
+=== PDF page 43 ===
+66 CAPITOLO 4 
+Figura 4.36 L'incapacità di raggiungere la linea superiore del canale rappresenta solitamente un 
+primo rischio di rottura delia trendiine inferiore, Si noti l'incapacità di raggiungere ia linea superiore al 
+punto 5, seguita dalla rottura della trendline principale rialzista al punto 6. 
+Figura 4.37 La linea superiore del canale viene rotta. Quando questo accade (come nel punto 5) molti 
+analisti ridisegneranno la trendiine principale rialzista, parallelamente alla nuova linea del canale più alto. 
+In altre parole, la linea 4-6 è disegnata parallelamente alla linea 3-5. Poiché questo uptrend è în 
+accelerazione, è probabile che anche il trend principale di base acceleri a sua volta. 
+CONCETTI FONDAMENTALI DI TREND 67 
+Figura 4.38 | prezzi non riescono a raggiungere la linea superiore del canale. In questo caso e 
+quando una prima linea ribassista è stata disegnata, congiungendo i due massimi decrescenti (linea 3- 
+5), si può disegnare la linea inferiore del canale partendo dal minimo al punto 4, parallelamente alla linea 
+3-5. La linea inferiore del canale, indica solitamente il probabile punto iniziale di supporto. 
+ridisegnare, sotto l’ultimo minimo, una nuova linea di supporto, parallela alla 
+nuova linea di resistenza, sopra i due massimi precedenti (figura 4.38). 
+Le linee di canale possono anche diventare un sistema di misurazione: infatti, 
+una volta che un canale è stato rotto, i prezzi tendono a percorrere una distanza 
+uguale alla profondità del canale; perciò non rimane che misurare la profondità del 
+canale e proiettarla dal punto in cui la trendline è stata rotta.’ 
+Tuttavia, la linea principale di trend è di gran lunga più importante e più affi- 
+dabile, dal momento che la linea del canale altro non è che un uso secondario del- 
+la tecnica delle trendlines, nonostante funzioni abbastanza bene e possa essere in- 
+clusa a pieno titolo tra gli strumenti a disposizione degli analisti tecnici. 
+4.9 Percentuale di ritracciamento 
+In tutti gli esempi precedenti di uptrend e downtrend, si sarà senz'altro notato che, 
+dopo un particolare movimento del mercato, i prezzi ritornano in parte nel trend 
+precedente, prima di ripartire nella direzione originale. Questi movimenti di cor- 
+rezione tendono a rispettare dei parametri percentuali fissi e l’applicazione più 
+conosciuta di questo fenomeno è la tecnica del ritracciamento (0 retracement) del 
+50%.
+
+=== PDF page 44 ===
+68 CAPITOLO 4 
+Per esempio, in un mercato con tendenza rialzista, su un movimento di prezzi da 
+100 a 200, molto spesso la conseguente correzione arretrerà di circa la metà del 
+movimento precedente, portandosi verso 150, prima che il movimento rialzista ri- 
+prenda. Questa è una caratteristica del mercato molto ben conosciuta che si mani- 
+festa frequentemente. Ma queste percentuali di ritracciamento possono essere ap- 
+plicate a qualsiasi tipo di trend, primario, secondario e minore. Oltre al 50% di 
+ritracciamento vi sono altre percentuali minime e massime di 1/3 e 2/3, largamente 
+conosciute. In altre parole, l'andamento dei prezzi, può essere diviso in terzi. 
+Solitamente il ritracciamento minimo è di circa il 33% e il massimo del 66% 
+circa. Questo significa che nella correzione di un trend molto forte, il mercato 
+arretra solitamente perlomeno di un terzo del precedente movimento, informa- 
+zione che può risultare molto utile per molteplici ragioni. 
+Se un trader sta cercando un’area d’acquisto, potrà calcolare sul grafico la zona 
+tra il 33% e il 50%, e trovarvi l'indicazione per una buona opportunità d’acquisto 
+(figure 4.39 e 4.40). 
+La massima percentuale di ritracciamento è del 66%, che diventa perciò una 
+speciale area critica. Se il trend precedente deve essere mantenuto, ia correzione 
+deve fermarsi a 2/3: quindi quest'area presenterà un rischio relativamente basso 
+per comperare in un trend rialzista 0, viceversa, per vendere su di un ribasso. 
+Se i prezzi dovessero scendere al di sotto dei 2/3 di ritracciamento, si avrà 
+piuttosto un'inversione di tendenza e il movimento sarà solitamente equivalente 
+al 100% del trend precedente. 
+200 
+190 
+180 
+170 
+160 Ain niNnRY Avtezterizina \qlly/ niesiainlziadaeziatezio asti 
+150 50% di ritracciamento 
+140 
+130 ° 66% di ritracciamento 
+120 
+110 
+100 
+Figura 4.39 | prezzi solitamente arretrano di circa la metà dei movimento precedente, prima di 
+ritornare verso la direzione originale. Questo esempio mostra un ritracciamento del 50%. Il 
+ritracciamento minimo è un terzo e il massimo, due terzi del movimento precedente. 
+CONCETTI FONDAMENTALI DI TREND 69 
+03/12/97 {*DWI X) Dow Industrials 02/09/98 
+Grafico a barre giornaliero fi 
+Ae L'ALA MI i 38% j Î me 
+Ni 7 Iole | 50% A 
+17200 
+ul? = . \ % di ritracciamento [9000 
+1 leeco 
+‘ 6400 
+pY n fi n DI E a) ra rina 
+Figura 4.40 Letre linse orizzontali segnano i livelli di ritracciamento del 39%, 50% e 62% misurati dal minimo di aprile al massimo di agosto 1997. Il primo ribasso è caduto sulla linea del 38%, Il secondo su quella del 62% e il terzo in prossimità delia linea del 50%. Il maggior numero di correzioni trovano supporto nelle zone di ritracciamento comprese tra il 38% e il 50%. Le linee del 38% e 62% sono ritracciamenti di Fibonacci molto utilizzati dagli analisti tecnici. 
+Le tre percentuali di ritracciamento menzionate, 50%, 33% e 66%, sono attinte 
+dalla teoria originale di Dow. Quando verrà esaminata la teoria delle onde di Elliott e i rapporti di Fibonacci, si incontreranno differenti metodi di approccio che uti- lizzano percentuali di ritracciamento del 33% e 62%. Tuttavia è preferibile ricorrere a entrambe le percentuali minime di ritracciamento, partendo dal 33% fino al 38 %, 
+con una zona massima dal 62% al 66%. Alcuni analisti tecnici arrotondano questi numeri fino ad arrivare a una zona di ritracciamento che va dal 40% al 60%. Chi segue la teoria di W.D. Gann misura la struttura di un trend in ottavi, 1/8, 2/8, 3/8, 4/8, 5/8, 6/8, 7/8, 8/8. Ciò nonostante, perfino Gann conferisce una speciale importanza ai 3/8 (38%), 4/8 (50%) e 5/8 (62%), come numeri di ri- tracciamento, ritenendoli molto importanti per dividere il trend in terzi, 1/3 
+(33%) e 2/3 (66%). 
+4.10 Speed resistance lines 
+Parlando di terzi, si arriva a un'altra tecnica che combina le trendlines con la 
+percentuale di ritracciamento: la tecnica delle speedlines. Fu sviluppata da Edson 
+Gould e si basa sull'idea di dividere il trend in terzi per mezzo di una linea
+
+=== PDF page 45 ===
+70 CAPITOLO 4 
+(2) 2/3 Speedline 
+(3) 1/9 Speedline 
+(03) 
+Figura 4.41 Esempio di una speed resistance line in un uptrend. La distanza verticale dal massimo al 
+principio del trend è divisa in terzi. Due trendiines sono state disegnate partendo dal'punto 1 verso Ì 
+punti 2 e 3. La linea superiore è l'equivalente dei 2/3 di speed/ine, mentre l'inferiore a 1/3. Le linee 
+dovrebbero fungere da supporto durante le correzioni del mercato. Una volta rotte, diventano linee di 
+resistenza per i rimbalzi. Qualche volta, queste speealines attraversano i movimenti di prezzo. 
+verticale, divisa a sua volta in terzi. Viene quindi tracciata una trendline, dal- 
+l’inizio del trend fino ai due punti contrassegnati sulla linea verticale che rap- 
+presentano 1/3 e 2/3. Per costruire una trendline rialzista bisogna trovare il punto 
+più alto del trend (figura 4.41). Da questo massimo scende una linea verticale 
+verso il fondo dove îl trend è cominciato. In un trend ribassista bisognerà sem- 
+plicemente invertire il processo. 
+Si misura la distanza verticale, partendo dal punto più basso del downtrend fino 
+ad arrivare all’inizio del trend, disegnando due linee partendo dall'inizio del 
+trend, attraversando i punti che sono a 1/3 e a 2/3 sulla linea verticale (figure 4.41 
+e 4.42). c 
+Ogni volta che si verifica un nuovo massimo in un uptrend, o un nuovo minimo 
+in un downtrend, sarà necessario ridisegnare una nuova serie di linee. Poiché le 
+speedlines vengono disegnate partendo dall'inizio del trend fino al livello di 1/3 e 
+(3) 1/3 Speedline 
+(2) 2/3 Speedlin 
+Figura 4.42 Speedlines in un downtrend. 
+CONCETTI FONDAMENTALI DI TREND 71 
+2/3, esse possono talvolta attraversare il grafico. In questo caso le trendlines non 
+sono disegnate sotto un minimo o sopra un massimo, ma attraversano il movi- 
+mento dei prezzi. 
+Se un trend rialzista è in fase di autocorrezione, la correzione al ribasso si 
+fermerà solitamente sulla speedline superiore (speedline dei 2/3). Altrimenti, ar- 
+riverà fino alla speedline più bassa (la speedline 1/3) e se anche questa venisse 
+rotta, i prezzi continueranno comunque a scendere fino all’inizio del trend pre- 
+cedente. In un downtrend, la rottura al rialzo della linea più bassa indica un 
+probabile rimbalzo fino alla linea più alta e se anche la linea dei 2/3 venisse rotta, 
+è probabile un rimbalzo fino all’inizio del trend. 
+Come tutte le trendlines, anche le speedlines invertono i propri ruoli una volta rot- 
+te. Di conseguenza, durante la correzione di un trend rialzista, se la linea superiore 
+(2/3) dovesse venire rotta al ribasso e i prezzi dovessero scendere fino alla linea 
+1/3, per poi rimbalzare, la linea più alta diventerà una barriera di resistenza. Solo 
+se la linea superiore dovesse essere superata, si avrebbe un segnale che prelude a 
+un retest dei massimi assoluti. Lo stesso principio vale per il downtrend. 
+4.11 Le linee a ventaglio di Gann e Fibonacci 
+I programmi di analisi tecnica consentono anche la rappresentazione delle linee 
+a ventaglio di Gann e di Fibonacci. Le linee a ventaglio di Fibonacci sono 
+disegnate ad angoli del 38% e 62% ed è questo l’unico punto di differenza 
+rispetto alle speedlines. L’origine di questi numeri verrà spiegata nel capitolo 13 
+relativo alla teoria delie onde di Elliott. Le linee di Gann, che prendono il nome 
+da W.D. Gann, leggendario trader di merci, sono trendlines disegnate partendo 
+dai massimi o dai minimi con specifiche angolature geometriche. La più im- 
+portante linea di Gann viene disegnata con un angolo di 45 gradi partendo da 
+un massimo o da un minimo. Durante un uptrend è possibile disegnare linee più 
+ripide con angolatura a 63?/4 e a 75 gradi e linee più piane a 26!/4 e 15 gradi. È 
+possibile disegnare fino a nove diverse linee di Gann. 
+L’uso delle linee di Gann e Fibonacci è uguale a quello delle speedlines poiché 
+forniscono supporto durante le correzioni al ribasso. Quando una linea viene 
+rotta, i prezzi di solito cadono sulla linea inferiore immediatamente successiva. Le 
+linee di Gann sono per certi versi discutibili; anche quando una di esse funziona, 
+non si sa mai in anticipo di quale linea si tratti. Alcuni analisti tecnici tuttavia 
+mettono totalmente in discussione la validità della rappresentazione di trendlines 
+geometriche. 
+4.12 Le trendlines interne 
+Esiste una variazione delle trendlines che non partono da massimi o minimi e- 
+stremi. Al contrario, le trendlines interne vengono disegnate sull'azione dei prezzi 
+e mettono in relazione il maggior numero possibile di massimi e minimi. Alcuni
+
+=== PDF page 46 ===
+72 CAPITOLO 4 
+8/10/95 (*DWI X) Dow Industrials 07/31/97 
+Grafico a barre giornaliero 
+7500 
+Esempio di trendline intera 
+Figura 4.43 Le trendiines interne vengono disegnate attraverso l'azione dei prezzi mettendo in 
+relazione il maggior numero possibile di massimi e minimi. La trendline intema rappresentata in questo 
+grafico lungo i massimi di inizio 1996 fornisce supporto un anno dopo, durante la primavera del 1997. 
+analisti tecnici sviluppano una buona capacità di valutazione di questo tipo di 
+trendlines, considerandole utili. La difficoltà connessa all’uso delle trendlines in- 
+terne è data dalla loro rappresentazione molto soggettiva laddove le regole per la 
+rappresentazione di frendlines più tradizionali, dai massimi e minimi estremi, sono 
+più precise (figura 4.43). 
+4.13 Reversal day 
+Il reversal day è una formazione particolare che può assumere parecchi nomi: il 
+top reversal day, il bottom reversal day, il buying o selling climax, il key reversal 
+day. Di per sé non ha un’importanza primaria, ma nel contesto di altre forma- 
+zioni tecniche, può diventare a volte significativo. Innanzitutto bisogna definire 
+cosa sia un reversal day; esso si può formare sia su un top sia, su un bottom e la 
+definizione generalmente accettata di top reversa/ day è quella di un nuovo 
+massimo in un uptrend, seguito da una chiusura inferiore nello stesso giorno. In 
+altre parole, i prezzi formano un nuovo massimo grazie a un movimento al rialzo 
+verificatosi durante il giorno (solitamente vicino all’apertura, o in apertura), poi si 
+indeboliscono, chiudendo con una chiusura inferiore a quella del giorno prece- 
+dente. Un bottom reversal day è un nuovo minimo fatto durante il giorno, seguito 
+CONCETTI FONDAMENTALI DI TREND 73 
+È ali 
+. lt 2 Luthi 
+Figura 4.44 a. - Esempio di un top reversal day. Più il volume è alto sul reversal day e tanto più ampia è l'escursione dei prezzi, più è elevata la sua importanza. b.- Esempio di un bottom reversal day. Se il volume è particolarmente forte, i bottom reversals vengono spesso denominati selling climaxes. 
+x 
+da una chiusura più alta. L’ampliarsi dei movimenti dei prezzi e l'aumento del 
+volume danno un segnale molto significativo di una possibile inversione a breve 
+periodo del trend, La figura 4.44 mostra entrambi i casi in un dar chart. Si può notare il forte volume nel reversa/ day e il fatto che entrambi i massimi e i minimi 
+del reversal, superano il range del giorno precedente, formando un outside day 5 
+Nonostante un outside day non sia una caratteristica peculiare del reversa! day, 
+esso ne amplifica l’importanza (figura 4.45). 
+Il bottom reversal day viene qualche volta definito come selling climax, che è 
+solitamente un drammatico punto d’inversione, sul fondo di un mercato ri- 
+bassista, dove tutti generalmente liquidano con forte volume. La conseguente assenza di pressione di vendita crea un vuoto sul mercato, che i prezzi successi- vamente riempiranno. Il selling climax è uno degli esempi più forti di reversal day 
+e sebbene non possa segnalare la fine di un mercato ribassista, tuttavia solita- mente indica che si è verificato un importante minimo. 
+4.13.1 Weekly e monthly reversals 
+Questo tipo di figura del bar chart, settimanale o mensile riveste maggiore impor- 
+tanza. In un grafico settimanale ogni barretta rappresenta l’intero movimento della 
+settimana, con la chiusura registrata del venerdi, Un upside weekly reversal si mani--' 
+festerà quando il mercato è in ribasso per tutta la settimana e realizza un nuovo 
+minimo, ma la chiusura del venerdì è superiore a quella del venerdì precedente. 
+3 L'outside day si verifica quando il massimo supera il massimo precedente e il minimo oltrepassa il 
+minimo precedente.
+
+=== PDF page 47 ===
+74 CAPITOLO 4 
+D5/29/97 (*DWI X) Dow Industrials 02/25/98 
+Grafico a barre giornaliero 
+LI 
+hi | Ù nno 
+Ru da 
+Po tO yi N » — 
+| 
+. 
+Î | me Reversal day rialzista (7200 
+Volume 1600004 
+Forte volume 
+Figura 4.45 ll movimento del grafico del 28 ottobre 1997 fu un esempio classico di upside reversal 
+day o selling climax. | prezzi aprirono in forte ribasso e chiusero in forte rialzo. La barra del volume di 
+questo giorno, insolitamente forte, ha aumentato l’importanza. Due upside reversa! days meno 
+drammatici (si vedano le frecce) hanno anche segnato i minimi dei prezzi. 
+I weekly reversals hanno molta più importanza dei reversals giornalieri per ovvie 
+ragioni e vengono studiati scrupolosamente dagli analisti come segnali d'inver- 
+sione di tendenza. Per lo stesso principio, i monthly reversals sono ancora più 
+importanti. 
+4.14 Price gaps 
+I price gaps sono semplicemente dei “buchi” nel bar chart, dei prezzi su cui non si 
+è verificato nessuno scambio. 
+In un trend rialzista, per esempio, i prezzi aprono sopra il massimo del giorno 
+precedente, lasciando sul grafico un buco aperto o uno spazio vuoto, che non 
+viene colmato durante il giorno. In un trend ribassista il massimo della giornata 
+sarà sotto il minimo del giorno precedente. Gli upside gaps mostrano la forza del 
+mercato, mentre i downside gaps sono solitamente segni di debolezza. Ì gaps pos- 
+sono apparire sui grafici di lungo periodo, settimanali o mensili e, quando questo 
+accade, sono solitamente molto importanti. Tuttavia compaiono più frequente- 
+mente sui bar charts giornalieri. 
+Esistono vari luoghi comuni relativi all’interpretazione dei gaps: uno dei più 
+CONCETTI FONDAMENTALI DI TREND 75 
+noti dice che i gaps devono venire sempre colmati, ma non è sempre vero e per 
+vari motivi. Certi gaps sono importanti, mentre altri no. É possibile però rico- 
+noscerne le differenti implicazioni, che dipendono dal tipo e dal posto specifico in 
+cui si sono verificati. 
+4.14.1 Tre tipi di gaps 
+Esistono tre tipi di gaps: il breakaway, il runaway (o measuring) e infine l’ex- 
+haustion gaps. 
+Il breakaway gap si manifesta solitamente sul completamento d’importanti 
+formazioni e in genere segnala l’inizio di un significativo movimento di mer- 
+cato. Dopo che il mercato ha completato una figura base, tipo un head and 
+shoulders bottom, si verifica spesso la rottura della neckline con un breakaway 
+ia reversal top 
+—_-_- - _—_ — n n___ 
+Ù Ì Breakaway gap — 
+pl | 
+Figura 4.46 | tre tipi di gaps. Il breakaway gap segnala il completamento di una figura di base. Il 
+runaway, si manifesta a metà del cammino (motivo per cui viene chiamato anche measuring gap). Un 
+exhaustion gap nella parte alta rialzista, seguito da un breakaway gap a ribasso, forma un island reversal 
+top. Il breakaway e il runaway gaps non sono stati colmati nella parte rialzista, cosa che accade di 
+sovente. 
+
+=== PDF page 48 ===
+76 CAPITOLO 4 
+gap. Le rotture maggiori delle formazioni di topping o di area di congestione, 
+generano un terreno fertile per questi tipi di gap, che però si possono verificare 
+anche sulla rottura di una trendline, un importante segnale di un’inversione di 
+tendenza. 
+Solitamente sono accompagnati da volumi molto forti e spesso non vengono 
+colmati. I prezzi, potrebbero ritornare a testare la parte finale superiore del gap 
+(nel caso di una rottura a rialzo) o chiudere soltanto una parte del gap. Come 
+sempre, più forte è il volume che lo accompagna, più è rara la possibilità che ven- 
+ga colmato. Gli upside gaps fungono generalmente da aree di supporto per le 
+successive correzioni del mercato. 
+È importante che durante un uptrend i prezzi non cadano al di sotto del gap. In 
+tutti i casi una chiusura al di sotto di un upward gap è segno di debolezza (si 
+vedano le figure 4.46 e 4.47). l 
+Il runaway 0 measuring gap si viene a formare dopo che un movimento è stato 
+in atto per un certo periodo; talvolta, a metà della formazione, i prezzi tendono a 
+formare un gap che inverte una situazione in cui il mercato fletteva con volume 
+moderato. In un upirend è un segno di mercato molto forte, mentre in un 
+downtrend indica debolezza. I runaway gaps fungono da supporto per successive 
+correzioni del mercato e solitamente non vengono colmati. Come per il caso del 
+05/29/97 (AMAT) Applied Matis Inc 02/24/98 
+Grafico a barre | 
+giornaliero | | 
+N A ui ! i | _ aveste Gap 
+ca) 
+entita) 
+a) I fi I | | ie 
+\ bi | 
+DÀ pl ” Exhaustion Gap 
+n) A e) La "MONO — EEN RT — I 
+È 
+i | 
+ji | 
+My 
+Figura 4.47 li primo riquadro mostra un exhaustion gap in prossimità della fine di un rally. | prezzi che 
+cadono al di sotto di quel gap hanno segnalato un top. Il secondo riquadro è un measuring gap a circa 
+metà percorso del downtrend. Il terzo riquadro rappresenta un altro exhaustion gap al fondo. Il 
+movimento di ritomo al di sopra di quel gap ha segnalato prezzi più alti. 
+nta 
+CONCETTI FONDAMENTALI DI TREND 71 
+breakaway, un movimento al di sotto del runaway gap è un segnale negativo 
+durante un rialzo. 
+Questo tipo di gap viene anche chiamato measuring gap perché si manifesta 
+solitamente circa a metà del trend. Misurando la distanza a partire dal primo o da 
+una rottura, si potrà determinare la probabile futura estensione del trend, rad- 
+doppiando il percorso già fatto. 
+Un ultimo tipo di gap, l'exhaustion gap si verifica alla fine di un movimento del 
+mercato. Dopo che tutti gli obiettivi di prezzo sono stati raggiunti e gli altri due 
+tipi di gaps sono stati identificati (breakaway e runaway), l'analista comincerà ad 
+aspettare il verificarsi dell'exhaustion gap. Vicino alla fine di un uptrend i prezzi 
+tendono ad accelerare con un ultimo guizzo; tuttavia il forte balzo tende a e- 
+saurirsi e i prezzi correggono per un paio di giorni 0 poco più. Quando i prezzi 
+chiudono al di sotto dell’ultimo gap, si verifica la vera fine del rialzo e.appare l’exhaustion gap. Questo è un classico esempio in cui il colmarsi di un gap in un 
+uptrend, implica un segnale molto bearish. 
+4.142. L’island reversal 
+Qualche volta, dopo che si è formato un exhaustion gap al rialzo, i prezzi si 
+muovono all’interno di un range per un paio di giorni o settimane, prima di 
+formare un altro gap a ribasso. L'attività dei prezzi rimane come sospesa, quasi 
+18/25/97 (PDG) Placer Dome Inc 12/12/97 
+Grafico a barre giornaliero | 20 
+I 
+Gap rialzista [ln Ù Gap ribassista see 
+I, n | 
+I, I | I 1002 
+iI I | | Î 4 
+Island reversal top | i ue 
+1 1192 
+DN I See Sa Noy, VAL 159 AT 
+EI 
+al f 
+Figura 4.48 | due gap su questo grafico giornaliero formano un massimo di island reversal. Il primo 
+riquadro mostra un gap al rialzo dopo un rally. Il secondo riquadro mostra un gap al ribasso tre 
+settimane dopo. Questa combinazione di gaps di solito segnala un massimo Importante.
+
+=== PDF page 49 ===
+78 CAPITOLO 4 
+come un'isola circondata dall'acqua. Un exhaustion gap al rialzo, seguito da un 
+breakaway gap al ribasso, completa la formazione di island reversal, e solitamente 
+indica un'inversione di trend di una certa consistenza. Naturalmente, l’impor- 
+tanza della inversione di tendenza dipende principalmente dalla struttura generale 
+del trend (figura 4.48). 
+4.15 Conclusioni 
+Questo capitolo introduce vari metodi tecnici che si possono considerare basilari 
+nell'analisi tecnica: supporto e resistenza, trendlines e canali, percentuali di si 
+tracciamento, speed resistance lines, reversal days e gaps. Ogni approccio tecnico 
+trattato nei successivi capitoli utilizzerà questi concetti in vari contesti. 
+SR 
+o 
+5 
+Le principali formazioni di inversione 
+Nei capitoli precedenti è stata illustrata la teoria di Dow, che costituisce. da anni 
+uno dei metodi più usati per l’interpretazione del trend. In seguito sono stati 
+evidenziati gli elementi principali del trend, quali supporti, resistenze e irendlines 
+ed è stato anche introdotto l’uso del volume e dell'open interest. Il prossimo passo 
+consisterà dunque nello studio delle formazioni basate direttamente sui concetti 
+espressi in precedenza. 
+In particolare, nel capitolo 4, si è definito il trend come una serie di massimi e 
+minimi ascendenti o discendenti, che danno luogo a trend rialzisti, ribassisti o 
+formati da movimenti laterali. Proprio questi movimenti laterali saranno l’argo- 
+mento dei prossimi due capitoli. Lo scopo principale di questa analisi consisterà 
+nel riconoscere i cambiamenti importanti di trend, intervenuti dopo un certo perio- 
+do di transizione. Il problema è che queste fasi non sempre segnalano inversioni di 
+trend ma, a volte, indicano una pausa o un consolidamento del trend in essere. 
+5.1 Formazioni grafiche dei prezzi 
+Lo studio di questi periodi di transizione e le loro implicazioni previsionali por- 
+tano direttamente al problema delle formazioni grafiche. Queste figure o for- 
+mazioni possono essere classificate in differenti categorie, le quali assumono 
+spesso un valore previsionale. 
+5.2 Due tipi di formazioni: d’inversione e di continuazione 
+Esistono due categorie di formazioni: d’inversione e di continuazione. Le for- 
+mazioni d’inversione implicano un'importante inversione del trend, mentre quelle 
+di continuazione rappresentano una semplice pausa, che può essere utilizzata per 
+correggere una condizione d'ipercomprato o d’ipervenduto di breve periodo. La 
+difficoltà consiste proprio nel distinguere questi due tipi di figure nel più breve 
+tempo possibile, quando la formazione è ancora in atto. 
+In questo capitolo verranno esaminate le cinque figure d’inversione più comuni: 
+il “testa e spalle”, il triplo massimo o minimo, il doppio massimo o minimo, il
+
+=== PDF page 50 ===
+80 CAPITOLO 5 
+fondo a “V”' e il fondo allargato “a vasca”. Sarà esaminata la figura in se stessa, 
+come si forma sul grafico e come può essere identificata; si affronteranno anche 
+alcune importanti considerazioni quali le relazioni con il volume e le relative 
+implicazioni. 
+Il volume riveste un importante ruolo di conferma per tutte le figure. Lo studio 
+del volume, accompagnato all’analisi delle formazioni grafiche, può costituire il 
+fattore decisivo che permette di comprenderle. Molte figure grafiche forniscono 
+strumenti di misurazione, adatti a determinare gli obiettivi minimi di prezzo. Poiché 
+essi sono solo un’approssimazione dei successivi movimenti di prezzo, sono utili al 
+trader per determinare il possibile guadagno o la percentuale di rischio. 
+Nel prossimo capitolo verrà approfondita una seconda categoria di formazioni, 
+dette di continuazione, quali i triangoli, le flags, i pennant, i wedges e i rettangoli. 
+Queste figure riflettono solitamente una pausa del trend esistente piuttosto che 
+un’inversione, e vengono spesso classificate come “minori” in contrapposizione 
+alle “maggiori”. 
+5.2.1 I principali requisiti comuni a tutte le formazioni d’inversione 
+Prima di avviare la discussione sulle formazioni d’inversione più importanti, è 
+utile puntualizzare alcuni fattori che le accomunano. 
+1. Il primo requisito per ogni formazione d’inversione consiste nel fatto che sia 
+già in atto un trend primario. 
+2. Il primo segnale per capire che il trend sta per essere invertito è la rottura di 
+un’importante trendline. 
+. Più è larga la formazione, più sarà forte il successivo movimento di prezzi. 
+4. Le formazioni di topping hanno solitamente durata più breve e più volatilità 
+rispetto a quelle di fondo. 
+5. I fondi hanno solitamente un range di prezzi più limitato e si protraggono più a 
+lungo. 
+6. Il volume è solitamente più importante nella fase rialzista. 
+(99) 
+1. La necessità di un trend primario. L’esistenza di un trend primario già in essere 
+è un importante requisito per ogni formazione d’inversione. Un mercato deve ov- 
+viamente avere qualcosa da invertire. Quando in un grafico appare improvvisa- 
+mente una ipotetica formazione d’inversione, che non è però preceduta da un trend, 
+deve subito considerarsi sospetta, dal momento che non ha niente da invertire. 
+L'essere a conoscenza del luogo in cui certe figure si verificano, costituisce un 
+elemento chiave per la loro identificazione. 
+Il fatto d’avere un trend presente da invertire, costituisce però un’opportunità 
+per poter prevedere gli obiettivi di prezzo. È già stato precisato che la maggior 
+parte delie tecniche di misurazione ci offrono soltanto gli obiettivi di prezzo mi- 
+nimi, mentre l’obiettivo massimo sarebbe equivalente alla totale estensione del 
+movimento precedente. 
+Se in un bull! market primario in atto si è formata un’importante figura di 
+topping, si avrà un ribasso eguale all’estensione di tutto il rialzo. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 81 
+2. La rottura di importanti trendlines. Il primo segno d’inversione di tendenza, viene quasi sempre dalla rottura di un’importante trendline. Tuttavia, non sempre tale rottura implica un’inversione di tendenza: anticipa comunque che è in atto un cambiamento nel trend. La rottura di un'importante trendline, potrebbe segnalare l’inizio dei movimenti di prezzo laterali, che solo più tardi si qualificheranno come consolidamento o come inversione. Talvolta la rottura di una trendline primaria coincide con il completarsi di una formazione. 
+3. Più la figura è grande, maggiore è il suo potenziale. Con il termine “grande”, ci si riferisce all’ampiezza e all'altezza della figura che ne misura la volatilità. Quanto più estesa è la formazione in altezza e in durata, tanto più sarà forte il potenziale del movimento successivo. 
+Tutte le tecniche di misura, presenti in questo e nel prossimo capitolo, sono ba- sate sull’altezza della figura e vengono applicate principalmente ai bar charts, se- condo criteri di misurazione verticale. Il metodo orizzontale invece, usato solita- mente per i grafici point & figure, misura solo l'ampiezza della figura. Questo me- todo è chiamato counting. 
+4. Differenza tra tops e bottoms. Le figure di fopping sono più volatili e hanno solitamente una durata inferiore rispetto a quelle di bottoms. Le oscillazioni di prezzo, in un top, sono più estese e più violente, I ops necessitano solitamente di meno tempo per formarsi, mentre i bottoms hanno oscillazioni di prezzo molto li- mitate, ma necessitano di un tempo maggiore per completarsi. Per questa ragione, diventa solitamente più facile e meno costoso operare in fase di bottom, piuttosto che nei market tops. È interessante per i traders il fatto che nei topping i prezzi ten- dono a scendere più velocemente di quanto abbiano impiegato a salire. Di con- seguenza si potrà guadagnare velocemente molto denaro, sfruttando i piccoli movi- menti di un bear market, piuttosto che stare ad aspettare i movimenti di un bu// market. Ogni cosa nella vita è un bilanciamento tra guadagno e rischio. I rischi maggiori vengono ripagati da maggiori guadagni e viceversa. Così, sebbene le figu- re di topping siano più rare, sono sempre più vantaggiose. 
+5. Il volume è più importante al rialzo. Generalmente il volume dovrebbe aumen- tare nella direzione del trend del mercato, confermando le formazioni e tutte le fi- gure in essere. Il completarsi di ogni figura dovrebbe essere accompagnato da un notevole incremento del volume. Ciò nonostante, nelle prime fasi d’inversione del trend, il volume non è così importante come nelle fasi di top del mercato. Il mer- cato ha una propria via per “cadere sui propri passi”, una volta che i movimenti ribassisti si siano manifestati. 
+Gli analisti sono soliti vedere nell’incremento dell'attività di contrattazione un segnale che accompagna i prezzi al ribasso. Sui bortoms, comunque, è essenziale che il volume aumenti decisamente. Se il volume non mostra un incremento si- gnificativo durante la rottura a rialzo di un’intera formazione, bisogna nutrire dei dubbi. Questo argomento verrà trattato più dettagliatamente nel capitolo 7, dove verrà trattato il volume.
+

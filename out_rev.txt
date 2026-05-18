@@ -1,0 +1,592 @@
+=== PDF page 50 ===
+80 CAPITOLO 5 
+fondo a “V”' e il fondo allargato “a vasca”. Sarà esaminata la figura in se stessa, 
+come si forma sul grafico e come può essere identificata; si affronteranno anche 
+alcune importanti considerazioni quali le relazioni con il volume e le relative 
+implicazioni. 
+Il volume riveste un importante ruolo di conferma per tutte le figure. Lo studio 
+del volume, accompagnato all’analisi delle formazioni grafiche, può costituire il 
+fattore decisivo che permette di comprenderle. Molte figure grafiche forniscono 
+strumenti di misurazione, adatti a determinare gli obiettivi minimi di prezzo. Poiché 
+essi sono solo un’approssimazione dei successivi movimenti di prezzo, sono utili al 
+trader per determinare il possibile guadagno o la percentuale di rischio. 
+Nel prossimo capitolo verrà approfondita una seconda categoria di formazioni, 
+dette di continuazione, quali i triangoli, le flags, i pennant, i wedges e i rettangoli. 
+Queste figure riflettono solitamente una pausa del trend esistente piuttosto che 
+un’inversione, e vengono spesso classificate come “minori” in contrapposizione 
+alle “maggiori”. 
+5.2.1 I principali requisiti comuni a tutte le formazioni d’inversione 
+Prima di avviare la discussione sulle formazioni d’inversione più importanti, è 
+utile puntualizzare alcuni fattori che le accomunano. 
+1. Il primo requisito per ogni formazione d’inversione consiste nel fatto che sia 
+già in atto un trend primario. 
+2. Il primo segnale per capire che il trend sta per essere invertito è la rottura di 
+un’importante trendline. 
+. Più è larga la formazione, più sarà forte il successivo movimento di prezzi. 
+4. Le formazioni di topping hanno solitamente durata più breve e più volatilità 
+rispetto a quelle di fondo. 
+5. I fondi hanno solitamente un range di prezzi più limitato e si protraggono più a 
+lungo. 
+6. Il volume è solitamente più importante nella fase rialzista. 
+(99) 
+1. La necessità di un trend primario. L’esistenza di un trend primario già in essere 
+è un importante requisito per ogni formazione d’inversione. Un mercato deve ov- 
+viamente avere qualcosa da invertire. Quando in un grafico appare improvvisa- 
+mente una ipotetica formazione d’inversione, che non è però preceduta da un trend, 
+deve subito considerarsi sospetta, dal momento che non ha niente da invertire. 
+L'essere a conoscenza del luogo in cui certe figure si verificano, costituisce un 
+elemento chiave per la loro identificazione. 
+Il fatto d’avere un trend presente da invertire, costituisce però un’opportunità 
+per poter prevedere gli obiettivi di prezzo. È già stato precisato che la maggior 
+parte delie tecniche di misurazione ci offrono soltanto gli obiettivi di prezzo mi- 
+nimi, mentre l’obiettivo massimo sarebbe equivalente alla totale estensione del 
+movimento precedente. 
+Se in un bull! market primario in atto si è formata un’importante figura di 
+topping, si avrà un ribasso eguale all’estensione di tutto il rialzo. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 81 
+2. La rottura di importanti trendlines. Il primo segno d’inversione di tendenza, viene quasi sempre dalla rottura di un’importante trendline. Tuttavia, non sempre tale rottura implica un’inversione di tendenza: anticipa comunque che è in atto un cambiamento nel trend. La rottura di un'importante trendline, potrebbe segnalare l’inizio dei movimenti di prezzo laterali, che solo più tardi si qualificheranno come consolidamento o come inversione. Talvolta la rottura di una trendline primaria coincide con il completarsi di una formazione. 
+3. Più la figura è grande, maggiore è il suo potenziale. Con il termine “grande”, ci si riferisce all’ampiezza e all'altezza della figura che ne misura la volatilità. Quanto più estesa è la formazione in altezza e in durata, tanto più sarà forte il potenziale del movimento successivo. 
+Tutte le tecniche di misura, presenti in questo e nel prossimo capitolo, sono ba- sate sull’altezza della figura e vengono applicate principalmente ai bar charts, se- condo criteri di misurazione verticale. Il metodo orizzontale invece, usato solita- mente per i grafici point & figure, misura solo l'ampiezza della figura. Questo me- todo è chiamato counting. 
+4. Differenza tra tops e bottoms. Le figure di fopping sono più volatili e hanno solitamente una durata inferiore rispetto a quelle di bottoms. Le oscillazioni di prezzo, in un top, sono più estese e più violente, I ops necessitano solitamente di meno tempo per formarsi, mentre i bottoms hanno oscillazioni di prezzo molto li- mitate, ma necessitano di un tempo maggiore per completarsi. Per questa ragione, diventa solitamente più facile e meno costoso operare in fase di bottom, piuttosto che nei market tops. È interessante per i traders il fatto che nei topping i prezzi ten- dono a scendere più velocemente di quanto abbiano impiegato a salire. Di con- seguenza si potrà guadagnare velocemente molto denaro, sfruttando i piccoli movi- menti di un bear market, piuttosto che stare ad aspettare i movimenti di un bu// market. Ogni cosa nella vita è un bilanciamento tra guadagno e rischio. I rischi maggiori vengono ripagati da maggiori guadagni e viceversa. Così, sebbene le figu- re di topping siano più rare, sono sempre più vantaggiose. 
+5. Il volume è più importante al rialzo. Generalmente il volume dovrebbe aumen- tare nella direzione del trend del mercato, confermando le formazioni e tutte le fi- gure in essere. Il completarsi di ogni figura dovrebbe essere accompagnato da un notevole incremento del volume. Ciò nonostante, nelle prime fasi d’inversione del trend, il volume non è così importante come nelle fasi di top del mercato. Il mer- cato ha una propria via per “cadere sui propri passi”, una volta che i movimenti ribassisti si siano manifestati. 
+Gli analisti sono soliti vedere nell’incremento dell'attività di contrattazione un segnale che accompagna i prezzi al ribasso. Sui bortoms, comunque, è essenziale che il volume aumenti decisamente. Se il volume non mostra un incremento si- gnificativo durante la rottura a rialzo di un’intera formazione, bisogna nutrire dei dubbi. Questo argomento verrà trattato più dettagliatamente nel capitolo 7, dove verrà trattato il volume.
+
+=== PDF page 51 ===
+84 CAPITOLO 5 
+5.3.1 La rottura della neckline completa la formazione 
+A questo punto; si potrebbe disegnare una trendline più orizzontale, congiun- 
+gendo gli ultimi due minimi (punto Be D), e chiamarla neckline o “linea di collo” 
+(vedi nella figura 5.1 la linea 2). 
+Questa linea ha generalmente una leggera inclinazione rialzista sui tops, ma 
+talvolta è orizzontale o solo raramente è inclinata verso il basso. Il fattore deci- 
+sivo della rottura dell’head and shoulders top, viene fornito dalla rottura decisiva 
+della neckline in chiusura. A questo punto il mercato ha violato la trendline sui 
+minimi 8 e D, fornendo i requisiti per un nuovo downtrend, identificato con 
+massimi e minimi decrescenti ai punti C, D, £, F. Il volume dovrebbe aumentare 
+sulla rottura della neckline. Ciò nonostante, un forte incremento del volume a 
+ribasso non è particolarmente determinante nelle fasi iniziali di un market top. 
+5.3.2 Il movimento di ritorno 
+Solitamente, un movimento di ritorno, o return move, si sviluppa con un rimbalzo 
+sulla neckline, o sul precedente minimo al punto D (si veda punto G), diventati en- 
+trambi punti di resistenza. Il movimento di ritorno non si verifica sempre: talvolta 
+il rimbalzo può anche avere dimensioni ridotte e il volume può ‘aiutare a de- 
+terminarne la dimensione. Se il movimento iniziale di rottura della neck/ine, si 
+manifesta con contrattazioni molto pesanti, le prerogative per un return move 
+diminuiscono a causa dell’aumentare dell'attività, che riflette una pressione ri- 
+bassista maggiore. Un volume debole sulla rottura iniziale della neck/ine, aumen- 
+ta la possibilità di un return move. 
+Ciò nonostante il rimbalzo dovrebbe verificarsi con volumi deboli, per una 
+successiva ripresa del nuovo downtrend, che dovrebbe essere accompagnata da 
+notevoli e pesanti attività di contrattazione. 
+5.3.3 Riassunto 
+Ecco dunque le componenti fondamentali che devono essere presenti in un head 
+and shoulders top: 
+1. l’esistenza di un precedente uptrend; 
+2. la spalla sinistra accompagnata da volumi forti (punto 4), seguita da una 
+correzione a ribasso sul punto 8; 
+3. un rimbalzo verso nuovi massimi, accompagnato da volumi più deboli (pun- 
+to C); . 
+4. un ribasso che, oltrepassando il precedente massimo (4), si dirige verso il mini- 
+mo precedente, da cui era partito il rimbalzo (reaction low; si veda punto D); 
+5. un terzo rimbalzo (punto E), con volumi assai deboli, incapace di raggiungere il 
+massimo della testa al punto C; 
+6. una chiusura al di sotto della neckline; 
+7. un return move! sulla neckline (punto G), seguita da nuovi minimi. 
+1 Il return move è il movimento di retest del precedente punto di rottura. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 85 
+Ciò che appare molto evidente è il fatto che i tre massimi sono ben definiti. Il 
+secondo massimo (la testa), è leggermente più alto delle altre due spalle (punto 
+A ed E). Ciò nonostante, la formazione non può considerarsi completa, finché 
+non verrà rotta in modo decisivo in chiusura la neckline. Un criterio di pene- 
+trazione oscillante tra l'1% e il 3% circa, o la permanenza sotto la neckline per 
+due giorni consecutivi in chiusura, possono essere usati per un’ulteriore con- 
+ferma. Fintanto che la rottura a ribasso non si verifica è sempre possibile che la 
+figura non sia un head and shoulders top e che l’upirend possa riprendere in 
+qualsiasi momento. 
+5.4 L’importanza del volume 
+Il collegamento del volume alle figure riveste un ruolo importante nello sviluppo 
+dell’head and shoulders top, così come per qualsiasi altra figura. In generale, il 
+secondo massimo (la testa) dovrebbe verificarsi con volumi inferiori rispetto alla 
+spalla sinistra. Questa non è una regola vera e propria, ma un’anticipazione che 
+segnala che la pressione dei compratori sta diminuendo. Il segnale più impor- 
+tante del volume si verifica sul terzo massimo (la spalla destra). Qui il volume 
+dovrebbe essere notevolmente inferiore rispetto ai due precedenti massimi. Dopo 
+di che il volume dovrebbe espandersi sulla rottura della neckline, diminuire sul 
+movimento di ritorno e infine aumentare nuovamente sulla fine del movimento 
+di ritorno. 
+Come detto in precedenza il volume è meno importante durante il completa- 
+mento delle figure di top del mercato, ciò nonostante, in alcuni punti dovrebbe 
+cominciare ad aumentare sull’inizio del nuovo downtrend. Il volume ha un ruolo 
+decisivo sui bottoms del mercato, argomento che verrà discusso brevemente dopo 
+avere affrontato le regole di misura della figura a “testa e spalle”. 
+5.5 Calcolare un obiettivo di prezzo 
+Per calcolare gli obiettivi di prezzo ci si basa sull'altezza della figura, usando la 
+distanza verticale, dalla testa (punto C) alla neckline e proiettandola poi in basso 
+partendo dal punto in cui la neckline è stata rotta. Se, per esempio, la testa si 
+trova a 100 e la neckline a 80, la distanza sarà la differenza e cioè 20. Questi 20 
+punti verranno proiettati a ribasso, partendo dal livello in cui la neckline è stata 
+rotta. Se la neckline, nella figura 5.1, si trova a 82 al momento della rottura, un 
+obiettivo di prezzo a ribasso porterà a un livello di 62, (82 — 20 = 62). 
+Un'altra tecnica, peraltro molto più semplice, consiste nel misurare sem- 
+plicemente la lunghezza della prima onda di ribasso, dal punto C al punto D, 
+moltiplicata per due. In entrambi i casi, maggiore è l'estensione o la volatilità 
+della figura maggiore sarà la lontananza dell’obiettivo di prezzo. Nei capitoli 
+precedenti si è visto che la misura ottenuta dalla penetrazione della trendline era 
+uguale a quella dell’altezza dell’head and showlders. I prezzi hanno così percorso la
+
+=== PDF page 52 ===
+86 CAPITOLO 5 
+stessa distanza dal punto di rottura della neck/ine. Proseguendo nello studio delle 
+formazioni grafiche si potrà notare che la maggior parte degli obiettivi di prezzo sui 
+bar charts sono basati sull’altezza o sulla volatilità delle varie figure. Il tema re- 
+lativo alla misurazione dell’altezza della figura e della conseguente proiezione 
+della distanza dal punto di rottura verrà costantemente ripetuto. 
+È molto importante ricordare che gli obiettivi di prezzo raggiunti sono quelli mi- 
+nimi e che i prezzi si muoveranno sempre molto al di sotto di tali obiettivi. Il fatto 
+di avere un obiettivo minimo di prezzo da tenere a mente, aiuta a determinare il 
+potenziale movimento del mercato, per prendere posizione. Se il mercato supe- 
+ra un obiettivo di prezzo, si avrà un’altra importante indicazione in quanto il 
+nuovo obiettivo equivarrà alla misura del precedente movimento. Se un prece- 
+dente bull market è salito da 30 a 100, il massimo obiettivo di prezzo a ribasso 
+sarà un’intero retracement? del precedente movimento rialzista dal rop, fino a 30. 
+Le figure d’inversione servono solo per prevedere un ripercorrimento del movi- 
+mento precedente. 
+5.5.1  Aggiustare gli obiettivi di prezzo 
+Molti sono i fattori importanti da considerare per arrivare a determinare un 
+obiettivo di prezzo. Le tecniche per misurare degli obiettivi mediante le figure, 
+quali l’head and shoulders top, costituiscono solo i primi passi. Ci sono infatti 
+altri fattori tecnici da prendere in considerazione. Per esempio, dove è possibile 
+trovare importanti livelli di supporto (reaction lows) del precedente movimento 
+rialzista? I mercati ribassisti solitamente si fermano su questi livelli, ma cosa si 
+può dire delle percentuali di ritracciamento? L'obiettivo di prezzo sarà il 100% 
+del ritracciamento del precedente mercato rialzista. Ma dove mettiamo il 50% e 
+il 66% di ritracciamento? Questi livelli formano, solitamente, importanti livelli 
+di supporto sul mercato. Cosa dicono i gaps incontrati strada facendo? Solita- 
+mente fungono da aree di supporto. Esistono trendlines di lungo periodo ben 
+chiare nel mercato? 
+L’analista tecnico dovrebbe considerare altri dati tecnici, per cercare di calco- 
+lare degli obiettivi di prezzo ottenuti dalle figure. Se per esempio il calcolo di un 
+movimento a ribasso ci porta a un obiettivo di 30 ed esiste un forte supporto a 32, 
+l'analista dovrebbe alzare l’obiettivo a 32. Come di consueto, quando esiste una 
+discrepanza di questo genere, diventa necessario modificare l’obiettivo di prezzo, 
+in modo da completarlo con ulteriori informazioni tecniche. 
+5.6 Fondo “a testa e spalle rovesciato” . 
+Il fondo “a testa e spalle rovesciato” (head and shoulders bottom) o più comune- 
+mente chiamato inverse head and shoulders, appare come una formazione di 
+topping rovesciata. La figura 5.3 mostra l’esistenza di tre distinti bottoms, con il 
+2 Il termine significa, letteralmente, “ripiego” NdT. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 87 
+Retum Move (o retest) 
+Spalla sinistra 
+nINiniia Figura 5.3 Esempio di un inverse head and shoulders. La parte finale (bottom) della formazione sembra una figura di top riflessa allo specchio. L'unica differenza significativa viene data dal volume nella seconda metà della figura. Il rialzo dalla testa dovrebbe essere accompagnato da volume forte in aumento e sulla rottura della neckline ci sarà la vera esplosione dell'attività di trading. Il movimento di ritorno sulla neckline si verifica più comunemente sui bottoms. 
+‘Spalla destra 
+Testa 
+secondo (testa) leggermente inferiore a quelli delle altre due spalle. Per completare la figura è necessario avere una chiusura che oltrepassi il livello della neckline. La tecnica per il calcolo dell'obiettivo di prezzo rimane la stessa. Una lieve diffe- renza consiste nel fatto che il movimento di ritorno tende a testare la neckline, 
+dopo che si è verificata la rottura a rialzo (figura 5.4). 
+La differenza più importante tra le figure di tops e bottoms consiste nello svi- luppo del volume, che ha un ruolo molto importante per identificare il com- pletamento della figura head and shoulders bottoms. Come detto poc'anzi, il mer- cato tende a “seguire i propri passi”. Tuttavia, per le formazioni di bottoms, il mercato richiede un significativo incremento della pressione d’acquisto, riflessa in un forte volume, per dare inizio a un nuovo bull market. 
+Una spiegazione, per capire tale differenza, può rintracciarsi nel fatto che il mercato può scendere semplicemente per inerzia: la mancanza d'interesse da parte dei compratori è sufficiente a farlo scendere; invece non sale solo per inerzia: questo avviene soltanto quando la domanda supera l’offerta e i compratori sono 
+più aggressivi dei venditori. 
+L'andamento del volume sul bortom è molto simile a quello sul top, per la prima metà della figura. Perciò, il volume sulla testa è leggermente inferiore a quello che si sviluppa nella spalla sinistra. Ciò nonostante il rimbalzo dalla testa non do- vrebbe manifestarsi unicamente con un incremento dell'attività di trading, ma il livello del volume dovrebbe essere superiore a quello registrato nella spalla sini- stra. Il punto critico sta nella correzione o punto di ritorno, fino alla neckline.
+
+=== PDF page 53 ===
+88 CAPITOLO 5 
+07/14/95 (FRX) Forest Labs Inc 01/02/98 
+Grafico a barre Le 
+settimanale | 
+| | Pr 
+| i Head and shoulders bottom [30 
+| | 
+Re ° 
+î | Dai | Ò 
+Spalla sinistra ih LA destra al 
+Figura 5.4 Head and shoulders bottom. La neckline presenta una lieve inclinazione verso il basso, 
+considerata normale. Il movimento di conferma dopo la rottura (si veda la freccia) ha intaccato 
+leggermente la neckline recuperando però in seguito l'uptrend. 
+Questo segnale dovrebbe essere accompagnato da un forte sviluppo del volume, 
+se la rottura è valida. Questa combinazione è diversa nelle figure di top. Infatti 
+nelle figure di bottom un volume molto forte rappresenta l’ingrediente essenziale 
+per confermarle come figure di base. Il movimento di ritorno, o returmi move, si 
+manifesta più frequentemente sulle figure di bottom piuttosto che su quelle di top, 
+e dovrebbe essere accompagnato da volumi deboli. Seguendo questa teoria, il 
+nuovo uptrend dovrebbe riprendere con volumi forti. La tecnica per il calcolo del- 
+l’obiettivo rimane la stessa usata per le figure di top. 
+5.6.1 Lo sviluppo della neckline 
+La neckline sui massimi ha solitamente una leggera inclinazione a rialzo. Ciò no- 
+nostante, a volte, è orizzontale, a volte rivolta verso il basso. Entrambi i casi sono 
+indifferenti. Tale inclinazione delinea un certo segnale di stanchezza e solitamente 
+è accompagnata dalla spalla destra con volumi deboli. . 
+Gli analisti tecnici che stanno aspettando la rottura della neckline per aprire po- 
+sizioni allo scoperto, dovranno aspettare un bel po’ poiché il segnale si verificherà 
+solo dopo parecchi movimenti laterali. Per le formazioni di base molte delle neck- 
+line saranno rivolte verso il basso. Una neckline rivolta verso l'alto rappresenta un 
+segnale di mercato molto forte, ma con numerosi movimenti laterali, che ri- 
+tardano il segnale. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 89 
+5.7 Formazioni composite head and shoulders 
+Una variante alle figure head and shoulders, viene chiamata formazione composita 
+head and shoulders. Essa si può presentare, nel contesto della stessa figura, con 
+due teste, due spalle sinistre o due spalle destre. Queste formazioni non sono 
+molto comuni, ma hanno comunque le stesse implicazioni. Un aiuto per identi- 
+ficarle potrebbe venire dalla forte sembianza simmetrica della testa rispetto alle 
+spalle. Questo significa che una singola spalla sinistra anticipa la presenza di una 
+singola spalla destra, quindi una doppia spalla sinistra aumenta la possibilità di 
+avere due spalle destre. 
+5.7.1 Tattiche 
+Questo argomento ricopre un ruolo importante in tutti gli scambi. Non tutti gli 
+analisti tecnici amano aspettare la rottura della neckline, per aprire nuove posi- 
+zioni. La figura 5.5 mostra come dei traders molto aggressivi, ritenendo di aver 
+identificato un head and shoulders bottom, comincino ad aprire nuove posizioni 
+lunghe durante il completarsi della spalla destra. Potrebbero anche iniziare a 
+comperare in corrispondenza del primo segnale tecnico di rialzo, vicino alla fine 
+della spalla destra. 
+Alcuni analisti misureranno la distanza del rimbalzo tra il fondo e la testa (dal 
+punto C al punto D) e, successivamente, acquisteranno a un livello di prezzo cor- 
+rispondente al 50% o 66% di ritracciamento di tale rimbalzo. Altri useranno una 
+trendline, che contiene il ribasso, e acquisteranno al primo segnale di rottura di 
+rialzo. Poiché queste figure sono ragionevolmente simmetriche, alcuni analisti si 
+Figura 5.5 Tattiche per un head and shoulders bottom. Molti analisti tecnici, cominceranno i loro 
+acquisti, sul formarsi della spalla destra (£). Altri aspetteranno la metà o i due terzi di pullback del rim- 
+balzo dal punto C al punto D, 0 una discesa sul supporto di breve periodo o su un support gap oppure 
+un ribasso sullo stesso livello, come per la spalla sinistra al punto A, o la rottura a ribasso di una trend- 
+line di breve periodo (linea 1): tutte provocano svariate opportunità per entrare nel mercato. Ulteriori 
+posizioni si apriranno successivamente, sulla rottura della neckline, o sul movimento di ritomo sulla 
+neckline.
+
+=== PDF page 54 ===
+90 CAPITOLO 5 
+serviranno di questa tecnica per comperare durante la formazione della spalla 
+destra, all’interno del fondo della spalla sinistra. É dimostrato statisticamente che 
+il punto d’acquisto più comunemente usato è proprio durante il formarsi della 
+spalla destra. Se i primi acquisti dei compratori anticipatori si verificano su questi 
+livelli, si avrà un aumento delle posizioni lunghe proprio sulla rottura a rialzo 
+della neckline, o meglio ancora, sul return move. i 
+5.7.2. La formazione failed head and shoulders 
+Una volta che i prezzi abbiano completato una formazione head and shoulders e 
+oltrepassato la neckline, non dovrebbero più romperla. Su una formazione di top, 
+una volta che la neck/ine è stata rotta a ribasso, ogni chiusura al di sopra della 
+neckline rappresenta un serio dubbio sulla validità del segnale. Quindi per ovvie 
+ragioni, si avrà una failed head and shoulders. Questo tipo di formazione as- 
+somiglia a un classico head and shoulders reversal, con la differenza che, a un certo 
+punto, solitamente prima della rottura della neck/ine o appena dopo, i prezzi ri- 
+prendono il loro trend originale. 
+A questo punto, bisogna fare due importanti precisazioni. La prima è che nes- 
+suna di queste figure è infallibile: solitamente funzionano, ma non sempre. La 
+seconda consiste nel fatto che ogni trader deve sempre verificare se la sua analisi è 
+corretta. Una delle chiavi per sopravvivere nei mercati finanziari consiste nel- 
+l’accettare piccole perdite, e nell'uscire il più velocemente possibile dalle posizioni 
+dove si è in perdita. E proprio l’analisi tecnica a permettere di capire subito 
+quando si è dalla parte sbagliata del mercato. L'abilità di riconoscere velocemente 
+un errore è un grosso vantaggio, che permette di difendersi immediatamente nei 
+mercati finanziari. 
+5.7.3 L’hAead and shoulders come formazione di consolidamento 
+Sono state analizzate le più conosciute e affidabili figure d’inversione; tuttavia 
+proprio queste figure potrebbero segnalare semplicemente un periodo di consoli- 
+damento. Quando ciò accade l’head and shoulders viene classificata come un’ec- 
+cezione, piuttosto che come una regola. Pertanto questo argomento verrà appro- 
+fondito nei successivi capitoli. 
+5.8. Tripli massimi e minimi 
+Molte particolarità nella figura head and shoulders, sono applicabili ad altri tipi di 
+formazioni d’inversione (figure 5.6, 5.7 e 5.8). Il triplo top o bottom, che è una 
+figura abbastanza insolita, rappresenta una piccola variante dell’head and 
+shoulders. La differenza principale è che nel triplo top o bottom, i tre massimi o 
+minimi si trovano tutti sullo stesso livello (figura 5.6). Gli analisti spesso non sono 
+favorevoli a catalogare entrambe le formazioni come figure d’inversione, ma le 
+loro considerazioni si basano solo su pretesti puramente accademici. 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 91 
+ONT Il Figura 5.6 Un triplo top. È simile all'head and shoulders, con l'eccezione che i massimi sono tutti sullo stesso livello. Ogni correzione a ribasso, partendo da un massimo, deve essere accompagnata da volumi deboli. La figura viene considerata completa quando entrambi i minirni vengono rotti con volumi forti. Per misurare l'obiettivo bisognerà proiettare l'altezza a ribasso, partendo dal punto di rottura. | movimenti di ritorno, sulla linea inferiore, sono frequenti. 
+--—- 
+Tn 
+Figura 5.7 . Un triplo bottom. È molto simile all'head and shoulders bottom, a eccezione del livello dei minimi che è sempre lo stesso. Il volume è molto importante sulla rottura a rialzo. 
+Il volume tende a diminuire a ogni successivo massimo verso il top e dovrebbe 
+aumentare sul punto di rottura. Il triplo top non è considerato completo fintanto che i livelli di supporto non siano stati rotti. 
+Al contrario i prezzi dovrebbero chiudere al di sotto dei due massimi, per com- pletare un triplo bottom (come strategia alternativa, si potrebbe usare la rottura del più vicino massimo o minimo, come segnale d’inversione). Per altro diventa 
+sosenziale la presenza di volumi a rialzo molto alti, per uscire dalla formazione di 
+ottom. 
+Il calcolo dell’obiettivo, simile a quello usato per il “testa e spalle”, si basa sul-
+
+=== PDF page 55 ===
+92 CAPITOLO 5 
+08/19/93 (KBH) Kaufman & Broad Home 01/02/08 
+Grafico a barre settimanale 28 
+200 
+24 
+212 
+1908 
+Triplo bottom 174 
+piaÙ 
+MINI: 
+VA : Na I ha 1a 
+UU — de NINA Tre) 
+Figura 5.8 Una formazione di triplo bottom reversal. | prezzi hanno trovato supporto al di sotto di 12 
+per tre volte prima di una decisiva avanzata. La formazione bottom rappresentata in questo grafico 
+settimanale è durata due anni, il che ne ha aumentato l'importanza. 
+l'altezza della figura. Solitamente i prezzi percorrono dal punto di rottura una 
+distanza minima, che equivale all’altezza della formazione. Una volta verificatasi 
+la rottura è sempre possibile un movimento di ritorno. Per concludere, si potrebbe 
+classificare il triplo top o bottom come una piccola variazione alla figura dell’head 
+and shoulders. 
+5.9 Doppio top e doppio bottom 
+Una formazione d’inversione molto comune è il doppio top o il doppio bottom. 
+Dopo l’head and shoulders rappresenta la formazione più frequente e riconoscibile 
+(figure dalla 5.9 alla 5.13). Le figure 5.9 e 5.10 mostrano entrambe i diversi tipi di 
+tops e bottoms. Per comodità, le figure di top sono paragonate' a delle “M”, 
+mentre quelle di boztom a delle “W”. Le caratteristiche del,doppio massimo 0 
+minimo, sono simili a quelle del “testa e spalle” e del triplo top o bottom, con la 
+differenza che il doppio top o bottom ha solo due massimi o minimi anziché tre. 
+La formazione del volume è simile e così il modo di misurazione degli obiettivi. In 
+un uptrend (come si vede dalla figura 5.9) il mercato ha formato un nuovo 
+massimo al punto A, solitamente accompagnato da volumi in aumento, scen- 
+dendo successivamente fino al punto 8, con volumi in diminuzione. Il successivo 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 93 
+Figura 5.9 Esempio di un double top. Questa formazione ha due massimi (A e C), quasi allo stesso li- 
+velo. La figura può considerarsi completa quando Il minimo al punto B viene rotto in chiusura. Solitamente, 
+il volume è leggermente inferiore sul secondo massimo (C) e aumenta notevolmente sulla rottura al punto 
+(D). Un movimento di ritomo sulla linea inferiore della figura non è insolito. Per calcolare un obiettivo minimo 
+di prezzo, bisognerà prolettare a ribasso l'altezza della figura, partendo dal punto di rottura. 
+ili Figura 5.10 Esempio di un double bottom. È l'immagine speculare del double top. Il volume è molto 
+più importante sulla rottura a rialzo. Il movimento di ritorno sul punto di rottura è più frequente sui 
+ottoms. 
+rimbalzo a rialzo sul punto C, incapace di superare il precedente massimo al 
+punto A, genererà un nuovo ribasso. Si è formato quindi un potenziale double top. 
+Si usa il termine “potenziale” perché, fintanto che il precedente supporto al punto 
+8 non viene violato, potrebbe trattarsi di una figura di consolidamento anziché 
+d'inversione e potrebbe prepararsi a far riprendere il precedente upirend dopo un 
+periodo di consolidamento. Il top ideale ha due massimi importanti, circa allo 
+stesso livello. Il volume tende a essere più alto sul primo massimo e più basso sul 
+secondo massimo. Una chiusura decisamente inferiore al punto 8 accompagnata 
+da un incremento del volume completa la formazione, dando il segnale d’inver- 
+sione di tendenza a ribasso. Un movimento di ritorno verso il punto di rottura 
+avviene solitamente prima del nuovo downtrend.
+
+=== PDF page 56 ===
+94 CAPITOLO 5 
+Grafico a barre giornaliero Il Lorna 
+il } L | | | "| Resistenza | | | iN L 
+ne | i Womaq A n 
+Sep od Nov Dec Feb Ve “DREI TT Siera Printed vene Tradeizion © Sinai Aaa Pa 1907 
+Figura 5.11 Esempio di un double bottom. Questo titolo è rimbalzato due votte al livello 68 in un arco 
+di tempo di tre mesi. Si noti che anche il secondo bottom è stato un upside reversal day. La rottura della 
+resistenza a 80 ha completato il bottom. 
+05/19/97 {AMAT) Applied Matls Inc 01/02/98 
+rafico a barre giornaliero fd) 
+Double top 
+B24 
+30 
+4746 
+| 
+\ | 
+| bl | pi” ” 27%4 
+Jun Ju Aug Se ‘oa ee RIA A Tra FAT 
+Figura 5.12 Esempio di un double top. A volte il secondo massimo non raggiunge il primo, come in 
+questo caso. Questo double top di due mesi ha segnalato un ribasso principale. Il segnale reale è stato 
+la rottura del supporto vicino a 46 (si veda il riquadro). 
+inni SRI 
+pit 
+PL 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 95 
+07/15/97 (*OTC) Nasdaq Composite Index 02/27/98 
+Grafico a barre giornaliero 
+dl 
+è 
+‘1050 
+Aug Sep Sa Nov Dec ee im Feb 
+Figura 5.13 Gli schemi dei prezzi appaiono regolarmente sui grafici dei più importanti indici azioriari. In questo grafico, il Nasdag Composite Index ha formato un double bottom vicino al livello 1470 prima di tomare al rialzo. La rottura della trendiine ribassista (sì veda il riquadro) ha confermato l'inversione rialzista. 
+5.9.1 Calcolo tecnico per il doppio top 
+Per misurare l’obiettivo di prezzo del double top, si proietta a ribasso l'altezza della figura partendo dal punto di rottura (punto 8). Come metodo alternativo, si può misurare l’altezza della prima onda di correzione a ribasso (dal punto A al punto 8) e proiettarla a ribasso, partendo dal minimo al punto 2. I calcoli peri bottoms sono gli stessi, ma ovviamente in un’altra direzione, 
+5.10 Variazioni delle formazioni ideali 
+Come in molti altri casi, nell'analisi dei mercati gli esempi reali possono differire da quelli teorici. Talvolta, i due massimi non sono esattamente allo stesso livello di prezzo. 
+In alcune occasioni, il secondo massimo non riesce a raggiungere il livello del precedente, senza peraltro causare alcun problema. Ciò che invece causa dei pro- blemi è il superamento, anche se marginale, del primo massimo. Ciò che in princi- pio poteva apparire come una valida rottura a rialzo, potrà in seguito presentarsi 
+come parte integrante della formazione di top. Per risolvere questo dilemma si può usare il criterio dei filtri.
+
+=== PDF page 57 ===
+96 CAPITOLO 5 
+5.10.1 Filtri 
+Per prima cosa, molti analisti tecnici richiedono una chiusura inferiore al prece- 
+dente massimo, anziché una rottura marginale su base intra-day. 
+Come secondo passo è sempre necessario utilizzare un filtro del prezzo di un 
+certo tipo, per esempio una percentuale di penetrazione dall'1% al 3%. 
+Come terzo passo si dovrebbe usare anche un filtro a livello temporale, per 
+esempio quello dei due giorni di penetrazione. In altre parole, i prezzi dovranno 
+chiudere al di sotto del top per due giorni consecutivi, per dare un valido segnale 
+di penetrazione. Un altro filtro temporale potrebbe essere una chiusura del ve- 
+nerdì oltre il massimo precedente. Il volume sulla rottura al rialzo potrebbe 
+fornire anche un indizio d’affidabilità. 
+Certamente questi filtri non sono infallibili, ma servono a ridurre il numero di 
+falsi segnali. Qualche volta sono d'aiuto altre no. Succede a volte, che nella fase 
+d’inversione si abbia la presenza di un nuovo massimo prima dell’inversione del 
+trend. Questo breakout al rialzo si chiamerà bull trap (figure 5.14 e 5.15). In 
+seguito verranno mostrati alcuni indicatori che potrebbero risultare utili per in- 
+dividuare queste false rotture. 
+Figura 5.14 Esempio di un falso breskout, solitamente chiamato bull trap. Talvolta, vicino alla fine del 
+major uptrend, | prezzi potranno superare il precedente massimo, prima d'invertira la tendenza. Gli 
+analisti usano svariati tipi di filtri per ridurre questi dubbi. Questo tipo di formazione verrà probabilmente 
+qualificato come double top. 
+5.10,2 L'uso del termine double top 
+I termini double top e bottom, vengono usati troppo frequentemente dagli analisti. 
+Molti potenziali double tops o bottoms si sviluppano dando l’idea di essere 
+qualcos’altro. 
+La spiegazione consiste nel fatto che i prezzi tendono a rimbalzare da un mi- 
+nimo e scendere dopo un massimo. Questi movimenti di prezzo sono reazioni na- 
+turali e non costituiscono di per se stesse figure d’inversione. Si ricordi che su un 
+topi prezzi dovrebbero sempre oltrepassare il precedente minimo per dar luogo a 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 97 
+D8/14/97 (JPM) Morgan J P & Co Inc 
+Grafico a barre giornaliero 
+Falso breakout Ila tai 
+I I) “ 
+Ml Au |P fl I Rio 
+li 
+Volume 
+DI si luglio Lil ib | 
+Figura 5.15 Esempio di un falso breakout. Si noti che la rottura al rialzo è avvenuta su un volume 
+leggero e il successivo ribasso sul volume pesante, una combinazione di eventi negativa. L'analisi del 
+volume contribuisce a evitare alcuni falsi breakout, ma non in tutti i casi. 
+a. b. 
+Figura 5.16 a. - Esempio di un normale pu/lback, proveniente da un precedente massimo, prima di 
+riprendere l'uptrend. Ciò rappresenta un semplice movimento del mercato da non confondere con il 
+double top. Il double top si verifica solo quando abbiamo la rottura del precedente minimo al punto 
+B. db e Esempio di un semplice rimbalzo da un precedente minimo. Rappresenta un semplice 
+movimento del mercato da non confondere con il double bottom. | prezzi rimbalzano normalmente da 
+Un precedente minimo causando un'idea sbagliata di doppio minimo. 
+un vero doppio massimo. Si noti come nella figura 5.16a i prezzi tornano indietro 
+dal precedente massimo al punto A, cosa per altro, perfettamente normale in un 
+uptrend.
+
+=== PDF page 58 ===
+98 CAPITOLO 5 
+Molti traders vedono immediatamente un doppio massimo non appena i prezzi 
+stentano nel superare il precedente. La figura 5.16b mostra la stessa situazione in 
+un downtrend. 
+Diventa quindi molto difficile per gli analisti determinare se un pu//back da un 
+precedente massimo, o un rimbalzo dal precedente minimo, rappresentino un 
+semplice movimento di correzione del trend esistente, o l’inizio di una formazione 
+d’inversione quale un double top o bottom. Poiché l’analisi tecnica monitorizza la 
+persistenza dei trend in essere, è saggio aspettare la conclusione della formazione 
+prima di prendere nuove posizioni. 
+5.10.3 L’importanza del periodo tra massimo e minimo 
+La misura delia formazione è sempre molto importante. La lunghezza del periodo 
+tra i due massimi e l'altezza dell’intera figura, rappresentano il potenziale d’in- 
+versione di ogni movimento. 
+In generale la maggior parte delle formazioni di double top o bottom do- 
+vrebbero avere un intervallo tra massimi e minimi di almeno un mese, ma talvolta 
+ne possono passare anche due o tre. Su grafici di lungo periodo, mensili e setti- 
+manali, possono intercorrere tra queste figure, parecchi anni. La maggior parte 
+degli esempi trattati, riguarda fasi di market tops. Le formazioni di bottoming 
+sono solo dei ‘ops riflessi allo specchio, con le differenze minime già evidenziate 
+all’inizio del capitolo. 
+5.11 Saucers e spikes 
+Anche se non avviene di frequente, in certi casi le figure d’inversione assumono la 
+forma di saucers (piattino) o rounding bottom. Partendo dal basso, il soucer 
+bottom mostra un movimento molto lento e graduale prima laterale e poi cre- 
+scente. 
+È difficile stabilire qual è il momento preciso il cui il saucer può considerarsi 
+completo o misurare la distanza coperta dai prezzi nella direzione opposta. In 
+genere i soucer bottoms vengono individuati sui grafici settimanali o mensili in un 
+lasso di tempo di diversi anni. Più sono lunghi, maggiore è il significato che 
+assumono (figura 5.17). 
+Gli spikes rappresentano i cambiamenti di mercato più complessi da gestire, in 
+quanto lo spike (o formazione a “V”) si verifica in maniera repentina senza 
+nessun periodo di transizione o con un periodo di transizione brevissimo. In 
+genere hanno luogo in un mercato che è talmente tirato, da invertire im- 
+provvisamente direzione in maniera brusca in caso di improvvise notizie negative. 
+Un reversa! giornaliero o settimanale, su un volume molto forte, a volte è 
+l’unico segnale di avvertimento. In questo caso non c'è molto da fare se non 
+sperare di non incorrere in un numero eccessivo di formazioni di questo tipo. 
+Alcuni indicatori tecnici che verranno trattati nei capitoli successivi aiuteranno a 
+capire quando il mercato è diventato troppo tirato (figura 5.18). 
+LE PRINCIPALI FORMAZIONI DI INVERSIONE 99 
+03/30/90 {BMY) Bristo! Myers Squibb 12/31/97 
+Grafico a barre mensile | inte 
+tin IL Do 
+i si 
+Rounding o saucer bottom I ii 
+pil Mi di i me H i[ il ! ui" 3192 al ul | TT 
+UT] i] 3] da 3 ono Sr n 
+Figura 5.17 Il grafico mostra l'aspetto di un saucer o rounding bottom. Si tratta di formazioni molto lente e graduali che in genere segnano i maggiori cambiamenti. li bottom rappresentato ha avuto una durata di quattro anni. 
+12/04/97 (MU) Micron Technology inc 12/31/97 
+Grafico a barre giornaliero | 
+V reversal si 
+50 
+si dh 
+p Lr A tp ia % 
+b31%2 
+Miglia do » 
+Volume 
+Volume forte 
+1000009 
+iu] dol bla pd able id ts salsa dti full bici 1) UL 
+Figura 81 8 Esempio di figura d'inversione a ‘V”. Queste inversioni improvvise awengono con pochissimo o nessun margine di preavviso. Un repentino calo dei prezzi su un volume forte è in genere l'unico segnale premonitore. Purtroppo questi cambiamenti improvvisi sono difficili da individuare in anticipo.
+
+=== PDF page 59 ===
+100 CAPITOLO 5 
+5.12 Conclusioni 
+Sono state esaminate le cinque formazioni d’inversione più comuni: l’head and 
+shoulders, îl double e triple top e bottom, il saucer ela V o spike. Tra tutte queste 
+figure, le più comuni sono l’head and shoulders, il double top € bottom, ci ‘ 
+reversal. Queste formazioni segnalano solitamente importanti inversioni Ì tren 
+e vengono classificate come le più importanti. Esiste un'altra categoria di or 
+mazioni di breve periodo che segnalano un trend di consolidamento piuttosto che 
+d’inversione; vengono chiamate formazioni di continuazione e verranno ap- 
+profondite, assieme ad altre, nel capitolo successivo. 
+6 
+Formazioni di continuazione 
+Le formazioni trattate in questo capitolo vengono chiamate formazioni di conti- 
+nuazione e solitamente indicano una pausa del trend prevalente che è in essere e 
+un conseguente movimento nella direzione precedente a tali formazioni. Questa è 
+la caratteristica principale che le distingue da quelle d’inversione. 
+Un'altra differenza è costituita dal fattore tempo. Le formazioni d’inversione 
+impiegano solitamente molto tempo prima di poter dar luogo a un cambiamento 
+di tendenza, mentre le formazioni di continuazione vengono di solito generate da 
+movimenti di breve periodo. Esse si dividono in formazioni di breve o di medio 
+termine, sebbene alcune di esse, quali per esempio le formazioni a triangolo, pur 
+essendo classificate tra le formazioni di continuazione, a volte anticipano un'in- 
+versione di tendenza e così diventano, occasionalmente, di lungo periodo. Esiste 
+una variante nelle formazioni a triangolo, il triangolo invertito, che solitamente 
+indica una formazione di fop del mercato. Persino la head and shoulders, la for- 
+mazione d’inversione più conosciuta, può occasionalmente diventare di continua- 
+zione. Considerando tutte le possibili eccezioni, queste formazioni grafiche ver- 
+ranno classificate in due categorie che, se interpretate correttamente, potranno 
+aiutare l'analista a determinare il futuro andamento del mercato. 
+6.1 I triangoli 
+La prima formazione di continuazione che viene esaminata è il triangolo. Ne esi- 
+stono di tre tipi: simmetrico, ascendente e discendente.! Ogni tipo di triangolo ha 
+forma e implicazioni leggermente differenti. Le figure 6.1, 6.2 e 6.3 mostrano i va- 
+ri tipi di triangoli. Il triangolo simmetrico (figura 6.1) presenta le trendlines con- 
+vergenti: la superiore è discendente mentre l’inferiore è ascendente. 
+La linea verticale sulla sinistra, che misura l’altezza della figura, viene chiama- 
+ta base. Il punto d’incontro tra le due trendlines viene detto apice. Per ovvie ra- 
+gioni grafiche il triangolo viene anche chiamato “serpentina” o coil. 
+Il triangolo ascendente presenta la linea inferiore ascendente mentre quella su- 
+* Alcuni analisti includono un quarto tipo, detto triangolo in espansione o broadening formation, 
+che verrà approfondito nel paragrafo 6.5.
+
+=== PDF page 60 ===
+102 CAPITOLO 6 
+Apice 
+Figura 6.1 Esempio di un triangolo simmetrico rialzista. Si può notare la convergenza delle due 
+trendlines. Una chiusura al di fuori di entrambe le trendiines completa la formazione. La linea verticale 
+sulla sinistra della figura rappresenta la base. Il punto sulla destra, dove s'incontrano le due trendiines, si 
+chiama apice. 
+Figura 6.2 Esempio di un triangolo ascendente. Si noti la linea superiore piatta e quella inferiore 
+ascendente. Solitamente è una formazione rialzista. 
+periore è piatta od orizzontale (figura 6.2). Il triangolo discendente (figura 6.3) 
+presenta, al contrario, la linea superiore discendente e quella inferiore orizzontale 
+o piatta. 
+FORMAZIONI DI CONTINUAZIONE 103 
+\ 
+Figura 6.3 Esempio di un triangolo discendente. Si può notare la linea inferiore piatta e la linea superiore discendente. Questa è solitamente una formazione ribassista. 
+6.2 ll triangolo simmetrico 
+Il triangolo simmetrico o coil viene classificato tra le formazioni di continuazione e rappresenta una pausa del trend esistente. Nella figura 6.1 si aveva un trend precedente rialzista, quindi le aspettative per la risoluzione del triangolo di con- 
+solidamento erano rialziste. Se il trend fosse stato ribassista, il triangolo sim- 
+metrico avrebbe avuto risvolti negativi. 
+Un triangolo deve avere un minimo di quattro punti di reazione. Si ricordi che per tracciare una trendline si ha sempre bisogno di almeno due punti. Di conse- 
+guenza, per avere due trendlines convergenti si dovrà avere una linea che tocca 
+almeno due punti. Nella figura 6.1 il triangolo inizia il periodo di consolidamento dell’uptrend dal punto 1. Successivamente, i prezzi arretrano fino al punto 2 e quindi rimbalzano al punto 3. Ciò nonostante il punto 3 è inferiore al punto 1. La trendline superiore potrà essere disegnata soltanto dopo che i prezzi saranno scesi dal punto 
+3. Si noti che il punto 4 è superiore al punto 2. Si potrà disegnare la trendline 
+inferiore solo dopo il rimbalzo dal punto 4. È solo a questo punto che l’analista si accorgerà della presenza del triangolo simmetrico. Adesso esistono quattro punti di 
+reazione (1-2-3-4) e due irendlines convergenti. Anche se il reversal minimo richiesto 
+per avere un triangolo simmetrico è di quattro punti, alcuni triangoli simmetrici hanno sei punti di reazione, come si può vedere dall’esempio della figura 6.1. Ciò significa che si avranno tre punti massimi e tre punti minimi, che nell'insieme formano cinque onde all’interno del triangolo, prima della ripresa dell’uptrend. 
+6.2.1 Tempo limite per la risoluzione del triangolo 
+Esiste un limite per la risoluzione delle formazioni, rappresentato dall’apice, il punto in cui le due linee s'incontrano. Solitamente i prezzi rompono il triangolo nella 
+direzione del trend precedente, in un punto compreso tra i due terzi e i tre quarti della profondità del triangolo. Questa rappresenta la distanza che intercorre dalla
+

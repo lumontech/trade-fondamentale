@@ -1,0 +1,27 @@
+# Caddy reverse proxy con HTTPS auto Let's Encrypt
+# Sostituisci YOUR_DOMAIN con il dominio (es. impact.duckdns.org)
+# Su Contabo metti questo file in /etc/caddy/Caddyfile e fai `sudo systemctl reload caddy`
+
+YOUR_DOMAIN {
+    reverse_proxy localhost:3000
+
+    # Headers di sicurezza minimi
+    header {
+        Strict-Transport-Security "max-age=31536000"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "no-referrer-when-downgrade"
+    }
+
+    # Logging
+    log {
+        output file /var/log/caddy/impact.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+    }
+}
+
+# Versione senza dominio (HTTP only su porta 80) — utile per test iniziale
+# :80 {
+#     reverse_proxy localhost:3000
+# }

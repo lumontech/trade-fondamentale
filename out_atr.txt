@@ -1,0 +1,378 @@
+=== PDF page 158 ===
+300 CAPITOLO 15 
+15.5 Parabolico e movimento direzionale di Welles Wilder 
+Ci soffermiamo ora su due studi particolarmente utili, entrambi sviluppati da J. 
+Welles Wilder Jr.? 
+15.5.1 Sistema parabolico (SAR) 
+Il sistema parabolico di Wilder, conosciuto anche come SAR è un sistema di in- 
+versione che prende in considerazione il fattore tempo/prezzo, e che sviluppa 
+un’operatività continua e quindi permanente sul mercato. L’acronimo SAR sta 
+per “Stop And Reverse” e indica che la posizione viene invertita non appena 
+venga raggiunto uno stop. È uno studio considerato di trend- -following. Viene 
+definito “parabolico” in quanto i trailirig stops tendono a curvare assumendo la 
+forma di parabola (figure 15.1-15.4). Si noti come man mano che i prezzi salgono, 
+i punti messi al di sotto dei prezzi (punti di stop e reverse) partono lentamente e 
+accelerano seguendo il trend. In un.mercato ribassista, avviene la stessa cosa ma in 
+direzione opposta (i puntini si trovano al di sopra del prezzo). I numeri relativi al 
+SAR vengono calcolati e forniti all’utente che li può utilizzare il giorno successivo. 
+(12/20/97 (*8PX) SEP 600 Stock index 03/18/98 
+Grafico a barre giornaliero 
+| Il I | I po 5 | | ] | LI Puntini del parabolico 
+] Î Î . stop and reverse 
+(SAR) 
+a_i ir] Mt "NONNA ) rl FI k n n] 
+Figura 15.1. Lo studio parabolico SAR rappresentato sotto forma di puntini. Il segnale d'acquisto è 
+dato quando i puntini superiori vengono perforati al rialzo (prima freccia). Il SAR accelera al rialzo 
+durante il rally, e si avvicina ai prezzi. SI è verificata una leggera correzione, ma è stata velocemente 
+corretta. Questo sistema funziona in presenza di un trend. 
+2 Gli studi sono descritti in J.W. Wilder, New Concepts in Technical Trading Systems, Trend 
+Research, Greensboro (NC) 1978. In questo volume vi sono altri tre studi, solitamente inclusi nelle 
+scelte dei software di analisi tecnica e sono il commodity selection index, il relative strenght index e lo 
+swing index. 
+COMPUTER E TRADING SYSTEMS 301 
+D4UZ1/97 (*8PX) SP 500 Stock index . ON1ame 
+Grafico a barre giornaliero 
+Parabolico SAR 
+Figura 15.2 Versione di lungo periodo del grafico precedente dove si evidenziano i lati positivi e 
+negativi del parabolico e di ogni altro sistema trend-following. Essi lavorano nei periodi di trend (a 
+sinistra e a destra del grafico), ma sono inutili durante le fasi laterali che si sono verificate da agosto a 
+gennaio. 
+parso (*8P) SAP 600 Stock index 03/91/06 
+Grafico a barre mensile 
+n Li A 
+De I Parabolico SAR mensile ell Lrco 
+int! i 
+bi (000 
+I. 4 
+N, 
+NL ui PS) 
+MNTTTIZZIAIE LI PITTILI ATL 
+VITI LI LASOPESZARE 4 n) 
+——x = E i reni 
+‘Figura 15.3 Parabolico usato su grafico mensile per tracciare il trend primario. Un segnale di vendita 
+all'inizio del 1994 è stato seguito da un segnale d'acquisto a fine estate. Eccezion fatta per una 
+correzione durante il 1996, questo sistema è rimasto positivo per quasi due anni.
+
+=== PDF page 159 ===
+302 CAPITOLO 15 
+Lo (DELLI Dal Computer Comp cavaone 
+| pa Grafico a barre settimanale | [A 
+. A n 
+EL pigli || H pu SIT 
+pete L \ il ,.°° Parabolico SAR settimanale e 
+MST PIT LIETI LUNE D° 
+lia VIPITTZZARE legna 
+Figura 15.4 Un parabolico applicato al grafico settimanale del titolo Dell Computer. Dopo assere 
+stato positivo per quasi tutto il 1997, in ottobre è stato generato un segnale di vendita che si è 
+trasformato in un segnale d'acquisto alla fine del 1997, 
+Wilder ha costruito un fattore di accelerazione nel sistema, per far sì che ogni 
+giorno gli stop possano muoversi nella direzione del nuovo trend. Inizialmente il 
+movimento degli stop è relativamente lento, in modo da poter consentire al trend di 
+stabilizzarsi. Man mano che il fattore di accelerazione aumenta, il SAR:comincia a 
+muoversi più velocemente fino a equiparare il movimento dei prezzi. Se il trend 
+esita a partire o non parte affatto, il sistema darà un segnale di stop e reverse. Come 
+mostrano i grafici delle figure 15.1-15.4, il sistema parabolico lavora estremamente 
+bene in mercati con una direzione ben definita e cioè nei trending markets. Notate 
+come le fasi trending siano ben individuate, e come durante una fase laterale, ossia 
+in periodi non-trending, il sistema continui a dare segnali di entrata e di uscita. 
+Questo dimostra sia la forza sia la debolezza della maggioranza ‘dei sistemi 
+trend-following che lavorano molto bene solo in periodi in cui il trend si dimostra 
+molto forte, e cioè, secondo le stime dello stesso Wilder, il 30% delle volte. Se 
+questa stima è vicina alla realtà, significa che i sistemi frend-followirig non fun- 
+zionano il 70% delle volte circa: un limite operativo notevole. 
+15.5.2 DMI e ADX 
+Per superare il limite sopra accennato si può ricorrere all’uso di alcuni tipi di filtri 
+che determinano se un mercato si trova in una situazione di trending. Lo studio di 
+Wilder denominato ADX line misura percentualmente il movimento direzionale dei 
+vari mercati in una scala da 0 a 100. Una linea ADX che sale indica che il mercato si 
+trova in presenza di un trend ben definito, un ottimo candidato per un sistema 
+COMPUTER E TRADING SYSTEMS 303 
+04/21/97 {"SPX) S&P 500 Stock Index 03/18/96 
+Grafico a barre giornaliero 1oso 
+È 8 ki i 5 8 & x 
+ADX O 
+A 
+VA VIV AN" Mi 4 + A 2 S x 2 rai 
+Figura 15.5 La linea ADX misura il grado di movimento direzionale. Un'inversione ribassista sotto 40 
+(freccia a sinistra) segnalava un rallentamento del trend e l'entrata in un movimento laterale. L'inversione 
+rialzista al di sopra di 20 (freccia a destra) segnalava una ripresa del trend. 
+trend-following. Viceversa, se la linea scende, indica una situazione non-trending, 
+che non può essere sfruttata con un approccio di trend-following (figura 15.5). 
+Dato che la linea ADX si muove in una scala da 0 a 100, l'operatore deve 
+semplicemente scegliere quei mercati che presentano la percentuale più alta. I 
+sistemi di non-trending, come per esempio gli oscillatori, possono essere utilizzati 
+in mercati con movimento direzionale a valori molto bassi. 
+Il movimento direzionale può essere usato sia come sistema sia come filtro per 
+l’uso del parabolico e per ogni altro sistema trend-following. Lo studio DMI 
+genera due linee, + DI e — DI. La prima linea misura i movimenti positivi 
+(rialzisti) e la seconda, i movimenti negativi (ribassisti) (figura 15.6). La linea più 
+marcata è + DI e quella meno marcata è — DI. Un segnale d’acquisto si sviluppa 
+quando la linea + DI incrocia al rialzo la linea — DI, viceversa un segnale di 
+vendita si verifica quando la linea + DI incrocia al ribasso la linea — DI. 
+La figura 15.6 mostra sia il parabolico sia il movimento direzionale. Il para- 
+bolico risulta chiaramente più sensibile, in quanto genera segnali più frequenti e 
+anticipatori. Utilizzando il movimento direzionale come filtro, parecchi falsi se- 
+gnali del parabolico possono essere evitati, seguendo soltanto quelli generati nella 
+stessa direzione delle linee del movimento direzionale. E ovvio quindi che para- 
+bolico e movimento direzionale devono essere usati insieme, dove il movimento 
+direzionale funziona da filtro a un parabolico molto sensibile.
+
+=== PDF page 160 ===
+304. CAPITOLO 15 
+P4/21/97 (*SPX) S&P 500 Stock Index 03/18/98 
+Grafico a barre giornaliero 
+_£° Parabolico SAR 
+‘(NE 
+N 
+EEE 
+EFE 
+IE Tea FRI ag Treia È Gnaga Renon: Gi NY 
+Figura 15.6 Le linee del movimento direzionale sul fondo del grafico possono essere usate per filtrare 
+il parabolico (grafico superiore). Quando la linea + DI è sopra la linea — DI (a sinistra e a destra del 
+grafico) tutti i segnali di vendita del parabolico possono essere ignorati. Questo dovrebbe eliminare 
+parecchie correzioni durante la fase rialzista. 
+Come già detto, il momento migliore per usare un sistema trending è quando le 
+linea ADX si trova rialzo (figure 15.7 e 15.8). Bisogna fare attenzione, a quando 
+la linea ADX inizia a scendere al di sotto a 40, generando quindi un segnale 
+anticipatore di un indebolimento del trend. Quando la linea risale al di sopra del 
+livello 20 abbiamo spesso un segnale di avvio di nuovo trend (la linea ADX è 
+essenzialmente una differenza tra + DI e — DI.) 
+15.6 Pro e contro del trading system 
+Un sistema meccanico presenta i seguenti vantaggi: 
+— permette di eliminare l’emotività; 
+— applica una forte disciplina; 
+— permette maggiore coerenza; 
+— le operazioni vengono fatte nella direzione del trend; 
+— garantisce virtualmente la partecipazione al movimento nella direzione di ogni 
+trend importante; 
+— permette di lasciar correre i profitti; 
+— minimizza le perdite. 
+Tuttavia, presenta anche i seguenti svantaggi: 
+COMPUTER E TRADING SYSTEMS 305 
+P3/17/08 (DWU) Dow Utiitios 03/20/98 
+Grafico a barre settimanale ll ui! ja 
+, È DI È 
+Ù ls 
+PR ped ui Pi e 
+Mi ti pa 
+hl e 
+DAI ADX a 14 settimane N 
+z LN — TONI z LA 200 “NN LI 
+Figura 15.7 La linea ADX a 14 settimane ha segnato un massimo all'inizio del 1996 ben oltre 40, ed è 
+iniziata una fase laterale di 18 mesi. Le linea è ritornata al rialzo durante l'estate del 1997 superando 20, 
+segnalando così una ripresa del trend. 
+D2/28/85 ("XOl) Amex Oîì Index 03/31/08 
+Grafico a barre mensile 
+Linea a 40 (AN 
+O 
+ADX a 14 mesi 
+Linea a 20 IA) 
+MI 
+Figura 15.8 La linea ADX sovrapposta a un grafico mensile. La linea ha segnato il massimo oltre.40 
+nel 1990, segnando la fine del trend rialzista. L'inversione positiva della linea ADX ha superato 20 
+all’inizio del 1995, segnando la fine di quattro anni di movimento laterale e anticipando correttamente 
+l'inizio di un nuovo rialzo.
+
+=== PDF page 161 ===
+306 CAPITOLO 15 
+- la maggioranza dei sistemi meccanici è trend-following; 
+-i sistemi trend-following per dare utili devono operare soltanto sui | trend di 
+lungo periodo; 
+- i sistemi trend-following sono generalmente in perdita quando il mercato non ha 
+trend; 
+- ci sono lunghi periodi di tempo in cui i mercati non hanno trend, perciò, non 
+sono sfruttabili dall'approccio trend-following. 
+Il problema maggiore risiede nell’incapacità del sistema di riconoscere quando un 
+mercato non ha trend e di bloccarsi. Per misurare un buon sistema, non bisogna 
+considerare solo la sua capacità di guadagno in mercati trending, ma anche quella 
+di preservare il capitale durante i periodi di non-trending. La debolezza del sistema 
+consiste proprio nella sua incapacità di autocorreggersi. Proprio per questo 
+motivo alcune modalità di filtro, come per esempio il movimento direzionale o la 
+ADX line di Wilder possono consentire all'operatore di determinare quali mercati 
+sono più adatti per il trading system. 
+Un altro punto a sfavore consiste nel non tener conto dei segnali anticipatori 
+delle inversioni di mercato. I sistemi trend-following marciano con il trend fino a 
+quando questo non inverte la sua direzione. Essi non riconoscono quando il 
+mercato raggiunge un supporto di lungo periodo o un livello di resistenza, 
+quando gli oscillatori divergono o quando la quinta onda di Elliott è chiaramente 
+visibile. Molti operatori su queste indicazioni comincerebbero a mettersi sulla 
+difensiva e inizierebbero a prendere profitti. Il sistema, invece, rimane in posi- 
+zione ben oltre l'inversione di tendenza del mercato. Sta perciò all'operatore 
+determinare qual è l’uso migliore che può fare del sistema, ossia se seguire cie- 
+camente le indicazioni o incorporare al sistema altri fattori tecnici. Questo ci 
+introduce al prossimo paragrafo riguardante l’uso del sistema meccanico come un 
+ulteriore informazione tecnica all’interno di un processo previsionale e operativo. 
+15.6.1 Usarei segnali del sistema come strumento di disciplina 
+I segnali del sistema possono essere usati semplicemente come conferrna mecca- 
+nica ad altri fattori tecnici. Anche se il sistema non è in grado di operare mec- 
+canicamente e sono stati impiegati altri fattori tecnici, il segnale può essere usato 
+come uno strumento disciplinare che costringe l’operatore a stare nella corretta 
+direzione in un trend di lungo periodo. Non si prendono posizioni: ribassiste 
+fintanto che il trend segnalato dal computer è al rialzo. Non si prendono posizioni 
+rialziste se il computer segnala trend al ribasso. Questo potrebbe essere un modo 
+molto semplice per operatori fondamentalmente orientati a usare il sistema tec- 
+nico come un filtro alle proprie convinzioni operative. 
+La direzione del trend può anche essere questione di opinione. I segnali ope- 
+rativi del computer eliminano un certo grado di incertezza dell’operatore. Pos- 
+sono evitargli di cascare in una trappola di tipo ‘top and bottom picking”? 
+? “Top and bottom picking” = “falso segnale” [N.d.T.]. 
+COMPUTER E TRADING SYSTEMS 307 
+15.6.2 Usare segnali come “avvisi” (alerts) 
+I segnali del sistema possono anche essere usati come un eccellente monitoraggio 
+che avvisa l’operatore delle recenti inversioni di trend. L’operatore può sem- 
+plicemente attivarsi alla segnalazione e immediatamente otterrà dal sistema di- 
+versi candidati all'operatività. Si può ottenere la stessa informazione osservando 
+personalmente tutti i grafici, ma il computer esegue questa procedura in maniera 
+più veloce, più semplice e con maggiore affidabilità. L'abilità del computer nel 
+fornire segnali automatici, e quindi di allertare di conseguenza l’operatore, è di 
+enorme vantaggio, specialmente quando l'universo dei mercati finanziari è così 
+vasto, come ai nostri giorni. 
+15.7 Necessitate l’aiuto di un esperto? 
+Uno dei prodotti offerti da Omega Research* chiamato TradeStation offre una 
+varietà di “servizi esperti” che interpretano per conto vostro gli indicatori ap- 
+plicati al mercato attuale. L’analista esperto di Omega determinerà quali indi- 
+catori dovrebbero lavorare meglio sul mercato in essere e ve ne fornirà l’inter- 
+pretazione. In aggiunta esistono altri due strumenti: il primo, denominato Trend- 
+lines Automatic Indicator, offre la possibilità di tracciare automaticamente delle 
+trendlines, e il secondo, chiamato Candlesticks Patterns Indicator, identifica le più 
+comuni formazioni grafiche dei candlesticks. 
+15.8 Testare i sistemi o crearne uno per conto vostro 
+Omega Research include un elenco dei più popolari trading systems usati dagli 
+operatori. Potete provarli, variarli, o crearne uno per conto vostro. Tutti gli 
+strumenti tecnici di Omega, indicatori e trading systems, sono scritti in un lin- 
+guaggio relativamente semplice denominato FEasyLanguage che converte in un 
+codice comprensibile alla macchina i concetti operativi descritti dall'utente in un 
+linguaggio completo. È difficile quantificare l'enorme valore della possibilità data 
+‘di sviluppare, testare, ottimizzare se lo desiderate e automatizzare le vostre ipotesi 
+operative senza essere un programmatore informatico. Il computer può persino 
+generare i corretti ordini operativi per conto vostro e avvisarvi sul vostro “pager” 
+se si sono verificati dei segnali.5 
+15.9 Conclusioni 
+In questo capitolo sono stati introdotti altri due sistemi di Welles Wilder, il 
+parabolico e il movimento direzionale (DMI). Il parabolico può generare utili 
+4 Omega Research, Miami, FL 33174,(305) 551-9991. 
+5 Nell’appendice C, utilizzeremo l'EasyLanguage di Omega Research e TradeStation per mostrarvi 
+alcuni esempi di costruzione di trading systems.
+
+=== PDF page 162 ===
+308 CAPITOLO 15 
+segnali operativi, ma probabilmente non può essere usato da solo. Le due linee del movimento direzionale possono essere usate come filtro al parabolico a un qualsiasi altro trading system basato su strumenti sensibili come i trend-following. La linea ADX, che fa parte del sistema del movimento direzionale, fornisce un modo per determinare con quale tipo di mercato si sta operando: irending o non- trending. Una linea ADX in rialzo suggerisce l’esistenza di un trend e favorisce 
+l’uso delle medie mobili. Una linea ADX discendente suggerisce un (rading range e favorisce l’uso degli oscillatori. Abbiamo usato il parabolico nei nostri esempi 
+per mostrare i lati positivi e negativi della maggior parte dei sistemi trend-fol- 
+lowing. Come già detto, essi lavorano bene in presenza di una direzione. Sono assolutamente inutili in assenza di direzione. Dovete essere in grado di ricono- scere la differenza. Abbiamo anche elencato i meriti di un trading system mec- canico, tra i quali spicca l’eliminazione dell'emotività umana che può essere molto utile se ci si trova nella direzione giusta. Possono anche essere usati come se- gnalatori tecnici e utilizzati insieme all'analisi fondamentale.$ 
+Indubbiamente i computer hanno rivoluzionato i mercati finanziari sia dal punto di vista operativo sia dal punto di vista analitico. Anche se il nostro in- teresse è primariamente nell’analisi tecnica, esistono programmi che consentono 
+di unire analisi fondamentale ad analisi tecnica. Inoltre, negli ultimi 15 anni il costo dei computer e dei programmi necessari all’analisi tecnica professionale è calato notevolmente, e spesso i software migliori forniscono all’acquirente 20 anni di dati storici su CD-ROM a prezzi accessibili o addirittura gratis. Un altro grande vantaggio è dato dalla quantità di materiale esplicativo con- tenuto all’interno di tali software professionali. I manuali stessi includono spie- gazioni di tutti i tipi, incluse le formule matematiche. Il fatto che i software attuali possano monitorare il mercato e avvisare l'utente risulta utile per chi controlla il mercato globale obbligazionario, gli indici dei mercati azionari e migliaia di singole azioni, per non menzionare i fondi. Nel capitolo 17 parleremo in maniera molto più approfondita dell’uso della tecnologia informatica per lo sviluppo delle reti neurali. Il messaggio è chiaro: se siete realmente interessati a operare sui mercati finanziari, comprate un computer e imparate a usarlo. Ne sarete contenti. 
+6 Si veda l’appendice C per approfondimenti sui trading systems. 
+16 
+Gestione patrimoniale 
+e tattiche operative 
+16.1 Introduzione 
+I capitoli precedenti hanno presentato quasi tutti i metodi tecnici usati a scopi 
+operativi e previsionali sui mercati finanziari. In questo capitolo tratteremo il 
+processo operativo, aggiungendo al ruolo della previsione alcuni elementi cruciali 
+di tattica operativa (o timing) e gli aspetti della gestione patrimoniale, spesso 
+trascurati. Non è possibile usare un trading program che non includa questi tre 
+elementi. 
+16.2 I tre elementi di un trading di successo 
+Ogni trading program di successo deve prendere in considerazione tre fattori 
+importanti: previsione di prezzo, timing, e gestione patrimoniale: 
+— la previsione di prezzo indica quale direzione ci si aspetta possa prendere il 
+mercato; è il primo passo, cruciale in una decisione operativa; il processo 
+previsionale determina se il trader è compratore o venditore e fornisce la ri- 
+sposta alla questione basilare, se entrare in un mercato, al rialzo o al ribasso; se 
+la previsione è sbagliata nessuno dei fattori che seguono può funzionare; l 
+— tecniche operative o timing, per stabilire il momento preciso di entrata e d'uscita; 
+è importante specialmente nell’operatività sui futures; a causa del basso margine 
+richiesto e dal fattore leva molto alto, non c’è spazio per errori; teoricamente è 
+possibile essere nella corretta direzione del mercato, ma è altrettanto possibile 
+perdere soldi in un’operazione, se il timing è sbagliato; il timing è di natura 
+totalmente tecnica: anche se l’operatore è orientato verso l’analisi fonda- 
+mentale, gli strumenti tecnici devono essere impiegati per determinare l’entrata 
+e l'uscita; 
+— la gestione patrimoniale consiste nella locazione dei capitali; include alcune aree, 
+come la formazione del portafoglio, la diversificazione, la scelta della somma da 
+investire o rischiare in ogni specifico mercato, l’uso degli stops, la gestione del 
+fattore di rischio, cosa fare dopo periodi di successo o insuccesso, e se operare 
+in maniera conservativa o aggressiva.
+
+=== PDF page 163 ===
+310 CAPITOLO 16 
+Per riassumere brevemente questi tre elementi si può affermare che la previ- 
+sione dice all’operatore cosa fare (comprare o vendere), il timing lo aiuta a de- 
+cidere quando farlo e la gestione patrimoniale determina come impostare l’ope- 
+razione. 
+Poiché delle previsioni di prezzo si è già ampiamente parlato nei capitoli pre- 
+cedenti, tratteremo gli altri due aspetti, partendo dalla gestione patrimoniale, dal 
+momento che deve essere tenuta in considerazione quando si decidono le tattiche 
+operative più appropriate. 
+16.3 Gestione patrimoniale (money management) 
+Dopo aver lavorato diversi anni nel dipartimento ricerca di uno dei più grandi 
+broker americani, sono inevitabilmente entrato nella gestione patrimoniale. Ho 
+subito scoperto la differenza che esiste tra raccomandare delle strategie operative 
+ad altri e applicarle in prima persona. Quello che mi ha sorpreso è stato che la 
+parte più difficile di questa transazione aveva poco a che fare con le strategie di 
+mercato. Il modo di analizzare i mercati e di determinare i punti di entrata e di 
+uscita non era variato molto ma era cambiata la mia percezione dell'importanza 
+della gestione patrimoniale. Ero meravigliato dell'impatto che alcune cose, come 
+la grandezza del conto, la composizione del portafoglio e la cifra da destinare a 
+ogni operazione, poteva avere sul risultato finale. 
+E inutile dire che sono convinto della grande importanza della gestione pa- 
+trimoniale. Il settore è pieno di consulenti e di servizi di consulenza che dicono ai 
+clienti cosa comprare o vendere e quando farlo. Manca tuttavia qualcuno che 
+dica quanto investire in ogni operazione. 
+Alcuni operatori credono che la gestione patrimoniale sia l’ingrediente princi- 
+pale di un trading program, addirittura più importante dell'approccio tecnico. 
+Non sono totalmente convinto di questa affermazione, ma non penso sia possibile 
+sopravvivere senza la gestione patrimoniale dato che ha a che fare con una questione di sopravvivenza: dice all'operatore come maneggiare i soldi. Ogni 
+buon operatore dovrebbe essere vincitore nel lungo periodo e la gestione pa- 
+trimoniale aumenta le possibilità di sopravvivenza fino al “lungo periodo”. 
+16.3.1 Alcune linee guida sulla gestione patrimoniale in generale 
+Considerando che la questione della gestione del portafoglio può essere molto complicata e richiedere l’uso di misure statistiche avanzate, affronteremo il pro- 
+blema in maniera molto semplice. Le linee guida generali riportate di seguito 
+possono essere utili nella distribuzione dei fondi e nella determinazione della grandezza del portafoglio. Esse fanno riferimento primariamente all'operatività 
+sui futures: 
+— il totale investito dovrebbe limitarsi al 50% del capitale totale; il restante do- 
+vrebbe essere investito in Tresury Bi/ls; questo significa che in nessun modo si 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 311 
+deve operare con più del 50% del capitale, dato che il restante 50% agisce come 
+riserva durante il periodi di avversità; se, per esempio il vostro capitale è di 
+100.000 dollari, potete utilizzarne per operare solo 50.000; 
+— la cifra da investire in ogni singolo mercato dovrebbe limitarsi al 10-15% del 
+totale del capitale; perciò, in un portafoglio di 100.000 dollari, solo 10.000- 
+15.000 dollari possono essere disponibili come deposito a margine per ogni 
+singolo mercato; questo dovrebbe impedire all’operatore di mettere troppo 
+capitale in ogni singola operazione; 
+— la cifra rischiata in ogni singolo mercato dovrebbe essere limitata al 5% del 
+capitale totale e dovrebbe corrispondere a quanto l'operatore è disposto a 
+perdere se l'operazione va male; questa è una considerazione importante nella 
+decisione del numero dei contratti con cui operare e nello stabilire quanto può 
+essere distante lo stop di protezione; un conto di 100.000 dollari, perciò, non 
+dovrebbe rischiare più di 5000 dollari in ogni singola operazione; 
+— la cifra investita in ogni settore di mercato deve essere limitata al 20-25% del 
+capitale totale; questo per evitare di investire troppo in un solo settore del 
+mercato; i titoli all'interno dei gruppi tendono a muoversi insieme; l’oro e l’ar- 
+gento fanno parte del settore “metalli preziosi” e solitamente si muovono nelia 
+stessa direzione; investire in più titoli dello stesso settore abbatte il principio della 
+diversificazione; l'investimento all’interno di un settore deve essere controllato. 
+Queste linee guida sono giustamente standardizzate per il settore dei futures, ma 
+possono essere modificate in base alle necessità dell’operatore. Alcuni, i più ag- 
+gressivi, prendono posizioni più grosse, altri sono più conservatori, ma fonda- 
+mentale per entrambi è impiegare una forma di diversificazione che consenta la 
+preservazione del capitale e delle misure di protezione durante il periodi di per- 
+dita. (Sebbene queste linee guida facciano riferimento all'operatività sui futures, i 
+principi generali della gestione patrimoniale e della asset allocation possono essere 
+applicati a qualsiasi forma di investimento.) 
+16.3.2 Diversificazione contro concentrazione 
+Sebbene la diversificazione sia un modo per limitare l’esposizione al rischio, può 
+risultare eccessiva. Se un operatore ha investito in troppi titoli nello stesso tempo, 
+alcune operazioni in utile potrebbero essere diluite da un più ampio numero di 
+operazioni in perdita, È necessario trovare una giusta misura e un compromesso. 
+Alcuni operatori di successo concentrano le loro operatività in un ristretto numero 
+dei titoli. Questo è ottimo fintanto che questi mercati sono fra quelli che riescono a 
+muoversi in ogni condizione. Mantenere posizioni in quattro valute estere allo 
+stesso tempo non è un buon esempio di diversificazione, dal momento che le valute 
+estere solitamente si muovono nella stessa direzione contro il dollaro. 
+16.3.3 L’uso degli stop di protezione 
+Raccomando vivamente l’uso degli stop di protezione, anche se riuscire a piaz- 
+zarli è comunque un’arte. L'operatore deve combinare fattori tecnici ricavati dal
+

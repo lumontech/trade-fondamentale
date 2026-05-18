@@ -1,0 +1,27 @@
+{
+  "agents": {
+    "ruflo-hyperliquid-architect": {
+      "agentId": "ruflo-hyperliquid-architect",
+      "agentType": "trading-systems-architect",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "focus": [
+          "hyperliquid-sdk",
+          "risk-management",
+          "kill-switch",
+          "websocket-l2",
+          "execution",
+          "separation-of-concerns"
+        ],
+        "model": "sonnet"
+      },
+      "createdAt": "2026-05-10T21:19:19.361Z",
+      "domain": "automated-trading-defi",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    }
+  },
+  "version": "3.0.0"
+}

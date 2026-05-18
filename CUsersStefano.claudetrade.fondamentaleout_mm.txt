@@ -1,0 +1,522 @@
+=== PDF page 162 ===
+308 CAPITOLO 15 
+segnali operativi, ma probabilmente non può essere usato da solo. Le due linee del movimento direzionale possono essere usate come filtro al parabolico a un qualsiasi altro trading system basato su strumenti sensibili come i trend-following. La linea ADX, che fa parte del sistema del movimento direzionale, fornisce un modo per determinare con quale tipo di mercato si sta operando: irending o non- trending. Una linea ADX in rialzo suggerisce l’esistenza di un trend e favorisce 
+l’uso delle medie mobili. Una linea ADX discendente suggerisce un (rading range e favorisce l’uso degli oscillatori. Abbiamo usato il parabolico nei nostri esempi 
+per mostrare i lati positivi e negativi della maggior parte dei sistemi trend-fol- 
+lowing. Come già detto, essi lavorano bene in presenza di una direzione. Sono assolutamente inutili in assenza di direzione. Dovete essere in grado di ricono- scere la differenza. Abbiamo anche elencato i meriti di un trading system mec- canico, tra i quali spicca l’eliminazione dell'emotività umana che può essere molto utile se ci si trova nella direzione giusta. Possono anche essere usati come se- gnalatori tecnici e utilizzati insieme all'analisi fondamentale.$ 
+Indubbiamente i computer hanno rivoluzionato i mercati finanziari sia dal punto di vista operativo sia dal punto di vista analitico. Anche se il nostro in- teresse è primariamente nell’analisi tecnica, esistono programmi che consentono 
+di unire analisi fondamentale ad analisi tecnica. Inoltre, negli ultimi 15 anni il costo dei computer e dei programmi necessari all’analisi tecnica professionale è calato notevolmente, e spesso i software migliori forniscono all’acquirente 20 anni di dati storici su CD-ROM a prezzi accessibili o addirittura gratis. Un altro grande vantaggio è dato dalla quantità di materiale esplicativo con- tenuto all’interno di tali software professionali. I manuali stessi includono spie- gazioni di tutti i tipi, incluse le formule matematiche. Il fatto che i software attuali possano monitorare il mercato e avvisare l'utente risulta utile per chi controlla il mercato globale obbligazionario, gli indici dei mercati azionari e migliaia di singole azioni, per non menzionare i fondi. Nel capitolo 17 parleremo in maniera molto più approfondita dell’uso della tecnologia informatica per lo sviluppo delle reti neurali. Il messaggio è chiaro: se siete realmente interessati a operare sui mercati finanziari, comprate un computer e imparate a usarlo. Ne sarete contenti. 
+6 Si veda l’appendice C per approfondimenti sui trading systems. 
+16 
+Gestione patrimoniale 
+e tattiche operative 
+16.1 Introduzione 
+I capitoli precedenti hanno presentato quasi tutti i metodi tecnici usati a scopi 
+operativi e previsionali sui mercati finanziari. In questo capitolo tratteremo il 
+processo operativo, aggiungendo al ruolo della previsione alcuni elementi cruciali 
+di tattica operativa (o timing) e gli aspetti della gestione patrimoniale, spesso 
+trascurati. Non è possibile usare un trading program che non includa questi tre 
+elementi. 
+16.2 I tre elementi di un trading di successo 
+Ogni trading program di successo deve prendere in considerazione tre fattori 
+importanti: previsione di prezzo, timing, e gestione patrimoniale: 
+— la previsione di prezzo indica quale direzione ci si aspetta possa prendere il 
+mercato; è il primo passo, cruciale in una decisione operativa; il processo 
+previsionale determina se il trader è compratore o venditore e fornisce la ri- 
+sposta alla questione basilare, se entrare in un mercato, al rialzo o al ribasso; se 
+la previsione è sbagliata nessuno dei fattori che seguono può funzionare; l 
+— tecniche operative o timing, per stabilire il momento preciso di entrata e d'uscita; 
+è importante specialmente nell’operatività sui futures; a causa del basso margine 
+richiesto e dal fattore leva molto alto, non c’è spazio per errori; teoricamente è 
+possibile essere nella corretta direzione del mercato, ma è altrettanto possibile 
+perdere soldi in un’operazione, se il timing è sbagliato; il timing è di natura 
+totalmente tecnica: anche se l’operatore è orientato verso l’analisi fonda- 
+mentale, gli strumenti tecnici devono essere impiegati per determinare l’entrata 
+e l'uscita; 
+— la gestione patrimoniale consiste nella locazione dei capitali; include alcune aree, 
+come la formazione del portafoglio, la diversificazione, la scelta della somma da 
+investire o rischiare in ogni specifico mercato, l’uso degli stops, la gestione del 
+fattore di rischio, cosa fare dopo periodi di successo o insuccesso, e se operare 
+in maniera conservativa o aggressiva.
+
+=== PDF page 163 ===
+310 CAPITOLO 16 
+Per riassumere brevemente questi tre elementi si può affermare che la previ- 
+sione dice all’operatore cosa fare (comprare o vendere), il timing lo aiuta a de- 
+cidere quando farlo e la gestione patrimoniale determina come impostare l’ope- 
+razione. 
+Poiché delle previsioni di prezzo si è già ampiamente parlato nei capitoli pre- 
+cedenti, tratteremo gli altri due aspetti, partendo dalla gestione patrimoniale, dal 
+momento che deve essere tenuta in considerazione quando si decidono le tattiche 
+operative più appropriate. 
+16.3 Gestione patrimoniale (money management) 
+Dopo aver lavorato diversi anni nel dipartimento ricerca di uno dei più grandi 
+broker americani, sono inevitabilmente entrato nella gestione patrimoniale. Ho 
+subito scoperto la differenza che esiste tra raccomandare delle strategie operative 
+ad altri e applicarle in prima persona. Quello che mi ha sorpreso è stato che la 
+parte più difficile di questa transazione aveva poco a che fare con le strategie di 
+mercato. Il modo di analizzare i mercati e di determinare i punti di entrata e di 
+uscita non era variato molto ma era cambiata la mia percezione dell'importanza 
+della gestione patrimoniale. Ero meravigliato dell'impatto che alcune cose, come 
+la grandezza del conto, la composizione del portafoglio e la cifra da destinare a 
+ogni operazione, poteva avere sul risultato finale. 
+E inutile dire che sono convinto della grande importanza della gestione pa- 
+trimoniale. Il settore è pieno di consulenti e di servizi di consulenza che dicono ai 
+clienti cosa comprare o vendere e quando farlo. Manca tuttavia qualcuno che 
+dica quanto investire in ogni operazione. 
+Alcuni operatori credono che la gestione patrimoniale sia l’ingrediente princi- 
+pale di un trading program, addirittura più importante dell'approccio tecnico. 
+Non sono totalmente convinto di questa affermazione, ma non penso sia possibile 
+sopravvivere senza la gestione patrimoniale dato che ha a che fare con una questione di sopravvivenza: dice all'operatore come maneggiare i soldi. Ogni 
+buon operatore dovrebbe essere vincitore nel lungo periodo e la gestione pa- 
+trimoniale aumenta le possibilità di sopravvivenza fino al “lungo periodo”. 
+16.3.1 Alcune linee guida sulla gestione patrimoniale in generale 
+Considerando che la questione della gestione del portafoglio può essere molto complicata e richiedere l’uso di misure statistiche avanzate, affronteremo il pro- 
+blema in maniera molto semplice. Le linee guida generali riportate di seguito 
+possono essere utili nella distribuzione dei fondi e nella determinazione della grandezza del portafoglio. Esse fanno riferimento primariamente all'operatività 
+sui futures: 
+— il totale investito dovrebbe limitarsi al 50% del capitale totale; il restante do- 
+vrebbe essere investito in Tresury Bi/ls; questo significa che in nessun modo si 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 311 
+deve operare con più del 50% del capitale, dato che il restante 50% agisce come 
+riserva durante il periodi di avversità; se, per esempio il vostro capitale è di 
+100.000 dollari, potete utilizzarne per operare solo 50.000; 
+— la cifra da investire in ogni singolo mercato dovrebbe limitarsi al 10-15% del 
+totale del capitale; perciò, in un portafoglio di 100.000 dollari, solo 10.000- 
+15.000 dollari possono essere disponibili come deposito a margine per ogni 
+singolo mercato; questo dovrebbe impedire all’operatore di mettere troppo 
+capitale in ogni singola operazione; 
+— la cifra rischiata in ogni singolo mercato dovrebbe essere limitata al 5% del 
+capitale totale e dovrebbe corrispondere a quanto l'operatore è disposto a 
+perdere se l'operazione va male; questa è una considerazione importante nella 
+decisione del numero dei contratti con cui operare e nello stabilire quanto può 
+essere distante lo stop di protezione; un conto di 100.000 dollari, perciò, non 
+dovrebbe rischiare più di 5000 dollari in ogni singola operazione; 
+— la cifra investita in ogni settore di mercato deve essere limitata al 20-25% del 
+capitale totale; questo per evitare di investire troppo in un solo settore del 
+mercato; i titoli all'interno dei gruppi tendono a muoversi insieme; l’oro e l’ar- 
+gento fanno parte del settore “metalli preziosi” e solitamente si muovono nelia 
+stessa direzione; investire in più titoli dello stesso settore abbatte il principio della 
+diversificazione; l'investimento all’interno di un settore deve essere controllato. 
+Queste linee guida sono giustamente standardizzate per il settore dei futures, ma 
+possono essere modificate in base alle necessità dell’operatore. Alcuni, i più ag- 
+gressivi, prendono posizioni più grosse, altri sono più conservatori, ma fonda- 
+mentale per entrambi è impiegare una forma di diversificazione che consenta la 
+preservazione del capitale e delle misure di protezione durante il periodi di per- 
+dita. (Sebbene queste linee guida facciano riferimento all'operatività sui futures, i 
+principi generali della gestione patrimoniale e della asset allocation possono essere 
+applicati a qualsiasi forma di investimento.) 
+16.3.2 Diversificazione contro concentrazione 
+Sebbene la diversificazione sia un modo per limitare l’esposizione al rischio, può 
+risultare eccessiva. Se un operatore ha investito in troppi titoli nello stesso tempo, 
+alcune operazioni in utile potrebbero essere diluite da un più ampio numero di 
+operazioni in perdita, È necessario trovare una giusta misura e un compromesso. 
+Alcuni operatori di successo concentrano le loro operatività in un ristretto numero 
+dei titoli. Questo è ottimo fintanto che questi mercati sono fra quelli che riescono a 
+muoversi in ogni condizione. Mantenere posizioni in quattro valute estere allo 
+stesso tempo non è un buon esempio di diversificazione, dal momento che le valute 
+estere solitamente si muovono nella stessa direzione contro il dollaro. 
+16.3.3 L’uso degli stop di protezione 
+Raccomando vivamente l’uso degli stop di protezione, anche se riuscire a piaz- 
+zarli è comunque un’arte. L'operatore deve combinare fattori tecnici ricavati dal
+
+=== PDF page 164 ===
+312 CAPITOLO 16 
+movimento di prezzo con considerazioni gestionali. Dimostreremo come fare nel 
+corso del capitolo, parlando delle strategie. L'operatore deve considerare la vo- latilità del mercato. Più questo è volatile, più gli stop devono essere lontani. 
+Tuttavia, anche in questo caso esiste una giusta misura. L’operatore desidera che 
+gli stop protettivi siano abbastanza vicini, in modo che la perdita derivante dall’operazione sia più piccola possibile ma così facendo, ne può risultare una liquidazione involontaria su una inversione di brevissimo termine (chiamata an- che noise). Se gli stop di protezione vengono messi troppo lontani si evitano 
+queste fastidiose correzioni, ma si possono creare grosse perdite. Il trucco sta nel 
+trovare una giusta via di mezzo. 
+16.4 L’utilità della gestione del fattore rischio 
+I migliori operatori guadagnano solo sul 40% delle loro operazioni e la mag- gioranza di loro dichiara di essere spesso in perdita. Come si possono guadagnare soldi essendo spesso in perdita? La risposta è che i contratti futures richiedono un margine così ristretto che persino un piccolo movimento nella direzione sbagliata 
+costringe a uscire in perdita. È necessario, perciò, che un operatore entri ed esca dal mercato parecchie volte prima di riuscire a prendere il movimento che sta cercando. 
+Questo ci porta alla questione della gestione del rischio. Dal momento che la maggioranza delle operazioni risulta in perdita, l’unico modo per uscirne è di assicurarsi che l'ammontare delle operazioni vincenti sia superiore a quello delle operazioni in perdita. Per riuscire a ottenere questo, molti operatori usano una percentuale di gestione rischio. Per ogni potenziale operazione, viene calcolato un obiettivo di profitto, bilanciato dalle potenziali perdite che si potrebbero verifi- care nel caso in cui l'operazione andasse male. Comunemente viene usato un parametro di potenziale rischio di 3 a 1: il profitto deve potenzialmente essere 
+almeno tre volte la possibile perdita. 
+Una delle massime che circola da tempo tra gli operatori recita: “lasciar correre i profitti e tagliare immediatamente le perdite”. Si raggiungono grossi utili nel- l'operatività stando nel trend. Dal momento che solo un numero ristretto di operazione durante il corso dell’anno genera grossi profitti è necessario massi- mizzare gli utili. Lasciar correre i profitti, è un modo per ottenere questo risultato. L'altra faccia della medaglia è di prendere perdite più piccole possibili. Sareste 
+sorpresi nel constatare quanti operatori fanno esattamente l'opposto. 
+16.5 Operare su varie posizioni: restare nel trend o fare operatività 
+Lasciar correre i profitti non è facile come sembra. Immaginate una situazione dove un mercato inizia un trend, producendo un grosso profitto in un lasso di tempo relativamente breve. Improvvisamente il trend si ferma, gli oscillatori mostrano una situazione di ipercomprato e potete verificare l’esistenza di alcune 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 313 
+resistenze sul grafico. Cosa fare? Voi pensate che il mercato abbia ancora delle 
+potenzialità rialziste, ma siete preoccupati della possibile perdita del vostro ipo- 
+tetico profitto, se il mercato dovesse scendere. Prendete profitti o sopportate una 
+possibile correzione? 
+Un modo per risolvere questo problema è quello di operare su varie posizioni, 
+che possono essere suddivise in trading e trending. La parte che destinate alla 
+posizione di trending viene mantenuta in un'ottica di lungo periodo: se si pongono 
+degli stop di protezione abbastanza lontani, si dà al mercato la possibilità di 
+consolidare o correggere. Queste sono le posizioni che producono il profitto 
+maggiore nel lungo periodo. 
+La parte destinata al trading di breve periodo sarà fatta con operazioni di 
+entrata e di uscita. Se il mercato raggiunge un primo obiettivo, è vicina una 
+resistenza e si è in condizione di ipercomprato, si possono prendere i profitti 
+o applicare degli stop protettivi molto vicini. Lo scopo è di chiudere la po- 
+sizione o proteggere gli utili. Se il trend riprende, ogni posizione liquidata può 
+essere reimpostata. La soluzione ottimale consiste nell’evitare di operare in 
+una sola direzione per volta. L'aumento di flessibilità che si è raggiunto 
+operando con posizioni multiple fa una grande differenza sui risultati del- 
+l'operatività totale. 
+16.6 Cosa fare dopo un periodo di successo o di avversità 
+Cosa fa un operatore dopo aver guadagnato o perso? Supponete che il vostro 
+titolo stia perdendo il 50%. Cambiate modo di operare? Se avete già perso la 
+metà del vostro denaro, ora dovrete raddoppiare quello che vi rimane per ri- 
+tornare alla vostra situazione di partenza. Fate delle operazioni guidate da scelte 
+più selettive, o continuerete a fare quelle già fatte in precedenza? Se diventate più 
+conservativi, sarà più difficile recuperare le vostre perdite. 
+Un dilemma più gradevole si verifica quando avete degli utili. Che cosa fate con 
+gli utili? Supponete di aver raddoppiato i vostri soldi. Una risposta è di usare il 
+vostro denaro in un modo estremo, raddoppiando le posizioni. Se fate ciò, che 
+cosa farete durante gli inevitabili periodi di perdita, che sicuramente seguiranno? 
+Invece di perdere il 50% dei vostri utili, potreste perdere il 50% del vostro ca- 
+pitale. La risposta a queste domande non è semplice o ovvia come potrebbe 
+sembrare. 
+Ogni operatore prende nota di una serie di massimi e minimi, creando 
+qualcosa di simile a un grafico. La direzione del grafico dovrebbe essere al 
+rialzo se l'operatore sta guadagnando. Il momento peggiore per aumentare il 
+proprio investimento viene subito dopo una fase di guadagni. È come compra- 
+re in un mercato in condizione di ipercomprato di un trend rialzista. La miglior 
+cosa da fare (che va contro la natura umana) è aumentare la quantità investita 
+dopo le perdite. Questo aumenta la possibilità che l’incremento del capitale in- 
+vestito possa essere raggiunto con acquisti vicino ai minimi, invece che vicino ai 
+massimi.
+
+=== PDF page 165 ===
+314 CAPITOLO 16 
+16.7 Tattiche operative 
+Prima di completare l’analisi del mercato, l’operatore dovrebbe sapere se vuole 
+comprare o vendere. Le considerazioni sulla gestione patrimoniale fatte finora 
+dovrebbero aver chiarito le implicazioni presenti in questo concetto.:Il passo 
+finale è quello di comprare o vendere. Questa è la parte più difficile di tutto il 
+processo. La decisione finale è come e dove entrare nel mercato, basandosi su una 
+combinazione di fattori tecnici, parametri di gestione patrimoniale e tipo di or- 
+dine da impiegare. Consideriamo ora il tipo di ordine. 
+16.7.1 L’uso dell’analisi tecnica nel timing 
+In realtà non c’è niente di nuovo nell’applicare i principi tecnici discussi nei 
+capitoli precedenti al processo di timing. La sola differenza è che il timing copre 
+un’area di brevissimo periodo. L'arco temporale che ci riguarda in questo con- 
+testo viene misurato in giorni, ore e minuti invece che in settimane e mesi. Ma gli 
+strumenti tecnici impiegati rimangono gli stessi. Invece di passare in rassegna 
+ancora una volta tutti i metodi tecnici, ci limiteremo ad alcuni concetti generali: 
+— le tattiche sulle rotture; 
+— la rottura di trendlines; 
+— l’uso di supporti e resistenze; 
+— l’uso del ritracciamento percentuale; 
+— l’uso dei gaps. 
+Tattiche sulle rotture: anticipazione o reazione? 
+L'operatore si trova sempre davanti a un dilemma: prendere posizione in' anticipo 
+rispetto alla rottura, prendere posizione sulla rottura stessa 0 aspettare una cor- 
+rezione o una reazione dopo che si verifica una rottura? Tali approcci sono validi 
+sia se isolati, sia se combinati tra loro. Se l’operatore sta operando con varie 
+posizioni, se ne può aprire una su ognuna di queste ipotesi. Se la posizione viene 
+fatta in anticipo a una rottura al rialzo, il risultato sarà un guadagno più alto se si 
+verifica un breakout anticipato. La possibilità di fare una cattiva entrata, co- 
+munque, è più alta. Aspettare la reale rottura aumenta le probabilità di successo, 
+ma come controparte si avrà un prezzo d'entrata più alto. Aspettare la correzione 
+della rottura è una via di mezzo, ammesso che la correzione si verifichi. Sfortu- 
+natamente, molti mercati dinamici (solitamente la maggioranza di quelli remune- 
+rativi) non danno all’operatore paziente una seconda chance. Il rischio che si corre 
+nell’aspettare la correzione è di aumentare la possibilità di non entrare nel mercato. 
+Questa situazione è un esempio di come operare con più posizioni semplifichi il 
+problema. L’operatore può aprire una piccola posizione in anticipo rispetto alla rottura, un’altra a rottura avvenuta e aggiungerne una terza sulla rispettiva 
+correzione. 
+Rotture di trendlines 
+Questo è uno dei più utili segnali di entrata e di uscita. Se l'operatore sta cercando 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 315 
+di aprire una nuova posizione su un segnale tecnico di variazione del trend o sta 
+cercando una ragione per uscire da una vecchia posizione, la rottura della trend. 
+line più vicina è spesso un eccellente segnale. Ovviamente bisogna sempre con- 
+siderare anche altri fattori. Le trendlines possono essere usate come punto d’en- 
+trata quando agiscono come supporto o resistenza. Comprare sulla rottura di una 
+trendline di lungo periodo o vendere sulla rottura di una ribassista può essere 
+un’ottima strategia di liming. 
+Uso di supporti e resistenze 
+Supporti e resistenze sono uno degli strumenti più efficaci per determinare il 
+punto d'entrata e di uscita. La rottura di una resistenza può essere un segnale per 
+aprire una posizione di lungo periodo. Gli stop di protezione possono essere 
+collocati sotto il supporto più vicino, mentre uno stop di protezione vicino si può 
+mettere appena sotto il punto di rottura rialzista, che dovrebbe funzionare come 
+supporto. Il rimbalzo verso la resistenza in un downtrend o il ribasso verso il 
+supporto in un uptrend possono essere utilizzati per aprire nuove posizioni o per 
+aggiungerne altre a posizioni già in utile. I supporti e le resistenze sono molto utili 
+per identificare i punti dove collocare gli stop di protezione. 
+Uso del ritracciamento percentuale 
+In un uptrend una fase di correzione che ritraccia del 40-60% il movimento 
+rialzista precedente può essere utilizzata per aprire o aggiungere posizioni di 
+lungo periodo. Dal momento che stiamo parlando principalmente del timing, il 
+ritracciamento percentuale può essere applicato a operazioni di breve periodo. 
+Una correzione del 40% dopo una rottura rialzista, per esempio, può fornire un 
+eccellente punto d’acquisto. Un rimbalzo del 40-60% solitamente fornisce una 
+buona opportunità per vendite allo scoperto in un downtrend. Il ritracciamento 
+percentuale può anche essere usato su grafici intra-day. 
+Uso dei gaps 
+I gaps sui grafici a barre possono essere usati per la scelta del timing in acquisto 0 
+in vendita. Dopo un movimento al rialzo, per esempio, si può formare un gap, 
+con la funzione di supporto. Si può comprare sulla parte superiore del gap o 
+all’interno del gap stesso oppure mettere uno stop di protezione al di sotto del 
+gap. In un mercato al ribasso, si può vendere sulla parte inferiore del gap o 
+all’interno del gap stesso oppure collocare uno stop di protezione al di sopra del 
+gap. 
+Uso combinato di concetti tecnici 
+La maniera più efficace per utilizzare i concetti tecnici è combinarli tra loro. 
+Quello che faremo in questo contesto è di sintonizzare meglio il punto d’entrata e 
+di uscita. Se si verifica un segnale d'acquisto, l'operatore desidera entrare al 
+miglior prezzo possibile. Supponete che i prezzi scendano del 40-60% e si portino 
+in una zona d'acquisto, e che abbiate identificato un importante livello di sup- 
+porto in quella zona, o che troviate un potenziale supporto dato da un gap.
+
+=== PDF page 166 ===
+316 . CAPITOLO 16 
+Supponete inoltre di trovarvi nelle vicinanze di una significativa trendline di 
+supporto rialzista. 
+Tutti questi fattori combinati tra loro creeranno un'ottima opportunità d’ac- quisto. L’idea è quella di comprare vicino ai supporti, ma di uscire velocemente se il supporto viene rotto, La perforazione improvvisa di una trendline sui massimi 
+di una movimento di correzione ribassista può essere usata come segnale d’ac- 
+quisto. Durante un rimbalzo in un trend ribassista, la rottura della trendline può 
+essere una opportunità di vendita al ribasso. 
+16.8 Come combinare i fattori tecnici e la gestione patrimoniale 
+Parallelamente all’uso dei grafici, dovrebbero entrare in gioco anche alcune 
+regole della gestione patrimoniale, per decidere, per esempio, dove posizionare 
+gli stop. Supponiamo di gestire un conto di 100.000 dollari (utilizzando il 
+criterio del 10% di investimento massimo, avremo a disposizione per l’opera- tività solo 10.000 dollari) e di dover tenere il fattore massimo di rischio al 5% 
+(ovvero 5000 dollari). Lo stop di protezione della posizione sarà messo in modo 
+da non perdere più di 5000 dollari nel caso in cui l'operazione non andasse a buon fine. 
+Uno stop di protezione più vicino vi permetterà di aprire posizioni più grosse e, nel caso in cui entrasse lo stop, di ridurre l'investimento. Alcuni operatori usano soltanto regole di gestione patrimoniale per determinare dove mettere gli stop di 
+protezione. E molto importante, comunque, che gli stop siano piazzati al di sopra 
+di una valida resistenza per le posizioni scoperte o al di sotto di un valido sup- 
+porto per le posizioni /ong. L'uso dei grafici intra-day può essere molto utile per 
+identificare i supporti e le resistenze più vicini. 
+16.9 Tipi di ordini operativi 
+La scelta del giusto tipo di.ordine è un ingrediente necessario per il processo 
+tattico. Tratteremo soltanto alcuni degli ordini più comuni come: a/ mercato, limitato, stop, stop limit e market-if-touched (MIT): 
+— l'ordine a/ mercato è una semplice istruzione data al broker di comprare 0 vendere al prezzo di mercato corrente; questo tipo di ordine è preferibile in condizioni di mercato molto veloce o quando l'operatore vuole essere sicuro di prendere posizione e di essere quindi certo di non perdere un potenziale mo- 
+vimento di mercato; 
+— L’ordine limitato specifica un prezzo al quale l’operatore intende comprare; 
+viene messo al di sotto del prezzo corrente e stabilisce il prezzo più alto che l'operatore intende pagare per acquistare il titolo; un ordine limitato di vendita o sell limit viene messo al di sopra del prezzo corrente ed è il prezzo più basso che il venditore intende accettare; questo tipo di ordine viene usato, per e- 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 317 
+sempio, dopo una rottura rialzista quando gli eventuali acquirenti desiderano 
+comprare su una reazione ribassista vicino al supporto; 
+— l'ordine stop può essere usato per stabilire dove aprire una nuova posizione, 
+limitare le perdite su una posizione esistente, o proteggere gli utili; specifica un 
+prezzo al quale l'ordine deve essere eseguito; il buy stop è messo al di sopra del 
+prezzo di mercato e il sell stop al di sotto; una volta raggiunto lo stop, l’ordine 
+di vendita diventa un ordine al mercato e viene eseguito al miglior prezzo 
+possibile; su una posizione /ong, un ordine sel/ stop viene messo al di sotto del 
+prezzo di mercato in modo da limitare le perdite; quando il mercato si muove al 
+rialzo, lo stop può essere alzato in modo da proteggere gli utili, diventando così 
+un trailing stop; un ordine buy stop può essere messo al di sopra di una resi- 
+stenza per iniziare una posizione /ong in caso di rottura rialzista; quando lo stop 
+order diventa un ordine di mercato, il prezzo dell’“eseguito’’ può essere oltre il 
+prezzo stabilito dallo stop, specialmente quando il mercato si muove veloce- 
+mente; 
+— un ordine stop limit combina sia un ordine stop sia un ordine limitato; questo 
+tipo di ordine specifica sia lo stop dove l’ordine viene attivato, sia il prezzo 
+limite; una volta che lo stop viene raggiunto dal mercato, l'ordine di vendita 
+diventa un ordine limitato; questo tipo di ordine è utile quando l’operatore 
+vuole comprare o vendere su di una rottura, ma ugualmente controllare il 
+prezzo sia in acquisto sia in vendita; 
+- l'ordine market-if-touched (MIT) è simile all'ordine limitato, tranne per il fatto 
+che diventa un ordine di mercato solo quando il prezzo limite viene toccato; un 
+ordine MIT in acquisto sarà messo al di sotto del prezzo di mercato come un 
+ordine limitato; quando il prezzo limitato viene raggiunto, l’ordine diventa un 
+ordine al mercato; questo tipo di ordine ha un vantaggio rispetto all'ordine 
+limitato: infatti quest’ultimo viene messo al di sotto del prezzo di mercato e non 
+garantisce di essere eseguito se il prezzo limite esatto non è raggiunto; i prezzi 
+possono rimbalzare velocemente da un prezzo limite, lasciando così l’ordine 
+ineseguito; un ordine MIT è invece più utile, in quanto l'operatore vuole 
+comprare su ribasso e non vuole rischiare di perdere l'operazione dopo che il 
+prezzo limite viene toccato. 
+Ognuno di questi ordini è adatto a certe condizioni di mercato. Ognuno ha un 
+punto forte e un punto debole. Gli ordini a/ mercato garantiscono una posizione, 
+ma possono essere “preda” del mercato. Gli ordini limitati forniscono più con- 
+trollo e prezzi migliori, ma si può rischiare di non entrare nel mercato. Gli ordini 
+stop limit rischiano anche loro di non entrare nel mercato se il prezzo crea un gap 
+al di sotto del limite. Gli ordini stop sono vivamente raccomandati per limitare le 
+perdite e proteggere gli utili. Comunque l’uso degli stop in acquisto o in vendita 
+per iniziare nuove posizioni, può risultare più complicato. L’ordine market-if- 
+touched è particolarmente utile ma non è permesso in alcuni mercati. Il mio 
+consiglio è di familiarizzare con i differenti tipi di ordine, dal momento che 
+ognuno di loro può avere una sua funzione sul trading plan. Siate sicuri di aver 
+verificato quali tipi di ordini sono permessi sui rispettivi mercati.
+
+=== PDF page 167 ===
+318 CAPITOLO 16 
+16.10 Dai grafici giornalieri ai grafici intra-day 
+Dal momento che il timing ha a che fare cori i movimenti di mercato di breve termine, i grafici intra-day possono essere particolarmente utili. Anche se questo 
+tipo di grafici diventa indispensabile per l'operatività, non ci soffermeremo su tale 
+aspetto in questa sede, concentrandoci invece su come l’attività intra-day può 
+facilitare l'operatore nel timing, una volta che questo abbia preso la decisione di 
+entrare o uscire dal mercato. 
+Abbiamo spesso ripetuto che il processo operativo deve iniziare da un'ottica di 
+lungo periodo e gradualmente accostarsi a breve termine. Le analisi cominciano 
+con grafici mensili e settimanali per una prospettiva di lungo periodo. In un 
+secondo tempo si consulta il grafico giornaliero, che diventa la base per stabilire 
+la strategia operativa. Il grafico intra-day è l’ultimo che viene visionato e'serve per 
+aumentare la precisione del timing. I grafici di lungo periodo forniscono una 
+panoramica telescopica del mercato mentre quelli intra-day una visione micro- 
+scopica del mercato. I principi tecnici discussi fino a qui sono chiaramente visibili 
+e applicabili a questi tipi di grafici molto sensibili (figure 16.1-16.3). 
+16.11  L’uso dei pivot points sui grafici intra-day 
+Per ottenere un’entrata in anticipo e persino uno stop di protezione molto vicino, 
+alcuni operatori cercano di anticipare dove il mercato chiuderà attraverso l'uso 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 319 
+i 
+Grafico a barre a 
+Supporto Îh 
+10 minuti 
+parz4e 12:50pm (US h6) caraIRa (2: 
+ra al pl uni = Ù pel ‘nl! ly | Wi - 
+i 
+Ju n 
+| 
+S&P 500 Futures I Ni trai Î , A m° 
+MUAVAMIANI no \ . I i | LA A 
+! iù Grafico a barre a 5 minuti h - 
+sila barre AN L svi w 7 * 
+Figura 16.1 Grafico a barre a 5 minuti del contratto futures S&P 500 di 1 giorno e mezzo di contrat- tazione. Gli ultimi cinque segnali dello stocastico (vedi frecce) hanno lavorato molto bene. | grafici intra- day vengono usati per un operatività di breve periodo. 
+inuti i 3 gioni di Figura 16.2 Grafico a bare a 10 minuti del contratto futures del Treasury Bonds di 
+contrattazione. Gli ultimi due segnali dello stocastico davano un'indicazione di vendita dopo le 10:10 del 
+mattino del 26 febbraio e successivamente un segnale d'acquisto, ll mattino seguente circa alla stessa ora. 
+02/13/98 11:209m (DM H18) 03/02/88 10:20801 
+Deutsche Mark Futures | in 
+° 4 | FOsT 
+I i - Grafico a barre a 60 minuti | Pa 
+ALINA n Stocastico a 14 barre I (100 
+ir — e e“ a ea) 
+Figura 16.8 Grafico a barre orario del contratto futures del marco tedesco di 10 giorni di 
+contrattazione. Lo stocastico ha dato 3 segnali (vedi frecce). Un segnale d'acquisto Îl 7 febbraio, che è 
+diventato un segnale di vendita il 24 febbraio, e che è ridiventato segnale d'acquisto Il 26 febbraio.
+
+=== PDF page 168 ===
+320 CAPITOLO 16 
+dei pivot points. Questa tecnica combina sette livelli di prezzo-chiave con quattro periodi di tempo. I sette pivo! point sono massimo, minimo e chiusura del giorno precedente e apertura, massimo, minimo e chiusura del giorno corrente. I quattro periodi di tempo vengono applicati all'operatività del giorno, e sono: l’apertura, 30 minuti dopo l'apertura, metà giornata (circa le 12:30 di New York) e 35 minuti prima della chiusura. . 
+Questi periodi di tempo possono essere aggiustati secondo ogni singolo mer- cato. L'idea è quella di usare questi punti come strumento per il timing quando l'operatore crede che il mercato abbia raggiunto il massimo o il minimo, I segnali di acquisto o di vendita vengono generati quando questi punti sono superati durante la giornata. Più tardi nella giornata il segnale si verifica, più forte sarà la . sua valenza. 
+Per avere un'idea migliore di un segnale d’acquisto si può dire che, se il titolo apre al di sopra della chiusura del giorno precedente, ma è al di sotto del massimo precedente, un ordine d’acquisto di tipo buy stop viene messo al di sopra del massimo del giorno precedente. Nel caso in cui l'ordine venga eseguito, uno stop di protezione di tipo se// stop viene messo al di sotto del minimo della giornata corrente. E 35 minuti prima della chiusura, se non è stata presa nessuna posi- zione, si mette un buy stop al di sopra del massimo giornaliero, con uno stop di protezione sotto l'apertura del giorno stesso. Non si prende nessuna posizione nei primi 30 minuti di trattazione. Man mano che la seduta prosegue, i pivot points diventano più stretti e diventano stop di protezione. Come necessità finale di un segnale d’acquisto, i prezzi devono chiudere al di sopra della chiusura del giorno precedente e al di sopra del prezzo di apertura del giorno corrente, 
+16.12 Riassunto delle regole della gestione patrimoniale e di trading 
+Riassumiamo di seguito la maggior parte degli elementi della gestione patrimo- niale e del trading: 
+1. operare nella direzione del trend intermedio; 
+2. in fase di rialzo, comprare ai minimi; in fase di ribasso vendere sui rimbalzi; 3. lasciar correre i profitti e tagliare le perdite; 
+4. usare stop di protezione per limitare le perdite; 
+5. non operare impulsivamente; creare una Strategia; 
+6. pianificare il lavoro e lavorare per creare un piano; 
+7. usare i principi della gestione patrimoniale; 
+8. diversificare, ma non troppo; 
+9. applicare un fattore di rischio pari almeno a 3 a 1; 0. quando si opera in piramide (aggiungere posizioni ad altre posizioni già esi- stenti), seguire queste regole: 
+1 
+a. ogni aggiunta deve essere più piccola della precedente; b. aggiungere solo posizioni a posizioni già in utile; 
+GESTIONE PATRIMONIALE E TATTICHE OPERATIVE 321 
+c. non aggiungere mai posizioni a posizioni già in perdita; 
+d. aggiustare gli stop su un punto medio; 
+11. non pagare i margin call per non buttare denaro; 
+12. chiudere le posizioni in perdita prima di quelle in utile; 
+13. eccezione fatta per le operazioni di brevissimo periodo, prendere decisioni 
+preferibilmente quando il mercato è chiuso; 
+14. partire da un’ottica di lungo termine per arrivare a un'ottica di breve termine; 
+15. usare grafici ‘intra-day per identificare meglio i punti di entrata e di uscita; 
+16. imparare a conoscere bene l'operatività intra-day prima di iniziare; 
+17. cercare di ignorare i giudizi convenzionali; non prendere in considerazione ciò 
+che dicono i media finanziari; 
+18. imparare a sentirsi a proprio agio quando si è in minoranza; se si ha ragione 
+sul mercato, molti non saranno d’accordo; 
+19. l’analisi tecnica è un’arte che migliora con l’esperienza e lo studio; occorre 
+quindi continuare a studiare e a imparare; 
+20. fare le cose in maniera semplice; le cose complicate non sono sempre le mi- 
+gliori. ! 
+16.13 Applicazione al mercato azionario | 
+La tattica operativa che abbiamo analizzato in questo capitolo (e in quello pre- 
+cedente) può essere applicata anche al mercato azionario, con qualche piccola 
+modifica. Mentre gli operatori dei futures si focalizzano su trend di breve e medio 
+periodo, gli investitori in borsa tendono a concentrarsi su trend intermedi e di più 
+lungo periodo. L'operatività azionaria enfatizza meno i trend di brevissimo pe- 
+riodo e utilizza poco i grafici intra-day. Ciononostante, le regole principali ri- 
+mangono le stesse sia per l’analisi sia per il frading: a meno che non vi troviate in 
+borsa a Chicago o nel floor del New York Stock Exchange. 
+16.14 Asset allocation 
+Le regole della gestione patrimoniale presentate in questo capitolo fanno riferi- 
+mento principalmente all’operatività sui futures. Comunque molti dei principi di 
+questa discussione evidenziano la necessità di una giusta diversificazione del 
+portafoglio ed entrano quindi nell'argomento dell’asset allocation. Il termine si 
+riferisce al fatto che un singolo portafoglio è ripartito tra azioni, obbligazioni e 
+contanti (solitamente in forma di fondi monetari o Tresury Bills). Può riferirsi 
+anche alla parte di un singolo portafoglio che dovrebbe essere investita sui 
+mercati esteri. Il termine asset allocation indica anche quante azioni sono state 
+messe nei vari settori o gruppi industriali dei vari mercati. Più recentemente ci si 
+riferisce a quale porzione deve essere destinata anche al tradizionale mercato delle 
+merci.
+
+=== PDF page 169 ===
+322 CAPITOLO 16 
+16.15 Fondi gestiti e mutua! funds 
+I fondi gestiti sono comparsi sul mercato dei futures da parecchi anni e hanno 
+costituito uno strumento per quelle persone che desideravano investire nel mer- 
+cato dei futures ma mancavano della necessaria esperienza per farlo in prima 
+persona; hanno quindi svolto una funzione simile a quella dei fondi comuni. 
+Anche se i fondi gestiti sui futures investono su tutti i mercati dei futures — incluso 
+valute, merci, obbligazioni e indici futures dei mercati azionari — sono in qualche 
+modo diversificati, a partire dalle obbligazioni fino alle azioni. Parte della di- 
+versificazione è dovuta al fatto che operano sia al rialzo sia al ribasso. Un altro 
+tipo di diversificazione deriva dalla porzione riguardante le merci. Comunque la 
+capacità di impiegare parti del portafoglio in merci è diventata più semplice a 
+partire dal 1997. 
+Il fondo comune Oppenheimer Real Assets, nato nel marzo 1997 è stato il 
+primo fondo dedicato esclusivamente agli investimenti sulle merci, Investendo in 
+azioni legate alle merci, il fondo è stato in grado di creare un portafoglio merci 
+che rispecchiasse l’indice Goldman Sachs Commodity, composto di 22 merci. Dal 
+momento che spesso queste hanno direzioni opposte rispetto alle obbligazioni e 
+alle azioni, fornisce un eccellente veicolo di diversificazione. La giusta diversifi- 
+cazione richiede la capacità di spostarsi da un gruppo o classe di mercato a un 
+altro che ha poca correlazione con il primo: in altre parole, con tendenza diversa. 
+Le merci sicuramente rientrano in questa categoria. 
+Evidenziamo questo concetto per due ragioni. La prima è per mostrare come 
+l’area della gestione patrimoniale e dall’asset allocation spesso si intreccino. La 
+seconda ragione è quella di dimostrare che i mercati stessi spesso si intrecciano tra 
+loro. Nei prossimi due capitoli vedremo molto più da vicino i legami tra mercato 
+azionario e mercato dei futures e perché è importante che l’investitore azionario 
+sia informato sull'andamento di questo mercato. Il capitolo 17 introdurrà al- 
+l’analisi tecnica intermarket. 
+16.16 Market profile 
+Non possiamo abbandonare l'argomento dei grafici intra-day senza avvicinarci a 
+uno dei più innovativi studi di brevissimo periodo denominato market profile. 
+Questa tecnica operativa è stata sviluppata da J. Peter Steidimayer, un operatore 
+sul floor del Chicago Board of Trade e ha avuto un successo fenomenale nel 
+decennio passato, specialmente sul mercato dei futures. Il market profile può, 
+comunque, essere applicato al mercato azionario comune. Non è uno studio 
+molto semplice, ma quegli operatori che sono riusciti a utilizzarlo hanno ottenuto 
+degli ottimi ritorni. Un esperto del marker profile, Dannis Hynes, ne spiega l’u- 
+tilizzo nell'appendice B. 
+17 
+Il legame tra mercato azionario e mercato 
+dei futures: intermarket analysis 
+Nel 1986, data della prima edizione di questo libro, la separazione tra il mercato 
+dei futures e il più tradizionale mercato azionario e obbligazionario, cominciava 
+già a vacillare. Vent'anni fa con il termine commodities ci si riferiva a merci come 
+il grano, la scia, l’oro e il petrolio. S'intendeva quindi un prodotto che poteva 
+essere coltivato, oppure estratto o raffinato. 
+Del 1972 al 1982 ci furono importanti cambiamenti e il principale fu l’in- 
+troduzione dei contratti futures sulle valute, sui Treasury Bonds e sugli indici 
+azionari, Il termine commodity lasciò così il campo al termine futures, dal mo- 
+mento che le obbligazioni e le azioni non potevano rientrare nella categoria delle 
+commodities. Da quel momento però il futures trading, poteva alternativamente 
+indicare sia un’operatività tradizionale sulle azioni sia un’operatività sul mercato 
+obbligazionario. 
+Alla fine di questo processo evolutivo, i metodi usati per analizzare i due diffe- 
+renti mercati si fondevano, diventando un unico strumento, universalmente ap- 
+plicato. cu 
+Quotidianamente sono disponibili i prezzi sia per il mercato obbligazionario sia 
+per i futures sul dollaro e sugli indici azionari, che spesso si muovono in sincronia 
+tra di loro. 
+La direzione di questi tre mercati è spesso condizionata da quello che succede 
+su quello delle commodities. 
+I program trading, che si attivano non appena il prezzo dello S&P 500 futures non 
+è in linea con quello dello S&P 500 cash, sono una realtà quotidiana. Forse è per 
+questo che, più è alta la nostra conoscenza del mercato dei futures, maggiore sarà la 
+nostra capacità di capire il mondo finanziario nella sua globalità, dato che ormai è 
+chiaro come i movimenti del mercato dei futures condizionano spesso l'andamento 
+del mercato azionario. 
+Segnali premonitori di inflazione e di direzione della politica monetaria, e in 
+particolare dei tassi d’interesse, vengono generalmente anticipati dal mercato dei 
+futures e solo in un secondo tempo riescono a determinare la direzione dei prezzi 
+dei mercati azionari. 
+Il trend del dollaro può dirci in effetti se l'economia americana è da conside- 
+rarsi forte o debole, e da qui quantificare gli utili delle società e quindi, per effetto 
+finale, la valutazione in borsa.
+

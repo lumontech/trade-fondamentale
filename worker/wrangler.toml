@@ -1,0 +1,33 @@
+# Cloudflare Worker config — Impact Trading paper simulator
+# Deploy: `wrangler deploy`
+# Tail logs: `wrangler tail`
+
+name = "impact-trading-worker"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Account ID
+account_id = "a9123ad3ec9f67ad43db432d1da622e1"
+
+# Cron trigger: tick simulator ogni minuto
+[triggers]
+crons = ["* * * * *"]
+
+# D1 database binding (creato con `wrangler d1 create impact_trading`)
+[[d1_databases]]
+binding = "DB"
+database_name = "impact_trading"
+# database_id va riempito dopo `wrangler d1 create` con l'output mostrato
+database_id = "REPLACE_AFTER_D1_CREATE"
+
+# Variabili runtime (non secrets)
+[vars]
+DEFAULT_BROKER_ID = "fpmarkets_raw"
+DEFAULT_STARTING_BALANCE = "1000"
+DEFAULT_RISK_PCT = "1"
+ALLOWED_ORIGINS = "http://localhost:5173,https://impact-trading.pages.dev"
+
+# Secrets (settati via `wrangler secret put NAME`):
+# - TWELVEDATA_API_KEY  → richiesta per pair forex/XAU
+# - TWELVEDATA_API_KEY_2 → opzionale, secondo account TD per rotazione

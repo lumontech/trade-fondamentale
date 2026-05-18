@@ -1,0 +1,433 @@
+=== PDF page 86 ===
+9 
+Medie mobili 
+Le medie mobili sono, in assoluto, gli indicatori tecnici più utilizzati. Questo 
+perché, oltre a rappresentare le basi di molti sistemi meccanici di trend- following, 
+sono di facile costruzione e possono essere variamente testate e modificate. 
+L'analisi tecnica è molto soggettiva e difficile da sperimentare e quindi non 
+verificabile tramite sistemi informatici, mentre le regole delle medie mobili posso- 
+no essere facilmente inserite in programmi computerizzati, per generare così 
+specifici segnali d’acquisto o di vendita. Mentre, per esempio, due analisti tecnici 
+potrebbero non concordare nell’interpretazione di una specifica configurazione, 
+perché uno vi riconosce un triangolo e l’altro un wedge, oppure interpretare la 
+formazione del volume come rialzista o ribassista, al contrario i segnali delle 
+medie mobili sono precisi e non si prestano ad alcun dubbio. 
+Prima di tutto è necessario definire cosa sono le medie mobili. Come suggerisce 
+il primo termine, esse sono medie di una certa quantità di dati. Per esempio, se si 
+desidera una media a 10 giorni dei prezzi di chiusura, si sommano i prezzi degli ul- 
+timi 10 giorni e si divide il totale per dieci. Il termine “mobili” sta a indicare che 
+per il calcolo vengono utilizzati soltanto i prezzi degli ultimi 10 giorni: di conse- 
+guenza, il blocco di prezzi da mediare (gli ultimi 10 giorni di prezzi di chiusura) si 
+“muove” in avanti ogni giorno. Il metodo più comune per calcolare le medie 
+mobili consiste nel partire ogni volta dal totale degli ultimi 10 prezzi di chiusura. 
+Ogni giorno si somma al totale l’ultimo prezzo di chiusura, sottraendo il prezzo 
+relativo all’undicesimo giorno. Il risultato viene quindi diviso per il numero dei 
+giorni, cioè per 10 (figura 9.1). 
+L'esempio fatto si riferisce a una media mobile di 10 giorni, ma esistono altri 
+tipi di medie mobili non altrettanto semplici. Si è creata tutta una casistica sul 
+metodo migliore per utilizzarle. Per esempio, quanti giorni bisogna mediare? 
+Si devono usare delle medie mobili di lungo o di medio periodo? C'è un tipo di 
+media mobile migliore delle altre per tutti i mercati, o per un singolo mercato? 
+Il prezzo di chiusura è il più appropriato da mediare? È meglio usare più di 
+una media mobile? Qual è il tipo migliore di media, quella semplice, ponderata 
+o esponenziale? Ci sono periodi in cui alcune medie mobili sono migliori di 
+altre? 
+Molti e validi sono gli interrogativi da prendere in considerazione a riguardo, 
+perciò in questo capitolo verranno illustrati i metodi più comunemente usati.
+
+=== PDF page 87 ===
+156 CAPITOLO 9 
+11/14/97 (*SPX) S&P 500 Stock Index 03/02/98 
+Grafico a barre giornaliero | | ‘ -1040 
+Media mobile 
+a 10 giorni [960 
+P920 
+Dee vw E 2a i 
+MEDIE MOBILI 157 
+04/03/97 (*SPX) S&P 500 Stack Index 03/02/98 
+° 1050 
+Grafico a barre giornaliero 
+1000 
+r960 
+#00 
+Media mobile 
+a 20 giomi esi 
+Media mobile a 200 giomi +-800 
+750 
+n VI MI VI E 6 a" 5 Ta F 7 bid (=> Riscaarh, ina (07 
+Figura 9.1 Una media mobile a 10 giorni applicata a un grafico giornaliero dello S&P 500. | prezzi 
+hanno incrociato la linea media diverse volte (si vedano le frecce) prima di salire. Durante il successivo 
+rally i prezzi si sono attestati al di sopra della media. 
+9.1 La media mobile: un sistema per mediare i prezzi 
+con un ritardo temporale 
+La media mobile è uno strumento tipico di chi segue il trend: il suo scopo è 
+infatti quello di identificare e segnalare l’inizio di un trend e controllarne gli 
+sviluppi. 
+Potrebbe sembrare una frendline curvilinea: essa comunque non predice i 
+movimenti futuri del mercato così come fa l’analisi tecnica tradizionale, poiché 
+segue, e non anticipa, lo sviluppo dei prezzi: in pratica reagisce soltanto; la media 
+mobile segue il mercato e indica l’inizio di un trend, ma solo dopo che si è già 
+avviato. 
+La media mobile è uno strumento dei prezzi: mediandoli, si ottiene una 
+linea smussata che rende più semplice la visione del trend sottostante. Per la 
+sua natura matematica, la media mobile è sempre in ritardo”sulle tendenze 
+del mercato. Una media mobile di breve periodo, per esempio a 20: giorni, si 
+avvicinerà ai movimenti dei prezzi più di una media a 200 giorni. Il ritardo 
+viene ridotto da una media mobile breve, ma non potrà mai essere eliminato 
+del tutto: l’uso dell’una o dell'altra dipende in gran parte dal tipo di mercato 
+da analizzare e dal grado di sensibilità che si desidera avere (figura 9.2). 
+Figura 9.2 Un confronto tra una media mobile a 20 giorni e una a 200 giorni. Durante i periodi di 
+movimento laterale, da agosto a gennaio, i prezzi hanno incrociato diverse volte la media mobile breve; 
+tuttavia, per l'intero periodo sono rimasti al di sopra della media a 200 giorni. 
+9.1.1 Quali prezzi usare 
+In tutti gli esempi proposti è stato utilizzato il prezzo di chiusura. Tuttavia, 
+sebbene sia considerato il prezzo più importante della giornata e il più usato per 
+la costruzione delle medie mobili, alcuni analisti tecnici ne preferiscono altri, per 
+esempio, un valore intermedio, che ottengono dalia media mobile giornaliera dei 
+prezzi. 
+Altri utilizzano nei loro calcoli il prezzo di chiusura, sommando il massimo, il 
+minimo e dividendo la somma per tre. Altri ancora preferiscono costruire bande 
+di oscillazione, mediando separatamente i massimi e i minimi. Come risultato 
+ottengono due singole medie mobili, che agiscono come una sorta di indicatore di 
+volatilità. Nonostante queste varianti, il prezzo di chiusura rimane sempre il dato 
+usato più comunemente per l’analisi delle medie mobili. 
+9.1.2 Medie mobili semplici 
+La media mobile semplice, o aritmetica, rimane sempre il tipo di media più usata 
+dagli analisti; ma riguardo alla sua utilità vi sono due punti controversi: il primo 
+punto ‘‘dolente” sta nella constatazione che viene preso in considerazione solo 
+l’ultimo periodo (per esempio, gli ultimi dieci giorni). 
+Il secondo punto è che le medie mobili semplici danno uguale peso a ogni prez-
+
+=== PDF page 88 ===
+158 CAPITOLO 9 
+zo giornaliero. In una media mobile a 10 giorni, gli ultimi giorni hanno la stessa importanza dei primi, quando si è iniziato il calcolo. A ogni prezzo giornaliero viene assegnato un peso del 10%. In una media mobile di 5 giorni, viene asse- gnato a ogni giorno un peso equivalente'al 20%. Alcuni analisti credono che si debba invece dare maggior peso ai movimenti di prezzo più recenti. 
+9.1.3 Le medie mobili ponderate linearmente 
+Alcuni analisti usano medie mobili ponderate linearmente, per ovviare al problema del peso da dare ai singoli dati. In questo calcolo, la chiusura del decimo giorno (nel caso di una media mobile a 10 giorni) viene moltiplicata per 10, quella del nono giorno per 9, dell’ottavo giorno per 8 e così via. In questo modo si darà maggior peso ai prezzi più recenti. Il totale verrà poi diviso per la somma del suo multiplo (nel caso di una media mobile a 10 giorni sarà 55 cioè 10+9+ +8+...+1). Comunque anche la media mobile ponderata linearmente non riesce a fornire un’idea precisa di quello che sta per succedere nel mercato. 
+9.1.4 La media mobile ponderata esponenziale 
+Un sistema di calcolo più sofisticato, che cerca di eliminare le carenze della media mobile semplice, è costituito dalle medie mobili esponenziali, Lo scopo primario di questa media mobile è dare ai prezzi più recenti un peso maggiore e, per questo, può definirsi una media mobile ponderata. Ma sebbene dia importanza minore ai movimenti di prezzo passati, li include ugualmente nel suo calcolo. Inoltre, l’utente è in grado di attribuire un peso maggiore o minore al prezzo giornaliero più recente assegnando un valore percentuale all'ultimo prezzo giornaliero che viene aggiunto a una percentuale del valore del giorno precedente, La somma di entrambi i valori percentuali ammonta a 100, Per esempio, al prezzo dell’ultimo giorno potrebbe essere assegnato un valore del 10% (0,10) che viene aggiunto al valore di 90% (0,90) del giorno precedente, In questo modo all’ultimo giorno viene assegnato il 10% del peso totale, che rappresenta l'equivalente di una media a 20 giorni. At- tribuendo all’ultimo giorno un valore inferiore al 5% (0,05), viene attribuito un peso inferiore ai dati dell’ultimo giorno e la media risulta meno sensibile, il che equivale a una media mobile a 40 giorni (figura 9.3). Il computer agevola molto questa procedura. È sufficiente scegliere il numero di giorni desiderato ai fini della media mobile 10, 20, 40 e così via per poi selezionare il tipo di media desiderata: semplice, ponderata linearmente, esponenziale. È possibile anche selezionarle tutte. 
+9.1.5. L'uso di una media mobile 
+Alcuni analisti tecnici usano una sola media mobile per avere segnali d’entrata o d’uscita, calcolandola su un grafico a barre, in corrispondenza dell'ultimo giorno di registrazione. Quando il prezzo di chiusura sale al di sopra della media mobile, si genera un segnale d'acquisto. Viceversa, si ha un segnale di vendita quando i prezzi scendono al di sotto di essa. Alcuni analisti aspettano che la media mobile giri in direzione della tendenza dei prezzi, per avere una conferma ulteriore (figura 9.4). 
+MEDIE MOBILI 159 
+14/14/97 (*"SPX) S&P 500 Stock Index 03/02/98 
+Grafico a barre giornaliero | 
+Mio 
+n Confronto tra medie mobili semplici I ] | 1020 ed esponenziali Î Î | 
+| Media mobile.’ [19 esponenziale . I! | a 40 giorni, <* 
+| » ” ILA FATANTT, a Media mobile 50 I | | Li sue semplice En z a 40 giorni 
+940 
+920 
+Figura 9.3 La media mobile ponderata a 40 giorni (linea punteggiata) è più sensibile rispetto alla semplice media mobile aritmetica a 40 giorni (linea continua). 
+18/25/97 (INTC) Intel Corp 03/02/98 
+Grafico a barre giomaliero 
+9744 
+Sep bei har bee de Fe n 
+Figura 9.4 In ottobre i prezzi sono caduti al di sotto della media mobile a 50 giorni (si veda in cerchio a sinistra). Il segnale di vendita è più forte quando scende anche la media mobile (si veda la freccia a sinistra). A gennaio il segnale di acquisto è stato confermato quando la media è salita.
+
+=== PDF page 89 ===
+160 CAPITOLO 9 
+08/25/97 {INTC} Intel Corp 03/02/98 
+Grafico a barre giornaliero Lar 
+. hi “Media a 50 giorni | lo 
+10 giorni \ ci . i Ei 
+Ì | Il E I p Ca a | 
+Oy n I 
+i” va ox ba MR Foo 7 
+MEDIE MOBILI 161 
+DB/22/97 (LIO598) Crude Oil, Light 05/98 03/02/98 
+| Grafico a barre giornaliero 218 
+(4 Nov Pec Se Feb 7 
+Figura 9.5 Una media sensibile fomisce segnali in anticipo. Una media a lungo periodo è più lenta, ma 
+fornisce segnali più affidabili. La media a 10 giorni prima si è manifestata al fondo, ma ha dato anche un 
+segnale di acquisto prematuro a novembre @ un intampestivo segnale di vendita a febbraio (si vedano Ì 
+riquadri). 
+Se si utilizza una media mobile a brevissimo periodo (5 o 10 giorni) si potrà notare 
+che la linea della media mobile rimane molto vicina ai movimenti di prezzo e spesso 
+addirittura li incrocia. Ciò può essere un fattore positivo e negativo insieme. Se una 
+media è molto sensibile, produce più segnali (e, di conseguenza, un maggior numero 
+di operazioni, con costi di commissione elevati), ma ne genera anche molti falsi. 
+Sebbene una media mobile troppo sensibile generi un numero maggiore di falsi 
+segnali, ha il vantaggio di fornire anticipatamente quelli relativi al trend. Infatti, 
+quanto più la media è sensibile tanto più velocemente verranno dati i segnali. Il 
+trucco sta nel trovare una media che sia abbastanza sensibile da generare ve- 
+locemente dei segnali, ma che sia al contempo in grado di eliminare la maggior 
+parte di quelli falsi (figura 9.5). 
+È stato detto che le medie mobili di lungo periodo hanno una performance mi- . 
+gliore quando il trend rimane in essere, ma risultano carenti per individuare le pos- 
+sibili inversioni di tendenza. Di conseguenza, è chiaro che l'utilizzo di una sola media 
+mobile porta molti svantaggi; è quindi più utile utilizzare due o tre medie mobili. 
+9.1.6 Come usare due medie mobili per generare i segnali 
+Questo metodo viene chiamato doppio crossover (o doppio incrocio). Significa che 
+un segnale d’acquisto viene prodotto dall'incrocio al rialzo della media mobile più 
+breve sulla media di più lungo periodo. Per esempio, due combinazioni molto 
+Figura 9.6 ll metodo del doppio incrocio utilizza due medie mobili. La combinazione a 5 e a.20 giorni 
+è molto diffusa tra i traders di futures. A ottobre la media a 5 giorni è caduta al di sotto di quella a 20 
+giorni (si veda il cerchio) catturando l'intero downtrend dei prezzi del greggio. 
+popolari sono la media a 5 € 20 giorni e la media a 10 e 50 giorni. Un segnale 
+d'acquisto si verifica quando la media a 5 giorni incrocia al rialzo la media a 20 
+giorni. Si avrà un segnale di vendita allo scoperto quando la media a 5 giorni 
+scende al di sotto della media a 20 giorni. Nell'esempio precedente la media 
+mobile a 20 giorni superava la media a 50 giorni indicando un uptrend, il down- 
+trend viene segnalato dalla rottura a ribasso della media a 10 giorni sulla media a 
+50 giorni. Il ricorso a questa tecnica ritarda leggermente l’entrata in posizione ma 
+dà luogo a un numero più basso di falsi segnali (figure 9.6 e 9.7). 
+9.1.7  L’uso di tre medie mobili o il metodo del triplo incrocio 
+Questo porta al metodo del triplo crossover, utilizzato principalmente per il 
+commercio dei futures. La combinazione più usata e popolare è formata dalla 
+media a 4, 9 e 18 giorni. Questo metodo, ideato da R.C. Allen,! è in realtà una 
+variante delle medie $, 10, 20 giorni comunemente usate nelle merci. Molti servizi 
+di grafici commerciali pubblicano medie a 4, 9, 18 giorni. 
+Per meglio chiarire come tali medie debbano essere utilizzate è necessario ri- 
+cordarsi che quanto più la media è di breve periodo tanto più si avvicina al- 
+!R.C. Allen, How fo Build a Fortune in Commodities, Windsor Books, Brightwaters (N.Y.) 1972; 
+Idem, How to Use the 4-Day, 9-Day and 18-Day Moving Averages to Earn Larger Profits from 
+Commodities, Best Books, 1974.
+
+=== PDF page 90 ===
+162 CAPITOLO 9 
+8125197 {INTC) Intei Corp 03/02/98 
+| Segnale di vendita —Grafico a barre giornaliero Lor 
+Î Pes 
+ia i 
+peo ,° Media a 10 giorni | . | n, i Liar 
+I “.. Media a 50 giorni | n) 
+Î cho 
+| MAZIPOTT IVILI TA VPPPECZONI Lg 
+\| mu | i Segnale d'acquisto|,, - 
+CS oa or ber de 12 arte] 
+Figura 9.7 | traders di azioni utilizzano medie mobili a 10 e a 50 giorni, A ottobre la media a 10 giorni è scesa al di sotto di quella a 50 giorni (cerchio a sinistra), dando un tempestivo segnale di vendita. L'incrocio al rialzo nell'altra direzione si è verificato a gennaio (cerchio in basso). 
+l’andamento dei prezzi. Di conseguenza la media mobile a 4 giorni accompagnerà il trend molto da vicino, seguita dalla media a 9 e quindi dalla media a 18 giorni. Quindi in un uptrend esse saranno allineate in ordine crescente: la media mobile a 4 giorni sarà sopra a quella a 9 giorni e a quella a 18 giorni. Invece in un downtrend esse saranno allineate esattamente al contrario: la media a 4 giorni sarà la più bassa, sovrastata da quella a 9 e quindi da quella a 18 giorni (figure 9.8 e 9.9). In un downtrend il segnale d’acquisto si verifica quando la media a 4 giorni incrocia entrambe le medie a 9 e 18 giorni. Si ha la conferma del segnale d’acquisto quando anche la media a 9 giorni incrocia la media a 18 giorni. Si posizionerà nel seguente ordine; la media a 4 giorni sopra la media a 9 e questa sopra la media a 18 giorni. Durante i periodi di correzione o di consolidamento, potrebbero verificarsi alcuni rimescolamenti, ma l'andamento generale dell’uptrend rimarrebbe comun- que intatto. Alcuni operatori potrebbero prendere i profitti durante questo pe- riodo di appiattimento, oppure approfittarne per fare ulteriori acquisti. Ovviamente esistono parecchie varianti nell’applicare queste regole ma tutto dipende dall’abilità e dall’aggressività del trader. Quando si verifica un’inversione di tendenza, da rialzista a ribassista, per prima cosa la media mobile di periodo più breve (la più sensibile) e cioè la 4 giorni, scende al di sotto di quella a 9 giorni. Questo è solo un segnale anticipatore di vendita ma alcuni operatori lo trovano sufficiente per uscire dalle posizioni lunghe; se, successivamente, anche la media a 9 scende al di sotto della media a 18 giorni, si avrà un segnale confermato per vendere allo scoperto. 
+MEDIE MOBILI 163 
+10/15/97 (JY0398) Japanese Yen 03/98 03/02/98 
+Grafico a barre giornaliero 
+Nov dec DI Feb . 
+Figura 9.8 i traders di futures utilizzano molto la combinazione della media mobile ag ea u 8 giorni. 
+Un segnale di vendita è stato dato alla fine di ottobre (primo cerchio) quando la media a 9 giorni è scesa 
+al di sotto di quella a 18 giorni. Un segnale di acquisto è stato dato all’inizio del 1998 quando la media a 
+9 giorni ha incrociato nuovamente al di sopra quella a 18 giorni. 
+(10/15/97 (JY0396) Japanase Yen 03/98 03/02/98 
+Loe 
+Media a 4 giorni a 
+Il grafico a barre dei prezzi 
+è stato rimosso per maggior chiarezza 
+Hex Dee co Eri arena) 
+Figura 9.9 Anche la combinazione formata dalla media a 4-9-18 giomi è diffusa trai traders di futures, 
+In un bottom, la media a 4 giorni (linea continua) appare per prima e incrocia le altre due linee; quindi la 
+media a 9 giorni incrocia al di sopra quella a 18 giorni (si veda il cerchio) segnalando un bottom.
+
+=== PDF page 91 ===
+164 CAPITOLO 9 
+06/04/97 (*DWI X) Dow Industrials -03/02/98 
+Grafico a barre giornaliero : n 
+Envelope del 3% | ) ante 
+y //( | 7411 n 700 Il 
+Media a 21 giorni | lrco 
+Envelope del 3% 
+7200 
+7000 
+And da PI Da hoy be Va tei ! 
+MEDIE MOBILI 165 
+(12/29/95 {*DWI1 X) Dow Industrials 03/06/98 
+Grafico a barre settimanale 
+7500 
+Envelope del 5% 
+Media a 10 settimane 
+Figura 9.10 Envelopes del 3% su una media mobile a 21 giorni del Dow. 1 movimenti al di fuori 
+dell'envelope suggeriscono un mercato azionario tirato. 
+9.2 L'utilizzo delle envelopes nella media mobile 
+L'utilità di una media mobile singola può essere migliorata mediante le envelopes. 
+Le envelopes percentuali possono essere usate per capire quando un mercato è 
+diventato tirato in entrambe le direzioni. In altre parole, indicano il momento in 
+cui i prezzi si sono allontanati troppo dalla linea della media mobile. A questo 
+scopo, le envelopes sono collocate a percentuali fisse al di sopra e al di sotto della 
+media. I traders di brevissimo termine, per esempio, spesso usano envelopes del 
+3% intorno a una media mobile semplice a 21 giorni. Quando i prezzi raggiun- 
+gono una delle envelopes (si discostano del 3% dalla media), il trend di breve 
+termine è considerato tirato. Per un’analisi di lungo periodo, alcune possibili 
+combinazioni includono envelopes del 5% intorno a una media a 10 settimane 
+oppure un’envelope del 10% intorno a una media a 40 settimane (figure 9.10 e 
+9.11). 
+9.3 Le bande di Bollinger 
+Questa tecnica è stata sviluppata da John Bollinger. Due trading bands, o bande 
+di trading, vengono collocate intorno a una media mobile secondo una tecnica 
+simile a quella dell'envelope; a differenza di quest’ultima, tuttavia, nelle bande di 
+Figura 9.11 Per un'analisi di lungo periodo, le envelopes del 5% possono essere collocate su una 
+media a 10: settimane. | movimenti estemi a esse hanno contribuito a identificare gli estremi di mercato. 
+Bollinger sono collocate due deviazioni standard al di sopra e al di sotto della 
+media mobile, solitamente a 20 giorni. La deviazione standard è un concetto 
+statistico che descrive la modalità di dispersione dei prezzi attorno a un valore 
+medio. Utilizzando due deviazioni standard vi è la certezza che il 95% dei dati sui 
+prezzi sarà compreso all’interno delle due bande di trading. Di regola, i prezzi 
+sono considerati tirati al rialzo (ipercomprato) quando toccano la banda supe- 
+riore. Sono considerati tirati al ribasso (ipervenduto) quando toccano la banda 
+inferiore (figure 9.12 e 9.13). 
+9.4 Usare le bande di Bollinger come obiettivi 
+Il modo più semplice di usare le bande di Bollinger consiste nel considerare la 
+banda superiore e quella inferiore come obiettivi di prezzo. In altre parole, se i 
+prezzi rimbalzano sulla banda inferiore e incrociano al di sopra della media a 20 
+giorni, la banda superiore diventa l’obiettivo di prezzo superiore. Un incrocio al 
+di sotto della media a 20 giorni identificherebbe la banda inferiore come obiettivo 
+al ribasso, In un forte uptrend i prezzi generalmente fluttuano tra la banda su- 
+periore e la media a 20 giorni. In quel caso, un incrocio al di sotto della media a 
+20 giorni segnalerebbe un’inversione del trend al ribasso.
+
+=== PDF page 92 ===
+166 CAPITOLO 9 
+104/97 (*DWI X) Dow Industriaîs 03/02/98 
+Grafico a barre giornaliero 
+Bande I di Bollinger | 
+(8200 
+| U/ | 
+ZI) I n 
+Media a 20 giorni o | 1409 
+Bande di Bollinger 7200 
+7006 Tui pre I Da ho De ta Fao ven al I Lila 
+Figura 9.12 Le bande di Bollinger dis movimento laterale da agosto a gennai 
+egnate su una media mobile a 20 giorni. Durante il periodo di o, i prezzi hanno continuato a toccare le bande esterne. Una volta recuperato l'uptrend, i prezzi sono stati scambiati tra la banda superiore e la media a 20 giorni. 
+PSrz4r96 (*DWI X) Dow Industrials 03/06/98 
+Grafico a barre settimanali 
+fl 
+Ì Bande di Bollinger 
+Bande di Bollinger 
+li j = 
+W , i 
+Media a 20 settimane 
+‘3500 
+E n e a e bi verra Ti 
+Figura 9.13 Le bande di Bollinger sono efficaci anche sui grafici settimanali utilizzando una media a 20 giorni come linea mediana. Ogni contatto 
+importante bottom di mercato e un'opportun 
+della banda inferiore (si vedano i cerchi) ha segnalato un ità di acquisto. 
+MEDIE MOBILI 167 
+9.5 L’ampiezza della banda misura la volatilità 
+Rispetto alle enve/opes, le bande di Bollinger sono diverse per un aspetto fon- damentale. Mentre le envelopes presentano un’ampiezza percentuale costante, le bande di Bollinger si espandono e si contraggono in base alla volatilità degli ultimi 20 giorni. 
+Durante un periodo di crescente volatilità dei prezzi la distanza tra le due bande aumenta; al contrario, in un periodo di bassa volatilità di mercato, la distanza tra le due bande si riduce. Le due bande hanno la tendenza ad alternare. fasi di espansione a fasi di contrazione; quando le bande si allontanano ecces- sivamente, spesso è segno che il trend attuale di mercato sta per concludersi mentre, quando la distanza tra le due bande si riduce troppo, spesso è il segno che il mercato sta per dare avvio a un nuovo trend. Le bande di Bollinger possono essere applicate anche ai grafici settimanali e mensili utilizzando 20 settimane e 20 mesi anziché 20 giorni. Esse mostrano una maggiore efficacia in combinazione con gli oscillatori di ipercomprato-ipervenduto che saranno spiegati nel prossimo capitolo.? 
+9.5.1 Centrare la media 
+Il modo statisticamente più corretto di Tappresentare una media mobile consiste nel centrarla, cioè collocarla al centro del periodo preso in considerazione. Una media mobile a 10 giorni, per esempio, verrebbe collocata cinque giorni prima. Una media mobile a 20 giorni verrebbe disegnata 10 giorni prima nel tempo. Tuttavia il difetto principale di questa tecnica sta nel fatto che produce segnali di modifica del trend molto tardivi; quindi, le medie mobili in genere vengono collocate alla fine dei periodo preso in considerazione invece che al centro. La tecnica di centering è usata quasi esclusivamente dagli analisti ciclici per isolare cicli di mercato sottostante. 
+9.6 Medie mobili vincolate ai cicli 
+Molti analisti credono che i ritmi ciclici rivestano un ruolo importante nel movi- mento di ogni mercato. Poiché questi cicli temporali sono ripetitivi e misurabili, è possibile determinarne approssimativamente il momento di ipotetico inizio e quindi i loro minimi e massimi. 
+Si verificano inoltre numerosi cicli temporali simultanei, a partire dal ciclo di breve periodo di 5 giorni, per finire col ciclo Kondratieff di lungo periodo, che dura 54 anni. Questo ramo molto affascinante dell’analisi tecnica sarà ap- profondito nel capitolo 14. 
+Per ora l'argomento è stato introdotto soltanto per rilevare che esiste una corre- lazione tra i cicli di certi mercati e l'applicazione corretta di determinate medie mo- bili. In altre parole, le medie mobili dovrebbero essere aggiustate al ciclo domi- 
+? Per conoscere altre tecniche sull'uso delle bande si consulti l’appendice A.
+
+=== PDF page 93 ===
+168 CAPITOLO 9 
+nante di ogni singolo mercato, in quanto sembra sussistere una relazione ben de- 
+finita tra esse e i rispettivi cicli. Per esempio, il ciclo mensile è tra i più conosciuti 
+per operare sul mercato delle merci. Un mese è formato da 20 o 21 giorni di con- 
+trattazioni. I cicli tendono ad avere una relazione armoniosa tra di loro, con fat- 
+tore di raddoppio. Ciò significa che il seguente ciclo di più lungo periodo equivarrà 
+al doppio della lunghezza del ciclo precedente e che il successivo di più breve pe- 
+riodo corrisponderà alla metà della sua lunghezza standard. Di conseguenza, il 
+ciclo mensile potrebbe dare una spiegazione alla popolarità delle medie mobili a 5, 
+10, 20 e 40 giorni. 
+Il ciclo di 20 giorni misura il ciclo mensile. La media mobile a 40 giorni cor- 
+risponde al doppio della media a 20 giorni. La media mobile a 10 giorni è la metà 
+della media a 20 giorni e la media a 5 giorni è ancora la metà di 10. 
+Molte delle medie mobili più comunemente usate (inclusa la media a 4, 9e 18 
+giorni derivata da quella a 5, 10 e 20 giorni) possono essere originate dall’in- 
+fluenza ciclica e dalla relazione di armonia con il ciclo più vicino. 
+9.7 1 numeri di Fibonacci usati come medie mobili 
+Le serie dei numeri di Fibonacci verranno trattate nel capitolo sulla teoria delle 
+onde di Elliott. Ciò nonostante, è utile parlare di questa serie di numeriimisteriosi 
+(13, 21, 34, 55 ecc.), fino ad arrivare a utilizzarli nell'analisi con le medie mobili, 
+non solo nei grafici giornalieri ma anche in quelli settimanali. La media mobile a 
+21 giorni fa parte di uno di questi numeri di Fibonacci. 
+Sul grafico settimanale, la media mobile a 13 settimane ha mostrato la sua 
+efficacia sia sui mercati azionari sia su quelli delle merci. 
+9.8 Medie mobili applicate ai grafici di lungo periodo 
+Sussiste anche la possibilità di applicare questa tecnica ai grafici di lungo periodo. 
+Le medie mobili di lungo periodo, come quella a 10 o 13 settimane in correlazione 
+con la media a 30 o 40 settimane, vengono usate per l’analisi del mercato azio- 
+nario, ma non riscuotono molta attenzione nel mercato dei futures. Esse invece 
+possono essere d’aiuto per individuare il trend primario sui grafici settimanali per 
+i futures e le azioni (figura 9.14). 
+9.9 Ottimizzare oppure no ' 
+La prima edizione di questo libro includeva i risultati di una vasta ricerca pro- 
+dotta dalla Merrill Lynch che pubblicò una serie di studi sulle tecniche:di trading 
+computerizzate applicate ai mercati dei futures tra il 1978 e il 1982. Vennero 
+condotti dei test di ampia portata su varie medie mobili e sui parametridi rottura 
+dei canali allo scopo di trovare le migliori combinazioni possibili per i mercati dei 
+MEDIE MOBILI 169 
+09/15/95 {"DWI X) Dow Industrials 03/06/98 
+Tlesoo | 
+OR - 
+Grafico a barre settimanale 
+pi 
+| TT ml 
+MUTI 
+ipy 4300 
+Se A I o or A y >] 3] SCE ld Teri 
+Figura 9.14 Le medie mobili sono apprezzabili sui grafici settimanali. La media mobile a 40 settimane 
+dovrebbe fomire supporto durante le correzioni del mercato al rialzo, come in questo esempio. 
+futures. I ricercatori della Merrill Lynch produssero gruppi diversi di indicatori 
+ottimizzati per ciascun mercato. 
+Quasi tutti i pacchetti applicativi utilizzati per la realizzazione di grafici con- 
+sentono di ottimizzare sistemi e indicatori. Per esempio, invece di utilizzare la 
+stessa media mobile in tutti i mercati, è possibile chiedere al computer di trovare 
+la media mobile, o la combinazione di medie mobili, che in passato è risultata più 
+efficace in quel particolare mercato. Lo stesso principio può essere applicato ai 
+sistemi di breakout giornalieri e settimanali e praticamente a tutti gli indicatori 
+tecnici trattati in questo libro. L’ottimizzazione consente ai parametri tecnici di 
+adattarsi alle condizioni del mercato in cambiamento. 
+Alcuni sono convinti che l'ottimizzazione serva a migliorare i risultati di tra- 
+ding, altri no. Il nocciolo del problema riguarda il modo in cui si ottimizzano i 
+dati. Le ricerche sottolineano che la procedura corretta consiste nell’utilizzare 
+solo una parte dei dati sui prezzi per scegliere i parametri migliori e sceglierne 
+un’altra parte per verificarne concretamente i risultati. La verifica dei parametri 
+ottimizzati su dati campione contribuisce a fornire risultati finali più vicini a 
+quelli che si potrebbero ottenere dal trading reale. 
+La decisione di utilizzare l'ottimizzazione è una scelta personale; in gran parte 
+dei casi, tuttavia, è stato dimostrato che non si tratta di una bacchetta magica 
+come si potrebbe pensare. È consigliabile seguire solo pochi mercati con l’ausilio 
+dell’ottimizzazione: è improbabile che i Treasury Bonds o il marco tedesco ab- 
+biano le stesse medie mobili dei cereali o del cotone. Per i traders del mercato
+
+=== PDF page 94 ===
+170 CAPITOLO 9 
+azionario il discorso è completamente diverso; dovendo seguire migliaia di titoli l'ottimizzazione diventa una scelta sconsigliabile. In conclusione, specializzandosi 
+in pochi mercati l'ottimizzazione può risultare utile; se si segue un ampio numero di mercati è preferibile usare per tutti gli stessi parametri tecnici. 
+9.10 Sommario 
+Sono state presentate molte variazioni sull’approccio alla media mobile. Volendo semplificare, gli analisti utilizzano una combinazione di due medie mobili, in genere medie semplici. Anche se l’uso delle medie esponenziali si sta diffondendo, non esiste la dimostrazione di una loro maggiore efficacia rispetto alla media semplice. Le combinazioni di medie mobili più comunemente usate nei mercati dei futures sono 4 e 9, 9 e 18, 5 e 20, 10 e 40. I traders di azioni utilizzano in maniera sistematica la media mobile a 50 giorni o a 10 settimane. Per un'analisi del mercato azionario di lungo periodo, le medie mobili settimanali più diffuse sono a 30 e a 40 settimane (o a 200 giorni). Le bande di Bollinger utilizzano le medie mobili a 20 giorni e a 20 settimane. La media a 20 settimane può essere convertita in grafici giornalieri utilizzando una media a 100 giorni, che è un’altra media mobile utile. I sistemi di rottura dei canali risultano estremamente efficaci nei mercati con tendenza definita, o trending markets, e possono essere usati su grafici giornalieri, settimanali e mensili. 
+9.11 La media mobile adattiva 
+Uno dei problemi riscontrati nell'uso della media mobile riguarda la scelta tra una media veloce o una leggera. Mentre la prima può risultare più efficace nel trading range market, l’altra è preferibile in un trending market. La soluzione potrebbe essere la scelta di un approccio innovativo: la media mobile adattiva ideata da Perry Kaufman.? La velocità della media mobile adattiva di Kaufman si aggiusta automaticamente al livello di disturbo (o volatilità) di un mercato. Si muove più lentamente quando i mercati si muovono lateralmente, per poi acce- lerare quando il mercato è in tendenza. In questo modo si evita di usare una media mobile più veloce, che presenta l'inconveniente di una maggiore frequenza dei falsi segnali durante un trading range, © di usare una media più lenta che risulta inadeguata quando il mercato è in tendenza. 
+A questo scopo Kaufman ha concepito un efficiency ratio, 0 rapporto di effi- cienza, che mette a confronto il movimento dei prezzi con il livello di volatilità. Quando l’efficiency ratio è elevato, il movimento è maggiore della volatilità, fa- vorendo una media più veloce; quando è basso, la volatilità è maggiore del movimento, il che favorisce una media più lenta. Incorporando l’efficiency ratio, si verifica un aggiustamento automatico della media mobile adattiva alla velocità più opportuna per il mercato corrente. 
+} Si veda P. Kaufman, Smarter Trading, McGraw-Hill, 1995. 
+MEDIE MOBILI 171 
+9.12 Alternative alle medie mobili 
+Le medie mobili non sempre sono efficaci; danno i migliori risultati quando il mercato è in fase di tendenza, mentre risultano scarsamente utili nei periodi di movimento laterale. Esiste comunque un’altra categoria di indicatori che forni- scono risultati di gran lunga migliori rispetto alla media mobile durante i fru- stranti intervalli di trading. Si tratta degli oscillatori, che verranno spiegati nel capitolo successivo.
+
+=== PDF page 95 ===
+so 
+10 
+Oscillatori e opinione contraria 
+In questo capitolo verrà approfondito lo studio degli oscillatori in alternativa 
+all'approccio del trend-following. Essi sono strumenti estremamente utili al- 
+l’arialista tecnico che operi in mercati privi di tendenza, dove i prezzi si muovono 
+lateralmente tra bande orizzontali, creando situazioni in cui molti dei sistemi di 
+trend-following non danno buoni risultati. 
+Comunque la validità degli oscillatori non è limitata solo a questi tipi di mer- 
+cato laterale: usati in correlazione con i grafici, durante fasi con tendenza ben 
+definita, diventano un prezioso strumento per individuare gli eccessi di breve pe- 
+riodo, evidenziando condizioni di ipercomprato o di ipervenduto. 
+Aiutano anche a individuare le fasi del mercato caratterizzate da perdita di 
+forza (o momentum), non ancora riscontrabili sui grafici normali, oppure ad an- 
+ticipare la fine di un trend, dando luogo a divergenze. 
+Prima di tutto bisogna spiegare cosa sia un oscillatore, e le relative modalità 
+d’interpretazione e di costruzione. Dopo di che, verrà discusso il significato del 
+momentum con le sue implicazioni previsionali. Saranno presentate alcune delle 
+più comuni tecniche di utilizzo degli oscillatori, dalle più semplici alle più com- 
+plesse, affrontando anche l'argomento delle divergenze e il significato dell’analisi 
+degli oscillatori in relazione al mercato ciclico, e infine la loro applicazione come 
+parte integrante dell'analisi tecnica operativa. 
+10.1 L’uso degli oscillatori in correlazione al trend 
+L’oscillatore è un indicatore secondario, cioè deve essere sempre subordinato 
+all’analisi principale del trend: infatti studiando i vari tipi di oscillatori utilizzati 
+dagli analisti tecnici viene costantemente messo in risalto quanto sia importante 
+operare nella direzione primaria del mercato. 
+Tuttavia la validità degli oscillatori non è assoluta: per esempio, all’inizio di im- 
+portanti movimenti, la loro analisi non è molto vantaggiosa e potrebbe portare 
+addirittura fuori strada. Al contrario, diventano molto utili vicino alla fine del 
+movimento di un mercato. Per concludere, si può affermare che nessun studio 
+analitico è completo in senso assoluto senza il vaglio dell'opinione contraria: si 
+parlerà in seguito del ruolo di questa filosofia e di come può essere incorporata 
+nell’analisi e nell’operatività sui mercati.
+

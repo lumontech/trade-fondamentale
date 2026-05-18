@@ -1,0 +1,17 @@
+{
+  "name": "impact-trading-worker",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker che gira la simulazione paper trading 24/7 (sostituisce il LiveSimulator del frontend)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "db:init": "wrangler d1 execute impact_trading --remote --file=./migrations/0001_init.sql",
+    "db:init:local": "wrangler d1 execute impact_trading --local --file=./migrations/0001_init.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.85.0"
+  }
+}

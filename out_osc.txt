@@ -1,0 +1,743 @@
+=== PDF page 96 ===
+174 CAPITOLO 10 
+10.1.1 Interpretazione degli oscillatori 
+Mentre esistono vari metodi per costruire gli oscillatori di tendenza, la loro effettiva 
+interpretazione non è molto diversificata da una tecnica all'altra. Molti oscillatori 
+sono inoltre simili. Vengono solitamente collocati sul fondo dei grafici giornalieri, 
+tracciando delle bande orizzontali che risultano per lo più piatte anche se i prezzi si muovono al rialzo, al ribasso o lateralmente. Comunque, i minimi e i massimi degli oscillatori coincidono con quelli del grafico. Alcuni oscillatori hanno un valore 
+intermedio, che divide la banda orizzontale in due parti uguali, una superiore e una inferiore. Solitamente il punto intermedio equivale a zero, ma ciò dipende co- munque dalla formula con cui sono stati costruiti: si avranno così, per esempio, 
+oscillatori con delle bande superiori e inferiori che partano da zero e arrivano a 100. 
+10.1.2 Regole generali d’interpretazione 
+La prima regola generale da considerare è che quando l’oscillatore raggiunge un valore estremo della banda inferiore o superiore, significa che probabilmente i mo- vimenti di prezzo si sono spinti troppo velocemente in una direzione, anticipando 
+una possibile correzione o una fase di consolidamento laterale. 
+Come seconda regola generale, il trader dovrebbe acquistare quando la linea del- l’oscillatore è vicina alla fine della banda inferiore e dovrebbe invece vendere quando è in prossimità della fine della parte superiore. L’incrocio con la linea dello zero viene generalmente utilizzato per generare segnali d'acquisto o di vendita. Queste regole generali verranno approfondite nella loro applicazione sui vari tipi di oscillatori. 
+10.13 Itre utilizzi più importanti degli oscillatori 
+In linea di massima si possono identificare tre situazioni in cui un oscillatore ri- 
+sulta molto utile: 
+1. quando il suo valore raggiunge l’estremità superiore o inferiore della propria banda di oscillazione; in questo caso si dice che il mercato si trova in iper- comprato quando è vicino all'estremità superiore della banda e in ipervenduto quando è prossimo all'estremità inferiore; questa condizione avverte che la tendenza dei prezzi è troppo tirata e quindi vulnerabile; 
+2. quando si verifica una divergenza tra gli oscillatori e la tendenza dei prezzi in posizione estrema, si è in presenza quasi sempre di un importante segnale di pericolo; 
+3. il passaggio oltre le linea dello zero può dar luogo a segnali molto importanti 
+nella direzione della tendenza del prezzo. . 
+10.2 Misurazione del momentum 
+Questo concetto è fondamentale nell'analisi svolta con gli oscillatori, perché misura il tasso di variazione dei prezzi rispetto ai loro livelli effettivi. Il momentum del mercato viene misurato registrando le continue variazioni di prezzo su inter- 
+OSCILLATORI E OPINIONE CONTRARIA 175 
+valli di tempo prefissati. Per costruire la linea del momentum a 10 giorni bisogna semplicemente sottrarre dall’ultimo prezzo di chiusura quello del decimo giorno già trascorso. Il valore, positivo o negativo, viene posizionato intorno alla linea 
+dello zero. La formula per calcolare il momentum è: 
+M=V- 
+dove: 
+V_ = ultimo prezzo di chiusura 
+V* = prezzo dei 10 giorni precedenti 
+Se l’ultimo prezzo di chiusura è superiore a quello dei 10 giorni precedenti (in 
+altre parole, se i prezzi sono saliti ulteriormente) si avrà un valore positivo da 
+posizionare sopra alla linea dello zero. Se l’ultimo prezzo di chiusura è inferiore a 
+quello dei 10 giorni precedenti (cioè i prezzi sono scesi), si avrà un valore nega- 
+tivo, da collocare sotto la linea dello zero. 
+Anche se il momentum a 10 giorni è il periodo che viene usato più comune- 
+mente, per ragioni che verranno discusse oltre, si può ricorrere anche ad altre serie 
+di periodi (figura 10.1). 
+Un periodo di tempo più breve (per esempio, 5 giorni) produce una linea più 
+03/11/96 (TR1600) Treasury Bonds 1600 03/06/98 
+p-123414 
+120% 
+(117400 
+144502 
+} | 
+1103 
+a 107428 
+T 
+BAL 
+Figura 10.1 La linea del momentum a 10 giorni fiuttua intorno alla linea dello zero. Uno scostamento 
+eccessivo al di sopra o al di sotto della linea dello zero indica rispettivamente una condizione di 
+ipercomprato o di ipervenduto. Il momentum dovrebbe essere usato In combinazione con il trend di 
+mercato, .
+
+=== PDF page 97 ===
+178 CAPITOLO 10 
+03/11/96 (TR1800) Treasury Bonds 1600 03/06/98 
+120M14 
+121429 
+12041 
+118024 
+11700 
+11882 
+114402 
+“Prize 
+41059 
+09*12 
+107426 
+Downtrend 
+Figura 10.3 Le trendiines s 
+prezzi. Il valore dell'indicatore 
+ul grafico del momentum rompono prima rispetto a quelle sul grafico dei 
+del momentum è dato dal fatto che si manifesta prima rispetto al mercato 
+stesso, rappresentando quindi un indicatore principale. 
+pa27/07 {TR1600) Treasury Bonds 1800 03/06/98] 
+ly 1239444 
+pi IT U Wh 121028 
+im | pl ll do 
+I ITA 
+pultuet | LL 
+pato! hu] Media mobile a 80 giorni 1192 
+| TA p 
+si 
+112418 
+Momentum a 40 giomi 
+Linea dello zero \ la 
+se Foo — I rg 
+Figura 10.4. Alcuni traders 
+d'acquisto e un Incrocio al di 
+considerano un Incrocio al di sopra della linea dello zero come un segnale 
+sotto della linea come un segnale di vendita (si vedano ì cerchi). Una media 
+mobile contribuisce a confermare I cambiamenti del trend. La linea del momentum ha raggiunto il punto 
+massimo prima rispetto a quella del prezzi (sl vedano le frecce). 
+OSCILLATORI E OPINIONE CONTRARIA 179 
+03/11/96 (TR1600) Treasury Bonds 1800 03/06/98 
+fan 
+142418) 
+11049 
+100412 
+PIO7A26 
+- — 100408. 
+i Momentum a 10 giorni ipercomprato 
+A N À A À 3 i wu 
+YA FUESCOON PEPATE ipervenduto | ha 
+(1 SMUDORLAAO:!* ALARM -" DALAI" TAMA 
+ARTI E FT 
+Figura 10.5 Attraverso un'analisi visiva, l'analista è in grado di individuare. la banda superiore e 
+inferiore del momentum adatte a ogni tipo di mercato (si vedano le linee orizzontali). 
+10/15/93 (TR1600) Treasury Bonds 1800 03/06/98 
+p121428 
+ipercomprato 
+tata Momentum a 13 settimane ” 
+= @ \ sl 
+TAI: AA RLVA d° DI 
+AI, ipervenduto le 
+VT 
+Figura 10.6 l Una linea del momentum a 13 settimane su un grafico settimanale del Treasury Bonds. 
+Le frecce indicano i punti di svolta dagli estremi del momentum. A ogni cambiamento principale la linea 
+del momentum ha cambiato direzione in anticipo rispetto a quella del prezzo (punti 1, 2 e 3).
+
+=== PDF page 98 ===
+180 CAPITOLO 10 
+10.3 Come misurare il rate of change (ROC) 
+Per misurare il rate of change è stato costruito un rapporto tra le chiusure di prezzo più recenti e il prezzo relativo a un certo numero di giorni nel passato, Per costruire un oscillatore a 10 giorni del rate of change, bisogna dividere l’ultimo prezzo di chiusura per la chiusura dei 10 giorni precedenti, tramite la formula seguente: 
+rate of change = 100 (V/ Vx) 
+dove: 
+V_ = ultimo prezzo di chiusura 
+Vx:= prezzo di chiusura di x giorni precedenti. 
+In questo caso, la linea del 100 diventa la linea del punto intermedio. Se l’ultimo prezzo di chiusura è superiore a quello dei 10 giorni precedenti (e quindi i prezzi stanno salendo), il risultante valore del rate of change sarà superiore a 100. Se, viceversa, l’ultimo prezzo di chiusura è inferiore a quello dei 10 giorni precedenti, il rapporto sarà inferiore a 100. I programmi per la creazione di grafici a volte utilizzano le variazioni delle formule precedenti per il momentum e il rate of change. Le tecniche di costruzione possono variare, ma l’interpretazione resta la stessa, 
+10.4 Il commodity channel index (CCD) 
+È possibile normalizzare un oscillatore dividendo i valori per un divisore costante. Nella costruzione del commodity channel index (CCI) il suo ideatore, Donald R. Lambert, confronta il prezzo attuale con una media mobile in un certo periodo di tempo, generalmente di 20 giorni; quindi normalizza i valori dell’oscillatore uti lizzando un divisore basato sulla deviazione media. Il risultato è che il CCI fluttua in un intervalio costante che va da +100 nella tendenza al rialzo a —100 nella 
+Usato in questo modo i valori superiori a +100 sono considerati segno di iper- comprato mentre i valori inferiori a — 100 sono considerati segno di ipervenduto. Il commodity channel index è stato originalmente sviluppato per il mercato delle commodities, ma viene usato anche per il trading dei futures a indice e delle options come lo S&P /00 (OEX). Sebbene il valore predefinito del CCI sia di 20 giorni, l’utente può variare il numero allo scopo di aggiustarne la sensibilità (figure 10.7 e 10.8). 
+OSCILLATORI E OPINIONE CONTRARIA 181 
+14/17/97 (TR1600) Treasury Bonds 1600 03/10/98 
+I a 
+i", O 
+po | [Ta Mur, [fa ni Da Commodity channel index n 
+Vv ° n 
+PI PO Trota 
+Figura 10.7 Il commodity channel index a 21 comprare con valori superiori a +100 e vendi 
+0 giorni. Lo scopo Originale dell'indicatore era quello di (ere con valori inferiori a —100 come mostrato in questo esempio. 
+11/11/97 (OEX) S&P 100 Stock Index © 03/05/98] 
+pr! heso 
+Hi! lo il li na HO 1 | Hol i, [ J Ml hai 
+Aa ipercomprato 
+V 
+av; = 
+Commodity channel index Bd ipervenduto VIII Lio Dec » Fed Mar L bai n 
+Figura 10.8 Il commodity channel index può essere usato per gli indici di mercato come quello fappresentato in questo grafico e anche 
+mercato. Si noti 
+predefinita è di 20 giorni, 
+come un qualsiasi oscillatore che misuri gli estremi del che il CC/ si manifesta prima dei prezzi a ogni massimo e minimo. La lunghezza
+
+=== PDF page 99 ===
+182 CAPITOLO 10 
+10.5 N relative strength index (RSD! 
+Poiché questo oscillatore è assai popolare tra i traders che operano sui futures, 
+verrà utilizzato per illustrare buona parte dei principi fondamentali dell’analisi 
+degli oscillatori. 
+Come puntualizzò Wilder, ideatore di questo indice, uno dei due problemi mag- 
+giori per costruire la linea del momentum (usando le differenze tra i prezzi) è dato 
+dai movimenti erratici, spesso dovuti ai bruschi cambiamenti dei valori, che 
+possono essere stati trascurati dalla serie dei dati. Un forte rialzo 0 ribasso re- 
+gistrato nei 10 giorni precedenti, nel caso della linea del momentum a 10 giorni, 
+può causare un’improvvisa inversione di tale linea, anche se i prezzi correnti 
+hanno delle variazioni minime; di conseguenza sono necessarie alcune limature 
+per minimizzare queste distorsioni. 
+Il secondo problema consiste nella necessità di avere delle bande costanti che 
+permettano di fare dei paragoni. La formula dell’RSI non risolve soltanto il 
+problema della smussatura, ma crea anche un range verticale costante tra 0 e 100. 
+Il termine relative strenght o forza relativa, oltre tutto, è in parte improprio € 
+crea spesso confusione anche in chi generalmente lo utilizza nell'analisi dei mer- 
+cati azionari. 
+Di solito con forza relativa si intende un grafico lineare che mette in rapporto 
+due differenti entità quali, per esempio, un'azione o un gruppo industriale e un 
+indice di mercato, che, in questo caso è rappresentato dallo S&P 500. 
+L'indice di Wilder non misura affatto la forza relativa tra due differenti entità, 
+ed è per questo motivo che spesso il termine che lo definisce trae in inganno. 
+Ciò nonostante l’RS/ risolve realmente il problema dei movimenti erratici e 
+soddisfa la necessità di una banda costante superiore e inferiore. La formula per 
+calcolarlo è la seguente: 100 
+RSI=100- | 33 
+SI=100 ; + xs] 
+_ media delle chiusure al rialzo di x giorni 
+= media delle chiusure al ribasso di x giorni RS 
+Per il calcolo è stato usato un periodo di 14 giorni; i periodi di 14 settimane 
+vengono usati nei grafici settimanali. Per individuare la media del valore rialzista, 
+bisogna sommare il totale delle differenze alla chiusura dei giorni di rialzo, per un 
+periodo di 14 giorni € dividere il totale per 14. Per individuare il valore della 
+media ribassista bisogna invece sommare il numero totale delle differenze di 
+chiusura durante i giorni di ribasso e dividere il totale per 14. 
+La forza relativa (RS) si ottiene quindi dividendo la media rialzista per la media 
+ribassista. Il valore di RS così ottenuto va inserito nella formula dell'RS/. Il nu- 
+mero dei giorni può variare semplicemente cambiando il valore di x. 
+1 L'indice RSI fu ideato da John Welles Wilder jr. e pubblicato in: J. Welles Wilder, New Concepts 
+in Technical Trading Systems, Trend Research, Greesboro (NC) 1978. Sebbene in questo paragrafo si 
+darà spazio notevole alla trattazione di tale indice, si rimanda comunque all'opera originale citata per 
+ulteriori approfondimenti. 
+OSCILLATORI E OPINIONE CONTRARIA 183 
+18/27/97 (*OEX) S&P 100 Stock Index 03/05/98 
+KO” 
+pe Los 
+m iù [ uo Py pi mi | 
+dl rta HI, fl AIA ® mu I [430 
+Na pt) ” 430 
+PAzo 
+410 
+Relative strength index (RSI) - 14 giorni 100 
+ipercomprato e) 
+peo 
+Iv, ipervenduto 20 
+\- Nor. Dec Sa na Feb T EI 
+Figura 10.9 Il relative strenght index a 14 giorni rappresenta una situazione di ipercomprato al di 
+sopra di 70 e di ipervenduto al di sotto di 30. Questo grafico mostra l'ipervenduto di ottobre dell'S&P 
+100 e l'ipercomprato di febbraio. 
+Originariamente Wilder usò un periodo di 14 giorni. Questo perché, più è breve il 
+periodo, più sensibile diventerà l’oscillatore e più estesa la sua ampiezza. L’RS7 
+funziona meglio quando le sue fluttuazioni raggiungono l’estremità superiore € 
+inferiore. Di conseguenza, se si sta operando a breve periodo e si desidera che le 
+oscillazioni diventino più evidenti, sarà necessario accorciare il periodo, mentre lo si 
+dovrà, al contrario, allungare quando lo si vuole smussare e contenere nei movi- 
+menti. L'ampiezza dei movimenti dell’oscillatore a 9 giorni è di conseguenza su- 
+periore a quella ottenuta dall’originale a 14 giorni. Sebbene questi periodi di tempo 
+siano tuttora comunemente utilizzati, alcuni analisti hanno sperimentato altri pe- 
+riodi, come a 5 e a 7 giorni per aumentare la volatilità della linea RS/; altri uti- 
+lizzano periodi a 21 o 28 giorni per smussare i segnali dell’R.SI (figure 10.9 e 10.10). 
+10.5.1  L’interpretazione dell’ R.S/ 
+L’RSI viene collocato su una scala verticale da 0 a 100. I movimenti al di sopra 
+della linea del 70 sono considerati in ipercomprato, mentre i movimenti al di sotto 
+della linea del 30, in ipervenduto. A causa dei movimenti che si verificano nei 
+mercati rialzisti o ribassisti, il livello 80 diventa il livello di ipercomprato di un bull 
+market e il livello 20 diventa quello di ipervenduto in un bear market. 
+Quelli che Wilder defini failure swings, si verificano quando l’RSI si trova al di 
+sopra di 70 o sotto 30, mentre un t0p failure swing, si verifica quando un nuovo
+
+=== PDF page 100 ===
+184 CAPITOLO 10 
+18/27/97 (*OEX) S&P 100 Stock Index 03/05/98 
+Relative strength index (RSI) - 14 giomi [100 
+Peo 
+ipercomprato fai 90 
+Aa 
+-50 
+aa 
+u/ ipervenduto 2 
+° pio 
+Relative strength index (RSI) - 7 giorni [100 
+Lol 
+CA RX ipercomprato WMA o 
+Ù 40 
+(50 
+ao 
+N g s (W) DI 20 ipervenduto Lo 
+|_Sep ba Nov Dec fe na Feo i m 
+Figura 10.10 L'ampiezza della linea RS/ può essere aumentata abbreviando il periodo di tempo. Si 
+noti che I'ASI a 7 giorni raggiunge gli estremi esterni più frequentemente rispetto all'AS/ a 14 giorni, 
+risultando quindi di maggiore utilità per il trading di breve periodo. 
+massimo dell’RS/ (sopra 70) è incapace di superare il precedente massimo nel- 
+l'uptrend, seguito da una rottura al ribasso di un minimo precedente. 
+Si ha invece un bottom failure swing quando 1’ RSI in un downtrend (sotto 30) è 
+incapace di formare un nuovo minimo e finisce col superare un precedente massi- 
+mo (figure 10.11 e 10,12). 
+Le divergenze tra la linea dell’RS/ e quella dei prezzi, quando l’RS/ si trova 
+sopra 70 o sotto 30, sono segnali assai preoccupanti. Difatti, Wilder considera le 
+divergenze come la caratteristica più indicativa del re/ative strenght index. 
+L'analisi del trend può essere utilizzata per individuare delle inversioni di tendenza 
+sull’RS/ e, allo stesso scopo, si possono usare le medie mobili (figura 10.13). 
+I failure swing e le divergenze che si verificano quando I RSI si trova sopra 70 0 
+sotto 30 rivestono una notevole importanza ma è necessario chiarire un altro 
+punto essenziale sull’uso degli oscillatori. 
+Ogni forte trend, rialzista o ribassista, produce troppo presto dei segnali di e- 
+stremizzazione dell’oscillatore. In questi casi affermare che il mercato sia in iper- 
+comprato o in ipervenduto è spesso prematuro e può portare a precipitose uscite 
+da un trend ancora potenzialmente rialzista. 
+Difatti, nei forti mercati rialzisti, le fasi d’ipercomprato possono durare per 
+molto tempo. Quindi il semplice fatto che l’oscillatore sia in ipercomprato, non 
+giustifica la liquidazione di una posizione /ong o addirittura l'apertura di posi- 
+zioni short in un forte upirend. 
+OSCILLATORI E OPINIONE CONTRARIA 185 
+13/26/97 (*'DWU) Dow Utilities 05/23/97 citi 
+228 
+Relative strength index (RSI) - 9 giorni 
+Z20 
+|__Linea a 70 i INA zu i 
+(ALII Zz0 
+Bottom failure swing 
+Zia 
+ly |! 
+20 M_i 12 10 Fal Co) 
+IA 
+Figura 10.11 Un bottom failure swing nella linea dell'ASI. Il secondo massimo RSI (punto 2) è superiore al primo (punto 1) mentre si trova al di sotto di 30 e i prezzi sono ancora in ribasso. La penetrazione al rialzo del massimo RS) (punto 3) segnala un bottom. 
+18/19/97 (*DWT X) Dow Transportation 11/05/97 
+Relative strength index (RSI) - 9 giorni 
+IL 
+VIII — seo 
+I 3 | tl Top failure swing 3100 
+all 
+Ul Linea a 30 | | 
+8 a 18 2 2 0_._ 20 27 
+Figura 10.12 Un top failure swing. Il secondo massimo (punto 2) è inferiore rispetto al primo (punto 1) mentre la linea dell'ASI si trova al di sopra di 70 a i prezzi sono ancora in salita, La rottura da parte della 
+linea dell'ASI al di sotto del minimo centrale (punto 3) segnala il top.
+
+=== PDF page 101 ===
+186 CAPITOLO 10 
+05/13/96 (‘DWU) Dow Utilities 07/18/97 
+Relative strength index (RSI) - 9 giorni [100 
+la pe A, 
+E A i p] 3 A 5 h°) N D wr F h "A bI I y FI 7] UA 
+Figura 10.13. Le trendiines sono molto efficaci sulla linea dell'ASI. In questo grafico la réttura delle due 
+trendiines dell'ASI diede segnali tempestivi di acquisto e vendita {si vedano le frecce). . 
+Solitamente, il primo movimento nella fase d’ipercomprato o d'ipervenduto è 
+solo un avvertimento mentre è molto più grave un secondo movimento nella zona 
+di pericolo. 
+Se invece quest’ultimo è incapace di confermare il movimento di prezzo, for- 
+mando un nuovo massimo o un nuovo minimo (dando luogo a un doppio top 0 a 
+un bottom sull’oscillatore), è possibile che si sia creata una divergenza. 
+A questo punto, si possono prendere alcune precauzioni per proteggere le po- 
+sizioni esistenti. Se l’oscillatore si muove nelle direzione opposta, rompendo un 
+precedente massimo o minimo, viene confermata una divergenza o un failure swing. 
+Il livello 50 è il valore centrale dell’RS/ e spesso si comporta da supporto 
+durante i pul/backs e da resistenza durante i rimbalzi. Alcuni traders considerano 
+gli incroci dell'RS/ al di sopra e al di sotto del livello 50 rispettivamente come 
+segnali di acquisto e di vendita. 
+10.6 L’utilizzo delle linee del 70 e del 30 per generare i segnali 
+Sul grafico dell’oscillatore, appaiono delle linee orizzontali a 70 e a 30. Solita- 
+mente gli operatori utilizzano questi livelli per generare dei segnali d'acquisto e di 
+vendita. 
+È già stato precisato che un movimento sotto 30 indica una fase d’ipervenduto. 
+Se un operatore ritenesse che il mercato stia formando il fondo e stesse quindi 
+OSCILLATORI E OPINIONE CONTRARIA 187 
+04/30/73 (*DWU) Dow Utilities 03/31/98 
+Grafico a barre mensile 
+Relative strength index (RSI) - 9 mesi [100 
+M dl 44 dd do M 
+, ti IAA ASTA TAL 
+274 76 Te TI Ta ro so bi ta bs Ru Rs be tr ba o Gi sa bs 4 te ve bro 
+E 8 8 3 
+Figura 10.14 L'osciliatore AS/ può essere usato nei grafici mensili. Si notino i due maggiori segnali di 
+acquisto in una situazione di ipervenduto nel 1974 e 1994. | massimi di ipervenduto nella linea dell'AS/ 
+hanno permesso l'identificazione di massimi importanti nelle utilities. 
+attendendo un'opportunità d’acquisto, aspetterebbe che l’oscillatore scendesse 
+ben sotto 30; in quella fascia d’ipervenduto potrebbe verificarsi qualche tipo di 
+divergenza o un doppio minimo. 
+Se a questo punto, l’oscillatore torna sui propri passi e supera al rialzo la linea 
+del 30, molti operatori interpreteranno questo movimento come la conferma che 
+il mercato sta girando al rialzo. Invece in un mercato in ipercomprato, il ritorno 
+al di sotto della linea del 70 può essere utilizzato come segnale di vendita (figura 
+10.14). 
+10.7 Stocastica (KX%D) 
+Il processo dello stocastico fu diffuso da George Lane.? È basato sull’osser- 
+vazione che, nel corso dell’incremento dei prezzi, quelli di chiusura tendono ad 
+avvicinarsi al massimo dell’escursione del prezzo stesso (price range). 
+Al contrario, nei downtrends, i prezzi di chiusura tendono ad avvicinarsi al mi- 
+nimo del price range. 
+Nel processo dello stocastico vengono usate due linee, la %WKela %D cheèla 
+più importante poiché genera i segnali principali. 
+? George Lane è il presidente della società statunitense Investment Educators, Inc., con sede a 
+Watseka, in Illinois.
+
+=== PDF page 102 ===
+188 CAPITOLO 10 
+L'intento è quello di determinare la relazione tra il prezzo di chiusura più recente e il price range di un determinato periodo di tempo; quello più comune- mente usato per questo tipo di oscillatori è di 14 giorni. Per determinare la linea XK, che tra le due è la più sensibile, si ricorre alla formula seguente: 
+%K= 100 [(C — L14)/(414-— L14)] dove: 
+C = ultima chiusura; 
+L14 = il minimo più basso degli ultimi 14 periodi;3 H14 = il massimo più alto registrato negli stessi 14 periodi. 
+Questa formula misura semplicemente, su base percentuale da 0 a 100, la rela- zione del prezzo di chiusura con il totale price range di un certo periodo di tempo. Un livello massimo (oltre 80) sottinte 
+simo del price range mentre un livello 
+nde un prezzo di chiusura vicino al mas- 
+minimo (sotto 20) va interpretato come un avvicinamento al minimo di price range. 
+La seconda linea (XD) è una media mobile a 3 periodi della linea %K. Questa formula produce una versione chiamata fast stochastics. Considerando un'altra media di %D a 3 periodi, viene calcolata una versione smussata che prende il nome di slow stochastics perché fornisce segnali più affidabili. Queste formule producono due linee che oscillano in una scala verticale che va da 0 a 100. La linea K è più veloce, mentre la linea D è più lenta. Il segnale più importante da ricercare è la divergenza 
+mercato, quando la linea D si trova in 
+Le estremità superiori e inferiori hanno 
+La divergenza ribassista si verifica qua massimi decrescenti mentre-i prezzi co rialzista si presenta quando la linea D 
+tra la linea D e il prezzo del sottostante 
+un'area d’ipercomprato o d’ipervenduto. 
+i valori 80 e 20 (figura 10.15). 
+ndo la linea D è sopra a 80 e forma due ntinuano a salire, mentre la divergenza 
+è sotto 20 e forma 2 minimi crescenti mentre i prezzi continuano a scendere. 
+Partendo dal presupposto che tutti questi fattori siano in atto, l'effettivo se- gnale d’acquisto o di vendita viene generato quando la linea continua X incrocia la più lenta linea D, 
+Esistono altre sottigliezze nell’uso dello stocastico, ma in questo paragrafo si sono comunque privilegiati gli aspetti essenziali. Infatti, anche se l’oscillatore è altamente sofisticato, la sua interpretazione rimane la stessa. Si verifica un segnale d’allerta, quando la linea %D si trova in un’area estrema e diverge dai movimenti di prezzo. Il vero segnale si ottiene quando la linea D viene tagliata dalla linea più veloce X al rialzo. L'oscillatore stocastico può essere usato su grafici di lungo periodo come nei settimanali e mensili. - Può comunque essere utilizzata anche sui grafici întra-day per operazioni di più breve periodo (figura 10.16). 
+? I 14 periodi possono riferirsi a giorni, settimane o mesi. 4 Il secondo smussamento produce 3 linee. Il fast stochastics usa le prime due linee, lo slow sStochastics utilizza le ultime due linee, 
+OSCILLATORI E OPINIONE CONTRARIA 189 
+Dz/07/97 (TR1600) Treasury Bonds 1600 
+Grafico a barre settimanale 
+L igura 10.15 Le frecce verso il basso indicano due segnali di vendita che si verificano quando ia linea 
+Fi 
+%K, più veloce, incrocia al di sotto la linea %D, più lenta, da un punto su della linea %K al di sopra della linea %D in un punto inferiore al livello acquisto (frecce verso l'alto). 
+Iperiore al livello 80. L'incrocio 
+20 rappresenta un segnale di 
+D3/10/95 (TR1600) Treasury Bonds 1600 03/13/98 Grafico a barre settimanale 
+° 
+I ly Fazione 
+pl | pl Mia Hou ( y IL noe i hf ' M Mi | ul MA Ù al U mete 
+pin TA Na Il 
+saro I DAY ipercomprato Pocastico a 14 Settimane A oo 
+aa ipervenduto \ a lio LA n D I] HI HI D br x y 3] te 
+Figura 10.16 | movimenti dello stocastico al di sopra di 80 e al di sotto di anticipare i maggiori cambiamenti nel mercato dei 7reasuy Bonds. | costruiti a 14 giorni, a 14 settimane o a 14 mesi, 
+20 hanno permesso di 
+grafici stocastici possono essere
+
+=== PDF page 103 ===
+190 CAPITOLO 10 
+19/22/95 (TR1600) Treasury Bonds 1600 03/13/98 
+Grafico lineare settimanale 
+RSI - 14 settimane 
+Stocastico a 14 settimane LA, 
+[o__ s. VI 1 A n tal n 
+Figura 10.17 Un confronto tra l'ASI e lo stocastico a 14 settimane. La finea dell'AS/ è meno volatile e 
+raggiunge gli estremi con minore frequenza rispetto a quella stocastica. | segnali migliori si verificano 
+quando entrambi gli oscillatori si trovano in territorio di ipercomprato o ipervenduto. 
+Un modo per combinare la stocastico giornaliero e settimanale consiste nel- 
+l’utilizzare segnali settimanali per determinare la direzione del mercato € segnali 
+giornalieri per il timing. È utile anche combinare lo stocastico con l'RSI (figura 
+10.17). 
+10.8 L’oscillatore Larry Williams %R 
+Questo oscillatore è basato su un concetto simile di misurazione dell’ultimo 
+prezzo di chiusura, in relazione con il prezzo di un determinato numero di giorni 
+nel passato. Il prezzo di chiusura del giorno viene sottratto dal prezzo massimo 
+del range per un predeterminato numero di giorni, dividendo tale differenza per il 
+totale del range relativo allo stesso periodo. 
+I concetti già discussi sull’interpretazione degli oscillatori, vengono applicati 
+anche al %R e anche in questo caso il fattore principale è la presenza di di- 
+vergenza nelle aree d’ipercomprato € d’ipervenduto (figura 10.18). 
+10.8.1 Scelta del periodo da applicare ai cicli 
+La lunghezza dell’oscillatore può essere collegata ai cicli principali del mercato. Si 
+usa come lunghezza del periodo 1/2 ciclo. Il periodo di tempo più diffuso è di 5, 
+10 e 20 giorni, basato su un calendario di 14, 28 e 56 giorni. 
+OSCILLATORI E OPINIONE CONTRARIA 191 
+08/27/97 (*SPX) S&P 500 Stock Index 03/05/98 
+pn 
+pì ii li 
+n AI NU) 
+I | MIT all 1 ji qui 
+400 
+NARRA TT Ii È) ; o 
+Vv 
+Willams %R - 20 giorni Ipervenduto 
+= Noy Dee w Ta r 
+PI Fat 
+Figura 10.18 L'oscillatore Larry Williams 9% è usato nello stesso modo in cui vengono usati gli altri 
+oscillatori. | valori superiori a 80 o inferiori a 20 identificano gli estremi del mercato. 
+L’RSI di Wilder utilizza 14 giorni, che corrispondono alla metà di 28. 
+È già stata più volte sottolineata la ricorrenza dei numeri 5, 10 e 20, nell'uso 
+delle medie mobili e degli oscillatori. In questo contesto perciò è sufficiente 
+menzionare che 28 giorni di calendario (corrispondenti a 20 giorni di con- 
+trattazione) rappresentano un importante ciclo dominante mensile e che gli altri 
+numeri hanno una relazione armoniosa con tale ciclo. 
+La popolarità che riscuotono il momentum a 10 giorni e le lunghezze dell’RS/ a 
+14 giorni si basa largamente su un ciclo di contrattazione di 28 giorni e misura 1/2 
+del ciclo dominante. 
+10.9 L'importanza del trend 
+Finora è stato illustrato l’uso degli oscillatori nell’analisi del mercato come 
+possibile aiuto per determinare le condizioni di breve periodo d’ipercomprato € 
+*ipervenduto e per allertare gli operatori sulla possibilità di divergenze. Inoltre è 
+stata analizzata la linea del momentum. È stato discusso un altro metodo per 
+misurare il rate of change (ROC), usando i price ratios al posto delle differenze. 
+Dopo di che si è dimostrato come comparare due medie mobili per individuare 
+gli eccessi di breve periodo e i vari incroci. Per finire, si è passati alla trattazione 
+dell’RSI, del processo dello stocastico € di come si possono sincronizzare gli 
+oscillatori con i cicli.
+
+=== PDF page 104 ===
+192 CAPITOLO 10 
+L'analisi della divergenza ci fa apprezzare la notevole utilità degli oscillatori. Tuttavia, non bisogna dare un'importanza eccessiva alla sola analisi delle di- vergenze, per non finire con l’ignorare o trascurare l’analisi del trend tradizionale. Molti segnali d’acquisto degli oscillatori funzionano meglio negli uptrends e i segnali di vendita sono più proficui nei downrends. Per analizzare il mercato si parte con il determinare la sua direzione generale: se la tendenza è rialzista si dovrà quindi adottare una strategia d'acquisto. Gli oscillatori possono essere usati per aiutare a individuare il momento giusto per entrare in un uptrend: si deve comprare quando il mercato è in fase d'ipervenduto, ma invece si deve vendere allo scoperto quando il mercato è in un downtrend e sì trova in una fase d’i- percomprato. Oppure comperare quando l’oscillatore del momentum, in un mercato prevalentemente rialzista, torna indietro a incrociare la linea dello zero, e vendere, in un mercato ribassista, sull’incrocio al ribasso della linea dello zero. L'importanza di operare nella direzione del trend prevalente non è da tra- scurare. Il pericolo che si corre dando troppa importanza all’uso degli oscillatori in se stessi sta nella tentazione di usare le divergenze come pretesto per aprire delle posizioni contro tendenza. Tutto ciò può essere molto costoso e doloroso. L’o- scillatore, per quanto utile, è solo uno strumento tra tanti altri e deve sempre essere un aiuto, e non un sostitutivo all'analisi basilare del trend. 
+10.10 Quando gli oscillatori sono molto utili 
+Esistono dei casi in cui l’uso degli oscillatori può essere assai più utile del solito. Durante i periodi di mercato irregolare, quando i prezzi si muovono lateralmente per parecchie settimane o mesi, gli oscillatori si avvicinano molto ai movimenti dei prezzi. I massimi e i minimi sul grafico coincidono quasi esattamente con i massimi e i minimi dell’oscillatore, dato che entrambi si muovono lateralmente. Talvolta a un certo punto si verifica una rottura che dà inizio a un nuovo uptrend o downtrend; per sua stessa natura l’oscillatore si trova già in una posizione estrema quando sta per verificarsi la rottura: se quest’ultima è al rialzo, l’oscil- latore si trova già in ipercomprato e viceversa se la rottura al ribasso. A questo punto l’operatore è alle prese con il dilemma se sia il caso di comprare sulla rottura, con l’oscillatore in fase d'ipercomprato, oppure se si debba vendere sulla rottura al ribasso in un mercato in ipervenduto. In questi casi, è meglio ignorare l’oscillatore e prendere posizioni; questo perché nelle prime fasi di un nuovo trend, seguito da un’importante rottura, gli oscil- latori solitamente raggiungono le estremità molto velocemente e lì rimangono per un breve periodo. In questi casi bisogna considerare soprattutto.l’analisi basilare del trend, lasciando in secondo piano gli oscillatori. Successivamente, con la maturazione del trend, si potrà assegnare loro un'importanza maggiore.5 Molti movimenti dinamici rialzisti sono stati persi dagli operatori che, pur 
+5 Nel capitolo 13 si noterà che l’analisi della quinta e ultima onda di Elliott viene spesso confermata dalla divergenza negativa dell’oscillatore. 
+OSCILLATORI E OPINIONE CONTRARIA 193 
+vedendo il segnale primario del trend, decidevano di aspettare che l’oscillatore fosse in fase d’ipervenduto, prima di cominciare a comperare. Per riassumere, si consiglia di dare meno importanza all’oscillatore nelle prime fasi di un importante movimento, ma di porre più attenzione ai suoi segnali nel momento in cui il mercato raggiunge la maturità. 
+10.11 Convergenza e divergenza delle medie mobili (MACD) 
+L'indicatore moving average convergence/divergence o, più semplicemente, MACD, fu sviluppato da Gerald Appel ed è utile perché combina alcuni dei principi degli oscillatori spiegati in precedenza coù un approccio che prevede un doppio incrocio della media mobile. 
+Sebbene le linee usate per il calcoli siano tre, sul monitor sono visibili solo due linee. La linea più veloce, chiamata linea MACD, è data dalla differenza tra due medie mobili esponenziali smussate dei prezzi di chiusura, generalmente gli ultimi 12 e 26 giorni o settimane. La linea più lenta, chiamata /inea del segnale, in genere è una media mobile esponenziale a 9 periodi smussata della linea MACD. Ini- zialmente Appel consigliava un gruppo di numeri per i segnali di acquisto e un altro per quelli di vendita; tuttavia, la maggior parte dei traders utilizza i valori predefiniti di 12, 26 e 9 in tuttii casi, compresi i valori giornalieri e settimanali (figura 10.19). 
+18/21/97 (*OTC) Nasdaq Composite Index 02/27/98 
+i | 1760 10%, 4 al | 
+al! ” pri tr Hi | I 
+Il I | Î | ul I 
+RI se 
+"Mt Moving average convergence/divergence (MACD) 
+C. Linea del segnale 
+Linea MACD 04 DerA 
+I Sep bd Toy Dec Ta Feo Lal Cul 
+Figura 10.19 li sistema della moving average convergence/divergence mostra due linee, Un segnale viene dato quando la linea della MACD, più veloce, incrocia la linea del segnale, più lenta. Le frecce indicano cinque segnali di trading in questo grafico del Nasdaq Composite Index.
+
+=== PDF page 105 ===
+194 CAPITOLO 10 
+1 segnali di acquisto e di vendita veri sono dati quando le due linee si incrociano. 
+L’incrocio della linea MACD, più veloce, al di sopra della linea del segnale, più 
+lenta, è un segnale di acquisto. Un incrocio della linea più veloce al di sotto di quella 
+più lenta è un segnale di vendita. In questo senso la MACD è simile a un metodo del 
+doppio incrocio della media mobile. Tuttavia, i valori della M ACD fluttuano anche 
+al di sopra e al di sotto della linea dello zero, il che evidenza la sua affinità con un 
+oscillatore. Una condizione di ipercomprato è presente quando le linee sono troppo 
+lontane al di sopra della linea dello zero. I migliori segnali di acquisto vengono dati 
+quando i prezzi sono eccessivamente al di sotto della linea dello zero (ipervenduto). 
+Gli incroci al di sopra e al di sotto della linea dello zero rappresentano un altro 
+modo per generare rispettivamente segnali di-acquisto e di vendita, in maniera 
+simile alla tecnica del momentum trattata precedentemente. 
+Le divergenze appaiono tra il trend delle linee della MACD ela linea dei prezzi. 
+Una divergenza negativa, o ribassista, si verifica quando le linee della MACD si 
+trovano molto al di sopra della linea dello zero (situazione di ipercomprato) € 
+iniziano a indebolirsi quando i prezzi continuano a mostrare una tendenza al 
+rialzo. Spesso ciò rappresenta il segnale di un massimo di mercato. Una di- 
+vergenza positiva, o rialzista, si verifica quando le linee della MACD si trovano 
+molto al di sotto della linea dello zero (situazione di ipervenduto) e iniziano a 
+spostarsi in alto in anticipo rispetto alla linea dei prezzi. Spesso questo rap- 
+presenta un precoce segnale di un market bottom. È possibile disegnare trendlines 
+semplici sulle linee della MACD, allo scopo di identificare importanti cambia- 
+menti del trend (figura 10.20). 
+(12/19/98 ("OTC) Nasdaq Composite Index 02/27/98 
+al È 
+Pe z ipercomprato 
+ipervenduto 
+I M A HI 6 Tati 
+Figura 10.20 Le linee della MACD fluttuano intomo alla linea dello zero, attribuendole le caratteristiche 
+di un oscillatore. | segnali di acquisto e di vendita migliori si verificano rispettivamente al di sotto e al di 
+sopra della linea dello zero. Si noti la divergenza negativa data a ottobre (freccia in basso). 
+OSCILLATORI E OPINIONE CONTRARIA 195 
+10.12 Gli istogrammi MACD 
+È possibile trasformare due linee MACOD in un istogramma costituito da barre 
+verticali che mostrano la differenza tra le linee delle medie mobili. L’istogramma 
+ha una sua linea dello zero. Quando le linee MACD hanno un allineamento 
+positivo (la linea più veloce incrocia quella più lenta), l’istogramma si trova al di 
+sopra della linea dello zero. Gli incroci dell’istogramma al di sopra e al di sotto 
+della linea dello zero coincidono con i reali segnali di acquisto e di vendita del- 
+l'incrocio della MACD. 
+Il valore reale dell'istogramma consiste nella sua capacità di individuare 
+l'ampliamento o la riduzione dello spazio tra le due linee. Quando l’istogramma si 
+trova al di sopra della linea dello zero, € quindi è positivo, e inizia a scendere 
+verso di essa, l'uptrend si sta indebolendo. AI contrario, quando l’istogramma si 
+trova al di sotto della linea dello zero e inizia a salire verso di essa, il downtrend sta 
+iniziando a perdere il suo momentum. Sebbene non venga dato nessun segnale di 
+acquisto o di vendita fino a che l’istogramma non incrocia la linea dello zero, i 
+suoi movimenti avvisano tempestivamente che il trend attuale sta perdendo il suo 
+momentum. I movimenti di ritorno dell’istogramma verso la linea dello zero 
+precedono sempre i reali segnali dell'incrocio. I movimenti dell’istogramma 
+spesso vengono usati per individuare dei precoci segnali di uscita dalle posizioni 
+esistenti. È molto più pericoloso utilizzarli come giustificazione per iniziare nuove 
+posizioni in controtendenza (figura 10.21). 
+09/03/97 (*OTC) Nasdaq Composite Index 03/10/98 
+My 
+QU, RLALITIN ' Ì 
+I pile | Ù 
+au I 4700 
+DAL Sona | ini 
+i I, Ii let Hof i ini I) | MESTIATETAII n 
+| n | J 1500 
+Istogramma MACD a [2° 
+cotte ittiline., H iI ia Alla mi 
+AVI 
+Figura 10.21 L'istogramma della MACO rappresenta la differenza tra le due linee della MACD. | 
+segnali vengono fomiti solo agli incroci sulla linea dello zero. Si noti che l'istogramma svolta prima 
+rispetto ai segnali di incrocio, awisando così il trader in anticipo.
+
+=== PDF page 106 ===
+196 CAPITOLO 10 
+10.13 La combinazione dei settimanali e dei giornalieri 
+Come per tutti gli indicatori tecnici, i segnali dei grafici settimanali sono sempre 
+più importanti rispetto a quelli dei grafici giornalieri. Il modo migliore per com- 
+binarli consiste nell'utilizzare i segnali settimanali per determinare la direzione del 
+mercato e quelli giornalieri per perfezionare i punti di entrata e di uscita. Un 
+segnale giornaliero viene seguito solo quando è in armonia con quello settimanale. 
+Utilizzati in questo modo, i segnali settimanali diventano filtri del trend per i 
+segnali giornalieri. In questo modo si evita si usare questi ultimi per effettuare 
+operazioni di trading in controtendenza. Due sistemi di incrocio in cui questo 
+principio è particolarmente valido sono la MACD e lo stocastico (figura 10.22). 
+02/28/97 (*OTC) Nasdaq Composite Index 03/13/98 
+Grafico a barre settimanale | | torso 
+| ti Î 4700 
+I | 
+pl Pay! br | (1450 I 
+Tia 1400 
+pt 
+| Ì 
+Ì I 
+Hib, 
+MACD {settirnanale) 
+0 UEZAZE 
+\ Zani Sulla I}{j Istogramma MACD settimanale {jb ne 
+7 du Ra Se ba Ter Mer____ Ape May Jun p Nov___Dec___e Fò ATE E Sr e TRY 
+Figura 10.22 L'istogramma della MACD è efficace sui grafici settimanali. Al massimo centrale, 
+l’istogramma ha svoltato verso il basso dieci settimane prima rispetto al segnale di vendita (freccia in 
+basso). Ai due uotums l'istogramma ha svoltato in alto 2 e 4 settimane prima rispetto al segnale di acquisto (frecce in alto). 
+10.14 Il principio dell’opinione contraria nei futures 
+L'analisi dell'oscillatore è lo studio degli eccessi di mercato. Una delle teorie più 
+seguite per misurare tali eccessi è il principio dell'opinione contraria. All’inizio di 
+questo testo, sono state identificate due principali filosofie dell’analisi dei mercati; 
+l’analisi fondamentale e l’analisi tecnica. Benché il principio dell'opinione con- 
+traria venga generalmente classificato nella categoria dell’analisi tecnica, è più 
+OSCILLATORI E OPINIONE CONTRARIA 197 
+propriamente una forma di analisi psicologica. L'opinione contraria dà corpo a una terza dimensione dell'analisi del mercato, assai importante, la dimensione 
+psicologica, determinando il grado di considerazione di rialzo o ribasso tra gli 
+speculatori nei vari mercati finanziari. 
+Il principio dell'opinione contraria si basa sul fatto che quando la maggior parte delle persone concordano su qualche cosa, solitamente stanno sbagliando. Un vero “bastian contrario” dovrà prima di tutto identificare l'opinione della maggioranza e poi agire nella direzione opposta. 
+Il decano del pensiero contrario fu Humphrey B. Neill,5 ma solo dopo dieci 
+anni dalla loro enunciazione, le sue teorie trovarono un'applicazione pratica, a opera di J.H. Sibbet che le cominciò a utilizzare nel trading dei futures delle mer- ci creando il Market Vane Advisory Service che includeva i valori del consenso al rialzo (detto dullish consensus). Ogni settimana veniva fatta un’indagine di mer- cato in modo da poter determinare il livello dell’aspettativa rialzista o ribassista 
+tra gli operatori professionisti di commodity. 
+Lo scopo del censimento era quello di quantificare il sentimenti del mercato, 
+riportandolo in numeri che potevano essere analizzati nel processo previsionale, Il fondamento di questo approccio sta nel fatto che la maggior parte degli operatori 
+sui futures sono influenzati dalla gran massa dei servizi previsionali. Monitorando 
+i punti di vista dei servizi di analisi professionali del mercato si può ottenere un’accurata verifica dell’atteggiamento degli investitori, 
+Un altro servizio che fornisce delle indicazioni del sentimenti del mercato è il Consensus Index of Bullish Market Opinion.” Questi dati vengono pubblicati ogni 
+venerdì e usano come livello d’ipercomprato il 75% e come ipervenduto il 25%. 
+10.14.1 L’interpretazione dei dati del bullish consensus 
+Molti operatori usano un metodo molto semplice per analizzare questi dati set- 
+timanali. Se i dati sono superiori al 75%, il mercato è considerato in ipercom- 
+prato con un possibile imminente top di breve periodo. Un dato inferiore al 25% va interpretato come una condizione di ipervenduto, con delle forti probabilità 
+che il mercato sia vicino a un fondo. 
+10.142 La contrary opinion misura la rimanente potenzialità 
+d’acquisto e di vendita 
+Si consideri il caso di uno speculatore individuale che, dopo aver letto il suo 
+bollettino preferito, si convinca che il mercato sta sostanzialmente salendo: più la 
+previsione è rialzista, più l'investitore entrerà aggressivamente nel mercato. 
+Una volta che i fondi degli speculatori individuali sono stati tutti impegnati su 
+di un particolare mercato, l’investitore è in ipercomprato, cioè non gli restano più 
+fondi da investirvi, 
+6 Cfr. Humphrey B. Neill, The Art of Contrary Thinking, The Caxton Printers, Caldwell (OH) 1954. 
+? Questo servizio viene pubblicato dal Consensus National Commodity Futures Weekly, con sede a 
+Kansas City,
+
+=== PDF page 107 ===
+198 CAPITOLO 10 
+Allargando questa situazione in modo da includere tutti gli investitori, se 
+1'80-90% di loro è rialzista, si presuppone che abbia già preso posizione sul 
+mercato. A questo punto, chi è ancora fuori dal mercato e lo fa salire? Questa 
+domanda rappresenta una delle chiavi per capire la contrary opinion: se il senti- 
+ment predominante degli investitori si trova da una parte del mercato, allora 
+semplicemente non potrà esserci abbastanza pressione d'acquisto o di vendita per 
+far proseguire il trend in atto. 
+10.14.3 La contrary opinion misura lo scontro tra mari forti e mani deboli 
+Un secondo aspetto di questa filosofia è la capacità di raffrontare le mani forti alle 
+mani deboli. Il trading sui futures è uno scontro paritario perché, a ogni contratto 
+acquistato corrisponde un contratto venduto. Se l'80% degli investitori si trova 
+dalla parte long del mercato allora il rimanente 20% (che sta tenendo delle posi- 
+zioni short) deve essere finanziato a sufficienza, per assorbire i contratti /ongs del- 
+l’altro 80%. Di conseguenza i contratti shorts dovranno avere delle posizioni mol- 
+to più ampie rispetto alle posizioni /ongs (in questo caso 4 su 1) e devono essere 
+ben capitalizzati: perciò vengono definiti mani forti. 
+L'80% che sta mantenendo delle posizioni molto più piccole per ogni con- 
+trattazione, è considerato mano debole in quanto sarà forzato a liquidare le 
+proprie posizioni /ongs a ogni improvvisa inversione dei prezzi. 
+10.14.4 Ulteriori aspetti dei datì del bullish consensus 
+Vi sono altre considerazioni da fare in relazione all'uso di tali dati. La normalità, 
+o punto d’equilibrio, si trova al 55%, questo per tener conto della naturale pre- 
+disposizione rialzista del pubblico. 
+L’estremità superiore è collocata al 90% mentre l’estremità inferiore al 20%, 
+sempre per tener conto della predisposizione rialzista. 
+Si può prendere in considerazione una posizione contraria quando il dato del 
+bullish consensus è superiore al 90% o inferiore al 20%. Dei dati superiori al 75% 
+o inferiori al 25% sono considerati anch'essi delle zone pericolose e suggeriscono 
+una probabile inversione di tendenza. 
+Comunque, in queste aree non ancora così estreme, è consigliabile aspettare che 
+ci sia un’inversione di trend nei dati, prima di aprire delle posizioni in con- 
+trotendenza. Un’inversione dei dati del bullish consensus, specialmente se si ve- 
+rifica da una delle zone pericolose, dovrebbe essere curata molto attentamente. 
+10.145 L'importanza dell’open interest (futures) 
+Anche l’open interest ha un ruolo nell’uso dei dati del bu/lish consensus. 
+In linea di massima, più è alto l’open interest più sono alte le probabilità di una 
+buona riuscita per un’operazione in controtendenza. 
+Ciò nonostante, non bisognerebbe aprire delle posizioni in controtendenza 
+mentre il valore dell'open interest sta ancora aumentando. Difatti, il continuo 
+aumento dell’open interest alimenta la possibilità che il trend in atto possa con- 
+OSCILLATORI E OPINIONE CONTRARIA 199 
+tinuare. Bisogna quindi aspettare un ribasso o un livellamento dei suoi dati prima 
+di prendere posizione. È necessario studiare il Commitment of Traders Report per 
+assicurarsi che gli hedgers abbiano meno del 50% dell'open interest. L'opinione 
+contraria funziona meglio quando la maggior parte dell'open interest è formata 
+dagli speculatori, che vengono considerati mani deboli. E anche sconsigliabile o- 
+perare contro le posizioni degli hedgers. 
+10.14.6 Controllo della reazione del mercato alle notizie fondamentali 
+Bisogna controllare molto attentamente le reazioni del mercato dopo le notizie 
+fondamentali: infatti l'incapacità dei prezzi di reagire alle notizie rialziste in un’a- 
+rea d’ipercomprato è una chiara indicazione di una possibile inversione a breve 
+periodo. 
+Solitamente la prima notizia negativa è già sufficiente a spingere velocemente i 
+prezzi nella direzione opposta. 
+Conseguentemente quando i prezzi in un’area d’ipervenduto (sotto 25%) non 
+possono reagire alle notizie ribassiste, si ha un segnale indicativo del fatto che 
+tutte le notizie negative sono state già scontate dai prezzi minimi. Qualsiasi no- 
+tizia rialzista, spingerà i prezzi al rialzo. 
+10.14.7 Combinazione della contrary opinion con altri strumenti tecnici 
+Come regola generale, è bene operare nella stessa direzione del trend del dullish 
+consensus fintantoché non viene raggiunta un'estremità; a quel punto è bene mo- 
+nitorare i valori per avere un segnale d’inversione del trend. È inutile dire che i 
+modelli analitici degli strumenti tecnici possono e devono essere impiegati come 
+aiuto per individuare le inversioni del mercato nei momenti critici. Le rotture dei 
+livelli di supporto e di resistenza, delle trendlines o delle medie mobili, possono 
+aiutare a confermare l’inversione del trend. 
+Le divergenze sui grafici degli oscillatori sono molto utili quando i dati del 
+bullish consensus sì trovano in fase d’ipercomprato o d’ipervenduto. 
+10.15 I valori sul sentiment degli investitori 
+Ogni fine settimana la rivista Barron's include nella sezione intitolata ‘Market 
+Laboratory” i dati relativi al sentiment degli investitori espressi in quattro 
+sondaggi che hanno la funzione di monitorare il grado di rialzismo o ribassismo 
+nel mercato azioriario. Vengono indicate le cifre relative all'ultima settimana e 
+alle due o tre settimane precedenti per fini comparativi. Alla pagina seguente, 
+viene fornito un campione casuale di quelle che potrebbero essere le cifre del- 
+l’ultima settimana, É importante ricordare che si tratta di contrary indicators:un 
+eccessivo rialzismo è un fenomeno negativo mentre un eccessivo ribassismo è un 
+fenomeno positivo.
+
+=== PDF page 108 ===
+200 CAPITOLO 10 
+Investors Intelligence 
+Rialzi 48% 
+Ribassi 27% 
+Correzione 24% 
+Consensus index 
+Bullish Opinion IT% 
+AAII Index (American Association of 
+Individual Investors 625 N, Michigan 
+Ave. Chicago, IL 6061 1) 
+Rialzisti 53% 
+Ribassisti 13% 
+Neutrali 34% 
+Market Vane 
+Bullish consensus 66% 
+10.16 Le cifre di Investors Intelligence 
+Investors Intelligence effettua un sondaggio settimanale tra i consulenti d’inve- stimento producendo tre cifre: la percentuale di consulenti rialzisti, quella dei ribassisti e quella di coloro che attendono una correzione di mercato. Un dullish consensus superiore a 55% indica un eccessivo ottimismo ed è potenzialmente negativo per il mercato. Un bullish consensus al di sotto del 35% riflette un eccessivo pessimismo ed è considerato positivo per il mercato. La percentuale relativa alla correzione rappresenta i consulenti che sono rialzisti ma si aspettano una debolezza nel breve termine. 
+Investors Intelligence pubblica anche settimanalmente dei dati che misurano il numero di azioni che sono al di sopra delle medie mobili a 10 e a 30 settimane. Queste cifre possono anche essere usate in maniera contraria. I dati superiori al 70% indicano un mercato azionario ipercomprato, mentre quelli inferiori al 30% indicano una situazione di mercato ipervenduto. I dati a 10 settimane risultano utili per misurare le svolte di mercato intermedie. Il segnale reale di un potenziale cambiamento del trend si verifica quando i numeri ritornano al di sopra di 30 o al di sotto di 70. 
+11 
+Grafici point & figure 
+I grafici puint & figure verranno esaminati in due fasi. Inizialmente si prenderà in esame il metodo originale che poggia sui movimenti di prezzo intra-day per poi valutare una versione semplificata di questi tipo di grafico che può essere co- struita utilizzando solo i prezzi alti e bassi per qualsiasi tipo di mercato. 
+11.1 Alcuni cenni storici 
+La prima forma di analisi tecnica applicata al mercato azionario fu costituita 
+proprio dai grafici point & figure.! Tale termine fu coniato nel 1933 da Victor de 
+Villiers, ma definiva una tecnica già ampiamente in uso da decenni, con altra de- nominazione. 
+Vi sono varie testimonianze di questo fatto. Una di esse risale a un articolo di 
+fondo, apparso il 20 luglio del 1901 sul Wall Street Journal, con la firma di Char- 
+les Dow: questi attribuì la denominazione di book method a una tecnica in uso 
+negli anni 80 e ’90 dell'Ottocento. 
+Dow affermò che il book method veniva utilizzato già da quindici anni, a partire 
+dal 1886. 
+La tecnica fu conosciuta negli anni Venti come figure chart, finché nel 1933, il 
+termine point & figure, entrò nell'uso corrente per definire il metodo di registra- 
+zione dei movimenti del mercato.? 
+I grafici point & figure furono dunque utilizzati ancor prima di quelli a barre, o bar chart. Infatti il Wall Street Journal cominciò solo nel 1896 a pubblicare il massimo, il minimo e la chiusura giornaliera del mercato azionario, dando così 
+una visione più completa del mercato e favorendo l’uso del bar chart; è evidente 
+però che i grafici a barre comparvero con un ritardo di dieci anni rispetto ai point 
+& figure. 
+! È già stato più volte specificato che tale termine non è traducibile in italiano, a meno che non si ricorra alla denominazione ‘segni e numeri”, assai poco indicativa {N.d.T.]. 
+? Victor de Villiers, The Point and Figure Method of Anticipating Stock Price Movements, Windsor 
+Book, Brightwaters (NY), 1933. 
+3 Negli anni Trenta anche R.D. WyckofF pubblicò molti lavori riguardo ai grafici point & figure.
+

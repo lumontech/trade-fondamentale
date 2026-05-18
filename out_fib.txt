@@ -1,0 +1,517 @@
+=== PDF page 44 ===
+68 CAPITOLO 4 
+Per esempio, in un mercato con tendenza rialzista, su un movimento di prezzi da 
+100 a 200, molto spesso la conseguente correzione arretrerà di circa la metà del 
+movimento precedente, portandosi verso 150, prima che il movimento rialzista ri- 
+prenda. Questa è una caratteristica del mercato molto ben conosciuta che si mani- 
+festa frequentemente. Ma queste percentuali di ritracciamento possono essere ap- 
+plicate a qualsiasi tipo di trend, primario, secondario e minore. Oltre al 50% di 
+ritracciamento vi sono altre percentuali minime e massime di 1/3 e 2/3, largamente 
+conosciute. In altre parole, l'andamento dei prezzi, può essere diviso in terzi. 
+Solitamente il ritracciamento minimo è di circa il 33% e il massimo del 66% 
+circa. Questo significa che nella correzione di un trend molto forte, il mercato 
+arretra solitamente perlomeno di un terzo del precedente movimento, informa- 
+zione che può risultare molto utile per molteplici ragioni. 
+Se un trader sta cercando un’area d’acquisto, potrà calcolare sul grafico la zona 
+tra il 33% e il 50%, e trovarvi l'indicazione per una buona opportunità d’acquisto 
+(figure 4.39 e 4.40). 
+La massima percentuale di ritracciamento è del 66%, che diventa perciò una 
+speciale area critica. Se il trend precedente deve essere mantenuto, ia correzione 
+deve fermarsi a 2/3: quindi quest'area presenterà un rischio relativamente basso 
+per comperare in un trend rialzista 0, viceversa, per vendere su di un ribasso. 
+Se i prezzi dovessero scendere al di sotto dei 2/3 di ritracciamento, si avrà 
+piuttosto un'inversione di tendenza e il movimento sarà solitamente equivalente 
+al 100% del trend precedente. 
+200 
+190 
+180 
+170 
+160 Ain niNnRY Avtezterizina \qlly/ niesiainlziadaeziatezio asti 
+150 50% di ritracciamento 
+140 
+130 ° 66% di ritracciamento 
+120 
+110 
+100 
+Figura 4.39 | prezzi solitamente arretrano di circa la metà dei movimento precedente, prima di 
+ritornare verso la direzione originale. Questo esempio mostra un ritracciamento del 50%. Il 
+ritracciamento minimo è un terzo e il massimo, due terzi del movimento precedente. 
+CONCETTI FONDAMENTALI DI TREND 69 
+03/12/97 {*DWI X) Dow Industrials 02/09/98 
+Grafico a barre giornaliero fi 
+Ae L'ALA MI i 38% j Î me 
+Ni 7 Iole | 50% A 
+17200 
+ul? = . \ % di ritracciamento [9000 
+1 leeco 
+‘ 6400 
+pY n fi n DI E a) ra rina 
+Figura 4.40 Letre linse orizzontali segnano i livelli di ritracciamento del 39%, 50% e 62% misurati dal minimo di aprile al massimo di agosto 1997. Il primo ribasso è caduto sulla linea del 38%, Il secondo su quella del 62% e il terzo in prossimità delia linea del 50%. Il maggior numero di correzioni trovano supporto nelle zone di ritracciamento comprese tra il 38% e il 50%. Le linee del 38% e 62% sono ritracciamenti di Fibonacci molto utilizzati dagli analisti tecnici. 
+Le tre percentuali di ritracciamento menzionate, 50%, 33% e 66%, sono attinte 
+dalla teoria originale di Dow. Quando verrà esaminata la teoria delle onde di Elliott e i rapporti di Fibonacci, si incontreranno differenti metodi di approccio che uti- lizzano percentuali di ritracciamento del 33% e 62%. Tuttavia è preferibile ricorrere a entrambe le percentuali minime di ritracciamento, partendo dal 33% fino al 38 %, 
+con una zona massima dal 62% al 66%. Alcuni analisti tecnici arrotondano questi numeri fino ad arrivare a una zona di ritracciamento che va dal 40% al 60%. Chi segue la teoria di W.D. Gann misura la struttura di un trend in ottavi, 1/8, 2/8, 3/8, 4/8, 5/8, 6/8, 7/8, 8/8. Ciò nonostante, perfino Gann conferisce una speciale importanza ai 3/8 (38%), 4/8 (50%) e 5/8 (62%), come numeri di ri- tracciamento, ritenendoli molto importanti per dividere il trend in terzi, 1/3 
+(33%) e 2/3 (66%). 
+4.10 Speed resistance lines 
+Parlando di terzi, si arriva a un'altra tecnica che combina le trendlines con la 
+percentuale di ritracciamento: la tecnica delle speedlines. Fu sviluppata da Edson 
+Gould e si basa sull'idea di dividere il trend in terzi per mezzo di una linea
+
+=== PDF page 45 ===
+70 CAPITOLO 4 
+(2) 2/3 Speedline 
+(3) 1/9 Speedline 
+(03) 
+Figura 4.41 Esempio di una speed resistance line in un uptrend. La distanza verticale dal massimo al 
+principio del trend è divisa in terzi. Due trendiines sono state disegnate partendo dal'punto 1 verso Ì 
+punti 2 e 3. La linea superiore è l'equivalente dei 2/3 di speed/ine, mentre l'inferiore a 1/3. Le linee 
+dovrebbero fungere da supporto durante le correzioni del mercato. Una volta rotte, diventano linee di 
+resistenza per i rimbalzi. Qualche volta, queste speealines attraversano i movimenti di prezzo. 
+verticale, divisa a sua volta in terzi. Viene quindi tracciata una trendline, dal- 
+l’inizio del trend fino ai due punti contrassegnati sulla linea verticale che rap- 
+presentano 1/3 e 2/3. Per costruire una trendline rialzista bisogna trovare il punto 
+più alto del trend (figura 4.41). Da questo massimo scende una linea verticale 
+verso il fondo dove îl trend è cominciato. In un trend ribassista bisognerà sem- 
+plicemente invertire il processo. 
+Si misura la distanza verticale, partendo dal punto più basso del downtrend fino 
+ad arrivare all’inizio del trend, disegnando due linee partendo dall'inizio del 
+trend, attraversando i punti che sono a 1/3 e a 2/3 sulla linea verticale (figure 4.41 
+e 4.42). c 
+Ogni volta che si verifica un nuovo massimo in un uptrend, o un nuovo minimo 
+in un downtrend, sarà necessario ridisegnare una nuova serie di linee. Poiché le 
+speedlines vengono disegnate partendo dall'inizio del trend fino al livello di 1/3 e 
+(3) 1/3 Speedline 
+(2) 2/3 Speedlin 
+Figura 4.42 Speedlines in un downtrend. 
+CONCETTI FONDAMENTALI DI TREND 71 
+2/3, esse possono talvolta attraversare il grafico. In questo caso le trendlines non 
+sono disegnate sotto un minimo o sopra un massimo, ma attraversano il movi- 
+mento dei prezzi. 
+Se un trend rialzista è in fase di autocorrezione, la correzione al ribasso si 
+fermerà solitamente sulla speedline superiore (speedline dei 2/3). Altrimenti, ar- 
+riverà fino alla speedline più bassa (la speedline 1/3) e se anche questa venisse 
+rotta, i prezzi continueranno comunque a scendere fino all’inizio del trend pre- 
+cedente. In un downtrend, la rottura al rialzo della linea più bassa indica un 
+probabile rimbalzo fino alla linea più alta e se anche la linea dei 2/3 venisse rotta, 
+è probabile un rimbalzo fino all’inizio del trend. 
+Come tutte le trendlines, anche le speedlines invertono i propri ruoli una volta rot- 
+te. Di conseguenza, durante la correzione di un trend rialzista, se la linea superiore 
+(2/3) dovesse venire rotta al ribasso e i prezzi dovessero scendere fino alla linea 
+1/3, per poi rimbalzare, la linea più alta diventerà una barriera di resistenza. Solo 
+se la linea superiore dovesse essere superata, si avrebbe un segnale che prelude a 
+un retest dei massimi assoluti. Lo stesso principio vale per il downtrend. 
+4.11 Le linee a ventaglio di Gann e Fibonacci 
+I programmi di analisi tecnica consentono anche la rappresentazione delle linee 
+a ventaglio di Gann e di Fibonacci. Le linee a ventaglio di Fibonacci sono 
+disegnate ad angoli del 38% e 62% ed è questo l’unico punto di differenza 
+rispetto alle speedlines. L’origine di questi numeri verrà spiegata nel capitolo 13 
+relativo alla teoria delie onde di Elliott. Le linee di Gann, che prendono il nome 
+da W.D. Gann, leggendario trader di merci, sono trendlines disegnate partendo 
+dai massimi o dai minimi con specifiche angolature geometriche. La più im- 
+portante linea di Gann viene disegnata con un angolo di 45 gradi partendo da 
+un massimo o da un minimo. Durante un uptrend è possibile disegnare linee più 
+ripide con angolatura a 63?/4 e a 75 gradi e linee più piane a 26!/4 e 15 gradi. È 
+possibile disegnare fino a nove diverse linee di Gann. 
+L’uso delle linee di Gann e Fibonacci è uguale a quello delle speedlines poiché 
+forniscono supporto durante le correzioni al ribasso. Quando una linea viene 
+rotta, i prezzi di solito cadono sulla linea inferiore immediatamente successiva. Le 
+linee di Gann sono per certi versi discutibili; anche quando una di esse funziona, 
+non si sa mai in anticipo di quale linea si tratti. Alcuni analisti tecnici tuttavia 
+mettono totalmente in discussione la validità della rappresentazione di trendlines 
+geometriche. 
+4.12 Le trendlines interne 
+Esiste una variazione delle trendlines che non partono da massimi o minimi e- 
+stremi. Al contrario, le trendlines interne vengono disegnate sull'azione dei prezzi 
+e mettono in relazione il maggior numero possibile di massimi e minimi. Alcuni
+
+=== PDF page 46 ===
+72 CAPITOLO 4 
+8/10/95 (*DWI X) Dow Industrials 07/31/97 
+Grafico a barre giornaliero 
+7500 
+Esempio di trendline intera 
+Figura 4.43 Le trendiines interne vengono disegnate attraverso l'azione dei prezzi mettendo in 
+relazione il maggior numero possibile di massimi e minimi. La trendline intema rappresentata in questo 
+grafico lungo i massimi di inizio 1996 fornisce supporto un anno dopo, durante la primavera del 1997. 
+analisti tecnici sviluppano una buona capacità di valutazione di questo tipo di 
+trendlines, considerandole utili. La difficoltà connessa all’uso delle trendlines in- 
+terne è data dalla loro rappresentazione molto soggettiva laddove le regole per la 
+rappresentazione di frendlines più tradizionali, dai massimi e minimi estremi, sono 
+più precise (figura 4.43). 
+4.13 Reversal day 
+Il reversal day è una formazione particolare che può assumere parecchi nomi: il 
+top reversal day, il bottom reversal day, il buying o selling climax, il key reversal 
+day. Di per sé non ha un’importanza primaria, ma nel contesto di altre forma- 
+zioni tecniche, può diventare a volte significativo. Innanzitutto bisogna definire 
+cosa sia un reversal day; esso si può formare sia su un top sia, su un bottom e la 
+definizione generalmente accettata di top reversa/ day è quella di un nuovo 
+massimo in un uptrend, seguito da una chiusura inferiore nello stesso giorno. In 
+altre parole, i prezzi formano un nuovo massimo grazie a un movimento al rialzo 
+verificatosi durante il giorno (solitamente vicino all’apertura, o in apertura), poi si 
+indeboliscono, chiudendo con una chiusura inferiore a quella del giorno prece- 
+dente. Un bottom reversal day è un nuovo minimo fatto durante il giorno, seguito 
+CONCETTI FONDAMENTALI DI TREND 73 
+È ali 
+. lt 2 Luthi 
+Figura 4.44 a. - Esempio di un top reversal day. Più il volume è alto sul reversal day e tanto più ampia è l'escursione dei prezzi, più è elevata la sua importanza. b.- Esempio di un bottom reversal day. Se il volume è particolarmente forte, i bottom reversals vengono spesso denominati selling climaxes. 
+x 
+da una chiusura più alta. L’ampliarsi dei movimenti dei prezzi e l'aumento del 
+volume danno un segnale molto significativo di una possibile inversione a breve 
+periodo del trend, La figura 4.44 mostra entrambi i casi in un dar chart. Si può notare il forte volume nel reversa/ day e il fatto che entrambi i massimi e i minimi 
+del reversal, superano il range del giorno precedente, formando un outside day 5 
+Nonostante un outside day non sia una caratteristica peculiare del reversa! day, 
+esso ne amplifica l’importanza (figura 4.45). 
+Il bottom reversal day viene qualche volta definito come selling climax, che è 
+solitamente un drammatico punto d’inversione, sul fondo di un mercato ri- 
+bassista, dove tutti generalmente liquidano con forte volume. La conseguente assenza di pressione di vendita crea un vuoto sul mercato, che i prezzi successi- vamente riempiranno. Il selling climax è uno degli esempi più forti di reversal day 
+e sebbene non possa segnalare la fine di un mercato ribassista, tuttavia solita- mente indica che si è verificato un importante minimo. 
+4.13.1 Weekly e monthly reversals 
+Questo tipo di figura del bar chart, settimanale o mensile riveste maggiore impor- 
+tanza. In un grafico settimanale ogni barretta rappresenta l’intero movimento della 
+settimana, con la chiusura registrata del venerdi, Un upside weekly reversal si mani--' 
+festerà quando il mercato è in ribasso per tutta la settimana e realizza un nuovo 
+minimo, ma la chiusura del venerdì è superiore a quella del venerdì precedente. 
+3 L'outside day si verifica quando il massimo supera il massimo precedente e il minimo oltrepassa il 
+minimo precedente.
+
+=== PDF page 47 ===
+74 CAPITOLO 4 
+D5/29/97 (*DWI X) Dow Industrials 02/25/98 
+Grafico a barre giornaliero 
+LI 
+hi | Ù nno 
+Ru da 
+Po tO yi N » — 
+| 
+. 
+Î | me Reversal day rialzista (7200 
+Volume 1600004 
+Forte volume 
+Figura 4.45 ll movimento del grafico del 28 ottobre 1997 fu un esempio classico di upside reversal 
+day o selling climax. | prezzi aprirono in forte ribasso e chiusero in forte rialzo. La barra del volume di 
+questo giorno, insolitamente forte, ha aumentato l’importanza. Due upside reversa! days meno 
+drammatici (si vedano le frecce) hanno anche segnato i minimi dei prezzi. 
+I weekly reversals hanno molta più importanza dei reversals giornalieri per ovvie 
+ragioni e vengono studiati scrupolosamente dagli analisti come segnali d'inver- 
+sione di tendenza. Per lo stesso principio, i monthly reversals sono ancora più 
+importanti. 
+4.14 Price gaps 
+I price gaps sono semplicemente dei “buchi” nel bar chart, dei prezzi su cui non si 
+è verificato nessuno scambio. 
+In un trend rialzista, per esempio, i prezzi aprono sopra il massimo del giorno 
+precedente, lasciando sul grafico un buco aperto o uno spazio vuoto, che non 
+viene colmato durante il giorno. In un trend ribassista il massimo della giornata 
+sarà sotto il minimo del giorno precedente. Gli upside gaps mostrano la forza del 
+mercato, mentre i downside gaps sono solitamente segni di debolezza. Ì gaps pos- 
+sono apparire sui grafici di lungo periodo, settimanali o mensili e, quando questo 
+accade, sono solitamente molto importanti. Tuttavia compaiono più frequente- 
+mente sui bar charts giornalieri. 
+Esistono vari luoghi comuni relativi all’interpretazione dei gaps: uno dei più 
+CONCETTI FONDAMENTALI DI TREND 75 
+noti dice che i gaps devono venire sempre colmati, ma non è sempre vero e per 
+vari motivi. Certi gaps sono importanti, mentre altri no. É possibile però rico- 
+noscerne le differenti implicazioni, che dipendono dal tipo e dal posto specifico in 
+cui si sono verificati. 
+4.14.1 Tre tipi di gaps 
+Esistono tre tipi di gaps: il breakaway, il runaway (o measuring) e infine l’ex- 
+haustion gaps. 
+Il breakaway gap si manifesta solitamente sul completamento d’importanti 
+formazioni e in genere segnala l’inizio di un significativo movimento di mer- 
+cato. Dopo che il mercato ha completato una figura base, tipo un head and 
+shoulders bottom, si verifica spesso la rottura della neckline con un breakaway 
+ia reversal top 
+—_-_- - _—_ — n n___ 
+Ù Ì Breakaway gap — 
+pl | 
+Figura 4.46 | tre tipi di gaps. Il breakaway gap segnala il completamento di una figura di base. Il 
+runaway, si manifesta a metà del cammino (motivo per cui viene chiamato anche measuring gap). Un 
+exhaustion gap nella parte alta rialzista, seguito da un breakaway gap a ribasso, forma un island reversal 
+top. Il breakaway e il runaway gaps non sono stati colmati nella parte rialzista, cosa che accade di 
+sovente. 
+
+==========
+=== PDF page 138 ===
+260 CAPITOLO 13 
+Se la terza onda comincia ad accelerare al punto da superare la linea superiore 
+del canale, sarà necessario ridisegnare delle altre linee lungo il top delle prima 
+onda e lungo il bottom della seconda onda, come mostra la figura 13.23. Il canale 
+finale viene tracciato al di sotto delle due onde di correzione (cioè la seconda e la 
+quarta) e solitamente al di sopra del rop della terza onda, come mostra la figura 
+13.24. Se la terza onda è insolitamente forte, o è una extended wave, la linea 
+superiore dovrebbe essere ridisegnata sopra al top della prima onda. La quinta 
+onda dovrebbe arrivare vicino alla linea superiore del canale, prima di esaurirsi. 
+Per tracciare le linee del canale di un trend di lungo periodo, è meglio utilizzare sia 
+grafici a scala semilogaritmica sia grafici con scala aritmetica. 
+4 
+Canale 
+finale 
+Figura 13.24 Canale finale. Fonte: A.J, Frost e R. Prechter, op. cit., p. 63 (Copyright © 1978 by Frost & Prechter). 
+LA TEORIA ELLIOTT WAVE O DELLE ONDE DI ELLIOTT 261 
+13.7. La quarta onda come area di supporto 
+Per concludere la discussione sulle formazioni delle onde e sulle guidelines bisogna menzionare anche l’importanza della quarta onda come area di supporto nei suc- cessivi bear market. 
+Una volta che le cinque onde rialziste sono state completate e una volta che il bear trend è incominciato, tale bear market solitamente non scenderà al di sotto della precedente quarta onda di grado inferiore, cioè l’ultima onda formata du- rante il precedente movimento rialzista. Esistono alcune eccezioni a questa regola, ma solitamente il bortom della quarta onda contiene il bear marker. Questo dato può essere molto utile per ottenere l’obiettivo massimo di prezzo al ribasso. 
+13.8 I numeri di Fibonacci sono la base del principio delle onde 
+Elliott asserì, nel suo Nature's Law: the Secret .of the Universe, che la base mate- matica del principio delle onde era costituita da una sequenza numerica comu- nemente definita, dal nome del suo scopritore, sequenza di Fibonacci o numeri di Fibonacci. 
+La sequenza numerica presentata è: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... e 
+così via fino all’infinito. 
+Questi numeri presentano delle caratteristiche interessanti, non ultima una 
+relazione reciproca quasi costante: 
+— la somma di due numeri consecutivi qualunque equivale al numero successivo: per esempio, 3 e 5 equivale a 8, 5 e 8 equivale a 13, e così via; — la proporzione esistente tra qualsiasi numero e il successivo numero superiore si avvicina a 0,618, dopo i primi quattro numeri. Per esempio: 1/1 è 1,00; 1/2 è 0,50; 2/3 è 0,67; 3/5 è 0,60; 5/8 è 0,625; 8/13 è 0,615; 13/21 è 0,619 e così di seguito; si può notare come questi primi valori percentuali fluttuino al di sopra e al di sotto di 0,618 in un margine strettissimo; i valori 1,00, 0,50 e 0,67 sono molto importanti e saranno commentati in modo più approfondito quando si parlerà della ratio analysis e della percentuale di ritracciamento; 
+— la proporzione tra ogni numero e quello inferiore che lo precede è approssi- mativamente 1,618 o l’inverso di 0,618; per esempio: 13/8 corrisponde a 1,625; 
+21/13 a 1,615; 34/21 a 1,619; più il numero diventa alto, più si avvicina ai valori di 0,618 e 1,618; 
+— la proporzione tra due numeri alternati si avvicina a 2,618 o del suo inverso 0,382; per esempio: 13/34 è 0,382; 34/13 è 2,615. 
+13.9 La percentuale di Fibonacci e il ritracciamento 
+È già stato sottolineato in precedenza che la teoria delle onde comprende tre aspetti importanti: la forma dell'onda, il rapporto e il tempo. Del primo, il più 
+importante, se ne è già ampiamente discusso, per cui verranno esaminate ora le
+
+=== PDF page 139 ===
+262 CAPITOLO 13 
+applicazioni della proporzione di Fibonacci e del ritracciamento. Questi rapporti 
+possono essere applicati sia al prezzo sia al tempo, nonostante il primo venga 
+considerato più veritiero. 
+Prima di tutto, è necessario riesaminare le figure 13.1 e 13,3, dalle quali risulta 
+chiaramente come la forma principale dell'onda rompa sempre al ribasso secondo 
+i numeri di Fibonacci. Un ciclo completo comprende otto onde, cinque al rialzo e 
+tre al ribasso, tutti i numeri compresi nella sequenza di Fibonacci, così come 
+accade per le due ulteriori suddivisioni che producono 34 e 144 onde. 
+Il legame tra la base matematica della teoria delle onde e la sequenza numerica 
+di Fibonacci va oltre il semplice conteggio delle onde e comprende anche il 
+rapporto proporzionale tra le onde stesse. Le seguenti proporzioni di Fibonacci 
+sono quelle più comunemente usate: 
+— una delle tre onde a impulso si estende; le altre due si equivalgono nel tempo € 
+nella grandezza; se la quinta onda si estende, la prima e la terza onda tendono a 
+eguagliarsi; se la terza onda si estende, la prima e la quinta tendono a eguagliarsi; 
+- un obiettivo minimo del top della terza onda può essere ottenuto moltiplicando 
+la lunghezza della prima onda per 1,618 e aggiungendo la cifra totale al bottom 
+della seconda onda; 
+— il top della quinta onda può essere approssimato moltiplicando la prima onda 
+per 3,236 (cioè 2 x 1,618) e sommando tale valore al top o al bottom della prima 
+onda per un obiettivo massimo o minimo; 
+- dove la prima e la terza onda sono uguali e ci si aspetta che la quinta onda si 
+estenda, si può ottenere un obiettivo di prezzo misurando la distanza tra il 
+bottom della prima onda e il top della terza, moltiplicandola per 1,618 e som- 
+mando il risultato al bottom della quarta; 
+- nelle onde di correzione, con una normale correzione zig-zag a 5-3-5, l'onda c, è 
+spesso quasi uguale in lunghezza all’onda a; 
+- un altro metodo per misurare la possibile lunghezza dell'onda c consiste nel 
+moltiplicare 0,618 per la lunghezza dell'onda a e sottrarre il risultato dal bottom 
+dell'onda a; 
+- nel caso di una correzione flat 3-3-5, in cui l’onda d raggiunge o supera il top 
+dell'onda a, l'onda c equivarrà circa a 1,618 della lunghezza di a; 
+- in un triangolo simmetrico ogni onda successiva ha un rapporto rispetto alla 
+sua precedente pari a circa 0,618. 
+13.9.1 Le percentuali di ritracciamento di Fibonacci 
+Le proporzioni descritte nel precedente paragrafo aiutano a determinare gli o- 
+biettivi di prezzo sia nelle onde a impulso sia in quelle di correzione, ma per 
+ottenere lo stesso fine si può utilizzare un altro metodo, ricorrendo cioè alle 
+percentuali di ritracciamento. I numeri più comunemente usati nell'analisi del 
+ritracciamento sono il 61,8% (solitamente arrotondato al 62%), il 38% e il 50%. 
+È già stato sottolineato nel capitolo 4 che i mercati spesso ripercorrono il mo- 
+vimento precedente con una percentuale che può essere prevista: generalmente è 
+del 33%, del 50% e del 67%. La sequenza di Fibonacci modifica leggermente 
+LA TEORIA ELLIOTT WAVE O DELLE ONDE DI ELLIOTT 263 
+02/28/79 (TR1600) Treasury Bonds 1600 03/31/98 
+128 
+Grafico a barra mensile grad 
+142416 
+109406 
+il 38% _[" Rd 
+50% 
+LU) papa1 
+ì 62% L81200! 
+Wo Mi x 
+| ‘ | Ritracciamento di Fibonacci ne 
+i 
+lai 
+bo_% TA 1) 7 L'IROAT] I 
+Figura 13.25 Le tre linee orizzontali mostrano i livelli di ritracciamento di Fibonacci del 38%, 50% e 
+62% misurati dal minimo del 1981 al massimo dei Treasury Bonds nei 1993. La correzione del 1994 nei 
+prezzi dei bonds si è fermata alla linea di ritracciamento del 38%. 
+queste cifre: in un uptrend forte, il minimo ritracciamento è di solito pari a circa il 
+38%, mentre in un trend debole, la massima percentuale di ritracciamento cor- 
+risponde solitamente al 62% (figure 13.25 e 13.26). 
+È stato puntualizzato precedentemente che il rapporto 0,618 di Fibonacci 
+compare soltanto dopo i primi quattro numeri della sequenza. 
+I primi tre rapporti sono 1/1 (100%), 1/2 (50%), e 2/3 (66%). Quindi anche il 
+famoso 50% di ritracciamento è in realtà un rapporto di Fibonacci, come i 2/3 di 
+ritracciamento. Un ritracciamento completo (100%) del precedente bull o bear 
+market dovrebbe formare anch'esso un’importante area di supporto o di resistenza. 
+13.10 L'obiettivo temporale di Fibonacci 
+È indubbio che la serie numerica di Fibonacci possa essere utilizzata anche in 
+relazione a obiettivi temporali, ma poiché è molto complicato prevederli, il fattore 
+tempo è considerato da alcuni elliottiani l'aspetto meno importante dei tre che 
+sono alla base della teoria. L'obiettivo temporale di Fibonacci si ottiene contando 
+verso i tops e i bottoms significativi. Su un grafico giornaliero, l’analista conta a 
+partire da un significativo punto d’inversione (turning point) verso il numero dei 
+giorni di contrattazione con la speranza che i tops 0 bottoms si verificheranno in 
+futuro in un giorno che fa parte della serie di Fibonacci, cioè nel 13°, 21°, 34°, 55° 
+od 89° giorno di contrattazione.
+
+=== PDF page 140 ===
+264 CAPITOLO 13 
+Grafico a barre mensile = | | 
+Ù A iS III AE 
+a de Sr bud Coe] 
+Figura 13.26 Le tre linee percentuali di Fibonacci misurate dal minimo del 1994 nei prezzi dei bonds al massimio dell'inizio del 1996. La correzione dei prezzi dei bonds è avvenuta alla linea del 62%. 
+La stessa tecnica può essere utilizzata per i grafici settimanali, mensili e anche annuali. Sui grafici settimanali, l'analista seleziona un top o un bottom signifi cativo e cerca un obiettivo temporale settimanale che corrisponda a un numero di Fibonacci (figure 13.27 e 13.28). 
+13.11 Combinazione dei tre aspetti della teoria delle onde 
+La situazione ideale si verifica quando la forma dell'onda, l’analisi percentuale e l’obiettivo temporale si combinano insieme. Si supponga che uno studio delle onde riveli che la quinta onda è stata completata, e che abbia percorso per 1,618 volte la sua distanza dal bottom della prima onda fino al top della terza onda, e che il tempo trascorso dall’inizio del trend sia stato di 13 settimane, partendo da un precedente minimo e 34 settimane dal precedente top. Si supponga inoltre che la quinta onda sia durata 21 giorni: ci sono buone probabilità che sia vicino un importante top. 
+Uno studio sui grafici dei prezzi del mercato azionario e dei-futures, rivela un legame tra il tempo e i numeri di Fibonacci. Comunque, parte del problema, consiste nella varietà del possibile rapporto: gli obiettivi temporali di Fibonacci infatti possono essere ricavati da top a top, da top a bottom, da bottoma bottom,.e da bottom a top; comunque questi rapporti si riscontrano sempre una volta che si siano sviluppati: non è sempre dato sapere quale delle possibili relazioni siano rilevanti per il trend corrente. 
+MIDA 
+LA TEORIA ELLIOTT WAVE O DELLE ONDE DI ELLIOTT 265 
+79 (TR1600) Treasury Bonds 1800 03/31/98 T 
+Grafico a barre mensile 
+i Obiettivi temporali 
+128 
+110024 
+11240 
+di Fibonacci 1 
+3 to 3 Se ww W_ vs u_we__ W Ca) 
+Figura 13.27 Gli obiettivi temporali di Fibonacci misurati in mesi dal Bonds. Potrebbe trattarsi di una coincidenza, ma gli ultimi quattro obiett verticali) hanno coinciso con delle svolte importanti nei prezzi dei bonds. 
+minimo del 1981 dei Treasury 
+ivi temporali di Fibonacci {barre 
+D2728/79 (*DWI X) Dow Industriale 03/31/98 
+f 
+Grafico a barre mensile 
+il 
+[9000 Il 
+I 
+I 
+; 
+000 I 
+II 
+! 
+[6000 Ù; 
+Il 
+Il 
+4 . FINACI ni n a) . 5000 ! Obiettivi temporali di Fibonacci 
+L4000 Il 
+I 
+A so i 
+piu 2000 
+I 
+itato 
+1000 do U_w_ wr UO] dr" Cuatry 
+Figura 13.28 Gli obiettivi temporali di Fibon: barre verticali coincidono con il mercato ri era a 13 anni dal minimo del 1982, un numero di Fibonacci. 
+lacci in mesi dal minimo del 1982 del Dow. Le ultime tre bassista degli anni 1987, 1990 e 1994. Il massimo del 1987
+
+=== PDF page 141 ===
+266 CAPITOLO 13 
+13.12 La teoria delle onde applicata sia al mercato azionario 
+sia alle commodities 
+Esistono alcune differenze nell’applicazione della teoria delle onde al mercato 
+azionario rispetto a quello delle commodities. Per esempio, nei mercati azionari 
+tende a estendersi la terza onda mentre nei mercati delle commodities si estende la 
+quinta onda. 
+La regola infallibile nei mercati azionari che la quarta onda non supera mai la 
+prima non è così ferrea in quelli delle commodities, mentre sui grafici dei futures, si 
+possono verificare delle rotture intra-day. Talvolta dai grafici del mercato mo- 
+netario delle commodities si ottengono delle figure di Elliott più chiare di quelle 
+che si riscontrano nel mercato dei futures. 
+L'uso dei grafici di continuazione nei commodity futures market produce an- 
+ch’esso delle distorsioni che potrebbero riproporsi sui grafici di lungo periodo. 
+Probabilmente, la differenza più significativa tra le due aree sta nel fatto che i 
+major bull market nelle commodities, possono essere ‘“contenuti”’, nel senso che i 
+massimi del bull market non sempre superano i precedenti massimi. È possibile nei 
+mercati delle commodities avere un bull trend completo di cinque onde che scende 
+fino ai precedenti massimi del bul/ market. I major tops formatisi in molti mercati 
+delle commodities nel periodo tra il 1980 e il 1981 sono stati incapaci di superare 
+quelli che si erano formati sette e otto anni prima. 
+Da un confronto finale tra le due aree, risulta che le migliori figure di Elliott nei 
+mercati delle commodities si sviluppano con la rottura di formazioni di basi estese 
+di lungo periodo. 
+È importante ricordare che la teoria delle onde è nata originariamente per 
+essere applicata agli indicatori del mercato azionario, perciò non funziona altret- 
+tanto bene sui titoli azionari; ed è probabile che non funzioni anche nei mercati 
+dei futures meno trattati, poiché la psicologia di massa è un aspetto basilare della 
+teoria. L'oro, per esempio, si presta molto bene all'analisi delle onde, poiché è 
+uno dei mercati più seguiti. 
+13.13 Sommario e conclusioni 
+È utile riassumere brevemente gli elementi più importanti della teoria delle onde 
+per dare a ognuno di essi il giusto valore: 
+- unciclo completo di bull market è formato da otto onde, cinque rialziste, seguite 
+da tre onde ribassiste; 
+- un trend si divide in cinque onde nella direzione del successivo trend di più 
+lungo periodo; 
+- le correzioni si verificano sempre in tre onde; 
+- i due tipi di correzioni semplici sono gli zig-zags (5-3-5) e i flats (3-3-5); 
+— i triangoli sono solitamente formati da quattro onde e precedono sempre l'onda 
+finale; possono anche essere delle onde d di correzione; 
+— le onde si possono espandere in onde più lunghe e suddividere in onde più corte; 
+BECCA 
+LA TEORIA ELLIOTT WAVE O DELLE ONDE DI ELLIOTT 267 
+- talvolta una delle onde a impulso si estende; le altre due dovranno quindi 
+eguagliarsi in tempo e in grandezza; 
+— la sequenza numerica di Fibonacci è la base matematica della teoria di Elliott; 
+— il numero delle onde segue la sequenza numerica di Fibonacci; 
+— le percentuali di Fibonacci e il ritracciamento sono utilizzati per determinare gli 
+obiettivi di prezzo; i ritracciamenti più comuni sono del 62%, 50% e 38%; 
+— la regola dell’alternanza suggerisce di non aspettarsi la stessa cosa per due volte 
+di seguito; 
+_ il bear market non dovrebbe scendere al di sotto del bottom della precedente 
+quarta onda; 
+— la quarta onda non dovrebbe sovrapporsi alla prima onda (la regola non è così 
+rigida nel mercato dei futures); 
+— la teoria Elliott Wave è composta dai tre seguenti fattori: forma delle onde, 
+percentuali e tempo, in questo ordine di importanza; 
+— la teoria fu applicata originariamente agli indici del mercato azionario e non 
+funziona altrettanto bene nei singoli titoli azionari; 
+- la teoria funziona meglio in quei mercati di commodities maggiormente seguiti 
+come per esempio l’oro; 
+— la principale differenza nei mercati delle commodities è data dall’esistenza di bull 
+market più contenuti. 
+Il principio della Elliott Wave è costruito sulle tecniche più classiche, come la 
+teoria di Dow e le tradizionali configurazioni grafiche, la maggior parte delle 
+quali può essere spiegata come parte della struttura della Elliott Wave. 
+La teoria delle onde è costruita sul concetto degli obiettivi d’inversione, usando 
+la proiezione della percentuale di Fibonacci è la percentuale di ritracciamento per 
+ottenere l’obiettivo di prezzo. La teoria delle onde pur prendendo in considera- 
+zione tutti quei fattori già noti, va però oltre, dando loro più ordine e rendendoli 
+più efficaci nella previsione di mercato. 
+13.13.1 La teoria delle onde dovrebbe essere utilizzata in correlazione 
+con altri strumenti tecnici 
+Le figure di Elliott a volte sono chiare ma altre volte non lo sono affatto. 
+Cercare di forzare a tutti i costi un movimento di mercato non chiaro nel 
+formato di Elliott, ignorando l’analisi di altri strumenti tecnici, corrisponde a un 
+abuso della teoria. 
+Essa va considerata come una tessera nel vasto mosaico delle previsioni di 
+mercato, e dà il meglio di sé proprio quando viene correlata con altre tecniche, 
+ampiamente illustrate in questo testo.” 
+? Per ulteriori approfondimenti sulla teoria delle onde e sui numeri di Fibonacci cfr.: R.R. Prechter, 
+The Major Works of R.N. Elliott, New Classic Library, Gainesville; A.J. Frost e R.R. Prechter, Elliott 
+Wave Principle, New Classic Library, Gainesville 1978, da cui è stata tratta la maggior parte dei grafici 
+presenti in questo capitolo. Per quanto riguarda i numeri di Fibonacci cfr.: Edward D. Dobson, 
+Understanding Fibonacci Numbers, Traders Press, Greenville.
+
+=== PDF page 142 ===
+14 
+I cicli temporali 
+Finora ci siamo concentrati essenzialmente sui movimenti dei prezzi, trascurando il 
+fattore tempo usato nel prevedere il futuro dei prezzi, che, pur essendo stato sempre 
+presente in analisi tecnica, è sempre stato posto in secondo piano. In questo capi- 
+tolo ce ne occuperemo, in quanto molti analisti vedono in ciò la carta vincente per le 
+loro analisi e aggiungeremo quindi un altro strumento a quelli già esaminati in 
+precedenza. Invece di chiederci in che direzione e fino a dove andranno i prezzi, 
+cominceremo a domandarci quando ci arriveranno. 
+Consideriamo un normale grafico a barre. L'asse verticale indica il livello dei 
+prezzi, ma ciò è solo una parte dei dati che fornisce; la scala orizzontale dà invece un 
+elemento temporale. Perciò il bar chart è in realtà un sistema di prezzi e tempo. 
+Nonostante questo, alcuni operatori si concentrano solo sui prezzi, escludendo il 
+fattore tempo. 
+Studiando le formazioni di prezzo sui grafici, si è notata una relazione tra 
+quanto tempo occorre per la loro formazione e quale potrà essere la potenzialità 
+per i successivi movimenti del mercato. Più a lungo dura la validità di una 
+trendline, di un supporto o di una resistenza, tanto più valida è la loro forza. Le 
+medie mobili richiedono opportuni studi sui loro tempi, così come gli oscillatori. 
+Nel capitolo 13 abbiamo riscontrato l’utilità degli obiettivi temporali di Fibo- 
+nacci. . 
+È chiaro allora che l’analisi tecnica si basi molto sul tempo, anche se questa 
+impostazione non è universalmente condivisa. Ecco allora entrare in campo l’analisi 
+dei cicli: essa si basa sul fattore tempo, determinante sia nei mercati rialzisti sia in 
+quelli ribassisti. 
+Non solo il tempo è determinante, ma è anzi risolutivo in molte tecniche di 
+analisi. Le medie mobili, per esempio, si possono ottimizzare legandole e adat- 
+tandole all'analisi ciclica. Lo stesso per le trendlines, se si individuano quelle 
+veramente valide. E ancora: i picchi dei prezzi possono essere rapportati ai picchi 
+di ciclo e gli intervalli di tempo servono per filtrare i movimenti di prezzo a- 
+normali.
+
