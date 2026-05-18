@@ -1,12 +1,14 @@
-// cTrader Open API data source — usa @himalaya-quant/ctrader-x
-// Singleton client connesso al broker FPMarkets via WebSocket Protocol Buffers.
+// cTrader Open API data source — stub mode (no @himalaya-quant/ctrader-x)
+// Il pacchetto cTrader non è disponibile nel deploy attuale (era una integrazione
+// sperimentale non committata in package.json). Restano operativi gli altri
+// data source: Yahoo, Finnhub, Binance, Hyperliquid.
 //
-// Use:
-//   import { initCtraderClient, ctraderFetchCandles, ctraderListSymbols } from './ctraderDataSource.js'
-//   await initCtraderClient(env)
-//   const candles = await ctraderFetchCandles('EURUSD', '15m', 500)
+// Per ripristinare cTrader full: aggiungere "@himalaya-quant/ctrader-x" alle
+// dependencies di server/package.json e rimuovere il flag STUB sotto.
+const STUB_MODE = true
 
-import { cTraderX } from '@himalaya-quant/ctrader-x'
+// Stub minimale del client cTrader. Tutte le funzioni ritornano "not available".
+const cTraderX = null
 import { getValidAccessToken, loadTokens } from './ctraderAuth.js'
 
 let _client = null
@@ -37,6 +39,10 @@ function normalizeName(symbol) {
  * Se non c'è token → ritorna null (graceful, sim continua con TD).
  */
 export async function initCtraderClient(env) {
+  if (STUB_MODE) {
+    console.log('[cTrader] STUB_MODE attivo — client cTrader disabilitato (pacchetto non installato)')
+    return null
+  }
   if (_initPromise) return _initPromise
   _initPromise = (async () => {
     try {
