@@ -168,7 +168,13 @@ else
   warn "  - FRED_API_KEY      (https://fredaccount.stlouisfed.org/apikey)"
   warn "  - ANTHROPIC_API_KEY (opzionale lato server, di solito sta nel browser)"
   echo ""
-  read -p "FRED_API_KEY [premi invio per skip]: " FRED_KEY
+  # Se FRED_KEY è già nell'ambiente (es. setup non interattivo via SSH),
+  # saltiamo il prompt. Altrimenti chiediamo all'utente.
+  if [ -z "${FRED_KEY:-}" ]; then
+    read -p "FRED_API_KEY [premi invio per skip]: " FRED_KEY
+  else
+    info "FRED_KEY ricevuta da environment, salto prompt interattivo"
+  fi
   FRED_KEY="${FRED_KEY:-}"
 
   cat > "${ENV_FILE}" <<EOF
