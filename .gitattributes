@@ -1,0 +1,7 @@
+# Shell script DEVONO restare LF anche su Windows checkout, altrimenti su Linux:
+#   /bin/bash^M: bad interpreter: No such file or directory
+*.sh           text eol=lf
+*.bash         text eol=lf
+
+# Auto-detect testo per il resto
+* text=auto
