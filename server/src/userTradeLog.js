@@ -126,7 +126,9 @@ export async function bulkUpsertTradeLog(db, userId, entries) {
 }
 
 // ── Hono route registration ────────────────────────────────────────
-export function registerTradeLogRoutes(app) {
+// `env` deve essere passato dal chiamante (es. index.js) ed esporre env.DB
+// del d1Adapter. Pattern identico a userApiKeys.
+export function registerTradeLogRoutes(app, env) {
   // GET /api/user/trade-log  → lista paginata
   app.get('/api/user/trade-log', async (c) => {
     const user = c.get('user')
@@ -136,7 +138,7 @@ export function registerTradeLogRoutes(app) {
     const status = c.req.query('status') || null
     const symbol = c.req.query('symbol') || null
     try {
-      const entries = await listTradeLog(c.env.DB, user.id, { since, limit, status, symbol })
+      const entries = await listTradeLog(env.DB, user.user_id, { since, limit, status, symbol })
       return c.json({ entries, count: entries.length })
     } catch (err) {
       console.error('[tradeLog] list error:', err.message)
@@ -151,7 +153,7 @@ export function registerTradeLogRoutes(app) {
     try {
       const entry = await c.req.json()
       if (!entry?.id) return c.json({ error: 'id required' }, 400)
-      const r = await upsertTradeLog(c.env.DB, user.id, entry)
+      const r = await upsertTradeLog(env.DB, user.user_id, entry)
       return c.json(r)
     } catch (err) {
       console.error('[tradeLog] upsert error:', err.message)
@@ -167,7 +169,7 @@ export function registerTradeLogRoutes(app) {
       const body = await c.req.json()
       if (!Array.isArray(body?.entries)) return c.json({ error: 'entries[] required' }, 400)
       if (body.entries.length > 1000) return c.json({ error: 'max 1000 entries per bulk' }, 400)
-      const results = await bulkUpsertTradeLog(c.env.DB, user.id, body.entries)
+      const results = await bulkUpsertTradeLog(env.DB, user.user_id, body.entries)
       const saved = results.filter(r => r.saved).length
       return c.json({ saved, total: results.length, results })
     } catch (err) {
@@ -182,7 +184,7 @@ export function registerTradeLogRoutes(app) {
     if (!user) return c.json({ error: 'unauthorized' }, 401)
     const id = c.req.param('id')
     try {
-      const r = await deleteTradeLog(c.env.DB, user.id, id)
+      const r = await deleteTradeLog(env.DB, user.user_id, id)
       return c.json(r)
     } catch (err) {
       console.error('[tradeLog] delete error:', err.message)
@@ -195,9 +197,9 @@ export function registerTradeLogRoutes(app) {
     const user = c.get('user')
     if (!user) return c.json({ error: 'unauthorized' }, 401)
     try {
-      const row = await c.env.DB.prepare(
+      const row = await env.DB.prepare(
         'SELECT COUNT(*) as total, MAX(updated_at) as last_updated FROM sim_user_trade_log WHERE user_id = ?'
-      ).bind(user.id).first()
+      ).bind(user.user_id).first()
       return c.json({
         total: row?.total || 0,
         last_updated: row?.last_updated || null,

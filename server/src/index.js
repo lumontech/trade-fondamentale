@@ -532,7 +532,7 @@ registerMacroRoutes(app)
 
 // ── TradeLog per-utente (sync server-side del Review Lab)
 // Tutte queste route sono dietro authMiddleware (user-specific).
-registerTradeLogRoutes(app)
+registerTradeLogRoutes(app, env)
 
 // ── cTrader FIX feed (FPMarkets live) — read-only quote session.
 // L'utente lo avvia ESPLICITAMENTE via POST /api/fix/start. Niente auto-init
