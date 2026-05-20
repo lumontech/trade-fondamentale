@@ -1,8 +1,8 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { useAppStore } from '../store/store'
 import { buildContextPack, summarizeContextPack } from '../services/ContextPack'
-import { askClaude, CLAUDE_MODELS, STYLE_PROFILES } from '../services/ClaudeService'
-import { captureMTFCharts } from '../services/MTFChartCapture'
+import { askClaude, askClaudeScalping, CLAUDE_MODELS, STYLE_PROFILES } from '../services/ClaudeService'
+import { captureMTFCharts, TF_PRESETS } from '../services/MTFChartCapture'
 import { loadCandles, loadMultiTFCandles } from '../services/DataHub'
 import { logDecision }                         from '../services/TradeLog'
 import { getLessons }                          from '../services/ClaudeReviewLab'
@@ -17,6 +17,7 @@ const DIR_STYLE = {
   LONG:  { bg: '#00e09618', border: '#00e09660', text: '#00e096', icon: '▲' },
   SHORT: { bg: '#ff335518', border: '#ff335560', text: '#ff3355', icon: '▼' },
   FLAT:  { bg: '#f5c84218', border: '#f5c84260', text: '#f5c842', icon: '■' },
+  NO_GO: { bg: '#f5c84218', border: '#f5c84260', text: '#f5c842', icon: '■' },   // scalping equivalente di FLAT
 }
 
 const SIDEBAR_TABS = [
@@ -154,7 +155,11 @@ export default function ClaudeDecisionPanel() {
     payload:  null,
   }
 
-  const handleAsk = async () => {
+  /**
+   * Handler unificato per Intraday e Scalping mode.
+   * @param {'intraday'|'scalping'} mode
+   */
+  const handleAskMode = async (mode) => {
     if (!apiKeys.anthropic) { setError('Inserisci API key Anthropic in API Hub'); return }
     if (!contextPack)       { setError('Dati insufficienti per costruire il contesto'); return }
     setLoading(true)
@@ -166,6 +171,9 @@ export default function ClaudeDecisionPanel() {
       let enrichedCtx = includeScan && scanResults
         ? { ...contextPack, multi_asset_scan: summarizeScanForClaude(scanResults, activeInstrument) }
         : contextPack
+      // Tag della modalità dentro il contextPack — serve poi nel TradeLog auto-log
+      enrichedCtx = { ...enrichedCtx, analysis_mode: mode }
+
       // Social sentiment via Apify (opzionale, costo ~€0.02-0.05)
       if (includeSocial && apiKeys.apify) {
         try {
@@ -178,14 +186,22 @@ export default function ClaudeDecisionPanel() {
           toast.warning?.(`Social sentiment skip: ${err.message}`)
         }
       }
-      // Vision: cattura i chart MTF + pannello indicatori prima di chiamare Claude
+
+      // Vision: cattura immagini MTF — TF list dipende dalla modalità
+      const tfs = mode === 'scalping' ? TF_PRESETS.scalping : TF_PRESETS.intraday
       let images = null
       if (includeVision) {
         try {
           setCapturing(true)
-          images = await captureMTFCharts({ symbol: activeInstrument, instruments, contextPack: enrichedCtx })
+          images = await captureMTFCharts({
+            symbol: activeInstrument,
+            instruments,
+            contextPack: enrichedCtx,
+            tfs,
+            headerLabel: mode === 'scalping' ? 'Scalping MTF Analysis' : 'Multi-Timeframe Analysis Trader Pro',
+          })
           setVisionImages(images)
-          toast.info?.(`Catturate ${images.length} immagini (context + ${images.filter(i => i.tf !== 'context').map(i => i.tf).join('+')})`)
+          toast.info?.(`[${mode}] catturate ${images.length} immagini (context + ${images.filter(i => i.tf !== 'context').map(i => i.tf).join('+')})`)
         } catch (err) {
           console.warn('[Vision capture] errore:', err.message)
           toast.warning?.(`Vision skip: ${err.message}`)
@@ -196,16 +212,23 @@ export default function ClaudeDecisionPanel() {
       } else {
         setVisionImages([])
       }
-      const out = await askClaude(enrichedCtx, apiKeys.anthropic, model, tr, styleProfile, images)
+
+      // Branch sull'API call corretta
+      const out = mode === 'scalping'
+        ? await askClaudeScalping(enrichedCtx, apiKeys.anthropic, model, tr, images)
+        : await askClaude(enrichedCtx, apiKeys.anthropic, model, tr, styleProfile, images)
+
       setResult(out)
-      // Auto-log silenzioso di ogni call (anche FLAT) per il Review Lab.
-      // Diverso dal "Save nel diario" che è esplicito e tracker SL/TP.
+
+      // Auto-log silenzioso. Tag mode così il Review Lab li distingue.
       try {
         const d = out.decision
-        const autoId = logDecision({
+        // NO_GO della modalità scalping → mappato a FLAT per consistency con UI
+        const dirForLog = d.direction === 'NO_GO' ? 'FLAT' : d.direction
+        logDecision({
           symbol:      activeInstrument,
           timeframe:   activeTimeframe,
-          direction:   d.direction,
+          direction:   dirForLog,
           confidence:  d.confidence,
           combined:    null,
           techScore:   null, fundScore: null, histScore: null, crossScore: null,
@@ -213,20 +236,20 @@ export default function ClaudeDecisionPanel() {
           suggestedSL: d.stopLoss,
           suggestedTP: d.takeProfit1,
           reasons: [
-            { type: 'claude', label: 'Claude (auto-log)', detail: d.reasoning },
+            { type: 'claude', label: `Claude ${mode === 'scalping' ? '⚡ Scalp' : '🧠 Intraday'} (auto-log)`, detail: d.reasoning },
             ...(d.keyFactors || []).map(k => ({ type: 'claude-factor', label: k })),
           ],
           blockers: (d.risks || []).map(r => ({ label: r })),
           context:  enrichedCtx,
         })
-        // Le FLAT/wait restano "open" senza SL/TP, finiranno solo nel Review Lab.
-        // Le LONG/SHORT verranno anche tracked da OutcomeTracker (SL/TP hit automatico).
       } catch (logErr) {
         console.warn('[ClaudePanel] auto-log skipped:', logErr.message)
       }
+
+      const dirLabel = out.decision.direction === 'NO_GO' ? 'NO-GO' : out.decision.direction
       toast.success(
-        `${out.decision.direction} con confidenza ${out.decision.confidence}%`,
-        { title: '🧠 Decisione ricevuta da Claude' }
+        `${dirLabel} con confidenza ${out.decision.confidence}%`,
+        { title: mode === 'scalping' ? '⚡ Decisione Scalp ricevuta' : '🧠 Decisione Intraday ricevuta' }
       )
     } catch (err) {
       setError(err.message)
@@ -235,6 +258,10 @@ export default function ClaudeDecisionPanel() {
       setLoading(false)
     }
   }
+
+  // Shortcut: il bottone Intraday usa lo stesso flow esistente
+  const handleAsk = () => handleAskMode('intraday')
+  const handleAskScalp = () => handleAskMode('scalping')
 
   const handleAddSchedule = (suggestion) => {
     addScheduledAnalysis({
@@ -261,7 +288,7 @@ export default function ClaudeDecisionPanel() {
   const handleSaveDecision = () => {
     if (!result?.decision) return
     const d = result.decision
-    if (d.direction === 'FLAT') return
+    if (d.direction === 'FLAT' || d.direction === 'NO_GO') return
     const id = logDecision({
       symbol:     activeInstrument,
       timeframe:  activeTimeframe,
@@ -401,11 +428,19 @@ export default function ClaudeDecisionPanel() {
             })()}
           </button>
 
-          {/* Bottone primario */}
-          <button onClick={handleAsk} disabled={loading || !contextPack}
-                  className="px-4 py-1.5 rounded-md font-mono text-sm font-semibold bg-gold/20 text-gold border border-gold/50 hover:bg-gold/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all">
-            {capturing ? '📸 Catturo chart...' : loading ? '⏳ Analizzando...' : '🧠 Chiedi a Claude'}
-          </button>
+          {/* Bottoni primari: due modalità di analisi separate */}
+          <div className="flex gap-1.5">
+            <button onClick={handleAsk} disabled={loading || !contextPack}
+                    title="Analisi intraday/swing: 1D + 4h + 1h + 15m, checklist 18-step, hold 1-6h+, R:R 2:1+"
+                    className="px-3 py-1.5 rounded-md font-mono text-sm font-semibold bg-gold/20 text-gold border border-gold/50 hover:bg-gold/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all">
+              {capturing ? '📸 ...' : loading ? '⏳ ...' : '🧠 Intraday'}
+            </button>
+            <button onClick={handleAskScalp} disabled={loading || !contextPack}
+                    title="Analisi scalping: 1h + 15m + 1m, checklist 10-step, hold 5-30min, R:R 1.5:1"
+                    className="px-3 py-1.5 rounded-md font-mono text-sm font-semibold bg-orange-500/20 text-orange-300 border border-orange-500/50 hover:bg-orange-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all">
+              {capturing ? '📸 ...' : loading ? '⏳ ...' : '⚡ Scalp'}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -432,7 +467,7 @@ export default function ClaudeDecisionPanel() {
           )}
 
           {!decision && !loading && !error && contextPack && (
-            <EmptyState onAsk={handleAsk} disabled={!contextPack} />
+            <EmptyState onAsk={handleAsk} onAskScalp={handleAskScalp} disabled={!contextPack} />
           )}
 
           {loading && (
@@ -508,7 +543,7 @@ export default function ClaudeDecisionPanel() {
                        style={{ width: `${decision.confidence}%`, backgroundColor: dirStyle.text }} />
                 </div>
 
-                {decision.direction !== 'FLAT' && (
+                {decision.direction !== 'FLAT' && decision.direction !== 'NO_GO' && (
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">
                     <Box label="Entry"     value={decision.entry} color={dirStyle.text} />
                     <Box label="Stop Loss" value={decision.stopLoss} color="#ff3355" />
@@ -532,7 +567,7 @@ export default function ClaudeDecisionPanel() {
 
               {/* Save button + meta */}
               <div className="flex items-center justify-between gap-4">
-                {decision.direction !== 'FLAT' && (
+                {decision.direction !== 'FLAT' && decision.direction !== 'NO_GO' && (
                   <button onClick={handleSaveDecision}
                           className="flex-1 px-4 py-2 rounded-md font-mono text-sm font-medium border transition-all"
                           style={{
@@ -550,14 +585,22 @@ export default function ClaudeDecisionPanel() {
                 )}
               </div>
 
-              {/* MTF Screening — cosa Claude ha visto sui 4 TF */}
+              {/* Mode badge (Intraday vs Scalping) */}
+              {decision.mode === 'scalping' && (
+                <ScalpModeBanner decision={decision} />
+              )}
+
+              {/* MTF Screening — solo intraday (scalping non ha questo schema) */}
               {decision.mtf_screening && (
                 <MTFScreeningView mtf={decision.mtf_screening} />
               )}
 
-              {/* Trader Pro Checklist 18-step */}
+              {/* Checklist 18-step (intraday) OR 10-step (scalping) */}
               {decision.checklist?.length > 0 && (
                 <ChecklistView checklist={decision.checklist} score={decision.checklist_score} />
+              )}
+              {decision.scalp_checklist?.length > 0 && (
+                <ChecklistView checklist={decision.scalp_checklist} score={decision.scalping_score} title="⚡ Scalp Checklist — 10 step" />
               )}
 
               {/* Suggested alternative asset */}
@@ -685,7 +728,7 @@ function PanelHeader({ onClose, symbol, timeframe }) {
           🧠 DECISIONE CLAUDE — {symbol} · {timeframe}
         </h2>
         <p className="font-mono text-xxs text-text-muted mt-0.5">
-          Multi-prospettiva: tecnico + fondamentale + sentiment + contrarian + storico
+          🧠 Intraday (1D/4h/1h/15m, hold 1-6h+) · ⚡ Scalp (1h/15m/1m, hold 5-30min)
         </p>
       </div>
       <button onClick={onClose}
@@ -757,33 +800,44 @@ function NoDataBanner({ symbol, timeframe, instruments, onReload, loading }) {
 }
 
 // ─── Empty state ────────────────────────────────────────────────────
-function EmptyState({ onAsk, disabled }) {
+function EmptyState({ onAsk, onAskScalp, disabled }) {
   return (
     <div className="flex flex-col items-center justify-center h-full text-center max-w-lg mx-auto pt-8">
       <div className="text-5xl mb-4">🧠</div>
       <h3 className="font-mono text-lg text-gold mb-2">Pronto per l'analisi</h3>
       <p className="font-mono text-sm text-text-secondary mb-6 leading-relaxed">
-        Claude analizzerà il contesto corrente da 5 prospettive (tecnico, fondamentale, sentiment, contrarian, storico)
-        e produrrà una <span className="text-gold">decisione operativa motivata</span> con entry, SL, TP e fattori chiave.
+        Scegli la modalità di analisi. <span className="text-gold">Intraday</span> per swing/day trading
+        (hold 1-6h+, R:R 2:1, checklist 18-step). <span className="text-orange-300">Scalp</span> per
+        micro-timing entry (hold 5-30 min, R:R 1.5:1, checklist 10-step).
       </p>
-      <div className="grid grid-cols-3 gap-2 w-full mb-6 font-mono text-xxs">
-        <div className="bg-bg-secondary rounded-lg p-2.5 border border-bg-border">
-          <div className="text-gold mb-1">📊 Tecnico</div>
-          <div className="text-text-muted">Pattern, MTF, SMC</div>
+      <div className="grid grid-cols-2 gap-3 w-full mb-6 font-mono text-xxs">
+        <div className="bg-bg-secondary rounded-lg p-3 border border-gold/30">
+          <div className="text-gold mb-1.5 font-semibold">🧠 INTRADAY</div>
+          <div className="text-text-muted leading-relaxed">
+            TF: 1D · 4h · 1h · 15m<br/>
+            Murphy top-down<br/>
+            Hold 1-6h+ · R:R ≥ 2:1
+          </div>
         </div>
-        <div className="bg-bg-secondary rounded-lg p-2.5 border border-bg-border">
-          <div className="text-gold mb-1">📰 Fondamentale</div>
-          <div className="text-text-muted">Eventi, news, COT</div>
-        </div>
-        <div className="bg-bg-secondary rounded-lg p-2.5 border border-bg-border">
-          <div className="text-gold mb-1">🌡 Sentiment</div>
-          <div className="text-text-muted">F&G, VIX, DXY</div>
+        <div className="bg-bg-secondary rounded-lg p-3 border border-orange-500/30">
+          <div className="text-orange-300 mb-1.5 font-semibold">⚡ SCALP</div>
+          <div className="text-text-muted leading-relaxed">
+            TF: 1h · 15m · 1m<br/>
+            Kill zone + trigger micro<br/>
+            Hold 5-30min · R:R ≥ 1.5:1
+          </div>
         </div>
       </div>
-      <button onClick={onAsk} disabled={disabled}
-              className="px-6 py-3 rounded-md font-mono text-base font-semibold bg-gold/20 text-gold border-2 border-gold/50 hover:bg-gold/30 disabled:opacity-50">
-        🧠 Chiedi a Claude
-      </button>
+      <div className="flex gap-3">
+        <button onClick={onAsk} disabled={disabled}
+                className="px-5 py-3 rounded-md font-mono text-base font-semibold bg-gold/20 text-gold border-2 border-gold/50 hover:bg-gold/30 disabled:opacity-50">
+          🧠 Intraday
+        </button>
+        <button onClick={onAskScalp} disabled={disabled}
+                className="px-5 py-3 rounded-md font-mono text-base font-semibold bg-orange-500/20 text-orange-300 border-2 border-orange-500/50 hover:bg-orange-500/30 disabled:opacity-50">
+          ⚡ Scalp
+        </button>
+      </div>
     </div>
   )
 }
@@ -998,36 +1052,64 @@ function ActionCard({ decision, symbol }) {
   let state, title, mainMsg, subMsg, steps, icon
   const fmtPrice = (v) => v == null ? '—' : (v > 100 ? v.toFixed(2) : v.toFixed(4))
 
-  if (dir === 'FLAT' || tHor === 'wait') {
+  const isScalp = d.mode === 'scalping'
+
+  if (dir === 'FLAT' || dir === 'NO_GO' || tHor === 'wait') {
     state = 'wait'
     icon = '🟡'
-    title = 'ASPETTA — non operare ora'
+    title = isScalp
+      ? (dir === 'NO_GO' ? 'NO-GO — niente scalping ora' : 'ASPETTA — setup scalping non pronto')
+      : 'ASPETTA — non operare ora'
     mainMsg = d.reasoning || 'Il setup non è abbastanza forte per entrare ora.'
     // Cerca info sul "cosa aspettare" nel reasoning / risks / keyFactors
     const planText = (d.keyFactors?.find(f => /attendere|aspettare|pullback|ritest|target/i.test(f))
                     || d.risks?.find(r => /attendere|aspettare|pullback/i.test(r)))
     if (planText) subMsg = planText
-    else subMsg = 'Ricontrolla tra 1-4 ore o quando il prezzo si muove significativamente.'
-    steps = [
-      `Non aprire posizioni su ${symbol} ora`,
-      'Imposta un alert sulla piattaforma se vuoi essere avvisato',
-      'Rilancia "Chiedi a Claude" se il mercato si muove molto',
-    ]
+    else if (isScalp) subMsg = 'Ricontrolla tra pochi minuti o aspetta una kill zone più attiva.'
+    else              subMsg = 'Ricontrolla tra 1-4 ore o quando il prezzo si muove significativamente.'
+    steps = isScalp
+      ? [
+        `Non scalpare ${symbol} ora`,
+        'Aspetta un trigger 1m fresco (pin bar / engulfing / breakout retest)',
+        'Verifica che la kill zone (London o NY) sia attiva',
+        'Rilancia ⚡ Scalp se vedi setup migliorare',
+      ]
+      : [
+        `Non aprire posizioni su ${symbol} ora`,
+        'Imposta un alert sulla piattaforma se vuoi essere avvisato',
+        'Rilancia "Chiedi a Claude" se il mercato si muove molto',
+      ]
   } else if (conf >= 60) {
     state = 'enter'
     icon = '🟢'
     const action = dir === 'LONG' ? 'COMPRA (LONG)' : 'VENDI (SHORT)'
-    title = `ENTRA — ${action} su ${symbol}`
+    title = isScalp
+      ? `GO ${action} su ${symbol} — SCALP`
+      : `ENTRA — ${action} su ${symbol}`
     mainMsg = d.reasoning || `Setup di qualità — confidence ${conf}%.`
-    subMsg = `Orizzonte: ${tHor === 'intraday' ? 'intraday (poche ore)' : tHor === 'swing' ? 'swing (giorni)' : tHor}`
+    if (isScalp) {
+      const hold = d.expected_hold_minutes != null ? `${d.expected_hold_minutes}min hold previsto` : 'hold breve'
+      subMsg = `⚡ Scalping · ${hold} · session ${d.session || '—'}`
+    } else {
+      subMsg = `Orizzonte: ${tHor === 'intraday' ? 'intraday (poche ore)' : tHor === 'swing' ? 'swing (giorni)' : tHor}`
+    }
     const rr = d.riskReward ? `R:R ${d.riskReward.toFixed(1)}:1` : ''
-    steps = [
-      `Entry: ${fmtPrice(d.entry)} ${dir === 'LONG' ? '(o limite a questo prezzo)' : '(o limite a questo prezzo)'}`,
-      `Stop Loss: ${fmtPrice(d.stopLoss)} — esci se il prezzo arriva qui`,
-      `Take Profit 1: ${fmtPrice(d.takeProfit1)} (chiudi metà posizione)`,
-      d.takeProfit2 ? `Take Profit 2: ${fmtPrice(d.takeProfit2)} (chiudi resto)` : null,
-      `Rischio max: 2% del conto · ${rr}`,
-    ].filter(Boolean)
+    steps = isScalp
+      ? [
+        `Entry: ${fmtPrice(d.entry)} (limit o market dopo trigger 1m)`,
+        `Stop Loss STRETTO: ${fmtPrice(d.stopLoss)} (5-15 punti tipico)`,
+        `TP1: ${fmtPrice(d.takeProfit1)} — chiudi 50% qui`,
+        d.takeProfit2 ? `TP2: ${fmtPrice(d.takeProfit2)} — chiudi resto con trail` : null,
+        `Rischio max: 1% del conto · ${rr}`,
+        `Plan: trail a BE dopo +1R, exit pieno se candela 1m chiude contro`,
+      ].filter(Boolean)
+      : [
+        `Entry: ${fmtPrice(d.entry)} (o limite a questo prezzo)`,
+        `Stop Loss: ${fmtPrice(d.stopLoss)} — esci se il prezzo arriva qui`,
+        `Take Profit 1: ${fmtPrice(d.takeProfit1)} (chiudi metà posizione)`,
+        d.takeProfit2 ? `Take Profit 2: ${fmtPrice(d.takeProfit2)} (chiudi resto)` : null,
+        `Rischio max: 2% del conto · ${rr}`,
+      ].filter(Boolean)
   } else {
     state = 'evaluate'
     icon = '🟠'
@@ -1084,6 +1166,45 @@ function ActionCard({ decision, symbol }) {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+// ─── Scalp Mode Banner (info aggiuntive per modalità scalping) ─────
+function ScalpModeBanner({ decision }) {
+  const sessionColors = {
+    London: '#00e096', NY_AM: '#00e096', NY_PM: '#82aaff',
+    Asia: '#f5c842', Overlap: '#00e096', Dead: '#ff3355',
+  }
+  const sessionColor = sessionColors[decision.session] || '#8892a4'
+  const fields = [
+    { label: 'MODE', value: '⚡ Scalping', color: '#ff9933' },
+    { label: 'Session', value: decision.session || '—', color: sessionColor },
+    { label: 'Hold', value: decision.expected_hold_minutes != null ? `${decision.expected_hold_minutes}min` : '—', color: '#82aaff' },
+    { label: 'Score', value: `${decision.scalping_score ?? '—'}/100`, color: (decision.scalping_score ?? 0) >= 80 ? '#00e096' : (decision.scalping_score ?? 0) >= 60 ? '#f5c842' : '#ff3355' },
+  ]
+  return (
+    <div className="bg-orange-500/5 border-2 border-orange-500/30 rounded-xl p-4">
+      <div className="grid grid-cols-4 gap-2 mb-3">
+        {fields.map((f, i) => (
+          <div key={i} className="text-center">
+            <div className="font-mono text-xxs uppercase tracking-wider text-text-muted">{f.label}</div>
+            <div className="font-mono text-sm font-bold tabular-nums" style={{ color: f.color }}>{f.value}</div>
+          </div>
+        ))}
+      </div>
+      {decision.why_now && (
+        <div className="bg-bg-primary/50 rounded p-2 mb-2 border-l-2 border-orange-400">
+          <div className="font-mono text-xxs uppercase text-orange-300 mb-0.5">⚡ Why now (trigger 1m)</div>
+          <div className="font-mono text-xs text-text-primary">{decision.why_now}</div>
+        </div>
+      )}
+      {decision.invalidation && (
+        <div className="bg-bg-primary/50 rounded p-2 border-l-2 border-red/60">
+          <div className="font-mono text-xxs uppercase text-red mb-0.5">⚠ Invalidation</div>
+          <div className="font-mono text-xs text-text-primary">{decision.invalidation}</div>
+        </div>
+      )}
     </div>
   )
 }
@@ -1149,9 +1270,23 @@ const STATUS_STYLE = {
   warn: { icon: '⚠', color: '#f5c842', bg: '#f5c84218' },
   skip: { icon: '–', color: '#5a6478', bg: '#5a647818' },
 }
-const PHASE_ORDER = ['MTF Screening', 'Context Macro', 'Setup Quality', 'Execution', 'Risk & Psy']
-function ChecklistView({ checklist, score }) {
-  const grouped = PHASE_ORDER.map(phase => ({
+// Ordine fasi supportato (intraday + scalping). Se la fase non è nell'array
+// finisce ordinata in coda usando l'ordine d'apparizione.
+const PHASE_ORDER = [
+  'MTF Screening', 'Context Macro', 'Setup Quality', 'Execution', 'Risk & Psy',  // intraday
+  'Context', 'Direction', 'Exit',                                                  // scalping
+]
+function ChecklistView({ checklist, score, title }) {
+  // Group preservando ordine dichiarato + raccogliendo ogni fase incontrata
+  const phasesSeen = []
+  for (const c of checklist) {
+    if (c.phase && !phasesSeen.includes(c.phase)) phasesSeen.push(c.phase)
+  }
+  const orderedPhases = [
+    ...PHASE_ORDER.filter(p => phasesSeen.includes(p)),
+    ...phasesSeen.filter(p => !PHASE_ORDER.includes(p)),
+  ]
+  const grouped = orderedPhases.map(phase => ({
     phase,
     items: checklist.filter(c => c.phase === phase),
   })).filter(g => g.items.length > 0)
@@ -1161,12 +1296,13 @@ function ChecklistView({ checklist, score }) {
   const skipCount = checklist.filter(c => c.status === 'skip').length
   const scoreVal = Number(score ?? Math.round((passCount / checklist.length) * 100))
   const scoreColor = scoreVal >= 80 ? '#00e096' : scoreVal >= 60 ? '#f5c842' : '#ff3355'
+  const titleText = title || `📋 Trader Pro Checklist — ${checklist.length} step`
   return (
     <div className="bg-bg-secondary rounded-xl border border-bg-border p-4">
       <div className="flex items-center justify-between mb-3">
         <div>
           <div className="font-mono text-xs text-gold font-semibold uppercase tracking-wider">
-            📋 Trader Pro Checklist — 18 step
+            {titleText}
           </div>
           <div className="flex gap-3 mt-1 font-mono text-xxs">
             <span className="text-green">✓ {passCount}</span>

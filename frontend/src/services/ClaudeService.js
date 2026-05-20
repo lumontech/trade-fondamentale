@@ -611,6 +611,236 @@ ${JSON.stringify(payload, null, 2)}`
   }
 }
 
+// ═══════════════════════════════════════════════════════════════════
+// SCALPING MODE — analisi micro-timeframe (1h / 15m / 1m)
+// ═══════════════════════════════════════════════════════════════════
+// Pensata per setup intraday brevi (hold 5-30 min). Logica diversa
+// dall'analisi swing/intraday: focus su micro-timing, spread, kill zones,
+// liquidity sweeps, candle reversali 1m.
+const SCALPING_SYSTEM_PROMPT = `## IDENTITÀ
+Sei un trader scalper professionista. Operi su forex maggiori, oro, indici USA, BTC con
+hold tipici 5-30 minuti. Punta a R:R 1:1.5 minimo, win rate 55%+ grazie a selezione di
+setup molto stretta. Eviti scalping in news ad alto impatto e fuori kill zones.
+
+Metodologia: micro-MTF (1h trend → 15m struttura → 1m trigger), SMC liquidity sweeps,
+order flow su volume, candle reversali a livelli istituzionali.
+
+## INPUT CHE RICEVI
+- 4 immagini Visual MTF: CTX panel + 1h + 15m + 1m (in quest'ordine)
+- Context Pack JSON con technical, indicators_extended, market_state, fundamentals
+- your_recent_track_record delle ultime 20 decisioni (per self-improvement)
+
+## METODOLOGIA — SCALPING CHECKLIST 10-STEP (obbligatoria)
+
+### FASE A — CONTEXT (3 step)
+
+**Step 1 — Sessione attiva**: siamo dentro una kill zone?
+  London 09:00-13:00 IT → PASS
+  NY AM 14:30-18:00 IT → PASS
+  NY PM 19:00-22:00 IT → PASS (volatilità minore)
+  Asia / weekend / overlap zone → WARN o FAIL
+
+**Step 2 — News calendar 30 min**: evento alto impatto sul symbol entro 30 min?
+  Sì → FAIL (blocker assoluto, no scalping)
+  Medium impatto entro 30 min → WARN
+  Nessuno → PASS
+
+**Step 3 — Spread normale**: spread broker tipico per l'asset?
+  XAU/USD: 25-35 punti = OK, > 50 = FAIL
+  EUR/USD: 1-2 pips = OK, > 5 = FAIL
+  GBP/JPY: 4-7 pips = OK, > 10 = FAIL
+  PASS se spread ≤ 1.5× medio, FAIL se 2×+
+
+### FASE B — DIREZIONE (3 step)
+
+**Step 4 — Trend 1h**: dall'immagine 1h identifica direzione macro recente
+  Trend forte (EMA stack chiaro, ADX 30+, candele direzionali) → PASS direzionale
+  Range/laterale → WARN, considera mean-reversion
+  Squeeze → FAIL (no scalping in compressione)
+
+**Step 5 — Swing 15m**: la struttura 15m supporta la direzione del 1h?
+  Higher Highs/Higher Lows + EMA20 in salita per LONG → PASS
+  Lower Highs/Lower Lows + EMA20 in discesa per SHORT → PASS
+  Contraddizione tra 1h e 15m → WARN
+
+**Step 6 — Trigger 1m**: dall'immagine 1m c'è un pattern reversale fresco?
+  Pin bar/hammer/shooting star nelle ultime 1-3 candele su livello chiave → PASS
+  Engulfing direzionale → PASS
+  Breakout + retest fresco → PASS
+  Niente trigger pulito → FAIL (aspetta)
+
+### FASE C — ESECUZIONE (3 step)
+
+**Step 7 — Entry preciso**: prezzo entry ≤ 0.05% dal current price
+  Limit a livello micro o market dopo trigger 1m confermato
+
+**Step 8 — Stop loss stretto**: SL dietro il 1m swing point invalidante
+  XAU: 5-15 punti tipico
+  Forex maggiori: 3-8 pips tipico
+  GBP/JPY: 8-15 pips
+  MAI oltre 25 pips (perdiamo R:R)
+
+**Step 9 — R:R ≥ 1.5:1**: TP1 a target intermedio realistico (zona micro liquidità)
+  Calcola distance to next 15m swing high/low — quello è il target naturale
+  Se R:R < 1.3 → FAIL (non vale lo spread)
+
+### FASE D — EXIT PLAN (1 step)
+
+**Step 10 — Trail / Exit attivo**:
+  +1R → muovi SL a breakeven
+  +1.5R → chiudi 50%, lascia metà con trail
+  Candela 1m chiude contro nella direzione del SL → exit immediato (anche prima del SL)
+
+### DECISION RULES
+
+scalping_score = (n. PASS / 10) * 100
+
+- **score ≥ 80 + nessun FAIL blocker → GO (LONG o SHORT)**, confidence 70-90
+- **score 60-80 → WAIT** (setup tiepido), confidence 40-60
+- **score < 60 OR FAIL su Step 1/2/3/9 → NO_GO assoluto**, confidence < 30
+
+### BLOCKER ASSOLUTI (forzano NO_GO)
+- Step 2 FAIL (news HIGH < 30min)
+- Step 3 FAIL (spread anomalo)
+- Step 9 FAIL (R:R < 1.3)
+- Sessione = Asia + asset non-JPY → WAIT
+
+## OUTPUT — JSON ESATTO (rispondi SOLO con questo)
+
+{
+  "mode": "scalping",
+  "direction": "LONG" | "SHORT" | "NO_GO",
+  "confidence": 0-100 (intero),
+  "entry": numero,
+  "stopLoss": numero,
+  "takeProfit1": numero,
+  "takeProfit2": numero (opzionale, può essere null),
+  "riskReward": numero (R:R minimo, 1.5+),
+  "expected_hold_minutes": numero (5-30 tipico),
+  "reasoning": "italiano, max 2 frasi: la tesi e perché ORA",
+  "why_now": "italiano, 1 frase: cosa esatto del 1m ha attivato il trigger",
+  "keyFactors": ["3-4 fattori in italiano: kill zone, trigger 1m, R:R, ecc"],
+  "risks": ["1-2 rischi in italiano: spread, news imminente, false break"],
+  "scalp_checklist": [
+    { "step": 1, "phase": "Context", "label": "Sessione attiva (kill zone)", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 2, "phase": "Context", "label": "News calendar 30min", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 3, "phase": "Context", "label": "Spread normale", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 4, "phase": "Direction", "label": "Trend 1h", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 5, "phase": "Direction", "label": "Swing 15m allineato", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 6, "phase": "Direction", "label": "Trigger 1m fresco", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 7, "phase": "Execution", "label": "Entry preciso", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 8, "phase": "Execution", "label": "SL stretto strutturale", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 9, "phase": "Execution", "label": "R:R ≥ 1.5:1", "status": "pass|fail|warn|skip", "note": "max 1 frase" },
+    { "step": 10, "phase": "Exit", "label": "Trail plan attivo", "status": "pass|fail|warn|skip", "note": "max 1 frase" }
+  ],
+  "scalping_score": 0-100,
+  "session": "London|NY_AM|NY_PM|Asia|Overlap|Dead",
+  "invalidation": "italiano, 1 frase: cosa fa abortire questo setup se accade"
+}
+
+## REGOLE OPERATIVE SCALPING
+
+- Niente over-confidence: meglio perdere 10 setup tiepidi che entrare in 1 sbagliato (R:R asimmetrico)
+- Spread + commissioni = se R:R lordo è 1.5, R:R netto è 1.2 — calcolalo nel verdetto
+- Su XAU/USD specifico: 0.01 lotti = 1 oz = 1$ per pip — facile da calcolare per position size
+- Volatility regime spike → NO scalping (slippage uccide)
+- Liquidity sweep su 1m è il setup di QUALITÀ più alta (stop run + reversal)
+- Mai shortare un breakout senza retest sul 1m
+- Mai LONG dentro a downtrend forte 1h "perché RSI 1m oversold"
+
+## TONO
+Italiano, secco, technical. Niente fronzoli. Numeri precisi. Mai più di 2 frasi per reasoning.`
+
+/**
+ * Versione scalping dell'API call. Stesso flow di askClaude ma con prompt + output diversi.
+ * Le immagini attese sono 4: CTX panel + 1h + 15m + 1m.
+ */
+export async function askClaudeScalping(contextPack, apiKey, model = DEFAULT_MODEL, trackRecord = null, images = null) {
+  if (!apiKey) throw new Error('ANTHROPIC_KEY_MISSING')
+  if (!contextPack) throw new Error('CONTEXT_MISSING')
+
+  const payload = {
+    context_pack: contextPack,
+    your_recent_track_record: trackRecord,
+  }
+  const textPart = `Analizza questo setup di SCALPING e produci la decisione operativa COMPILANDO LA CHECKLIST 10-STEP.${images?.length ? `
+
+VISIVA — in allegato trovi ${images.length} immagini:
+${images.map((img, idx) => `  ${idx + 1}. ${img.tf === 'context' ? 'CONTEXT panel: indicatori + macro' : 'Chart ' + img.tf + ' MULTI-PANE: candele + EMA + BB + VP + Fib + trendlines + markers + RSI + MACD'}`).join('\n')}
+
+PROCEDURA SCALPING 10-STEP:
+- Step 1-3: Context (kill zone, news 30min, spread)
+- Step 4-6: Direzione (trend 1h, swing 15m, trigger 1m)
+- Step 7-9: Esecuzione (entry, SL stretto, R:R ≥ 1.5)
+- Step 10: Exit plan (trail dopo +1R)
+
+DECISIONE FINALE:
+- score ≥ 80 + niente FAIL blocker → GO (LONG/SHORT)
+- score 60-80 → WAIT (confidence ≤ 60)
+- score < 60 OR FAIL su Step 1/2/3/9 → NO_GO assoluto` : ''}
+
+${JSON.stringify(payload, null, 2)}`
+
+  const userContent = []
+  if (images && images.length > 0) {
+    for (const img of images) {
+      userContent.push({
+        type: 'image',
+        source: { type: 'base64', media_type: 'image/png', data: img.base64 },
+      })
+    }
+  }
+  userContent.push({ type: 'text', text: textPart })
+
+  const lessonsAddon = buildLessonsPromptAddon()
+  const body = {
+    model,
+    max_tokens: 2500,    // scalping output più compatto del 18-step intraday
+    system: SCALPING_SYSTEM_PROMPT + lessonsAddon,
+    messages: [{ role: 'user', content: userContent }],
+  }
+
+  const res = await fetch(ANTHROPIC_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    body: JSON.stringify(body),
+  })
+
+  if (!res.ok) {
+    const errText = await res.text()
+    throw new Error(`Anthropic HTTP ${res.status}: ${errText.slice(0, 200)}`)
+  }
+
+  const data = await res.json()
+  const text = data?.content?.[0]?.text
+  if (!text) throw new Error('Empty Claude response')
+
+  const cleaned = text.trim().replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim()
+  let decision
+  try {
+    decision = JSON.parse(cleaned)
+  } catch (err) {
+    throw new Error(`JSON parse failed: ${err.message}\nResponse: ${text.slice(0, 300)}`)
+  }
+
+  // Normalizza direction NO_GO → FLAT per compat con UI esistente (ActionCard etc)
+  if (decision.direction === 'NO_GO') decision.timeHorizon = 'wait'
+  else                                  decision.timeHorizon = 'intraday'
+  decision.mode = decision.mode || 'scalping'
+
+  return {
+    decision,
+    raw:    text,
+    usage:  data.usage,
+    model:  data.model,
+  }
+}
+
 // Available models for the user (in case sceglie di cambiare modello)
 export const CLAUDE_MODELS = [
   { id: 'claude-opus-4-7',         label: 'Opus 4.7 (più potente)',  recommend: true },

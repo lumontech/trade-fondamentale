@@ -25,7 +25,15 @@ import { calculateFibonacci } from './IndicatorsExtended'
 import { detectAllPatterns } from './PatternsEngine'
 import html2canvas from 'html2canvas'
 
-const TF_LABELS = { '15m': '15 minuti', '1h': '1 ora', '4h': '4 ore', '1D': 'Giornaliero' }
+const TF_LABELS = { '1m': '1 minuto', '5m': '5 minuti', '15m': '15 minuti', '1h': '1 ora', '4h': '4 ore', '1D': 'Giornaliero' }
+
+// Preset TF list per modalità diverse di analisi.
+// Intraday/swing: 1D → 4h → 1h → 15m (top-down Murphy classico)
+// Scalping:       1h → 15m → 1m       (focus micro-timing entry)
+export const TF_PRESETS = {
+  intraday: ['1D', '4h', '1h', '15m'],
+  scalping: ['1h', '15m', '1m'],
+}
 
 // ── Calcolo RSI / MACD per pane secondari (in-line, no dep esterne) ────────
 function calcRSISeries(candles, period = 14) {
@@ -424,18 +432,31 @@ function renderContextPanel(parent, ctxPack) {
   return div
 }
 
-export async function captureMTFCharts({ symbol, instruments, contextPack }) {
+/**
+ * Cattura le immagini Visual MTF per il prompt Claude.
+ * @param {object} opts
+ * @param {string} opts.symbol         es. 'XAUUSD'
+ * @param {object} opts.instruments    store.instruments
+ * @param {object} opts.contextPack    output di buildContextPack()
+ * @param {string[]} [opts.tfs]        lista TF da catturare (default: intraday).
+ *                                     Esempi: TF_PRESETS.intraday | TF_PRESETS.scalping
+ * @param {string} [opts.headerLabel]  override del titolo dell'header (default 'Trader Pro')
+ */
+export async function captureMTFCharts({ symbol, instruments, contextPack, tfs, headerLabel }) {
   const inst = instruments[symbol]
   if (!inst) throw new Error('No instrument data')
   const mtf = inst.mtf || {}
   const mainCandles = Array.isArray(inst.candles) ? inst.candles : []
 
+  const tfList = Array.isArray(tfs) && tfs.length ? tfs : TF_PRESETS.intraday
+
   const pickArr = (a) => Array.isArray(a) ? a : []
-  const data = {
-    '1D':  pickArr(mtf['1D']).length  ? pickArr(mtf['1D'])  : (contextPack?.meta?.timeframe === '1D'  ? mainCandles : []),
-    '4h':  pickArr(mtf['4h']).length  ? pickArr(mtf['4h'])  : (contextPack?.meta?.timeframe === '4h'  ? mainCandles : []),
-    '1h':  pickArr(mtf['1h']).length  ? pickArr(mtf['1h'])  : (contextPack?.meta?.timeframe === '1h'  ? mainCandles : []),
-    '15m': pickArr(mtf['15m']).length ? pickArr(mtf['15m']) : (contextPack?.meta?.timeframe === '15m' ? mainCandles : []),
+  // Costruisco lo store TF→candles dinamicamente in base ai TF richiesti.
+  const data = {}
+  for (const tf of tfList) {
+    data[tf] = pickArr(mtf[tf]).length
+      ? pickArr(mtf[tf])
+      : (contextPack?.meta?.timeframe === tf ? mainCandles : [])
   }
 
   const container = buildContainer()
@@ -445,7 +466,7 @@ export async function captureMTFCharts({ symbol, instruments, contextPack }) {
     // Header
     const head = document.createElement('div')
     head.style.cssText = `font-size: 20px; color: #f5c842; font-weight: 700; margin-bottom: 10px;`
-    head.textContent = `Multi-Timeframe Analysis Trader Pro — ${symbol}`
+    head.textContent = `${headerLabel || 'Multi-Timeframe Analysis Trader Pro'} — ${symbol} [${tfList.join(' / ')}]`
     container.appendChild(head)
 
     // CONTEXT (1 immagine dedicata)
@@ -457,9 +478,9 @@ export async function captureMTFCharts({ symbol, instruments, contextPack }) {
 
     // Ogni TF: usa chart.takeScreenshot() di lightweight-charts (NON html2canvas,
     // che non sa leggere il canvas dei chart e produce immagini vuote).
-    for (const tf of ['1D', '4h', '1h', '15m']) {
+    for (const tf of tfList) {
       if (!data[tf] || data[tf].length < 30) continue
-      const r = renderTFPanel(container, { symbol, tf, candles: data[tf], label: TF_LABELS[tf] })
+      const r = renderTFPanel(container, { symbol, tf, candles: data[tf], label: TF_LABELS[tf] || tf })
       // Forza il layout + un paio di frame per assicurarsi che tutti i chart
       // abbiano completato il rendering prima di chiamare takeScreenshot.
       void r.panel.offsetHeight
@@ -467,7 +488,7 @@ export async function captureMTFCharts({ symbol, instruments, contextPack }) {
       await new Promise(resolve => setTimeout(resolve, 250))
       try {
         const base64 = composeTFCanvas({
-          symbol, tf, label: TF_LABELS[tf],
+          symbol, tf, label: TF_LABELS[tf] || tf,
           slice: r.slice, last: r.last, charts: r.charts,
           rsiLast: r.rsiLast, macdLast: r.macdLast,
         })
