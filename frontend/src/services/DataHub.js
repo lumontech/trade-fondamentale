@@ -67,15 +67,24 @@ function alignBarTime(nowSec, tfSec) {
 }
 
 // ── Load multi-timeframe candles per analisi confluence ──────────
+// Default TF list per analisi intraday/swing (Murphy top-down).
 const MTF_TIMEFRAMES = ['15m', '1h', '4h', '1D']
+// TF aggiuntive per analisi scalping (1m + 5m + 15m + 1h).
+export const SCALPING_TIMEFRAMES = ['1m', '5m', '15m', '1h']
 
-export async function loadMultiTFCandles(symbol) {
+/**
+ * Carica le candele MTF per un symbol.
+ * @param {string} symbol
+ * @param {string[]} [tfs]  TF list (default: MTF_TIMEFRAMES per intraday).
+ *                          Per scalping passare SCALPING_TIMEFRAMES.
+ */
+export async function loadMultiTFCandles(symbol, tfs = MTF_TIMEFRAMES) {
   const store  = useAppStore.getState()
   const source = ROUTING[symbol]
   const key    = source === 'twelvedata' ? store.apiKeys.twelvedata : null
 
-  // Carica le 4 TF in parallelo. Per twelvedata: se manca key o fallisce → Yahoo fallback.
-  await Promise.allSettled(MTF_TIMEFRAMES.map(async tf => {
+  // Carica le TF in parallelo. Per twelvedata: se manca key o fallisce → Yahoo fallback.
+  await Promise.allSettled(tfs.map(async tf => {
     try {
       let candles = []
       if (source === 'binance') {

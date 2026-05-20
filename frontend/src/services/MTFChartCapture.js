@@ -28,11 +28,11 @@ import html2canvas from 'html2canvas'
 const TF_LABELS = { '1m': '1 minuto', '5m': '5 minuti', '15m': '15 minuti', '1h': '1 ora', '4h': '4 ore', '1D': 'Giornaliero' }
 
 // Preset TF list per modalità diverse di analisi.
-// Intraday/swing: 1D → 4h → 1h → 15m (top-down Murphy classico)
-// Scalping:       1h → 15m → 1m       (focus micro-timing entry)
+// Intraday/swing: 1D → 4h → 1h → 15m   (top-down Murphy classico, 4 TF)
+// Scalping:       1h → 15m → 5m → 1m   (focus micro-timing entry, 4 TF)
 export const TF_PRESETS = {
   intraday: ['1D', '4h', '1h', '15m'],
-  scalping: ['1h', '15m', '1m'],
+  scalping: ['1h', '15m', '5m', '1m'],
 }
 
 // ── Calcolo RSI / MACD per pane secondari (in-line, no dep esterne) ────────

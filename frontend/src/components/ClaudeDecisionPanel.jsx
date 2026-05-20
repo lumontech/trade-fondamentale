@@ -3,7 +3,7 @@ import { useAppStore } from '../store/store'
 import { buildContextPack, summarizeContextPack } from '../services/ContextPack'
 import { askClaude, askClaudeScalping, CLAUDE_MODELS, STYLE_PROFILES } from '../services/ClaudeService'
 import { captureMTFCharts, TF_PRESETS } from '../services/MTFChartCapture'
-import { loadCandles, loadMultiTFCandles } from '../services/DataHub'
+import { loadCandles, loadMultiTFCandles, SCALPING_TIMEFRAMES } from '../services/DataHub'
 import { logDecision }                         from '../services/TradeLog'
 import { getLessons }                          from '../services/ClaudeReviewLab'
 import { getClaudeTrackRecord }                from '../services/OutcomeTracker'
@@ -193,9 +193,24 @@ export default function ClaudeDecisionPanel() {
       if (includeVision) {
         try {
           setCapturing(true)
+          // Per scalping serve forzare il caricamento dei TF brevi (1m/5m)
+          // che il default loadMultiTFCandles NON include. Aspetto sincronicamente
+          // così quando arriva captureMTFCharts le candele 1m/5m sono nello store.
+          if (mode === 'scalping') {
+            try {
+              const inst = useAppStore.getState().instruments[activeInstrument]
+              const missing = SCALPING_TIMEFRAMES.filter(tf => (inst?.mtf?.[tf]?.length || 0) < 30)
+              if (missing.length > 0) {
+                toast.info?.(`Carico TF scalping mancanti: ${missing.join(', ')}`)
+                await loadMultiTFCandles(activeInstrument, SCALPING_TIMEFRAMES)
+              }
+            } catch (e) {
+              console.warn('[Scalp] preload TF brevi failed:', e.message)
+            }
+          }
           images = await captureMTFCharts({
             symbol: activeInstrument,
-            instruments,
+            instruments: useAppStore.getState().instruments,    // ri-leggi state aggiornato
             contextPack: enrichedCtx,
             tfs,
             headerLabel: mode === 'scalping' ? 'Scalping MTF Analysis' : 'Multi-Timeframe Analysis Trader Pro',
@@ -490,18 +505,19 @@ export default function ClaudeDecisionPanel() {
                   <div className="font-mono text-xxs text-text-muted uppercase tracking-wider mb-2">
                     🔍 Visual MTF — immagini inviate a Claude ({visionImages.length})
                   </div>
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                  <div className="grid grid-cols-1 gap-3">
                     {visionImages.map((img, idx) => (
                       <div key={idx} className="relative group cursor-pointer">
                         <img src={`data:image/png;base64,${img.base64}`}
                              alt={img.tf}
-                             className="w-full h-24 object-cover rounded border border-bg-border hover:border-gold transition-colors"
+                             className="w-full object-contain rounded border border-bg-border hover:border-gold transition-colors bg-bg-primary"
+                             style={{ maxHeight: '500px' }}
                              onClick={() => {
                                const w = window.open('', '_blank')
                                w.document.write(`<html><body style="margin:0;background:#04060a"><img src="data:image/png;base64,${img.base64}" style="width:100%"/></body></html>`)
                              }}
                           />
-                        <div className="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-bg-primary/80 font-mono text-xxs text-gold">
+                        <div className="absolute top-2 left-2 px-2 py-1 rounded bg-bg-primary/90 font-mono text-xs text-gold font-semibold border border-gold/30">
                           {img.tf === 'context' ? 'CTX' : img.tf}
                         </div>
                       </div>
