@@ -62,6 +62,12 @@ export default function AuthGuard({ children }) {
             const { useAppStore } = await import('../store/store')
             await useAppStore.getState().syncApiKeysFromServer?.()
           } catch (e) { console.warn('[AuthGuard] sync keys at mount:', e.message) }
+          // Sync TradeLog dal server (Review Lab + Diario funzionano cross-device)
+          try {
+            const { syncFromServer } = await import('../services/TradeLog')
+            const r = await syncFromServer({ limit: 1000 })
+            if (r.synced > 0) console.log('[TradeLog] sync at mount:', r)
+          } catch (e) { console.warn('[AuthGuard] sync trade log at mount:', e.message) }
           setState({ loading: false, authed: true })
         } else {
           sessionStorage.removeItem(SESSION_KEY)
@@ -110,6 +116,12 @@ export default function AuthGuard({ children }) {
         const { useAppStore } = await import('../store/store')
         await useAppStore.getState().syncApiKeysFromServer?.()
       } catch (e) { console.warn('[AuthGuard] sync keys after login:', e.message) }
+      // Sync TradeLog (Review Lab funziona cross-device)
+      try {
+        const { syncFromServer } = await import('../services/TradeLog')
+        const r = await syncFromServer({ limit: 1000 })
+        if (r.synced > 0) console.log('[TradeLog] sync after login:', r)
+      } catch (e) { console.warn('[AuthGuard] sync trade log after login:', e.message) }
       setState({ loading: false, authed: true })
     } catch (err) {
       setError('Errore di rete — riprova')

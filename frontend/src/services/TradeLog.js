@@ -1,9 +1,19 @@
 // TradeLog — registro persistente delle decisioni operative di Claude.
 // Ogni voce contiene snapshot completo (prezzo, scoring, contesto macro)
 // + outcome quando viene chiusa (prezzo finale, P/L, R-multiple).
-// Storage: localStorage.
+//
+// Storage: hybrid
+//   - localStorage (cache locale, sempre disponibile, no network latency)
+//   - server-side via /api/user/trade-log (sync cross-device, persistente)
+//
+// Strategia di sync:
+//   - Ogni write locale (logDecision/closeDecision/dismiss/delete) triggera
+//     anche una fetch verso il server (best-effort, fire-and-forget).
+//   - Al mount dell'app (AuthGuard), syncFromServer fa merge nel localStorage.
+//   - LWW (last-write-wins) by updatedAt timestamp.
 
 const STORAGE_KEY = 'itp_tradelog_v1'
+const SERVER_URL  = '/api/user/trade-log'
 
 function _load() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]') }
@@ -12,6 +22,97 @@ function _load() {
 function _save(list) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)) }
   catch {}
+}
+
+// ── Server sync helpers (best-effort, fire-and-forget) ──────────────
+async function _serverUpsert(entry) {
+  try {
+    const res = await fetch(SERVER_URL, {
+      method: 'PUT',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...entry, updatedAt: Date.now() }),
+    })
+    if (!res.ok && res.status !== 401) {
+      console.warn('[TradeLog] server upsert failed:', res.status)
+    }
+  } catch (err) {
+    console.warn('[TradeLog] server upsert error:', err.message)
+  }
+}
+
+async function _serverDelete(id) {
+  try {
+    await fetch(`${SERVER_URL}/${encodeURIComponent(id)}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    })
+  } catch (err) {
+    console.warn('[TradeLog] server delete error:', err.message)
+  }
+}
+
+/**
+ * Pull dal server e merge nel localStorage.
+ * Chiamato dall'AuthGuard dopo login + on app mount.
+ * LWW merge: per ogni id, vince il record con updatedAt più alto.
+ */
+export async function syncFromServer({ since = 0, limit = 1000 } = {}) {
+  try {
+    const url = `${SERVER_URL}?since=${since}&limit=${limit}`
+    const res = await fetch(url, { credentials: 'include' })
+    if (!res.ok) {
+      if (res.status !== 401) console.warn('[TradeLog] sync HTTP', res.status)
+      return { synced: 0, error: 'http_' + res.status }
+    }
+    const data = await res.json()
+    const remoteEntries = data.entries || []
+    if (remoteEntries.length === 0) return { synced: 0 }
+
+    const local = _load()
+    const localById = Object.fromEntries(local.map(e => [e.id, e]))
+    let added = 0, updated = 0
+    for (const rem of remoteEntries) {
+      const loc = localById[rem.id]
+      if (!loc) {
+        local.unshift(rem); added++
+      } else if ((rem.updatedAt || 0) > (loc.updatedAt || 0)) {
+        const idx = local.findIndex(e => e.id === rem.id)
+        if (idx >= 0) { local[idx] = rem; updated++ }
+      }
+    }
+    if (added || updated) {
+      // Mantieni sort cronologico inverso
+      local.sort((a, b) => (b.openedAt || 0) - (a.openedAt || 0))
+      _save(local)
+    }
+    return { synced: added + updated, added, updated, total: remoteEntries.length }
+  } catch (err) {
+    console.warn('[TradeLog] sync error:', err.message)
+    return { synced: 0, error: err.message }
+  }
+}
+
+/**
+ * Push completo: bulk upsert di tutto il localStorage al server.
+ * Utile la prima volta (es. utente con dati locali da pre-feature).
+ */
+export async function pushAllToServer() {
+  const list = _load()
+  if (list.length === 0) return { pushed: 0 }
+  try {
+    const res = await fetch(`${SERVER_URL}/bulk`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ entries: list.map(e => ({ ...e, updatedAt: e.updatedAt || Date.now() })) }),
+    })
+    if (!res.ok) return { pushed: 0, error: 'http_' + res.status }
+    const data = await res.json()
+    return { pushed: data.saved || 0, total: data.total }
+  } catch (err) {
+    return { pushed: 0, error: err.message }
+  }
 }
 
 /**
@@ -46,9 +147,13 @@ export function logDecision(snapshot) {
     pnlPct:      null,
     rMultiple:   null,
     notes:       '',
+    mode:        snapshot.context?.analysis_mode || null,
+    updatedAt:   Date.now(),
   }
   list.unshift(entry)
   _save(list)
+  // Server sync best-effort (non blocca il return)
+  _serverUpsert(entry)
   return id
 }
 
@@ -66,7 +171,7 @@ export function closeDecision(id, exitPrice, notes = '') {
     const risk = Math.abs(d.entryPrice - d.suggestedSL)
     if (risk > 0) rMultiple = pnl / risk
   }
-  list[idx] = {
+  const updated = {
     ...d,
     status:    'closed',
     closedAt:  Date.now(),
@@ -75,8 +180,11 @@ export function closeDecision(id, exitPrice, notes = '') {
     pnlPct,
     rMultiple,
     notes,
+    updatedAt: Date.now(),
   }
+  list[idx] = updated
   _save(list)
+  _serverUpsert(updated)
   return true
 }
 
@@ -84,14 +192,17 @@ export function dismissDecision(id, notes = '') {
   const list = _load()
   const idx = list.findIndex(d => d.id === id)
   if (idx < 0) return false
-  list[idx] = { ...list[idx], status: 'dismissed', closedAt: Date.now(), notes }
+  const updated = { ...list[idx], status: 'dismissed', closedAt: Date.now(), notes, updatedAt: Date.now() }
+  list[idx] = updated
   _save(list)
+  _serverUpsert(updated)
   return true
 }
 
 export function deleteDecision(id) {
   const list = _load().filter(d => d.id !== id)
   _save(list)
+  _serverDelete(id)
 }
 
 export function getAllDecisions() { return _load() }

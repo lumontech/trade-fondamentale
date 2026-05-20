@@ -17,6 +17,7 @@ import { calculateLiquidityHeatmap, summarizeLiquidity } from './LiquidityHeatma
 import { calculateAllExtended } from './IndicatorsExtended'
 import { buildHistoricalContext } from './HistoricalContext'
 import { detectTrendlines, summarizeTrendlines } from './TrendlinesEngine'
+import { runAllSetupBacktests, summarizeSetupBacktests } from './DynamicBacktest'
 
 // Numero arrotondato per token-efficiency
 function r(n, decimals = 2) {
@@ -63,7 +64,7 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     },
   }
 
-  // ── Backtest reale ────────────────────────────────────────────
+  // ── Backtest reale (legacy: per signal label aggregato) ────────
   const backtest = getBacktestStats(symbol, timeframe, candles)
   const histStats = backtest?.byLabel?.[signal?.label]
   const backtestHistory = histStats ? {
@@ -75,6 +76,21 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     expectancy:   r(histStats.expectancy, 4),
     max_dd_R:     r(histStats.maxDD, 1),
   } : null
+
+  // ── Backtest dinamico setup-specifico ─────────────────────────
+  // Calcola WR/avg_R/profit_factor di ~12 setup pre-definiti sulle
+  // ultime candele DELL'ASSET CORRENTE. Claude lo riceve come filtro
+  // per modulare confidence in base alla performance recente del pattern.
+  // ~100-300ms per asset, 0% costo API extra.
+  let setupBacktestsSummary = null
+  try {
+    if (Array.isArray(candles) && candles.length >= 250) {
+      const allBT = runAllSetupBacktests(candles)
+      setupBacktestsSummary = summarizeSetupBacktests(allBT)
+    }
+  } catch (err) {
+    console.warn('[ContextPack] dynamic backtest skipped:', err.message)
+  }
 
   // ── Eventi ravvicinati ────────────────────────────────────────
   const HOUR = 3600 * 1000
@@ -230,6 +246,7 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     volatility_regime: regime,
     seasonality,
     historical_backtest: backtestHistory,
+    setup_specific_backtests: setupBacktestsSummary,
     quantitative_metrics: quantitative,
     fundamentals: {
       upcoming_events_24h: upcomingEvents,

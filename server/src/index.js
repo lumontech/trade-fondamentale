@@ -25,6 +25,7 @@ import { registerMacroRoutes } from './macroProxy.js'
 import {
   listUserApiKeys, setUserApiKey, deleteUserApiKey, getCryptoStatus,
 } from './userApiKeys.js'
+import { registerTradeLogRoutes } from './userTradeLog.js'
 
 const PORT = Number(process.env.PORT) || 3000
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
@@ -528,6 +529,10 @@ app.get('/api/yahoo/symbols', (c) => c.json({ symbols: yahooListSymbols() }))
 // ── Macro proxy (FF calendar, FRED yields, F&G Index) ────────────
 // Sostituisce corsproxy.io che dà 403 frequentemente.
 registerMacroRoutes(app)
+
+// ── TradeLog per-utente (sync server-side del Review Lab)
+// Tutte queste route sono dietro authMiddleware (user-specific).
+registerTradeLogRoutes(app)
 
 // ── cTrader FIX feed (FPMarkets live) — read-only quote session.
 // L'utente lo avvia ESPLICITAMENTE via POST /api/fix/start. Niente auto-init

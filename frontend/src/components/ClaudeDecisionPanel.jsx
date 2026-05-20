@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { useAppStore } from '../store/store'
 import { buildContextPack, summarizeContextPack } from '../services/ContextPack'
-import { askClaude, askClaudeScalping, CLAUDE_MODELS, STYLE_PROFILES } from '../services/ClaudeService'
+import { askClaude, askClaudeScalping, askClaudeSelfConsistent, CLAUDE_MODELS, STYLE_PROFILES } from '../services/ClaudeService'
 import { captureMTFCharts, TF_PRESETS } from '../services/MTFChartCapture'
 import { loadCandles, loadMultiTFCandles, SCALPING_TIMEFRAMES } from '../services/DataHub'
 import { logDecision }                         from '../services/TradeLog'
@@ -50,6 +50,10 @@ export default function ClaudeDecisionPanel() {
   // Vision: cattura 3 chart MTF + indicator panel e li manda a Claude come allegato
   // Default ON: l'utente lo vuole. Costo +~$0.10 per call (vision tokens).
   const [includeVision, setIncludeVision] = useState(true)
+  // Self-consistency: 3 call parallele a Claude con temperature diverse, merge mediano.
+  // Riduce varianza decisionale del 30-40% (Wang et al. 2022).
+  // Costo: 3× del normale (~$1.50/call). Default OFF.
+  const [includeSelfConsistency, setIncludeSelfConsistency] = useState(false)
   const [visionImages, setVisionImages] = useState([])    // anteprima per UI
   const [capturing, setCapturing] = useState(false)
   const [scheduledTick, setScheduledTick] = useState(0)
@@ -229,9 +233,14 @@ export default function ClaudeDecisionPanel() {
       }
 
       // Branch sull'API call corretta
+      // Self-consistency disponibile solo per intraday (scalp è già veloce)
+      const useSelfConsistency = includeSelfConsistency && mode === 'intraday'
+      if (useSelfConsistency) toast.info?.('🎯 Self-consistency attiva: 3 call parallele in corso (~$1.50)...')
       const out = mode === 'scalping'
         ? await askClaudeScalping(enrichedCtx, apiKeys.anthropic, model, tr, images)
-        : await askClaude(enrichedCtx, apiKeys.anthropic, model, tr, styleProfile, images)
+        : useSelfConsistency
+          ? await askClaudeSelfConsistent(enrichedCtx, apiKeys.anthropic, model, tr, styleProfile, images)
+          : await askClaude(enrichedCtx, apiKeys.anthropic, model, tr, styleProfile, images)
 
       setResult(out)
 
@@ -417,6 +426,15 @@ export default function ClaudeDecisionPanel() {
             {apiKeys.apify && includeSocial && <span className="text-gold">(~€0.04)</span>}
           </label>
 
+          <label className="flex items-center gap-1.5 font-mono text-xxs text-text-secondary cursor-pointer"
+                 title="Self-consistency: 3 call parallele a Claude con temperature diverse (0.3/0.5/0.7), merge mediano della decisione. Riduce variance del 30-40%. SOLO per Intraday (scalp è già veloce). Costo: 3× normale.">
+            <input type="checkbox" checked={includeSelfConsistency}
+                   onChange={e => setIncludeSelfConsistency(e.target.checked)}
+                   className="cursor-pointer" />
+            <span>🎯 Self-consistency</span>
+            {includeSelfConsistency && <span className="text-gold">(3× cost)</span>}
+          </label>
+
           <div className="flex-1" />
 
           {/* Riepilogo essenziale a destra */}
@@ -527,6 +545,11 @@ export default function ClaudeDecisionPanel() {
                     Click su un'immagine per aprirla a piena dimensione. Token vision ~{Math.round(visionImages.length * 3000)}.
                   </div>
                 </div>
+              )}
+
+              {/* Self-consistency banner (solo se attivo + merge avvenuto) */}
+              {decision.self_consistency_score != null && (
+                <SelfConsistencyBanner decision={decision} />
               )}
 
               {/* COSA FARE ORA — semaforo plain-Italian, in cima a tutto */}
@@ -1051,6 +1074,44 @@ function EmptyTab({ icon, message }) {
     <div className="flex flex-col items-center justify-center text-center py-8 px-2">
       <div className="text-3xl mb-2 opacity-50">{icon}</div>
       <div className="font-mono text-xxs text-text-muted leading-relaxed">{message}</div>
+    </div>
+  )
+}
+
+// ─── Self-Consistency Banner — mostra agreement tra 3 call parallele ─
+function SelfConsistencyBanner({ decision }) {
+  const score = decision.self_consistency_score ?? 0
+  const note  = decision.self_consistency_note || ''
+  const dirs  = decision.self_consistency_directions || []
+  const confs = decision.self_consistency_confidences || []
+  const color = score >= 100 ? '#00e096' : score >= 67 ? '#82aaff' : score >= 50 ? '#f5c842' : '#ff3355'
+  const label = score >= 100 ? 'UNANIME' : score >= 67 ? 'CONCORDANTE' : score >= 50 ? 'PARZIALE' : 'DISCORDANTE'
+  return (
+    <div className="rounded-xl border-2 p-3" style={{ backgroundColor: color + '15', borderColor: color + '60' }}>
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-xxs uppercase tracking-wider text-text-muted">🎯 Self-consistency</span>
+          <span className="font-mono text-xs font-bold" style={{ color }}>{label}</span>
+        </div>
+        <div className="flex items-baseline gap-2">
+          <span className="font-mono text-2xl font-bold tabular-nums" style={{ color }}>{score}%</span>
+          <span className="font-mono text-xxs text-text-muted">agreement</span>
+        </div>
+      </div>
+      {dirs.length > 0 && (
+        <div className="grid grid-cols-3 gap-1.5">
+          {dirs.map((d, i) => (
+            <div key={i} className="bg-bg-primary rounded p-1.5 text-center">
+              <div className="font-mono text-xxs text-text-muted">T={[0.3,0.5,0.7][i]}</div>
+              <div className="font-mono text-xs font-bold" style={{
+                color: d === 'LONG' ? '#00e096' : d === 'SHORT' ? '#ff3355' : '#f5c842'
+              }}>{d}</div>
+              <div className="font-mono text-xxs text-text-secondary">{confs[i]}%</div>
+            </div>
+          ))}
+        </div>
+      )}
+      {note && <div className="font-mono text-xxs text-text-muted mt-2 italic">{note}</div>}
     </div>
   )
 }
