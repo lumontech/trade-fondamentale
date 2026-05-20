@@ -172,9 +172,48 @@ export default function ClaudeDecisionPanel() {
     setSavedId(null)
     try {
       const tr = includeTrackRecord ? trackRecord : null
+
+      // FRESHNESS PRELOAD — prima di tutto, refresh candele così il contextPack
+      // viene ricostruito su dati freschi (non sul useMemo che potrebbe avere
+      // candele di 10-30 min fa). Il TF list dipende dalla modalità.
+      const tfs = mode === 'scalping' ? TF_PRESETS.scalping : TF_PRESETS.intraday
+      try {
+        const inst = useAppStore.getState().instruments[activeInstrument]
+        const lastCandle = inst?.candles?.[inst.candles.length - 1]
+        const ageSec = lastCandle ? (Date.now() / 1000 - lastCandle.time) : Infinity
+        const ageMin = Math.round(ageSec / 60)
+        toast.info?.(ageSec > 300
+          ? `🔄 Refresh candele (stale ${ageMin}min)...`
+          : `🔄 Refresh candele per analisi fresca...`)
+        await Promise.allSettled([
+          loadCandles(activeInstrument, activeTimeframe),
+          loadMultiTFCandles(activeInstrument, tfs),
+        ])
+      } catch (e) {
+        console.warn('[Claude] preload candles failed:', e.message)
+      }
+
+      // Ribuilda il contextPack ORA dalle candele appena ricaricate (lo store è aggiornato)
+      const freshState = useAppStore.getState()
+      const freshContextPack = buildContextPack({
+        symbol: activeInstrument,
+        timeframe: activeTimeframe,
+        instruments: freshState.instruments,
+        events: freshState.events,
+        marketContext: freshState.marketContext,
+        cot: freshState.cot[activeInstrument] || null,
+        news: freshState.news,
+        now: new Date(),
+      })
+      if (!freshContextPack) {
+        setError('Dati ancora insufficienti dopo il refresh')
+        setLoading(false)
+        return
+      }
+
       let enrichedCtx = includeScan && scanResults
-        ? { ...contextPack, multi_asset_scan: summarizeScanForClaude(scanResults, activeInstrument) }
-        : contextPack
+        ? { ...freshContextPack, multi_asset_scan: summarizeScanForClaude(scanResults, activeInstrument) }
+        : freshContextPack
       // Tag della modalità dentro il contextPack — serve poi nel TradeLog auto-log
       enrichedCtx = { ...enrichedCtx, analysis_mode: mode }
 
@@ -191,27 +230,11 @@ export default function ClaudeDecisionPanel() {
         }
       }
 
-      // Vision: cattura immagini MTF — TF list dipende dalla modalità
-      const tfs = mode === 'scalping' ? TF_PRESETS.scalping : TF_PRESETS.intraday
+      // Vision: cattura immagini MTF — TF list già calcolata sopra (tfs)
       let images = null
       if (includeVision) {
         try {
           setCapturing(true)
-          // Per scalping serve forzare il caricamento dei TF brevi (1m/5m)
-          // che il default loadMultiTFCandles NON include. Aspetto sincronicamente
-          // così quando arriva captureMTFCharts le candele 1m/5m sono nello store.
-          if (mode === 'scalping') {
-            try {
-              const inst = useAppStore.getState().instruments[activeInstrument]
-              const missing = SCALPING_TIMEFRAMES.filter(tf => (inst?.mtf?.[tf]?.length || 0) < 30)
-              if (missing.length > 0) {
-                toast.info?.(`Carico TF scalping mancanti: ${missing.join(', ')}`)
-                await loadMultiTFCandles(activeInstrument, SCALPING_TIMEFRAMES)
-              }
-            } catch (e) {
-              console.warn('[Scalp] preload TF brevi failed:', e.message)
-            }
-          }
           images = await captureMTFCharts({
             symbol: activeInstrument,
             instruments: useAppStore.getState().instruments,    // ri-leggi state aggiornato
