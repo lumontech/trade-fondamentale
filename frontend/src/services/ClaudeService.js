@@ -102,8 +102,11 @@ Solo se la maggior parte degli step "must-have" passano → considera entry.
 **Step 15 — Stop loss strutturale**: SL oltre il livello chiave o swing point invalidante,
   minimo 1.5×ATR, mai inferiore allo spread broker tipico. PASS se SL strutturale e valido.
 
-**Step 16 — Risk:Reward ≥ 2:1**: TP1 → minimo 2R, TP2 → 3-4R (target volume profile opposto
-  o prossimo livello liquidità). PASS se R:R ≥ 2:1; FAIL se < 1.8:1.
+**Step 16 — Risk:Reward**: TP1 a target intermedio realistico, TP2 estensione.
+  R:R ≥ 2.0 → PASS pieno (ottimale, target volume profile opposto o livello liquidità)
+  R:R 1.5-2.0 → PASS (accettabile in trend forte)
+  R:R 1.2-1.5 → WARN (richiede WR alto sul setup per essere profittevole)
+  R:R < 1.2 → FAIL (non ripaga commissioni + slippage)
 
 ### FASE 4 — RISK & PSYCHOLOGY (2 step)
 
@@ -117,19 +120,31 @@ Solo se la maggior parte degli step "must-have" passano → considera entry.
 ### DECISION RULES — basate sul punteggio checklist
 
 Calcola checklist_score = (numero step PASS) / 18 × 100.
+Gli step SKIP (es. volume su forex Yahoo, COT mancante) NON penalizzano lo score:
+score_effettivo = PASS / (PASS + FAIL + WARN) × 100.
 
-- **checklist_score ≥ 80% + MTF alignment ≥ 75 + nessun blocker FAIL** → direction LONG/SHORT, confidence 70-90%
-- **checklist_score 60-80% + MTF alignment ≥ 50** → direction LONG/SHORT, confidence 50-70%
-- **checklist_score 40-60%** → considera FLAT, confidence max 40, oppure "wait" timeHorizon
-- **checklist_score < 40% OR blocker FAIL (Step 7 news, Step 5 MTF, Step 16 R:R)** → FLAT obbligatorio
+- **score ≥ 70 + MTF alignment ≥ 60 + nessun blocker FAIL** → direction LONG/SHORT, confidence 65-90
+- **score 55-70 + MTF alignment ≥ 50** → direction LONG/SHORT, confidence 45-65
+- **score 40-55** → direction LONG/SHORT con confidence 35-45 (tiepido), timeHorizon "intraday"
+- **score < 40 OR blocker FAIL (Step 7 news, Step 5 MTF, Step 16 R:R)** → FLAT obbligatorio
 
-### BLOCKER ASSOLUTI (override checklist score, forzano FLAT)
+### BLOCKER ASSOLUTI (gli unici che forzano FLAT, non essere prudente oltre)
 
-- Step 7 FAIL (evento alto impatto < 60min) → FLAT
-- Step 5 FAIL (MTF 0-1/4) → FLAT
-- Step 16 FAIL (R:R < 1.8:1) → FLAT
-- Backtest WR < 35% sul setup primario → FLAT
+- Step 7 FAIL = evento HIGH impatto sul symbol entro 60 min → FLAT
+- Step 5 FAIL = MTF alignment 0-1/4 (3-4 TF discordanti) → FLAT
+- Step 16 FAIL = R:R proposto < 1.5:1 → FLAT (era 1.8, ma 1.5 è soglia Murphy)
+- Backtest WR < 30% sul setup primario (era 35) → FLAT
 - Drawdown track record > 30% nelle ultime 20 → riduci size, non FLAT
+- Weekend / mercato chiuso (forex/indici) → FLAT
+
+### CALIBRAZIONE STORICA — non essere over-prudente
+
+Il modello tende a essere troppo restrittivo dando FLAT al 90%+ dei casi.
+La calibrazione corretta è:
+- Setup intraday CHIARI (3+ TF allineati + livello chiave + R:R 1.5+) sono frequenti (2-4 al giorno per asset attivo)
+- Sii decisivo: meglio LONG/SHORT con confidence 55 e WIN che FLAT con regret
+- "FLAT obbligatorio" usalo SOLO per i blocker veri (news/MTF estremo/R:R inadeguato/weekend)
+- Se vedi 12+ step PASS su 18 (score 67%+) con direzione coerente → ENTRA, non FLAT
 
 ### MULTI-ASSET OPPORTUNITY SCAN (se contesto include scan)
 
@@ -548,11 +563,14 @@ PROCEDURA OBBLIGATORIA (Trader Pro 18-step, top-down Murphy):
 17-18) Compila Risk & Psychology (size 2% + plan B)
 Calcola checklist_score = (n. PASS / 18) * 100.
 
-DECISIONE FINALE basata sulla checklist:
-- score ≥ 80 + MTF ≥ 75 + nessun blocker FAIL → LONG/SHORT con confidence 70-90
-- score 60-80 + MTF ≥ 50 → LONG/SHORT con confidence 50-70
-- score 40-60 → FLAT o "wait", confidence max 40
-- score < 40 OR blocker FAIL (Step 5/7/16) → FLAT obbligatorio` : ''}
+DECISIONE FINALE basata sulla checklist (THRESHOLDS RILASSATI):
+- score ≥ 70 + MTF ≥ 60 + nessun blocker FAIL → LONG/SHORT con confidence 65-90
+- score 55-70 + MTF ≥ 50 → LONG/SHORT con confidence 45-65
+- score 40-55 → LONG/SHORT con confidence 35-45 (tiepido)
+- score < 40 OR blocker FAIL (Step 5/7/16) → FLAT obbligatorio
+
+NON essere over-prudente: dopo 24+ ore di FLAT consecutivi la calibrazione corretta
+è essere decisivi. "FLAT" solo per blocker veri (news HIGH 60min/MTF estremo/R:R<1.5/weekend).` : ''}
 
 ${JSON.stringify(payload, null, 2)}`
 
