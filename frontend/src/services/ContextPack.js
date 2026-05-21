@@ -259,6 +259,36 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
       session,
       cross_asset_correlations: correlatedAssets,
     },
+    data_freshness: (() => {
+      // Calcola lag di ogni TF rispetto a "ora". Utile a Claude per sapere
+      // se i prezzi 1m/5m che sta analizzando sono freschi o stale.
+      const inst = instruments[symbol]
+      const out = {}
+      const nowSec = Math.floor(now.getTime() / 1000)
+      const mtfTfs = ['1m', '5m', '15m', '1h', '4h', '1D']
+      for (const tf of mtfTfs) {
+        const arr = inst?.mtf?.[tf]
+        if (Array.isArray(arr) && arr.length > 0) {
+          const lastTime = arr[arr.length - 1].time
+          out[tf] = {
+            last_candle_at: lastTime,
+            lag_seconds: nowSec - lastTime,
+            lag_minutes: Math.round((nowSec - lastTime) / 60),
+          }
+        }
+      }
+      // Anche main candles
+      if (candles?.length) {
+        const lastTime = candles[candles.length - 1].time
+        out.main = {
+          tf: timeframe,
+          last_candle_at: lastTime,
+          lag_seconds: nowSec - lastTime,
+          lag_minutes: Math.round((nowSec - lastTime) / 60),
+        }
+      }
+      return out
+    })(),
   }
 }
 

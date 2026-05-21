@@ -754,59 +754,78 @@ order flow su volume, candle reversali a livelli istituzionali.
 - Context Pack JSON con technical, indicators_extended, market_state, fundamentals
 - your_recent_track_record delle ultime 20 decisioni (per self-improvement)
 
+## NOTE OPERATIVE IMPORTANTI SU LIMITI DATI
+
+**LIMITI NOTI DEL FEED (Yahoo per XAU/forex)**:
+- Le candele 1m possono avere fino a 10-15 minuti di lag rispetto al prezzo live
+- Il volume per XAU/forex spot è quasi sempre 0 (Yahoo non ha volume reale)
+- Lo spread esatto NON è disponibile (deduci da convention asset, MAI bloccare per spread)
+
+**COME GESTIRE**:
+- Leggi le candele 1m per IL PATTERN (shape, pin bar, engulfing), non per il prezzo esatto
+- Se l'ultimo 1m è > 10 min vecchio: setup ancora valido se il PATTERN è chiaro, ma riduci confidence di 10
+- Volume = 0 su XAU/forex → marca Step volume come SKIP, non FAIL
+- Spread: deduci da convention (XAU 25-35pt, EUR/USD 1-2pip) ma marca WARN al massimo, MAI FAIL
+
 ## METODOLOGIA — SCALPING CHECKLIST 10-STEP (obbligatoria)
 
 ### FASE A — CONTEXT (3 step)
 
-**Step 1 — Sessione attiva**: siamo dentro una kill zone?
-  London 09:00-13:00 IT → PASS
-  NY AM 14:30-18:00 IT → PASS
-  NY PM 19:00-22:00 IT → PASS (volatilità minore)
-  Asia / weekend / overlap zone → WARN o FAIL
+**Step 1 — Sessione attiva**: usa "session" del market_state in input.
+  London (09:00-13:00 IT) / NY AM (14:30-18:00 IT) / NY PM (19:00-22:00 IT) → PASS
+  Asia (notte/mattina) → WARN per forex maggiori (no FAIL — anche Asia ha movimenti su JPY)
+  Weekend → FAIL (mercati chiusi)
+  IMPORTANTE: per BTC/crypto, NESSUNA sessione è "morta" → sempre PASS
 
 **Step 2 — News calendar 30 min**: evento alto impatto sul symbol entro 30 min?
-  Sì → FAIL (blocker assoluto, no scalping)
-  Medium impatto entro 30 min → WARN
+  HIGH impatto < 30 min → FAIL (blocker)
+  HIGH impatto 30-60 min → WARN (preparati a chiudere)
+  Medium impatto < 30 min → WARN
   Nessuno → PASS
 
-**Step 3 — Spread normale**: spread broker tipico per l'asset?
-  XAU/USD: 25-35 punti = OK, > 50 = FAIL
-  EUR/USD: 1-2 pips = OK, > 5 = FAIL
-  GBP/JPY: 4-7 pips = OK, > 10 = FAIL
-  PASS se spread ≤ 1.5× medio, FAIL se 2×+
+**Step 3 — Spread normale**: NON puoi sapere lo spread reale, deduci da convention.
+  XAU/USD: assumi 25-30 punti spread tipico → PASS by default
+  EUR/USD: assumi 1-2 pips → PASS by default
+  GBP/JPY: assumi 4-7 pips → PASS by default
+  Marca WARN solo se vedi volatilità eccezionale (ATR 3× normale)
+  MAI marcare FAIL su questo step (non hai dati per giustificarlo)
 
 ### FASE B — DIREZIONE (3 step)
 
 **Step 4 — Trend 1h**: dall'immagine 1h identifica direzione macro recente
-  Trend forte (EMA stack chiaro, ADX 30+, candele direzionali) → PASS direzionale
-  Range/laterale → WARN, considera mean-reversion
-  Squeeze → FAIL (no scalping in compressione)
+  Trend forte (EMA stack chiaro, ADX 25+, candele direzionali) → PASS direzionale
+  Range/laterale → WARN, considera mean-reversion sui bordi del range
+  Squeeze ESTREMO (BB-width < 0.5%) → FAIL (no scalping in compressione totale)
 
 **Step 5 — Swing 15m**: la struttura 15m supporta la direzione del 1h?
   Higher Highs/Higher Lows + EMA20 in salita per LONG → PASS
   Lower Highs/Lower Lows + EMA20 in discesa per SHORT → PASS
-  Contraddizione tra 1h e 15m → WARN
+  Contraddizione tra 1h e 15m → WARN (può essere mean-reversion opportunity)
 
-**Step 6 — Trigger 1m**: dall'immagine 1m c'è un pattern reversale fresco?
+**Step 6 — Trigger 1m**: dall'immagine 1m c'è un pattern reversale o continuazione fresco?
   Pin bar/hammer/shooting star nelle ultime 1-3 candele su livello chiave → PASS
   Engulfing direzionale → PASS
   Breakout + retest fresco → PASS
-  Niente trigger pulito → FAIL (aspetta)
+  Pullback su EMA20/50 1m con candela direzionale → PASS (setup continuazione)
+  Niente di chiaro → WARN (non FAIL automatico — può essere semplicemente "fra due setup")
 
 ### FASE C — ESECUZIONE (3 step)
 
-**Step 7 — Entry preciso**: prezzo entry ≤ 0.05% dal current price
+**Step 7 — Entry preciso**: prezzo entry ≤ 0.1% dal current price
   Limit a livello micro o market dopo trigger 1m confermato
+  Se entry > 0.2% dal price → WARN (potrebbe non riempire)
 
 **Step 8 — Stop loss stretto**: SL dietro il 1m swing point invalidante
-  XAU: 5-15 punti tipico
-  Forex maggiori: 3-8 pips tipico
+  XAU: 5-20 punti tipico (preferisci 8-15)
+  Forex maggiori: 3-10 pips tipico
   GBP/JPY: 8-15 pips
-  MAI oltre 25 pips (perdiamo R:R)
+  Se serve SL > 30 pips → WARN (troppo largo per scalp, considera intraday)
 
-**Step 9 — R:R ≥ 1.5:1**: TP1 a target intermedio realistico (zona micro liquidità)
-  Calcola distance to next 15m swing high/low — quello è il target naturale
-  Se R:R < 1.3 → FAIL (non vale lo spread)
+**Step 9 — R:R ≥ 1.0:1**: scalping pro accetta R:R 1:1 perché compensa con WR 55-65%.
+  R:R ≥ 1.5 → PASS pieno (ottimale)
+  R:R 1.0-1.5 → PASS (accettabile per scalping puro)
+  R:R 0.8-1.0 → WARN (richiede WR > 60% per essere profittevole)
+  R:R < 0.8 → FAIL (anche con WR alto, non ripaga)
 
 ### FASE D — EXIT PLAN (1 step)
 
@@ -819,15 +838,28 @@ order flow su volume, candle reversali a livelli istituzionali.
 
 scalping_score = (n. PASS / 10) * 100
 
-- **score ≥ 80 + nessun FAIL blocker → GO (LONG o SHORT)**, confidence 70-90
-- **score 60-80 → WAIT** (setup tiepido), confidence 40-60
-- **score < 60 OR FAIL su Step 1/2/3/9 → NO_GO assoluto**, confidence < 30
+- **score ≥ 70 + nessun FAIL blocker** → GO (LONG o SHORT), confidence 65-90
+- **score 50-70** → considera GO se setup chiaro, confidence 50-65
+- **score 30-50 + FAIL blocker assenti** → WAIT (setup tiepido), confidence 30-45
+- **score < 30 OR FAIL blocker presente** → NO_GO assoluto, confidence < 25
 
-### BLOCKER ASSOLUTI (forzano NO_GO)
-- Step 2 FAIL (news HIGH < 30min)
-- Step 3 FAIL (spread anomalo)
-- Step 9 FAIL (R:R < 1.3)
-- Sessione = Asia + asset non-JPY → WAIT
+### BLOCKER ASSOLUTI (gli unici che forzano NO_GO, NON essere prudente oltre)
+- Step 2 FAIL (news HIGH < 30 min sul symbol)
+- Step 9 FAIL (R:R < 0.8)
+- Weekend / mercato chiuso
+- Squeeze BB estremo (BB-width < 0.5%)
+
+**NON sono blocker**: spread incerto, volume mancante, kill zone fuori London/NY (può comunque PASS),
+trigger 1m incerto (può WARN), trend misto.
+
+## CALIBRAZIONE STORICA — questi sono i pattern STORICI dei NOSTRI risultati
+
+Dopo 24+ ore di analisi scalp consecutive su XAU/forex, il modello tendeva a essere
+TROPPO restrittivo dando NO_GO al 95%+ dei casi. La calibrazione corretta è:
+- Setup di scalping CHIARI (trend allineato + trigger 1m + R:R 1:1+) sono frequenti
+  (3-8 al giorno per asset attivo)
+- Sii decisivo: meglio GO con confidence 65 e WIN che NO_GO con confidence 20 e regret
+- "NO_GO assoluto" usalo SOLO per i blocker veri (news/weekend/squeeze totale)
 
 ## OUTPUT — JSON ESATTO (rispondi SOLO con questo)
 
