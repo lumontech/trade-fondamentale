@@ -120,18 +120,82 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     dxy:            marketContext.dxy?.value != null ? r(marketContext.dxy.value, 2) : null,
   }
 
-  // ── Sessione corrente ─────────────────────────────────────────
-  const sessionStates = SESSIONS.map(s => ({
-    id:     s.id,
-    label:  s.label,
-    open:   getSessionStatus(s, now).open,
-  }))
+  // ── Sessione corrente (dettagliata: stato + tempi + rilevanza per asset) ──
+  // Claude la usa per:
+  //  - sapere quali sessioni sono attive ORA
+  //  - quanti minuti mancano alla prossima apertura/chiusura rilevante
+  //  - se siamo in overlap di massima volatilità
+  //  - quali sessioni sono rilevanti per l'asset specifico (es. JPY → Tokyo)
+  const sessionDetails = SESSIONS.map(s => {
+    const st = getSessionStatus(s, now)
+    return {
+      id:        s.id,
+      label:     s.label,
+      group:     s.group,             // 'forex' | 'stocks' | 'crypto'
+      open:      st.open,
+      opens_in_min:  st.opensIn,      // minuti alla prossima apertura
+      closes_in_min: st.closesIn,     // minuti alla chiusura (se aperta)
+    }
+  })
   const m = now.getUTCHours() * 60 + now.getUTCMinutes()
   const day = now.getUTCDay()
-  const inOverlap = day >= 1 && day <= 5 && m >= 12*60 && m < 16*60
+  const inLondonNYOverlap = day >= 1 && day <= 5 && m >= 12*60 && m < 16*60
+  const inTokyoLondonOverlap = day >= 1 && day <= 5 && m >= 7*60 && m < 9*60
+
+  // Asset → sessioni più rilevanti (volatilità tipicamente concentrata)
+  const ASSET_KEY_SESSIONS = {
+    XAUUSD:   ['london', 'newyork'],
+    USOIL:    ['newyork'],
+    EURUSD:   ['london', 'newyork'],
+    GBPUSD:   ['london', 'newyork'],
+    USDJPY:   ['tokyo', 'newyork'],
+    GBPJPY:   ['tokyo', 'london'],
+    EURJPY:   ['tokyo', 'london'],
+    EURGBP:   ['london'],
+    US500:    ['nyse'],
+    NAS100:   ['nyse'],
+    DXY:      ['london', 'newyork'],
+    BTCUSD:   ['crypto'],       // sempre attivo, ma volume picco UE-US
+    ETHUSD:   ['crypto'],
+  }
+  const keyForAsset = ASSET_KEY_SESSIONS[symbol] || ['london', 'newyork']
+  const keySessionsState = keyForAsset.map(id => {
+    const s = sessionDetails.find(x => x.id === id)
+    return s ? { id, open: s.open, opens_in_min: s.opens_in_min, closes_in_min: s.closes_in_min } : null
+  }).filter(Boolean)
+
+  // "Imminente" = apre o chiude entro 60 min
+  const imminent_events = []
+  for (const s of sessionDetails) {
+    if (s.open && s.closes_in_min != null && s.closes_in_min <= 60) {
+      imminent_events.push({ event: 'close', session: s.id, in_min: s.closes_in_min })
+    }
+    if (!s.open && s.opens_in_min != null && s.opens_in_min <= 60) {
+      imminent_events.push({ event: 'open',  session: s.id, in_min: s.opens_in_min })
+    }
+  }
+  imminent_events.sort((a, b) => a.in_min - b.in_min)
+
+  // Stagione di trading: dead zone / asia only / europe / overlap / NY only
+  let trading_phase
+  if (inLondonNYOverlap)            trading_phase = 'london_ny_overlap_HIGH_VOL'
+  else if (inTokyoLondonOverlap)    trading_phase = 'tokyo_london_overlap'
+  else if (sessionDetails.find(s => s.id === 'london' && s.open))   trading_phase = 'london_only'
+  else if (sessionDetails.find(s => s.id === 'newyork' && s.open))  trading_phase = 'newyork_only'
+  else if (sessionDetails.find(s => s.id === 'tokyo' && s.open))    trading_phase = 'asia_only'
+  else                                                                trading_phase = 'dead_zone_LOW_VOL'
+
   const session = {
-    open_now: sessionStates.filter(s => s.open).map(s => s.id),
-    london_ny_overlap: inOverlap,
+    now_utc:           `${String(now.getUTCHours()).padStart(2,'0')}:${String(now.getUTCMinutes()).padStart(2,'0')}`,
+    now_italy:         now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }),
+    day_of_week:       ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day],
+    open_now:          sessionDetails.filter(s => s.open).map(s => s.id),
+    london_ny_overlap: inLondonNYOverlap,
+    tokyo_london_overlap: inTokyoLondonOverlap,
+    trading_phase,                // chiave per Claude: usa questo come hint volatilità
+    key_sessions_for_asset: keySessionsState,    // le sessioni rilevanti per QUESTO asset + stato
+    imminent_events,              // [{event:'open'|'close', session, in_min}], ordinati per imminenza
+    all_sessions:      sessionDetails,
   }
 
   // ── COT ───────────────────────────────────────────────────────
