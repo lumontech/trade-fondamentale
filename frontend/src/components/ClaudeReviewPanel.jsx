@@ -295,11 +295,15 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
                   className="px-2.5 py-1 rounded font-mono text-xxs bg-gold/15 text-gold border border-gold/40 hover:bg-gold/25 disabled:opacity-50">
             {r ? '↻ Re-Review' : '🔍 Review'}
           </button>
-          {d.status === 'closed' && onCorrect && (
+          {/* Sia per closed (correggi outcome divergente) sia per open (chiudi manualmente
+              quando broker ha già chiuso ma sistema non ha rilevato): stesso modal. */}
+          {(d.direction === 'LONG' || d.direction === 'SHORT') && onCorrect && (
             <button onClick={() => setCorrectOpen(true)}
-                    title="Correggi outcome se il broker reale ha avuto un risultato diverso dai dati Yahoo (es. SL hit invece di TP)"
+                    title={d.status === 'open'
+                      ? "Trade aperto sul broker ma chiuso? Usa qui per chiuderlo manualmente con exit_price reale."
+                      : "Correggi outcome se il broker reale ha avuto un risultato diverso dai dati Yahoo"}
                     className="px-2.5 py-1 rounded font-mono text-xxs bg-orange-500/15 text-orange-300 border border-orange-500/40 hover:bg-orange-500/25">
-              ✏️ Correggi
+              {d.status === 'open' ? '⚠ Chiudi' : '✏️ Correggi'}
             </button>
           )}
           <button onClick={() => setExpanded(!expanded)}
@@ -566,12 +570,13 @@ function CorrectOutcomeModal({ decision, onClose, onSubmit }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={onClose}>
       <div className="bg-bg-secondary border-2 border-orange-500/50 rounded-xl p-5 w-full max-w-md" onClick={e => e.stopPropagation()}>
         <h3 className="font-mono text-base text-orange-300 font-bold mb-3">
-          ✏️ Correggi outcome
+          {d.status === 'open' ? '⚠ Chiudi manualmente' : '✏️ Correggi outcome'}
         </h3>
         <p className="font-mono text-xxs text-text-muted mb-4 leading-relaxed">
-          Usa questo se il sistema (basato su candele Yahoo) ha rilevato un outcome diverso da
-          quello reale del broker (es. lag, divergenza intra-bar, slippage).
-          Il record viene marcato come <span className="text-orange-300">MANUAL</span>.
+          {d.status === 'open'
+            ? 'Il trade è ancora aperto nel sistema ma sul broker è già stato chiuso (es. SL/TP hit non rilevato per lag Yahoo). Inserisci exit price reale per chiuderlo.'
+            : 'Usa questo se il sistema (basato su candele Yahoo) ha rilevato un outcome diverso da quello reale del broker (es. lag, divergenza intra-bar, slippage).'}
+          {' '}Il record viene marcato come <span className="text-orange-300">MANUAL</span>.
         </p>
 
         <div className="space-y-3">
