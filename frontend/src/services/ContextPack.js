@@ -164,17 +164,46 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     return s ? { id, open: s.open, opens_in_min: s.opens_in_min, closes_in_min: s.closes_in_min } : null
   }).filter(Boolean)
 
-  // "Imminente" = apre o chiude entro 60 min
+  // "Imminente" = apre o chiude entro 60 min (per warning in reasoning)
   const imminent_events = []
   for (const s of sessionDetails) {
     if (s.open && s.closes_in_min != null && s.closes_in_min <= 60) {
-      imminent_events.push({ event: 'close', session: s.id, in_min: s.closes_in_min })
+      imminent_events.push({ event: 'close', session: s.id, label: s.label, in_min: s.closes_in_min })
     }
     if (!s.open && s.opens_in_min != null && s.opens_in_min <= 60) {
-      imminent_events.push({ event: 'open',  session: s.id, in_min: s.opens_in_min })
+      imminent_events.push({ event: 'open',  session: s.id, label: s.label, in_min: s.opens_in_min })
     }
   }
   imminent_events.sort((a, b) => a.in_min - b.in_min)
+
+  // Timeline cronologica COMPLETA delle prossime 24h (tutti i mercati, non solo i 60min)
+  // Claude può così sapere "tra 4h apre NYSE, tra 6h chiude Tokyo, ecc."
+  const next_24h = []
+  for (const s of sessionDetails) {
+    if (s.open && s.closes_in_min != null && s.closes_in_min <= 24*60) {
+      next_24h.push({
+        event: 'close',
+        session: s.id,
+        label: s.label,
+        group: s.group,
+        in_min: s.closes_in_min,
+        in_h: Math.round(s.closes_in_min / 60 * 10) / 10,
+        at_italy: new Date(now.getTime() + s.closes_in_min * 60000).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }),
+      })
+    }
+    if (!s.open && s.opens_in_min != null && s.opens_in_min <= 24*60) {
+      next_24h.push({
+        event: 'open',
+        session: s.id,
+        label: s.label,
+        group: s.group,
+        in_min: s.opens_in_min,
+        in_h: Math.round(s.opens_in_min / 60 * 10) / 10,
+        at_italy: new Date(now.getTime() + s.opens_in_min * 60000).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }),
+      })
+    }
+  }
+  next_24h.sort((a, b) => a.in_min - b.in_min)
 
   // Stagione di trading: dead zone / asia only / europe / overlap / NY only
   let trading_phase
@@ -194,7 +223,8 @@ export function buildContextPack({ symbol, timeframe, instruments, events, marke
     tokyo_london_overlap: inTokyoLondonOverlap,
     trading_phase,                // chiave per Claude: usa questo come hint volatilità
     key_sessions_for_asset: keySessionsState,    // le sessioni rilevanti per QUESTO asset + stato
-    imminent_events,              // [{event:'open'|'close', session, in_min}], ordinati per imminenza
+    imminent_events,              // [{event:'open'|'close', session, in_min}], ordinati per imminenza (≤60min)
+    next_24h_events: next_24h,    // timeline cronologica completa delle prossime 24h (15+ mercati globali)
     all_sessions:      sessionDetails,
   }
 

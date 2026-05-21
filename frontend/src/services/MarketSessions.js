@@ -2,23 +2,40 @@
 // La visualizzazione viene poi convertita automaticamente in ora italiana dal browser.
 
 // Forex (24/5, chiuso da venerdì 21:00 UTC a domenica 22:00 UTC)
-// Stocks: lun-ven, weekend chiusi
+// Stocks: lun-ven, weekend chiusi (alcuni mercati MENA aprono domenica)
 export const SESSIONS = [
-  // ── Forex ────────────────────────────────────────────
-  { id: 'sydney',   group: 'forex',  label: 'Sydney',     openUTC: 21*60,    closeUTC: 6*60,    weekend: 'fx', flag: '🇦🇺' },
-  { id: 'tokyo',    group: 'forex',  label: 'Tokyo',      openUTC: 0*60,     closeUTC: 9*60,    weekend: 'fx', flag: '🇯🇵' },
-  { id: 'london',   group: 'forex',  label: 'London',     openUTC: 7*60,     closeUTC: 16*60,   weekend: 'fx', flag: '🇬🇧' },
-  { id: 'newyork',  group: 'forex',  label: 'New York',   openUTC: 12*60,    closeUTC: 21*60,   weekend: 'fx', flag: '🇺🇸' },
+  // ── Forex sessions (4 principali) ─────────────────────
+  { id: 'sydney',   group: 'forex',  label: 'Sydney',     openUTC: 21*60,    closeUTC: 6*60,    weekend: 'fx', flag: '🇦🇺', note: 'Apertura settimana forex' },
+  { id: 'tokyo',    group: 'forex',  label: 'Tokyo',      openUTC: 0*60,     closeUTC: 9*60,    weekend: 'fx', flag: '🇯🇵', note: 'BOJ events, JPY volatility' },
+  { id: 'london',   group: 'forex',  label: 'London',     openUTC: 7*60,     closeUTC: 16*60,   weekend: 'fx', flag: '🇬🇧', note: 'Maggior volume forex globale' },
+  { id: 'newyork',  group: 'forex',  label: 'New York',   openUTC: 12*60,    closeUTC: 21*60,   weekend: 'fx', flag: '🇺🇸', note: 'Fed events, USD news' },
 
-  // ── Stocks ───────────────────────────────────────────
-  { id: 'nyse',     group: 'stocks', label: 'NYSE/NASDAQ',openUTC: 13*60+30, closeUTC: 20*60,   weekend: 'wk', flag: '🇺🇸' },
-  { id: 'lse',      group: 'stocks', label: 'London LSE', openUTC: 7*60,     closeUTC: 15*60+30,weekend: 'wk', flag: '🇬🇧' },
-  { id: 'xetra',    group: 'stocks', label: 'Frankfurt',  openUTC: 7*60,     closeUTC: 15*60+30,weekend: 'wk', flag: '🇩🇪' },
-  { id: 'tse',      group: 'stocks', label: 'Tokyo TSE',  openUTC: 0*60,     closeUTC: 6*60,    weekend: 'wk', flag: '🇯🇵' },
-  { id: 'hkex',     group: 'stocks', label: 'Hong Kong',  openUTC: 1*60+30,  closeUTC: 8*60,    weekend: 'wk', flag: '🇭🇰' },
+  // ── Stocks Asia ───────────────────────────────────────
+  { id: 'tse',      group: 'stocks', label: 'Tokyo TSE',     openUTC: 0*60,     closeUTC: 6*60,    weekend: 'wk', flag: '🇯🇵', note: 'Nikkei 225, indici Asia' },
+  { id: 'hkex',     group: 'stocks', label: 'Hong Kong',     openUTC: 1*60+30,  closeUTC: 8*60,    weekend: 'wk', flag: '🇭🇰', note: 'HK33/Hang Seng, China exposure' },
+  { id: 'sse',      group: 'stocks', label: 'Shanghai SSE',  openUTC: 1*60+30,  closeUTC: 7*60,    weekend: 'wk', flag: '🇨🇳', note: 'China A-shares, CSI300' },
+  { id: 'sgx',      group: 'stocks', label: 'Singapore SGX', openUTC: 1*60,     closeUTC: 9*60,    weekend: 'wk', flag: '🇸🇬', note: 'Forex+commodities Asia, riapre 13:00-17:00 UTC' },
+  { id: 'asx',      group: 'stocks', label: 'Sydney ASX',    openUTC: 23*60+50, closeUTC: 6*60,    weekend: 'wk', flag: '🇦🇺', note: 'AUS200, mining/commodities' },
+  { id: 'krx',      group: 'stocks', label: 'Seoul KRX',     openUTC: 0*60,     closeUTC: 6*60+30, weekend: 'wk', flag: '🇰🇷', note: 'KOSPI, tech-heavy' },
+  { id: 'nse',      group: 'stocks', label: 'Mumbai NSE',    openUTC: 3*60+45,  closeUTC: 10*60,   weekend: 'wk', flag: '🇮🇳', note: 'NIFTY50, India growth' },
+
+  // ── Stocks Europa ─────────────────────────────────────
+  { id: 'lse',      group: 'stocks', label: 'London LSE',    openUTC: 7*60,     closeUTC: 15*60+30,weekend: 'wk', flag: '🇬🇧', note: 'FTSE100, max liquidità UK' },
+  { id: 'xetra',    group: 'stocks', label: 'Frankfurt XETRA',openUTC: 7*60,    closeUTC: 15*60+30,weekend: 'wk', flag: '🇩🇪', note: 'DAX40, indice Europa principale' },
+  { id: 'mil',      group: 'stocks', label: 'Borsa Italiana',openUTC: 8*60,     closeUTC: 16*60+30,weekend: 'wk', flag: '🇮🇹', note: 'FTSE MIB, banking-heavy' },
+  { id: 'eu',       group: 'stocks', label: 'Euronext Paris',openUTC: 8*60,     closeUTC: 16*60+30,weekend: 'wk', flag: '🇫🇷', note: 'CAC40' },
+  { id: 'swx',      group: 'stocks', label: 'SIX Swiss',     openUTC: 8*60,     closeUTC: 16*60+30,weekend: 'wk', flag: '🇨🇭', note: 'SMI, banking + pharma' },
+
+  // ── Stocks America ────────────────────────────────────
+  { id: 'nyse',     group: 'stocks', label: 'NYSE/NASDAQ',   openUTC: 13*60+30, closeUTC: 20*60,   weekend: 'wk', flag: '🇺🇸', note: 'S&P500, NDX100, max volume globale' },
+  { id: 'tsx',      group: 'stocks', label: 'Toronto TSX',   openUTC: 13*60+30, closeUTC: 20*60,   weekend: 'wk', flag: '🇨🇦', note: 'CAD, mining + oil & gas' },
+  { id: 'b3',       group: 'stocks', label: 'B3 São Paulo',  openUTC: 13*60,    closeUTC: 20*60,   weekend: 'wk', flag: '🇧🇷', note: 'BOVESPA, BRL/commodities' },
+
+  // ── Futures CME (commodities + indici USA) ────────────
+  { id: 'cme',      group: 'futures',label: 'CME Globex',    openUTC: 22*60,    closeUTC: 21*60,   weekend: 'wk', flag: '🇺🇸', note: 'Futures S&P/NDX/oro/oil, 23h al giorno con pausa 21-22 UTC' },
 
   // ── Crypto sempre attivo ─────────────────────────────
-  { id: 'crypto',   group: 'crypto', label: 'Crypto',     openUTC: 0,        closeUTC: 24*60,   weekend: 'always', flag: '₿' },
+  { id: 'crypto',   group: 'crypto', label: 'Crypto',        openUTC: 0,        closeUTC: 24*60,   weekend: 'always', flag: '₿', note: '24/7, ma volume picco UE-US 14-22 UTC' },
 ]
 
 // Overlap forex notable (massima volatilità)

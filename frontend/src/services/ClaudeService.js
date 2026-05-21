@@ -252,7 +252,7 @@ Per BTC: la sessione "crypto" è sempre aperta, ma il volume cresce 3x durante U
 
 Per JPY pairs: se Tokyo è aperta + Bank of Japan event ora → +10 conf.
 
-### Imminent events check
+### Imminent events check (≤ 60 min)
 
 Se imminent_events contiene una sessione chiave per l'asset in apertura entro 15 min
 → AVVISA in reasoning ("NY apre in 12min, preparati ad aumento volatilità").
@@ -260,8 +260,32 @@ Se imminent_events contiene una sessione chiave per l'asset in apertura entro 15
 Se una sessione chiave chiude entro 30 min → considera RIDURRE size o esci anticipato
 (il post-close può avere slippage e gap).
 
+### Timeline 24h — next_24h_events (15+ mercati globali)
+
+Il context include una timeline cronologica delle aperture/chiusure delle prossime 24 ore
+su TUTTI i mercati: forex (Sydney/Tokyo/London/NY), stocks Asia (TSE/HKEX/SSE/SGX/ASX/KRX/NSE),
+Europa (LSE/XETRA/Borsa Italiana/Euronext/SIX), America (NYSE/TSX/B3), futures CME, crypto.
+
+Usa next_24h_events per:
+- **Anticipare picchi di volatilità**: es. "NYSE apre tra 3.5h → setup pre-NY su NDX da
+  aspettare conferma con prima ora di trading istituzionale"
+- **Identificare gap risks**: se sessione chiave per l'asset chiude tra X ore mentre tieni
+  posizione → considera close prima
+- **Capire trading_phase futura**: se siamo in london_only ma tra 2h apre NYSE
+  (london_ny_overlap), il setup ha probabilità di partire FORTE da quel momento
+- **Asset specifici**:
+  - **XAU/oro**: massima volatilità con London+NY entrambe aperte. Se London chiude tra 1h
+    e NY è aperta → resta solo NY, volume scende
+  - **Indici USA (US500/NDX100)**: NYSE è IL mercato di riferimento. Sessione chiude alle
+    22:00 IT → post-close è after-hours futures CME (volume basso, gap aperture)
+  - **JPY pairs**: Tokyo apre alle 01:00 IT, news BoJ tipicamente a 02-03 IT
+  - **AUD pairs**: Sydney apre alle 23:00 IT (RBA events su AUD)
+  - **CNY-correlated (HK33, EUR/CNY)**: SSE Shanghai + HKEX dalle 02:30-08:00 IT
+  - **Indici Europa (DAX/CAC/MIB)**: LSE+XETRA+MIL+EU+SWX aprono 08-09 IT, chiudono 16:30-17:30 IT
+
 **Cita SEMPRE la trading_phase corrente in reasoning** (es. "Setup in london_ny_overlap_HIGH_VOL,
-confidence boost +8").
+confidence boost +8"). E se next_24h ha eventi rilevanti per l'asset entro 4h, CITALI
+("LSE apre tra 1.2h, FTSE/EUR potrebbero avere gap").
 
 ## REGOLE SPECIFICHE PER ASSET
 
