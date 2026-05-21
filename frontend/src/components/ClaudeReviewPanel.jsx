@@ -11,7 +11,7 @@ import {
   reviewDecision, reviewLastN, getAllReviews, getReview,
   aggregateReport, rebuildLessons, getLessons, clearLessons,
 } from '../services/ClaudeReviewLab'
-import { getAllDecisions, deleteDecision } from '../services/TradeLog'
+import { getAllDecisions, deleteDecision, correctOutcome } from '../services/TradeLog'
 import { useToast } from './ui/Toast'
 
 const STATUS_COLOR = {
@@ -175,6 +175,15 @@ export default function ClaudeReviewPanel() {
                       deleteDecision(d.id); refresh()
                     }
                   }}
+                  onCorrect={(correction) => {
+                    const r = correctOutcome(d.id, correction)
+                    if (r) {
+                      toast.success('Outcome corretto manualmente', { duration: 2500 })
+                      refresh()
+                    } else {
+                      toast.error('Correzione fallita')
+                    }
+                  }}
                   busy={busy}
                 />
               ))}
@@ -226,8 +235,9 @@ function EmptyState({ filter }) {
   )
 }
 
-function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, busy }) {
+function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, onCorrect, busy }) {
   const [expanded, setExpanded] = useState(false)
+  const [correctOpen, setCorrectOpen] = useState(false)
   const d = decision
   const r = review
   const dirColor = DIR_COLOR[d.direction]
@@ -266,6 +276,11 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
             {d.exitPrice != null && (
               <span> · exit {d.exitPrice} · R {d.rMultiple?.toFixed?.(2) ?? '—'} · P&L {d.pnlPct?.toFixed?.(2) ?? '—'}%</span>
             )}
+            {d.manuallyCorrected && (
+              <span className="ml-2 px-1.5 py-0.5 rounded bg-orange-500/20 text-orange-300 text-xxs font-bold">
+                MANUAL
+              </span>
+            )}
           </div>
           {r && (
             <div className="font-mono text-xs text-text-primary mt-1.5 italic">
@@ -280,6 +295,13 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
                   className="px-2.5 py-1 rounded font-mono text-xxs bg-gold/15 text-gold border border-gold/40 hover:bg-gold/25 disabled:opacity-50">
             {r ? '↻ Re-Review' : '🔍 Review'}
           </button>
+          {d.status === 'closed' && onCorrect && (
+            <button onClick={() => setCorrectOpen(true)}
+                    title="Correggi outcome se il broker reale ha avuto un risultato diverso dai dati Yahoo (es. SL hit invece di TP)"
+                    className="px-2.5 py-1 rounded font-mono text-xxs bg-orange-500/15 text-orange-300 border border-orange-500/40 hover:bg-orange-500/25">
+              ✏️ Correggi
+            </button>
+          )}
           <button onClick={() => setExpanded(!expanded)}
                   className="px-2.5 py-1 rounded font-mono text-xxs text-text-secondary hover:text-text-primary border border-bg-border">
             {expanded ? '▲ Hide' : '▼ Detail'}
@@ -290,6 +312,18 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
           </button>
         </div>
       </div>
+
+      {/* Modal: correzione outcome manuale */}
+      {correctOpen && (
+        <CorrectOutcomeModal
+          decision={d}
+          onClose={() => setCorrectOpen(false)}
+          onSubmit={(correction) => {
+            onCorrect(correction)
+            setCorrectOpen(false)
+          }}
+        />
+      )}
 
       {expanded && (
         <div className="border-t border-bg-border bg-bg-primary/40 p-3 space-y-3">
@@ -494,6 +528,133 @@ function LessonsBox({ lessons, onClear }) {
       </div>
       <div className="font-mono text-xxs text-text-muted mt-1">
         Aggiornato: {new Date(lessons.updated_at).toLocaleString('it-IT')}
+      </div>
+    </div>
+  )
+}
+
+// ─── Modal: correzione outcome manuale ──────────────────────────────
+function CorrectOutcomeModal({ decision, onClose, onSubmit }) {
+  const d = decision
+  const [exitPrice, setExitPrice] = useState(d.exitPrice ?? '')
+  const [result, setResult]       = useState('')   // 'WIN' | 'LOSS' | 'BE' | ''
+  const [notes, setNotes]         = useState('')
+
+  // Auto-suggest exit price quando seleziona result
+  const onResultChange = (r) => {
+    setResult(r)
+    if (r === 'WIN' && d.suggestedTP != null)  setExitPrice(d.suggestedTP)
+    if (r === 'LOSS' && d.suggestedSL != null) setExitPrice(d.suggestedSL)
+    if (r === 'BE')                             setExitPrice(d.entryPrice)
+  }
+
+  // Calcolo preview
+  const exitNum = parseFloat(exitPrice)
+  const validExit = !isNaN(exitNum)
+  const sign = d.direction === 'LONG' ? 1 : -1
+  const previewPnl = validExit ? sign * (exitNum - d.entryPrice) : null
+  const previewPnlPct = (previewPnl != null && d.entryPrice) ? (previewPnl / d.entryPrice) * 100 : null
+  const risk = d.suggestedSL != null ? Math.abs(d.entryPrice - d.suggestedSL) : null
+  const previewR = (previewPnl != null && risk > 0) ? previewPnl / risk : null
+
+  const submit = () => {
+    if (!validExit) return alert('Inserisci un exit price valido')
+    onSubmit({ exitPrice: exitNum, result: result || null, notes })
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={onClose}>
+      <div className="bg-bg-secondary border-2 border-orange-500/50 rounded-xl p-5 w-full max-w-md" onClick={e => e.stopPropagation()}>
+        <h3 className="font-mono text-base text-orange-300 font-bold mb-3">
+          ✏️ Correggi outcome
+        </h3>
+        <p className="font-mono text-xxs text-text-muted mb-4 leading-relaxed">
+          Usa questo se il sistema (basato su candele Yahoo) ha rilevato un outcome diverso da
+          quello reale del broker (es. lag, divergenza intra-bar, slippage).
+          Il record viene marcato come <span className="text-orange-300">MANUAL</span>.
+        </p>
+
+        <div className="space-y-3">
+          <div>
+            <div className="font-mono text-xxs text-text-muted uppercase mb-1">Risultato reale</div>
+            <div className="grid grid-cols-3 gap-1.5">
+              {['WIN', 'LOSS', 'BE'].map(r => (
+                <button key={r} onClick={() => onResultChange(r)}
+                        className={`px-3 py-2 rounded font-mono text-sm font-bold border ${
+                          result === r
+                            ? r === 'WIN' ? 'bg-green/20 text-green border-green'
+                              : r === 'LOSS' ? 'bg-red/20 text-red border-red'
+                              : 'bg-gold/20 text-gold border-gold'
+                            : 'bg-bg-primary text-text-secondary border-bg-border hover:border-text-secondary'
+                        }`}>
+                  {r}
+                </button>
+              ))}
+            </div>
+            <div className="font-mono text-xxs text-text-muted mt-1">
+              Seleziona per auto-popolare exit price (TP/SL/Entry).
+            </div>
+          </div>
+
+          <div>
+            <label className="font-mono text-xxs text-text-muted uppercase block mb-1">Exit price reale broker</label>
+            <input type="number" step="0.01" value={exitPrice}
+                   onChange={e => setExitPrice(e.target.value)}
+                   placeholder={`Es: ${d.entryPrice}`}
+                   className="w-full bg-bg-primary border border-bg-border rounded px-3 py-2 font-mono text-sm text-text-primary" />
+          </div>
+
+          <div>
+            <label className="font-mono text-xxs text-text-muted uppercase block mb-1">Note (opzionale)</label>
+            <input type="text" value={notes}
+                   onChange={e => setNotes(e.target.value)}
+                   placeholder="Es: SL hit per spread, gap, slippage..."
+                   className="w-full bg-bg-primary border border-bg-border rounded px-3 py-2 font-mono text-sm text-text-primary" />
+          </div>
+
+          {validExit && (
+            <div className="bg-bg-primary rounded p-3 border border-bg-border">
+              <div className="font-mono text-xxs text-text-muted uppercase mb-1.5">Preview</div>
+              <div className="grid grid-cols-3 gap-2 font-mono text-xs">
+                <div>
+                  <div className="text-text-muted">P&L</div>
+                  <div className={`font-bold ${previewPnl >= 0 ? 'text-green' : 'text-red'}`}>
+                    {previewPnl >= 0 ? '+' : ''}{previewPnl?.toFixed(2)}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-text-muted">P&L %</div>
+                  <div className={`font-bold ${previewPnlPct >= 0 ? 'text-green' : 'text-red'}`}>
+                    {previewPnlPct >= 0 ? '+' : ''}{previewPnlPct?.toFixed(3)}%
+                  </div>
+                </div>
+                <div>
+                  <div className="text-text-muted">R-multiple</div>
+                  <div className={`font-bold ${previewR >= 0 ? 'text-green' : 'text-red'}`}>
+                    {previewR >= 0 ? '+' : ''}{previewR?.toFixed(2)}R
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className="font-mono text-xxs text-text-muted bg-bg-primary/50 rounded p-2 border border-bg-border/50">
+            <div>Entry originale: <span className="text-text-primary">{d.entryPrice}</span></div>
+            <div>SL: <span className="text-red">{d.suggestedSL ?? '—'}</span> · TP: <span className="text-green">{d.suggestedTP ?? '—'}</span></div>
+            <div>Sistema vedeva exit: <span className="text-text-primary">{d.exitPrice ?? '—'}</span></div>
+          </div>
+        </div>
+
+        <div className="flex gap-2 mt-4">
+          <button onClick={onClose}
+                  className="flex-1 px-4 py-2 rounded font-mono text-sm text-text-secondary border border-bg-border hover:bg-bg-hover">
+            Annulla
+          </button>
+          <button onClick={submit} disabled={!validExit}
+                  className="flex-1 px-4 py-2 rounded font-mono text-sm font-semibold bg-orange-500/20 text-orange-300 border border-orange-500/50 hover:bg-orange-500/30 disabled:opacity-50">
+            Salva correzione
+          </button>
+        </div>
       </div>
     </div>
   )

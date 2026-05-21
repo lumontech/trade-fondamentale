@@ -205,6 +205,56 @@ export function deleteDecision(id) {
   _serverDelete(id)
 }
 
+/**
+ * Correzione manuale dell'outcome del trade (sovrascrive auto-close del sistema).
+ * Da usare quando l'OutcomeTracker — basato su candele Yahoo — diverge dal vero outcome
+ * del broker (Yahoo lag/intra-bar ambiguity/divergenza tick-by-tick).
+ *
+ * @param {string} id            ID della decisione
+ * @param {object} correction    { exitPrice, result: 'WIN'|'LOSS'|'BE'|null, notes }
+ *                               Se `result` è impostato, il pnl viene calcolato in modo
+ *                               coerente (LONG WIN = exit > entry, LONG LOSS = exit < entry).
+ */
+export function correctOutcome(id, { exitPrice, result, notes }) {
+  const list = _load()
+  const idx = list.findIndex(d => d.id === id)
+  if (idx < 0) return false
+  const d = list[idx]
+
+  // Calcolo PnL/R-multiple corretti
+  const sign = d.direction === 'LONG' ? 1 : d.direction === 'SHORT' ? -1 : 0
+  const pnl = exitPrice != null ? sign * (exitPrice - d.entryPrice) : d.pnl
+  const pnlPct = (pnl != null && d.entryPrice) ? (pnl / d.entryPrice) * 100 : null
+  let rMultiple = null
+  if (d.suggestedSL != null && pnl != null) {
+    const risk = Math.abs(d.entryPrice - d.suggestedSL)
+    if (risk > 0) rMultiple = pnl / risk
+  }
+
+  // Notes append: marca come correzione manuale per tracciabilità
+  const correctionNote = `[MANUAL CORRECTION ${new Date().toLocaleString('it-IT')}] ` + (notes || '') +
+    (result ? ` outcome=${result}` : '') +
+    (exitPrice != null ? ` exit=${exitPrice}` : '')
+
+  const updated = {
+    ...d,
+    status:      'closed',
+    closedAt:    d.closedAt || Date.now(),
+    exitPrice:   exitPrice ?? d.exitPrice,
+    pnl,
+    pnlPct,
+    rMultiple,
+    notes:       d.notes ? (d.notes + ' | ' + correctionNote) : correctionNote,
+    manuallyCorrected: true,
+    correctedAt: Date.now(),
+    updatedAt:   Date.now(),
+  }
+  list[idx] = updated
+  _save(list)
+  _serverUpsert(updated)
+  return updated
+}
+
 export function getAllDecisions() { return _load() }
 
 export function getStats() {
