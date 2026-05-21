@@ -49,10 +49,10 @@ const NAV_GROUPS = [
 // Bottoni sempre visibili (primary actions)
 const PINNED_BUTTONS = [
   { id: 'claude',        label: 'Claude',     icon: '🧠', highlight: true },
-  { id: 'claude-review', label: 'Review Lab', icon: '🧪' },
+  { id: 'claude-review', label: 'Review & Lessons', icon: '🧪' },
   { id: 'simulation',    label: 'Simulazione',icon: '💰' },
   { id: 'multichart',    label: 'Multi Chart',icon: '📊' },
-  { id: 'tradelog',      label: 'Diario',     icon: '📋' },
+  { id: 'tradelog',      label: 'Storia',     icon: '📋' },
 ]
 
 function DropdownMenu({ group, activePanel, onSelect }) {

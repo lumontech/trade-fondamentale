@@ -57,7 +57,12 @@ export default function ClaudeReviewPanel() {
     setBusy(true)
     try {
       await reviewDecision(id, apiKeys.anthropic)
-      toast.success('Review completata', { duration: 2500 })
+      // Auto-rigenera lessons (così finiscono subito nel prompt senza altri click)
+      const ls = rebuildLessons()
+      toast.success(
+        `Review completata${ls?.lessons?.length ? ` · ${ls.lessons.length} lezioni attive nel prompt` : ''}`,
+        { duration: 3500 }
+      )
       refresh()
     } catch (err) {
       toast.error(err.message, { title: 'Errore review' })
@@ -74,7 +79,12 @@ export default function ClaudeReviewPanel() {
       const results = await reviewLastN(n, apiKeys.anthropic, 'claude-opus-4-7', (p) => setProgress(p))
       const ok  = results.filter(r => r.ok).length
       const ko  = results.length - ok
-      toast.success(`${ok} review OK / ${ko} errori`, { title: 'Batch review completata', duration: 4000 })
+      // Auto-rigenera lessons al termine del batch
+      const ls = rebuildLessons()
+      toast.success(
+        `${ok}/${results.length} review OK${ls?.lessons?.length ? ` · ${ls.lessons.length} lezioni attive` : ''}`,
+        { title: 'Batch review + lessons aggiornate', duration: 4000 }
+      )
       refresh()
     } catch (err) {
       toast.error(err.message)
@@ -175,13 +185,28 @@ export default function ClaudeReviewPanel() {
                       deleteDecision(d.id); refresh()
                     }
                   }}
-                  onCorrect={(correction) => {
+                  onCorrect={async (correction) => {
                     const r = correctOutcome(d.id, correction)
-                    if (r) {
-                      toast.success('Outcome corretto manualmente', { duration: 2500 })
-                      refresh()
-                    } else {
-                      toast.error('Correzione fallita')
+                    if (!r) { toast.error('Correzione fallita'); return }
+                    const outcomeLabel = correction.result === 'WIN' ? '✓ WIN'
+                                       : correction.result === 'LOSS' ? '✗ LOSS'
+                                       : correction.result === 'BE' ? '🤝 BE' : 'chiuso'
+                    toast.success(`Outcome ${outcomeLabel} salvato. Lancio re-review automatica...`, { duration: 2000 })
+                    refresh()
+                    // Auto re-review per estrarre lezioni con outcome corretto
+                    if (apiKeys.anthropic) {
+                      try {
+                        await reviewDecision(d.id, apiKeys.anthropic)
+                        // Auto-rigenera lessons (così finiscono subito nel prompt)
+                        const ls = rebuildLessons()
+                        toast.success(
+                          `Review aggiornata${ls?.lessons?.length ? ` · ${ls.lessons.length} lezioni attive nel prompt` : ''}`,
+                          { duration: 3500 }
+                        )
+                        refresh()
+                      } catch (e) {
+                        console.warn('[auto-review after correct]', e.message)
+                      }
                     }
                   }}
                   busy={busy}
@@ -207,10 +232,10 @@ function Header({ onClose }) {
     <div className="flex items-center justify-between px-5 py-3 border-b border-bg-border bg-bg-secondary shrink-0">
       <div>
         <h2 className="font-mono text-lg font-semibold text-gold tracking-wider">
-          🧪 CLAUDE REVIEW LAB — Self-Learning
+          🧪 REVIEW & LESSONS — Self-Learning Claude
         </h2>
         <p className="font-mono text-xxs text-text-muted mt-0.5">
-          Claude rivede le sue decisioni passate, estrae lezioni, le inietta nel prompt delle prossime analisi
+          1) Click ✓TP/✗SL/🤝BE per chiudere ogni trade · 2) Claude estrae lezioni dai post-mortem · 3) Le lezioni si iniettano automaticamente nel prompt
         </p>
       </div>
       <button onClick={onClose}
@@ -260,7 +285,7 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
 
         {/* Main info */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
             <span className="font-mono text-sm font-semibold text-text-primary">{d.symbol}</span>
             <span className="font-mono text-xs text-text-muted">{d.timeframe}</span>
             <span className="font-mono text-xs font-bold" style={{ color: dirColor }}>
@@ -270,6 +295,32 @@ function DecisionReviewCard({ decision, review, reviewedAt, onReview, onDelete, 
             <span className="font-mono text-xxs uppercase tracking-wider" style={{ color: statusColor }}>
               · {d.status}
             </span>
+
+            {/* Quick outcome buttons — solo per LONG/SHORT (FLAT/NO_GO non hanno SL/TP) */}
+            {(d.direction === 'LONG' || d.direction === 'SHORT') && onCorrect && (
+              <div className="flex gap-1 ml-auto">
+                <button
+                  onClick={() => onCorrect({ exitPrice: d.suggestedTP, result: 'WIN', notes: 'Quick: TP hit' })}
+                  disabled={d.suggestedTP == null}
+                  title={`Chiudi a TP=${d.suggestedTP ?? '?'} (WIN +R)`}
+                  className="px-2 py-0.5 rounded font-mono text-xs font-bold bg-green/20 text-green border border-green/40 hover:bg-green/30 disabled:opacity-30">
+                  ✓ TP
+                </button>
+                <button
+                  onClick={() => onCorrect({ exitPrice: d.suggestedSL, result: 'LOSS', notes: 'Quick: SL hit' })}
+                  disabled={d.suggestedSL == null}
+                  title={`Chiudi a SL=${d.suggestedSL ?? '?'} (LOSS -1R)`}
+                  className="px-2 py-0.5 rounded font-mono text-xs font-bold bg-red/20 text-red border border-red/40 hover:bg-red/30 disabled:opacity-30">
+                  ✗ SL
+                </button>
+                <button
+                  onClick={() => onCorrect({ exitPrice: d.entryPrice, result: 'BE', notes: 'Quick: chiuso break-even' })}
+                  title={`Chiudi a Entry=${d.entryPrice} (BE)`}
+                  className="px-2 py-0.5 rounded font-mono text-xs font-bold bg-gold/20 text-gold border border-gold/40 hover:bg-gold/30">
+                  🤝 BE
+                </button>
+              </div>
+            )}
           </div>
           <div className="font-mono text-xxs text-text-muted">
             {new Date(d.openedAt).toLocaleString('it-IT', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}

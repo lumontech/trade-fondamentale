@@ -469,11 +469,11 @@ export default function ClaudeDecisionPanel() {
             </div>
           )}
 
-          {/* Link al Review Lab (self-learning) */}
+          {/* Link al Review & Lessons (self-learning) */}
           <button onClick={() => setPanel('claude-review')}
-                  title="Apri Review Lab: rivedi decisioni passate, estrai lezioni, abilita self-learning"
+                  title="Apri Review & Lessons: chiudi i trade con TP/SL/BE rapidi, Claude estrae lezioni che vengono iniettate nel prompt"
                   className="px-3 py-1.5 rounded-md font-mono text-xs bg-purple-500/15 text-purple-300 border border-purple-500/40 hover:bg-purple-500/25 transition-all">
-            🧪 Review Lab
+            🧪 Review
             {(() => {
               const ls = getLessons()
               return ls?.lessons?.length ? (
@@ -511,6 +511,9 @@ export default function ClaudeDecisionPanel() {
               <div className="font-mono text-xs text-text-secondary mt-1">{error}</div>
             </div>
           )}
+
+          {/* Banner permanente lessons attive (sempre visibile se ce ne sono) */}
+          <ActiveLessonsBanner onOpenReview={() => setPanel('claude-review')} />
 
           {!contextPack && !loading && !error && (
             <NoDataBanner
@@ -627,19 +630,12 @@ export default function ClaudeDecisionPanel() {
                 )}
               </div>
 
-              {/* Save button + meta */}
+              {/* Auto-log info + meta */}
               <div className="flex items-center justify-between gap-4">
-                {decision.direction !== 'FLAT' && decision.direction !== 'NO_GO' && (
-                  <button onClick={handleSaveDecision}
-                          className="flex-1 px-4 py-2 rounded-md font-mono text-sm font-medium border transition-all"
-                          style={{
-                            backgroundColor: savedId ? '#00e09618' : dirStyle.bg,
-                            borderColor:     savedId ? '#00e09660' : dirStyle.border,
-                            color:           savedId ? '#00e096'   : dirStyle.text,
-                          }}>
-                    {savedId ? '✓ Salvata nel diario' : '💾 Salva nel diario'}
-                  </button>
-                )}
+                <div className="flex-1 flex items-center gap-2 font-mono text-xxs text-text-muted">
+                  <span className="text-green">✓</span>
+                  <span>Analisi auto-salvata nella Storia. Quando chiudi il trade reale, segna l'outcome (TP/SL/BE) dal pannello <button onClick={() => setPanel('claude-review')} className="text-purple-300 hover:underline">🧪 Review & Lessons</button>.</span>
+                </div>
                 {result.usage && (
                   <span className="font-mono text-xxs text-text-muted shrink-0">
                     {result.usage.input_tokens}in / {result.usage.output_tokens}out · {result.model}
@@ -862,6 +858,54 @@ function NoDataBanner({ symbol, timeframe, instruments, onReload, loading }) {
 }
 
 // ─── Empty state ────────────────────────────────────────────────────
+// ─── ActiveLessonsBanner: badge permanente che mostra lezioni iniettate ──
+function ActiveLessonsBanner({ onOpenReview }) {
+  const [expanded, setExpanded] = useState(false)
+  // Rileggi a ogni mount + ogni 5s in caso di nuova review fatta da altra tab
+  const [tick, setTick] = useState(0)
+  useEffect(() => {
+    const id = setInterval(() => setTick(t => t + 1), 5000)
+    return () => clearInterval(id)
+  }, [])
+  const ls = useMemo(() => getLessons(), [tick])
+  if (!ls?.lessons?.length) return null
+  return (
+    <div className="rounded-lg border border-purple-500/40 bg-purple-500/5 mb-3">
+      <button onClick={() => setExpanded(!expanded)}
+              className="w-full flex items-center justify-between px-3 py-2 hover:bg-purple-500/10 transition-colors">
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-xxs uppercase tracking-wider text-purple-300 font-semibold">🧠 Lezioni attive nel prompt</span>
+          <span className="px-1.5 py-0.5 rounded bg-purple-500/30 text-purple-200 font-mono text-xxs font-bold">{ls.lessons.length}</span>
+          <span className="font-mono text-xxs text-text-muted">· calibration: {ls.calibration} · {ls.stats_note}</span>
+        </div>
+        <span className="font-mono text-xs text-purple-300">{expanded ? '▲' : '▼'}</span>
+      </button>
+      {expanded && (
+        <div className="px-3 pb-3 pt-1">
+          <ol className="space-y-1.5">
+            {ls.lessons.map((l, i) => (
+              <li key={i} className="font-mono text-xs text-text-primary flex gap-2 leading-relaxed">
+                <span className="text-purple-300 font-bold shrink-0">{i + 1}.</span>
+                <span>{l}</span>
+              </li>
+            ))}
+          </ol>
+          <div className="font-mono text-xxs text-text-muted mt-2 pt-2 border-t border-purple-500/20 italic">
+            Queste lezioni vengono iniettate automaticamente nel prompt di Claude ad ogni nuova analisi.
+            Si auto-aggiornano dopo ogni Review.
+          </div>
+          {onOpenReview && (
+            <button onClick={onOpenReview}
+                    className="mt-2 px-3 py-1 rounded font-mono text-xxs bg-purple-500/15 text-purple-300 border border-purple-500/40 hover:bg-purple-500/25">
+              🧪 Apri Review Lab per gestire
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function EmptyState({ onAsk, onAskScalp, disabled }) {
   return (
     <div className="flex flex-col items-center justify-center h-full text-center max-w-lg mx-auto pt-8">

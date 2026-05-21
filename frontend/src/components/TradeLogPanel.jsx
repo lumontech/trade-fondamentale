@@ -81,10 +81,10 @@ export default function TradeLogPanel() {
       <div className="flex items-center justify-between px-6 py-4 border-b border-bg-border bg-bg-secondary shrink-0">
         <div>
           <h2 className="font-mono text-xl font-semibold text-gold tracking-wider">
-            📋 DIARIO DELLE DECISIONI
+            📋 STORIA DECISIONI
           </h2>
           <p className="font-mono text-sm text-text-secondary mt-0.5">
-            Memoria persistente del track record. Ogni decisione include snapshot completo del contesto.
+            Vista tabellare di TUTTE le decisioni Claude (auto-loggate). Per chiudere i trade o gestire lezioni vai in <span className="text-purple-300">🧪 Review & Lessons</span>.
           </p>
         </div>
         <button
